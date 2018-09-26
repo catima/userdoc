@@ -89,7 +89,7 @@ Le reste de la procédure est similaire à celle de l'édition d'une fiche et d�
 
 > La notion de sous-fiche étant liée à celle de type de fiche, pour la suite de la procédure se référer si besoin à la section ["Type de fiche"](#type-de-fiche).
 
-### Ajout d'un "Ensemble de choix" 
+### Ajout d'un "Ensemble de choix"  
 
 Un ensemble de choix est une liste d'éléments prédéfinis permettant de remplir un champ.
 
@@ -274,3 +274,117 @@ Les champs suivants dépendent ensuite du type de menu choisi :
 Une fois les champs remplis avec les données, il est possible d'enregistrer et retourner au menu *Setup* avec "*Créer le menu*" ou d'enregistrer et ajouter de nouvelles données avec "*Create and add another*".
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
+
+# Exemple de réalisation d'un catalogue
+
+Afin d'illustrer la réalisation d'un catalogue du début à la fin, voici un exemple reprenant toutes les étapes décrites jusqu'à présent. Cet exemple consiste en un catalogue recensant les universités romandes et de leurs bibliothèques afin de les représenter sur une carte géographique.
+
+## Conceptualisation 
+
+Une manière de débuter de la conceptualisation est de représenter des données réelles ou d'exemple sous la forme d'un tableau de données. Cette étape de création fera émerger les éléments marquants du catalogue.
+
+|  | Université de Fribourg | Université de Genève | Université de Lausanne | Université de Neuchâtel |
+|--------------------|--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Abbréviation | UNIFR | UNIGE | UNIL | UNINE |
+| Localité | Fribourg | Genève | Lausanne | Neuchâtel |
+| Bâtiments | Uni Beauregard, Uni Miséricorde, Uni Pérolles, Uni Régina Mundi |Battelle, Campus Biotech, CMU, Les Philosophes, Sciences, Uni Bastion, Uni Carl Vogt, Uni Dufour, Uni Mail, Uni Pignon |Amphimax, Amphipôle, Anthropole, Batochime, Biophore, Cubotron, Génopode, Internef, Unicentre, Unithèque|Rue de Saint-Nicolas 4, Place Numa-Droz 3, Chaussée de la Boine 20 , Fbg du Lac 5a, Av. DuPeyrou 1, etc.. |
+| Facultés |Droit, Lettres et sciences humaines, Sciences et médecine, Sciences économiques et sociales, Théologie |Droit, Économie et management, Lettres, Médecine, Psychologie et sciences de l'éducation, Sciences, Sciences de la société, Théologie |Biologie et médecine, Droit, sciences criminelles et administration publique, Géosciences et environnement, Hautes études commerciales, Lettres, Sciences sociales et politiques, Théologie et sciences des religions  |Droit, Lettres et sciences humaines, Sciences,Sciences économiques |
+| Nombre d'étudiants | 10414 |  16935 | 14976 | 4284 |
+| Bibliothèque | Bibliothèque cantonale et universitaire (Fribourg) | Bibliothèque de l'Université de Genève | Bibliothèque cantonale et universitaire (Lausanne) | Bibliothèques UniNE |
+| Adresse | Avenue de l'Europe 20, 1700 Fribourg | 24 rue du Général-Dufour,   1211 Genève 4 | Unicentre, 1015 Lausanne | Avenue du 1er-Mars 26, 2000 Neuchâtel |
+| Site web | www.unifr.ch | www.unige.ch | www.unil.ch | www.unine.ch |
+
+Dans cet exemple, la réalisation d'un tableau permet de relever les concepts importants de ce catalogue. Les concepts d'Université et de Bibliothèque sont centraux dans ce catalogue. Les grandes lignes du catalogue sont ainsi tracées conformément à son but initial ("Créer une base de données des Universités romandes et de leurs bibliothèques afin de les représenter sur une carte géographique"). Mais pour décrire une université, certains autres concepts méritent également d'être décrits comme la localité où se situe l'université ou ses bâtiments.
+
+---
+|Université
+|---
+|Nom de l'Université
+|Abbréviation
+|Localité ==> **concept "Localité"**
+|Bâtiments ==> **concept "Bâtiment**
+|Facultés
+|Nombre d'étudiants
+|Photographies
+|Bibliothèque ==> **concept "Bibliothèque"**
+|Adresse
+|Site web
+----
+
+|Bibliothèque
+|---
+|Nom de la bibliothèque
+|Réseau
+|Accès
+---
+
+|Localité
+|---
+|Nom de la localité
+|Canton
+|Population
+---
+
+|Bâtiment
+|---
+|Nom du bâtiment
+|Localisation géographique
+---
+
+### Types de fiches et liens
+
+Les quatre concepts précédements relevés, "Université", "Bibliothèque", "Localité", "Bâtiment",  correspondent aux types de fiches qu'il faudra créer dans Catima.
+
+**Liens entre les types de fiches :**
+
+* Une **université** a une ou plusieurs **bibliothèque(s)**
+* Une **université** a une et une seule **localité**
+* Une **université** a un, ou plusieurs **bâtiment(s)**
+
+## Ajout des types de fiches
+
+> Pour cette étape, se baser sur la section ["Ajout d'un type de fiche"](#ajout-dun-type-de-fiche). 
+
+> NB : Cet exemple propose un catalogue bilingue français/anglais. Pour un catalogue mono- ou plurilingue, remplir les champs correspondants aux langues du-dit catalogue.
+
+Afin d'éviter des allers et retours entre les différents types de fiches, cet exemple propose de commencer par ajouter les concepts ayant le moins de liens avec les autres, par exemple "Localité" :
+
+Il s'agit ici de donner un nom (et d'éventuelles traductions du nom) au type de fiche, des formes au pluriel, ainsi qu'une version courte du nom appelée "slug" (NB : la langue anglaise se prête souvent bien à cet usage) puis de confirmer avec le bouton "créer type de fiche". 
+
+ ![](assets/captures_CATIMA/item/new_item_type_ex1.png)
+
+ Le type de fiche "Localité" ainsi créé est par défaut vide : 
+
+  ![](assets/captures_CATIMA/item/new_item_type_ex2.png)
+
+La prochaine étape est donc d'ajouter des champs descriptifs, qui ont été déterminés dans l'étape de conceptualisation. Pour la "Localité", il s'agira ainsi de créer les champs "Nom de la localité", "Canton" et "Population".
+
+Pour cela, cliquer sur le bouton "+Ajouter", qui affichera une liste de champs possibles à ajouter. Le champ "Nom de la localité" par exemple sera un champ "de texte" et "Population" sera un champ "nombre entier". Pour le champ "Canton", ceux-ci étant en nombre limités (4), un champ "ensemble de choix" semble indiqué, mais un champ de texte aurait très bien convenu également.
+
+Pour le champ "Nom de la localité", remplir le nom du champ (et éventuelles traductions), les formes au pluriel et le slug. Il est également possible d'ajouter un texte d'aide à la saisie, et de spécifier des options d'affichage comme définir que le champ en question comme champ primaire (voir "champ primaire"). Noter également les options de saisie de données, qui permettent selon le type de champ, d'entrer une ou plusieurs données (Single vs Multiple values) et de s'assurer que le champ sera rempli par l'utilisateur (Required). Confirmer l'ajout d'un champ avec le bouton "Créer le champ".
+
+  ![](assets/captures_CATIMA/item/new_item_type_ex3.png)
+  ![](assets/captures_CATIMA/item/new_item_type_ex4.png)
+
+Cette étape, à répéter pour chaque champ du type de fiche, est globalement similaire pour tous les champs, voir "Types de champs" pour les spécifités de chaque champ. 
+
+> NB : La question des champs qui sont également des concepts (dans notre cas les champs "Bibliothèque", et "Localité" dans le type de fiche "Université") sera traitée dans la prochaine section "Liens entre types de fiches".
+
+Une fois tous les champs d'un type de fiche créés, créer un nouveau type de fiche par ordre de complexité croissante, jusqu'à avoir créé tous les types de fiches avec tous leurs champs. 
+
+## Liens entre types de fiches
+
+Une fois tous les types de fiches et leurs champs créés, vient le moment de relier les types de fiches aux autres auxquels ils font références. 
+
+> Dans notre exemple, il s'agira dans "Université" de faire une référence aux concepts de "Bibliothèque" et de "Localité". 
+
+Pour cela, sélectionner "Université" parmi les types de fiches (accessibles dans la barre latérale gauche) puis créer un nouveau champ "référence", par exemple à "Localité", qui sera à remplir comme tout autre champ, jusqu'à choisir à la fin le type de fiche auxquel faire référence, ici "Localité".
+
+  ![](assets/captures_CATIMA/item/new_item_type_ex5.png)
+  ![](assets/captures_CATIMA/item/new_item_type_ex6.png)
+
+Ainsi lors de l'ajout d'une Université, lorsqu'il s'agira de choisir une localité, il faudra qu'elle existe auparavant. Cela revient à dire que l'ordre d'ajout des données suivra le même ordre que pour la création des types de fiches, à savoir du plus simple au plus complexe (ici Localité > Bibliothèque > Université), afin que les concepts plus complexes puissent se baser sur les données des concepts plus simples.
+
+## Création de pages personnalisées
+
+## Création d'un menu personnalisé
