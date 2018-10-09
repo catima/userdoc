@@ -1,5 +1,5 @@
 # Configuration d'un catalogue 
-## Ajout d'un type de fiche 
+## Création d'un type de fiche 
 
 Un catalogue permet de stocker des données (texte, images, dates, etc...) structurées sous la forme de types de fiches. Les types de fiches représentent des entités conceptuelles (p.ex le concept "livre") possédant des caractéristiques définies (p.ex "auteur", "année de publication").
 
@@ -8,7 +8,6 @@ Pour accéder à la section de configuration ("Setup"), cliquer sur "Admin" dans
 Pour ajouter un objet, cliquer sur "+ Nouveau type de fiche" en bas de la rubrique "Types de fiche", dans la barre latérale gauche. 
 
 ![](assets/captures_CATIMA/item/new_item_type1.png)
-
 
 Le formulaire suivant s’affiche :
 
@@ -63,7 +62,7 @@ Pour permettre l'enregistrement de données de manière conditionnelle, il est n
 1. Une sous-fiche
 2. Un ensemble de choix
 
-> La notion de sous-fiche étant liée à celle de type de fiche, se référer si besoin à la section ["Type de fiche"](#ajout-dun-type-de-fiche).
+> La notion de sous-fiche étant liée à celle de type de fiche, se référer si besoin à la section "Type de fiche"].
 
 ### Création d'une sous-fiche 
 
@@ -77,7 +76,7 @@ Une fois choisi un nom pour la sous-fiche, il est possible d'enregistrer et reto
 > 
 ### Édition d'une sous-fiche
 
-Une fois les sous-fiches créées, il s'agit d'y ajouter les champs souhaités. 
+Une fois la/les sous-fiches créée-s, il s'agit d'y ajouter les champs souhaités. 
 
 Pour cela, choisir la sous-fiche : dans la barre de gauche, dans la section "Sous-fiches", sélectionner la sous-fiche souhaitée. 
 
@@ -87,7 +86,7 @@ Le reste de la procédure est similaire à celle de l'édition d'une fiche et d�
 
 ![](assets/captures_CATIMA/categories/add_field_category.png)
 
-> La notion de sous-fiche étant liée à celle de type de fiche, pour la suite de la procédure se référer si besoin à la section ["Type de fiche"](#type-de-fiche).
+> La notion de sous-fiche étant liée à celle de type de fiche, pour la suite de la procédure se référer si besoin à la section "Type de fiche".
 
 ### Ajout d'un "Ensemble de choix"  
 
@@ -101,7 +100,7 @@ La liste des "Ensembles de choix" est accessible en cliquant sur "Ensembles de c
 
 ![](assets/captures_CATIMA/choice/choice_set.png)
 
-Cliquer sur "+Nouvel ensemble de choix" qui s’affiche en bleu, à droite dans la ligne grise. 
+Cliquer sur "*+Nouvel ensemble de choix*" qui s’affiche en bleu, à droite dans la ligne grise. 
 
 La page de paramétrages suivante apparait :
 
@@ -113,13 +112,10 @@ Une fois les champs remplis avec les données, il est possible d'enregistrer et 
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
 
-## Affichages personnalisés
-
-[Item View]
 
 ## Pages personnalisées : listes de types de fiches et contenus Web
 
-Catima génère automatiquement une page par type de fiche. La rubrique "Page" permet d'ajouter des pages personnalisées comme une page d'accueil ou de bibliographie. Ces pages peuvent contenir du texte, des listes de types de fiches ou des blocs de code HTML ou Markdown.
+Catima génère automatiquement une page par type de fiche. La rubrique "Page" permet d'ajouter des pages personnalisées comme une page d'accueil, de bibliographie ou une carte affichant des localisations géographiques. Ces pages peuvent contenir du texte, des listes de types de fiches, des blocs de code HTML ou Markdown.
 
 ### Ajout d'une page
 
@@ -127,7 +123,7 @@ Pour ajouter une page, sélectionner "Pages" dans la barre de gauche. La liste d
 
 ![](assets/captures_CATIMA/pages/page.PNG)
 
-Cliquer sur "New page". La page de paramétrages suivante apparait :
+Cliquer sur "Nouvelle page". La page de configuration suivante apparait :
 
  ![](assets/captures_CATIMA/pages/new_page.PNG) 
 
@@ -135,7 +131,7 @@ Choisir le(s) titre(s) de la page dans les différentes langues du catalogue ain
 
 > Exemple de slug : "accueil", "home", "biblio"
 
-Une fois les champs remplis , il est possible d'enregistrer et retourner au menu *Setup* avec "Créer page" (*Create page*) ou d'enregistrer et ajouter de nouvelles données avec "*Create and add another*".
+Une fois les champs remplis , il est possible d'enregistrer et retourner au menu *Setup* avec "Créer une page" ou d'enregistrer et ajouter de nouvelles données avec "*Créer et ajouter une autre*".
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
 
@@ -157,6 +153,12 @@ Trois types de contenus sont possibles :
 
 Pour ajouter du contenu, cliquer sur "+Add" puis choisir le type de contenu souhaité. 
  
+### Édition d'un conteneur de cartes géographique (Map Container)
+
+Ce type de conteneur permet de générer automatiquement une carte géographique affichant les données géographiques pour un type de fiches donné.
+
+![](assets/captures_CATIMA/pages/map-container.png)
+
 ### Édition d'un conteneur HTML
 
 Ce type de conteneur permet d'ajouter du code utilisé habituellement dans les **pages web**. 
@@ -190,11 +192,11 @@ L'édition de l'HTML se déroule dans la zone "HTML" et peut se faire de deux ma
 
 * Les utilisateurs avancés ont la possibilité d'insérer, écrire ou modifier du code HTML via le mode "Code View".
  
-> Quelque soit le mode choisi, il est possible d'afficher l'éditeur en mode **plein écran** via le bouton  ![](assets/captures_CATIMA/pages/fullscreen_button.PNG)
+> Quelque soit le mode choisi, il est possible d'afficher l'éditeur en mode **plein écran** via le bouton ![](assets/captures_CATIMA/pages/fullscreen_button.PNG)
  
 Une fois le contenu HTML ajouté, enregistrer et retourner au menu *Setup* avec "*Créer conteneur*".
 
-> NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel). Le contenu du champ d'édition sera perdu.
+> NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler". Le contenu du champ d'édition sera perdu.
 
 ### Édition d'un conteneur Item List
 
@@ -208,7 +210,7 @@ Choisir un "slug" (nom court à donner au conteneur). Celui-ci apparaitra dans l
 
 Une fois le slug et l'item choisis, enregistrer et retourner au menu *Setup* avec "*Créer conteneur*".
 
-> NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel). Le contenu du champ d'édition sera perdu.
+> NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler". Le contenu du champ d'édition sera perdu.
 
 ### Édition d’un conteneur Markdown
 
@@ -232,19 +234,20 @@ L'ordre des conteneurs ajoutés peut être modifié en tout temps en cliquant su
 
 Une fois satisfait de l'organisation de vos conteneurs, **enregistrer** en cliquant sur "Update page" ou annuler avec "Cancel".
 
-## Organisation du menu
+## Organisation de la barre de menus
 
-Cette rubrique permet d'**organiser la présentation** de la barre de menus, permettant de naviguer dans le site. Par défaut, les onglets permettent d'accéder aux différents types de fiches, classés par ordre alphabétique. 
+Cette rubrique permet d'**organiser la présentation** de la barre de menus, permettant de naviguer dans le site. Par défaut, les onglets permettent d'accéder aux différents types de fiches, classés par ordre alphabétique. Créer un nouveau menu permet de changer le nom des menus dans la barre horizontale supérieure, mais aussi de créer un accès facile à des pages personnalisées (voir la section "Pages personnalisées")
 
-> NB : L'ajout d'un nouveau menu remplace la barre de menu par défaut. Cela implique de devoir également créer tous les autres menus souhaités. 
+> NB : L'ajout d'un nouveau menu remplace la barre de menu par défaut (portant le nom des types de fiches). Cela implique de devoir également créer manuellement tous les menus souhaités. 
 
 Pour personnaliser l'organisation de cette barre, choisir "Menus" dans la barre latérale gauche. Les éventuels menus existants sont affichés dans une liste. 
 
  ![](assets/captures_CATIMA/menu_items/menu_items.PNG)
 
-Pour ajouter un nouveau menu, cliquer sur "+ Nouveau menu" (*+ New menu item*). La page suivante affiche différents champs et permet de choisir parmi 4 types de menus différents :
+Pour ajouter un nouveau menu, cliquer sur "+ Nouveau menu". La page suivante affiche différents champs et permet de choisir parmi 4 types de menus différents :
 
-![](assets/captures_CATIMA/menu_items/new_menu_item.PNG)
+![](assets/captures_CATIMA/menu_items/new_menu_item1.png)
+![](assets/captures_CATIMA/menu_items/new_menu_item2.png)
 
 Pour tous les types de menus, remplir les informations suivantes : 
 - **Slug** : nom court à donner au menu. Celui-ci apparaitra dans l'adresse web (URL) du site généré par CATIMA. Il doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
@@ -296,28 +299,6 @@ Une manière de débuter de la conceptualisation est de représenter des donnée
 
 Dans cet exemple, la réalisation d'un tableau permet de relever les concepts importants de ce catalogue. Les concepts d'Université et de Bibliothèque sont centraux dans ce catalogue. Les grandes lignes du catalogue sont ainsi tracées conformément à son but initial ("Créer une base de données des Universités romandes et de leurs bibliothèques afin de les représenter sur une carte géographique"). Mais pour décrire une université, certains autres concepts méritent également d'être décrits comme la localité où se situe l'université ou ses bâtiments.
 
----
-|Université
-|---
-|Nom de l'Université
-|Abbréviation
-|Localité ==> **concept "Localité"**
-|Bâtiments ==> **concept "Bâtiment**
-|Facultés
-|Nombre d'étudiants
-|Photographies
-|Bibliothèque ==> **concept "Bibliothèque"**
-|Adresse
-|Site web
-----
-
-|Bibliothèque
-|---
-|Nom de la bibliothèque
-|Réseau
-|Accès
----
-
 |Localité
 |---
 |Nom de la localité
@@ -325,29 +306,51 @@ Dans cet exemple, la réalisation d'un tableau permet de relever les concepts im
 |Population
 ---
 
+|Université
+|---
+|Nom de l'Université
+|Abbréviation
+|Localité ==> **concept "Localité"**
+|Facultés
+|Nombre d'étudiants
+|Photographies
+|Adresse
+|Site web
+----
+
 |Bâtiment
 |---
 |Nom du bâtiment
 |Localisation géographique
+|Université ==> **concept "Université"**
+---
+
+|Bibliothèque
+|---
+|Nom de la bibliothèque
+|Abbréviation
+|Réseau
+|Bâtiment ==> **concept "Bâtiment"**
+|Université  ==> **concept "Université"**
 ---
 
 ### Types de fiches et liens
 
 Les quatre concepts précédements relevés, "Université", "Bibliothèque", "Localité", "Bâtiment",  correspondent aux types de fiches qu'il faudra créer dans Catima.
 
-**Liens entre les types de fiches :**
+**Liens conceptuels entre les types de fiches :**
 
-* Une **université** a une ou plusieurs **bibliothèque(s)**
-* Une **université** a une et une seule **localité**
+* Une **localité** a une et une seule **université**
+* Une **université** a une, ou plusieurs **bibliothèque(s)**
 * Une **université** a un, ou plusieurs **bâtiment(s)**
 
-## Ajout des types de fiches
+## Ajout des types de fiches et création de champs
 
-> Pour cette étape, se baser sur la section ["Ajout d'un type de fiche"](#ajout-dun-type-de-fiche). 
+> Pour cette étape, se baser sur la section "Ajout d'un type de fiche". 
 
 > NB : Cet exemple propose un catalogue bilingue français/anglais. Pour un catalogue mono- ou plurilingue, remplir les champs correspondants aux langues du-dit catalogue.
 
-Afin d'éviter des allers et retours entre les différents types de fiches, cet exemple propose de commencer par ajouter les concepts ayant le moins de liens avec les autres, par exemple "Localité" :
+Le concept de "Localité" étant le concept le plus large (un bâtiment se situe dans une université, qui est dans une localité), il englobe les concepts plus précis que lui, à savoir "Université", qui lui-même englobe les "Bâtiments" et les "Bibliothèques". C'est pourquoi il est judicieux de créer d'abord le type de fiches de l'entité la plus large, ici "Localité". Ainsi lors de l'ajout d'une nouvelle université (puis de nouveaux bâtiments et bibliothèques) il existera toujours l'entité plus globale à laquelle faire référence.
 
 Il s'agit ici de donner un nom (et d'éventuelles traductions du nom) au type de fiche, des formes au pluriel, ainsi qu'une version courte du nom appelée "slug" (NB : la langue anglaise se prête souvent bien à cet usage) puis de confirmer avec le bouton "créer type de fiche". 
 
@@ -366,25 +369,20 @@ Pour le champ "Nom de la localité", remplir le nom du champ (et éventuelles tr
   ![](assets/captures_CATIMA/item/new_item_type_ex3.png)
   ![](assets/captures_CATIMA/item/new_item_type_ex4.png)
 
-Cette étape, à répéter pour chaque champ du type de fiche, est globalement similaire pour tous les champs, voir "Types de champs" pour les spécifités de chaque champ. 
-
-> NB : La question des champs qui sont également des concepts (dans notre cas les champs "Bibliothèque", et "Localité" dans le type de fiche "Université") sera traitée dans la prochaine section "Liens entre types de fiches".
+Cette étape, à répéter pour chaque champ du type de fiche, est globalement similaire pour tous les champs, voir "Types de champs" pour les spécifités de chaque champ.
 
 Une fois tous les champs d'un type de fiche créés, créer un nouveau type de fiche par ordre de complexité croissante, jusqu'à avoir créé tous les types de fiches avec tous leurs champs. 
 
-## Liens entre types de fiches
+### Références à d'autres champs 
 
-Une fois tous les types de fiches et leurs champs créés, vient le moment de relier les types de fiches aux autres auxquels ils font références. 
+Lors de la conceptualisation, les concepts les plus "précis" comme par exemple "Bâtiment", font référence aux concepts dans lesquels ils sont compris, par exemple ici "Université". On attribue ainsi à chaque bâtiment une caractéristique d'appartenance à une université.
 
-> Dans notre exemple, il s'agira dans "Université" de faire une référence aux concepts de "Bibliothèque" et de "Localité". 
+Dans Catima sela se traduit par la création d'un champ "Référence" : 
 
-Pour cela, sélectionner "Université" parmi les types de fiches (accessibles dans la barre latérale gauche) puis créer un nouveau champ "référence", par exemple à "Localité", qui sera à remplir comme tout autre champ, jusqu'à choisir à la fin le type de fiche auxquel faire référence, ici "Localité".
+> Dans notre exemple, il s'agira dans "Bâtiment" de faire une référence aux concepts d' "Université". 
+
+Pour cela, sélectionner "Bâtiment" parmi les types de fiches (accessibles dans la barre latérale gauche) puis créer un nouveau champ "Référence". 
 
   ![](assets/captures_CATIMA/item/new_item_type_ex5.png)
-  ![](assets/captures_CATIMA/item/new_item_type_ex6.png)
 
-Ainsi lors de l'ajout d'une Université, lorsqu'il s'agira de choisir une localité, il faudra qu'elle existe auparavant. Cela revient à dire que l'ordre d'ajout des données suivra le même ordre que pour la création des types de fiches, à savoir du plus simple au plus complexe (ici Localité > Bibliothèque > Université), afin que les concepts plus complexes puissent se baser sur les données des concepts plus simples.
-
-## Création de pages personnalisées
-
-## Création d'un menu personnalisé
+Pour l'éditeur de données, cela se concrétisera dans l'ajout d'un nouveau bâtiment par la possiblité/obligation de choisir parmi les universités pré-existantes.
