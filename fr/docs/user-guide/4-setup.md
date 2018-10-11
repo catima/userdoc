@@ -1,7 +1,51 @@
 # Configuration d'un catalogue 
+## Conceptualisation
+
+La démarche de conceptualisation d'un catalogue est une partie importante de la réalisation d'un catalogue : en effet ces réflexions préliminaires ont pour but d'élaborer la structure conceptuelle et logique du catalogue. Effectuer cette étape réflexive en amont facilite ensuite la réalisation concrète du catalogue au sein de Catima.
+
+Pour une conceptualisation efficace il est promordial de comprendre la différence entre les **données** et leur **conceptualisation**. La conceptualisation consiste ainsi en une étape de regroupement des objets que l'on souhaite décrire sous un même concept.
+
+> Par exemple, les objets "*2001, l'Odyssée de l'espace*", "*Le Parrain*", et "*Titanic*" sont regroupés sous le même concept **"film"**.
+
+Ces concepts ont des **caractéristiques** qui les décrivent.
+
+> Par exemple, le concept **"film"** peut regrouper des films de genres différents, réalisés par des personnes différentes et sortis au cinéma à des périodes différentes.
+
+Les éléments du concept "film" peuvent ainsi être représentés dans un tableau tel que celui-ci où les objets sont décrits par leurs caractéristiques "Titre", Réalisateur", "Sortie au cinéma
+
+| Titre                       | Genres          | Réalisateur          | Sortie au cinéma |
+|-----------------------------|-----------------|----------------------|------------------|
+| 2001, l'Odyssée de l'espace | Science-fiction | Stanley Kubrick      | 1968             |
+| Le Parrain                  | Gangsters       | Francis Ford Coppola | 1972             |
+| Titanic                     | Drame, romance  | James Cameron        | 1998             |
+
+Les étapes suivantes permettent d'effectuer une conceptualisation efficace : exploration, hiérarchisation et liens
+
+## Exploration
+
+L'étape de listage consiste à lister librement tout élément pertinent à figurer dans le catalogue et à ce stade sans souci d'organisation. Dans cet exemple, il s'agit de lister par exemple une vingtaine de films qui auraient leur place dans ce catalogue.
+
+## Hiérarchisation et Structure
+
+L'étape de structure permet de mettre de l'ordre dans les concepts précédemment listés librement. Il s'agit à présent de se demander quels sont les éléments centraux parmi ceux listés précédemment.
+
+Un concept est considéré comme central dès lors qu'il devient pertinent pour le but du catalogue de décrire ce concept. Un concept n'est donc pas central dans l'absolu, mais relatif à un catalogue.
+
+Dans notre exemple, le concept de **film** est central car le but du catalogue est d'effectuer un inventaire de films. Si il est également d'intérêt pour le catalogue de décrire les réalisateurs de films (naissance, nationalité, biographie...), alors ce concept devient également central.
+
+Si en revanche, évoquer le nom du/des réalisateurs du film suffit, alors le concept "réalisateur" reste une caractéristique de "film" mais n'est pas central.
+
+C'est également le moment de réfléchir aux caractéristiques des concepts, c'est à dire ce qui les décrit. Dans le cas du concept **film** ici, ses caractéristiques sont le réalisateur, le genre et la sortie au cinéma.
+
+## Liens et Références
+
+Il est fréquent que des concepts soient liés à d'autres : par exemple les concepts "livre" et "auteur" sont liés entre eux par le fait qu'un livre a un (ou plusieurs) auteurs.
+
 ## Création d'un type de fiche 
 
 Un catalogue permet de stocker des données (texte, images, dates, etc...) structurées sous la forme de types de fiches. Les types de fiches représentent des entités conceptuelles (p.ex le concept "livre") possédant des caractéristiques définies (p.ex "auteur", "année de publication").
+
+Dans Catima les concepts sont appelés "**Types de fiches**" et leurs caractéristiques des **Champs**.
 
 Pour accéder à la section de configuration ("Setup"), cliquer sur "Admin" dans la barre horizontale supérieure, puis choisir "Catalog Setup" dans le menu déroulant. Une interface résumant les éventuels objets existants s'affiche.
 
