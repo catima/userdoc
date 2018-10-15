@@ -79,9 +79,58 @@ Pour ajouter un champ, cliquer sur la liste déroulant "*+ Ajouter…*" (*Add*) 
 
 > Rappel : Les champs du type de fiche sont issus de l'étape de conceptualisation. Voir (conceptualisation) pour en savoir plus.
 
-Bien que chaque champ impose son format de données spécifiques (nombres, dates, images, etc...), une grande partie des informations à remplir est commune : 
+### Types de champs 
 
-#### Choix du nom
+Afin que le catalogue soit rempli par les éditeurs avec des données au bon format (p.ex nombre, date, image), il s'agit de créer des champs adaptés. Voici les types de champs disponibles dans Catima : 
+
+#### Champ booléen (oui/non)
+
+Ce champ permet le choix entre deux valeurs "oui" ou "non" uniquement.
+
+#### Champ ensemble de choix
+
+Ce champ permet de proposer une liste de choix entre plusieurs valeurs.
+
+#### Champ décimal
+
+Ce champ permet d'entrer des nombres au format décimal.
+
+#### Champ e-mail
+
+Ce champ permet d'entrer une adresse e-mail.
+
+#### Champ fichier
+
+Ce champ permet d'ajouter des fichiers, avec d'éventuelles restrictions d'extension (par exemple uniquement .pdf ou .doc)
+
+#### Champ géographique
+
+Ce champ permet d'entrer une localisation géographique soit en entrant manuellement les valeurs de latitude et longitude soit en pointant la localisation sur une carte.
+
+#### Champ image
+
+Ce champ permet d'ajouter des fichiers images, avec d'éventuelles restrictions d'extension (par exemple uniquement .jpg ou .png)
+
+#### Champ nombre entier
+
+Ce champ permet d'entrer des nombres entiers.
+
+#### Champ référence
+
+Ce champ permet de créer une référence à un autre type de fiche.
+
+#### Champ de texte
+
+Ce champ permet d'entrer du texte avec possibilités de mise en forme (gras, italique, listes, notes de bas de page).
+
+#### Champ URL
+
+Ce champ permet d'entrer des adresses URL.
+
+### Création d'un champ 
+
+Bien que chaque champ impose son format de données spécifiques (nombres, dates, images, etc...), une partie des informations à remplir est commune : 
+
 
 |              | Définition                 | Exemple                           | Remarques                                                                                                                  |
 |--------------|----------------------------|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -155,7 +204,6 @@ Choisir un **nom** pour l'ensemble de choix, puis entrer la liste de choix possi
 Une fois les champs remplis avec les données, il est possible d'enregistrer et retourner au menu *Setup* avec "*Créer ensemble de choix'*" ou d'enregistrer et ajouter un nouvel ensemble de choix avec "*Create and add another*".
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
-
 
 ## Pages personnalisées : listes de types de fiches et contenus Web
 

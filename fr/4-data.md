@@ -27,11 +27,13 @@ Une fois les champs remplis avec les données, il est possible d'enregistrer et 
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
 
-![](assets/captures_CATIMA/data/add_new_data.PNG)  
+![](assets/captures_CATIMA/data/new_data_1.PNG)  
+![](assets/captures_CATIMA/data/new_data_2.PNG)  
 
-Ne pas oublier d'enregistrer à chaque fois pour ne rien perdre. De plus, un enregistrement n'est possible que si toutes les sections ont été remplies. Dans le cas contraire un message d'erreur apparaît et vous invite à corriger ou remplir les champs.
 
-Une fois vos données enregistrées celles-ci apparaissent dans la section *Data* sous la forme d'un tableau de données. 
+Une fois les champs remplis, enregistrer avec " *Enregistrer 'nom du type de fiche'* ". Un enregistrement n'est possible que si toutes les sections obligatoires ont été remplies. Dans le cas contraire un message d'erreur apparaît et invite à corriger ou remplir les champs.
+
+Une fois les données enregistrées, celles-ci apparaissent dans la section *Data* sous la forme d'un tableau de données. 
 
 ## Modification de données
 
@@ -41,9 +43,9 @@ Pour choisir les données à modifier, sélectionner la fiche souhaitée dans la
 
 Pour la modification de chaque champ, la procédure et les remarques sont semblables à l'ajout de données (voir [Ajout de données](#ajout-de-données)).
 
-Une fois les modifications terminées, enregistrer avec " *Enregistrer 'nom du type de fiche'* ". Un enregistrement n'est possible que si toutes les sections ont été remplies. Dans le cas contraire un message d'erreur apparaît et vous invite à corriger ou remplir les champs.
+Une fois les modifications terminées, enregistrer avec " *Enregistrer 'nom du type de fiche'* ". Un enregistrement n'est possible que si toutes les sections obligatoires ont été remplies. Dans le cas contraire un message d'erreur apparaît et invite à corriger ou remplir les champs.
 
-Une fois vos données enregistrées celles-ci apparaissent dans la section *Data* sous la forme d'un tableau de données. 
+Une fois les données enregistrées, celles-ci apparaissent dans la section *Data* sous la forme d'un tableau de données. 
 
 ## Duplication de données
 
