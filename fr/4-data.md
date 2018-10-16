@@ -11,7 +11,7 @@ L'accueil de la section **Data** consiste en un affichage des différentes fiche
 
 Dans la section *Data* la barre latérale gauche permet d'accéder aux données par fiches. Une fois la fiche choisie, une liste des données existantes est présentée. 
 
-![](assets/captures_CATIMA/data/data.PNG)
+![](assets/data/data.png)
 
 > NB : Certains champs ont pu être cachés dans la configuration du type de fiche. Ainsi seuls Les champs pour lesquels l'option "Inclure le champ dans la liste des fiches" a été activée dans ***Setup*** seront affichés dans cette liste.
 
@@ -27,8 +27,8 @@ Une fois les champs remplis avec les données, il est possible d'enregistrer et 
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
 
-![](assets/captures_CATIMA/data/new_data_1.PNG)  
-![](assets/captures_CATIMA/data/new_data_2.PNG)  
+![](assets/data/new_data_1.png)  
+![](assets/data/new_data_2.png)  
 
 
 Une fois les champs remplis, enregistrer avec " *Enregistrer 'nom du type de fiche'* ". Un enregistrement n'est possible que si toutes les sections obligatoires ont été remplies. Dans le cas contraire un message d'erreur apparaît et invite à corriger ou remplir les champs.
@@ -39,7 +39,7 @@ Une fois les données enregistrées, celles-ci apparaissent dans la section *Dat
 
 Pour choisir les données à modifier, sélectionner la fiche souhaitée dans la barre latérale gauche. Les données existantes s'affichent sous forme d'un tableau. Pour modifier la fiche souhaitée, cliquer sur le bouton "Actions" puis sur "Éditer" :
 
-![](assets/captures_CATIMA/data/edit_data.PNG)  
+![](assets/data/edit_data.png)  
 
 Pour la modification de chaque champ, la procédure et les remarques sont semblables à l'ajout de données (voir [Ajout de données](#ajout-de-données)).
 
@@ -51,7 +51,7 @@ Une fois les données enregistrées, celles-ci apparaissent dans la section *Dat
 
 Il est possible de dupliquer une fiche en cliquant sur le bouton "Actions" puis sur "Dupliquer" : 
 
-![](assets/captures_CATIMA/data/duplicate_data.PNG)  
+![](assets/data/duplicate_data.png)  
 
 Cela ouvre la même page que pour l'ajout de données, avec les données de la fiche dupliquée, qu'il est possible de modifier.
 
@@ -135,17 +135,17 @@ Ainsi pour ajouter une nouvelle localité : dans la section "Data" de Catima, s�
 
 Une liste des localités existante s'affiche : 
 
-![](assets/captures_CATIMA/data/new_data_ex1.PNG)  
+![](assets/data/new_data_ex1.png)  
 
 Cliquer sur "+ Nouveau type de fiche 'Localité'" puis remplir tous les champs nécessaires : 
 
-![](assets/captures_CATIMA/data/new_data_ex2.PNG)  
+![](assets/data/new_data_ex2.png)  
 
 Une fois la localité créée, il est possible de lui ajouter l'Université dans la localité de Lausanne :
 
-![](assets/captures_CATIMA/data/new_data_ex3.PNG)  
+![](assets/data/new_data_ex3.png)  
 
 Puis d'ajouter les données des autres types de fiches "Bâtiments" et "Bibliothèques" : 
 
-![](assets/captures_CATIMA/data/new_data_ex4.PNG)  
+![](assets/data/new_data_ex4.png)  
 

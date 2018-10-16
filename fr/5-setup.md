@@ -1,4 +1,9 @@
 # Configuration d'un catalogue 
+
+Pour pouvoir réaliser un catalogue contenant des données, deux étapes sont à effectuer : la première est la réalisation de la structure du catalogue (configuration). La deuxième consiste en l'entrée des données. 
+
+Cette section décrit la première étape. Pour l'ajout des données consulter la section "Données" destinée aux éditeurs de catalogue.
+
 ## Conceptualisation
 
 La démarche de conceptualisation d'un catalogue est une partie importante de la réalisation d'un catalogue : en effet ces réflexions préliminaires ont pour but d'élaborer la structure conceptuelle et logique du catalogue. Effectuer cette étape réflexive en amont facilite ensuite la réalisation concrète du catalogue au sein de Catima.
@@ -27,19 +32,23 @@ L'étape de listage consiste à lister librement tout élément pertinent à fig
 
 ## Hiérarchisation et Structure
 
-L'étape de structure permet de mettre de l'ordre dans les concepts précédemment listés librement. Il s'agit à présent de se demander quels sont les éléments centraux parmi ceux listés précédemment.
+L'étape de structure permet de mettre de l'ordre dans les concepts précédemment listés librement. Il s'agit à présent de se demander quels sont les concepts parmi les éléments parmi ceux listés précédemment et lesquels sont des caractéristiques de chaque concept.
 
-Un concept est considéré comme central dès lors qu'il devient pertinent pour le but du catalogue de décrire ce concept. Un concept n'est donc pas central dans l'absolu, mais relatif à un catalogue.
+> NB : Un élément peut être à la fois une caractéristique d'un concept *et* un concept en lui-même. Dans ce cas il sera fait une référence à ce concept (voir plus loin "Liens et Références")
 
-Dans notre exemple, le concept de **film** est central car le but du catalogue est d'effectuer un inventaire de films. Si il est également d'intérêt pour le catalogue de décrire les réalisateurs de films (naissance, nationalité, biographie...), alors ce concept devient également central.
+Est considéré comme un **concept** un élément pour lequel des descriptions supplémentaires sont pertinentes pour le but du catalogue. Un élément descriptif ne devient donc pas un concept *dans l'absolu*, mais il l'est *selon le but du catalogue*.
 
-Si en revanche, évoquer le nom du/des réalisateurs du film suffit, alors le concept "réalisateur" reste une caractéristique de "film" mais n'est pas central.
-
-C'est également le moment de réfléchir aux caractéristiques des concepts, c'est à dire ce qui les décrit. Dans le cas du concept **film** ici, ses caractéristiques sont le réalisateur, le genre et la sortie au cinéma.
+> Dans notre exemple, l'élément **Film** est un concept car le but du catalogue est d'effectuer un inventaire de films. Si il est également d'intérêt pour le catalogue de décrire les **Réalisateurs** de films (naissance, nationalité, biographie...), alors cet élément devient également un concept auquel le film fera référence. Si en revanche, évoquer le nom du/des réalisateurs du film suffit, alors l'élément "réalisateur" reste une caractéristique de "film" mais n'est pas un concept.
 
 ## Liens et Références
 
-Il est fréquent que des concepts soient liés à d'autres : par exemple les concepts "livre" et "auteur" sont liés entre eux par le fait qu'un livre a un (ou plusieurs) auteurs.
+Dans cette étape il s'agit d'évaluer les liens que peuvent avoir les concepts entre eux. Il est en effet fréquent que des concepts soient liés à d'autres. 
+
+> Par exemple : Les concepts "Film" et "Réalisateur" sont liés entre eux par le fait qu'un Film a un (ou plusieurs) Réalisateur(s).
+
+Ces liens seront concrétisés dans Catima par des **"Références"**, au sein du concept le plus précis vers le concept le plus large et englobant (selon le catalogue). 
+
+> Dans notre exemple de catalogue de film, dans le concept "Réalisateur" il sera fait une référence aux Films réalisés par ce Réalisateur.
 
 ## Création d'un type de fiche 
 
@@ -51,11 +60,11 @@ Pour accéder à la section de configuration ("Setup"), cliquer sur "Admin" dans
 
 Pour ajouter un objet, cliquer sur "+ Nouveau type de fiche" en bas de la rubrique "Types de fiche", dans la barre latérale gauche. 
 
-![](assets/captures_CATIMA/item/new_item_type1.png)
+![](assets/setup/new_item_type1.png)
 
 Le formulaire suivant s’affiche :
 
-![](assets/captures_CATIMA/item/new_item_type2.png)
+![](assets/setup/new_item_type2.png)
 
 Remplir le nom du type de fiche et sa forme plurielle. Si le support de plusieurs langues a été demandé pour le catalogue, il s'agira de remplir également ces éléments traduits dans les autres langues. Pour terminer, choisir une forme simplifiée du nom appelée "slug" qui apparaitra dans l'adresse web (URL) du site généré par CATIMA. Celui-ci doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
 
@@ -65,17 +74,17 @@ Une fois les champs remplis avec les données, il est possible d'enregistrer et 
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
 
-Une fois le type de fiche créé, ses éléments (nom, pluriel, slug) sont résumés sur la ligne grise. Il est possible de les modifier en cliquant sur le lien "Éditer item type".
+Une fois le type de fiche créé, ses éléments (nom, pluriel, slug) sont résumés sur la ligne grise. Il est possible de les modifier en cliquant sur le lien "Éditer le type de fiche".
 
-![](assets/captures_CATIMA/item/edit_item.png)
-
-### Édition d'un "type de fiche" 
+### Configuration d'un "type de fiche" 
 
 Une fois le type de fiche créé, il s'agit d'y ajouter les champs souhaités. 
 
+> NB : Les **champs** à créer dans Catima correspondent aux caractéristiques des concepts issus de l'étape de "Conceptualisation"
+
 Pour ajouter un champ, cliquer sur la liste déroulant "*+ Ajouter…*" (*Add*) qui révèle les différents choix de champs possibles.
 
-![](assets/captures_CATIMA/item/add_field_item.png)
+![](assets/setup/add_field_item.png)
 
 > Rappel : Les champs du type de fiche sont issus de l'étape de conceptualisation. Voir (conceptualisation) pour en savoir plus.
 
@@ -161,7 +170,7 @@ Pour permettre l'enregistrement de données de manière conditionnelle, il est n
 
 Pour ajouter une **Sous-fiche** , dans la barre de gauche, en bas de la rubrique "*Sous-fiches*", cliquer sur "**+ Nouvelle sous-fiche**". 
 
-![](assets/captures_CATIMA/categories/new_category.png)
+![](assets/categories/new_category.png)
 
 Une fois choisi un nom pour la sous-fiche, il est possible d'enregistrer et retourner au menu *Setup* avec "*Créer sous-fiche'*" ou d'enregistrer et ajouter une nouvelle sous-fiche avec "*Create and add another*".
 
@@ -173,11 +182,11 @@ Une fois la/les sous-fiches créée-s, il s'agit d'y ajouter les champs souhait�
 
 Pour cela, choisir la sous-fiche : dans la barre de gauche, dans la section "Sous-fiches", sélectionner la sous-fiche souhaitée. 
 
-![](assets/captures_CATIMA/categories/edit_category.png)
+![](assets/categories/edit_category.png)
 
 Le reste de la procédure est similaire à celle de l'édition d'une fiche et débute par un clic sur la liste déroulante "*+ Ajouter…*" qui révèle les différents choix de champs possibles :
 
-![](assets/captures_CATIMA/categories/add_field_category.png)
+![](assets/categories/add_field_category.png)
 
 > La notion de sous-fiche étant liée à celle de type de fiche, pour la suite de la procédure se référer si besoin à la section "Type de fiche".
 
@@ -191,13 +200,13 @@ Effectuer un choix permet ainsi l'affichage d'une sous-fiche dédiée.
 
 La liste des "Ensembles de choix" est accessible en cliquant sur "Ensembles de choix" dans la barre de gauche. Une liste des ensembles de choix existants est affichée :
 
-![](assets/captures_CATIMA/choice/choice_set.png)
+![](assets/choice/choice_set.png)
 
 Cliquer sur "*+Nouvel ensemble de choix*" qui s’affiche en bleu, à droite dans la ligne grise. 
 
 La page de paramétrages suivante apparait :
 
-![](assets/captures_CATIMA/choice/add_choice_set.png)
+![](assets/choice/add_choice_set.png)
 
 Choisir un **nom** pour l'ensemble de choix, puis entrer la liste de choix possibles (nom court et éventuellement nom long) avec "+Ajouter choix". 
 
@@ -213,11 +222,11 @@ Catima génère automatiquement une page par type de fiche. La rubrique "Page" p
 
 Pour ajouter une page, sélectionner "Pages" dans la barre de gauche. La liste des pages existantes apparaît :
 
-![](assets/captures_CATIMA/pages/page.PNG)
+![](assets/pages/page.png)
 
 Cliquer sur "Nouvelle page". La page de configuration suivante apparait :
 
- ![](assets/captures_CATIMA/pages/new_page.PNG) 
+ ![](assets/pages/new_page.png) 
 
 Choisir le(s) titre(s) de la page dans les différentes langues du catalogue ainsi qu'une forme simplifiée du nom appelée "slug" qui apparaitra dans l'adresse web (URL) du site généré par CATIMA. Celui-ci doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
 
@@ -231,7 +240,7 @@ Une fois les champs remplis , il est possible d'enregistrer et retourner au menu
 
 Une fois la page créée, il s'agit d'y ajouter du contenu. Sélectionner "*Pages*" dans la barre de gauche. La liste récapitulative de toutes les pages s’affiche. Cliquer ensuite sur le bouton "Actions" puis "*Éditer*" correspondant à la page à paramétrer. La page d'édition suivante apparaît :
 
-![](assets/captures_CATIMA/pages/edit_page.PNG)
+![](assets/pages/edit_page.png)
 
 Les champs remplis lors de l'ajout de la page (slug et titres) sont facilement modifiables en leur attribuant les nouvelles valeurs souhaitées puis en cliquant sur "Update page". 
 
@@ -247,15 +256,17 @@ Pour ajouter du contenu, cliquer sur "+Add" puis choisir le type de contenu souh
  
 ### Édition d'un conteneur de cartes géographique (Map Container)
 
-Ce type de conteneur permet de générer automatiquement une carte géographique affichant les données géographiques pour un type de fiches donné.
+Ce type de conteneur permet de générer automatiquement une carte géographique affichant les données géographiques pour un type de fiches donné, comme ici : 
 
-![](assets/captures_CATIMA/pages/map-container.png)
+
+
+![](assets/pages/map-container.png)
 
 ### Édition d'un conteneur HTML
 
 Ce type de conteneur permet d'ajouter du code utilisé habituellement dans les **pages web**. 
 
-![](assets/captures_CATIMA/pages/html_container.PNG)
+![](assets/pages/html_container.png)
 
 Choisir un "slug" (nom court à donner au conteneur). Celui-ci apparaitra dans l'adresse web (URL) du site généré par CATIMA. Il doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
 
@@ -277,14 +288,14 @@ L'édition de l'HTML se déroule dans la zone "HTML" et peut se faire de deux ma
 * Insertion d'**image**
 * Insertion de **vidéo**
 
- ![](assets/captures_CATIMA/pages/html_container_tools.PNG)
+ ![](assets/pages/html_container_tools.png)
 
 
 **2. Édition de code en activant l'affichage "Code View"**
 
 * Les utilisateurs avancés ont la possibilité d'insérer, écrire ou modifier du code HTML via le mode "Code View".
  
-> Quelque soit le mode choisi, il est possible d'afficher l'éditeur en mode **plein écran** via le bouton ![](assets/captures_CATIMA/pages/fullscreen_button.PNG)
+> Quelque soit le mode choisi, il est possible d'afficher l'éditeur en mode **plein écran** via le bouton ![](assets/pages/fullscreen_button.png)
  
 Une fois le contenu HTML ajouté, enregistrer et retourner au menu *Setup* avec "*Créer conteneur*".
 
@@ -294,7 +305,7 @@ Une fois le contenu HTML ajouté, enregistrer et retourner au menu *Setup* avec 
 
 Ce type de *conteneur*, permet d'afficher (sur la page personnalisée) toutes les données enregistrées dans un type de fiche donné.
 
- ![](assets/captures_CATIMA/pages/itemlist_container.PNG)
+ ![](assets/pages/itemlist_container.png)
 
 Choisir un "slug" (nom court à donner au conteneur). Celui-ci apparaitra dans l'adresse web (URL) du site généré par CATIMA. Il doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
 
@@ -308,7 +319,7 @@ Une fois le slug et l'item choisis, enregistrer et retourner au menu *Setup* ave
 
 Ce type de conteneur permet d'ajouter du texte simple ou des tableaux et des images viac une syntaxe simplifiée (Markdown).  
 
- ![](assets/captures_CATIMA/pages/markdown_container.PNG)
+ ![](assets/pages/markdown_container.png)
 
 Choisir un "slug" (nom court à donner au conteneur). Celui-ci apparaitra dans l'adresse web (URL) du site généré par CATIMA. Il doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
 
@@ -322,7 +333,7 @@ Une fois le contenu Markdown ajouté, enregistrer et retourner au menu *Setup* a
 
 L'ordre des conteneurs ajoutés peut être modifié en tout temps en cliquant sur les flèches bleues **haut** ou **bas** à côté du numéro indiquant leur position (indiqués en rouge ci-dessous)
 
- ![](assets/captures_CATIMA/pages/containers_organisation.png)
+ ![](assets/pages/containers_organisation.png)
 
 Une fois satisfait de l'organisation de vos conteneurs, **enregistrer** en cliquant sur "Update page" ou annuler avec "Cancel".
 
@@ -334,12 +345,12 @@ Cette rubrique permet d'**organiser la présentation** de la barre de menus, per
 
 Pour personnaliser l'organisation de cette barre, choisir "Menus" dans la barre latérale gauche. Les éventuels menus existants sont affichés dans une liste. 
 
- ![](assets/captures_CATIMA/menu_items/menu_items.PNG)
+ ![](assets/menus/menu_items.png)
 
 Pour ajouter un nouveau menu, cliquer sur "+ Nouveau menu". La page suivante affiche différents champs et permet de choisir parmi 4 types de menus différents :
 
-![](assets/captures_CATIMA/menu_items/new_menu_item1.png)
-![](assets/captures_CATIMA/menu_items/new_menu_item2.png)
+![](assets/menus/new_menu_item1.png)
+![](assets/menus/new_menu_item2.png)
 
 Pour tous les types de menus, remplir les informations suivantes : 
 - **Slug** : nom court à donner au menu. Celui-ci apparaitra dans l'adresse web (URL) du site généré par CATIMA. Il doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
@@ -446,11 +457,11 @@ Le concept de "Localité" étant le concept le plus large (un bâtiment se situe
 
 Il s'agit ici de donner un nom (et d'éventuelles traductions du nom) au type de fiche, des formes au pluriel, ainsi qu'une version courte du nom appelée "slug" (NB : la langue anglaise se prête souvent bien à cet usage) puis de confirmer avec le bouton "créer type de fiche". 
 
- ![](assets/captures_CATIMA/item/new_item_type_ex1.png)
+ ![](assets/setup/new_item_type_ex1.png)
 
  Le type de fiche "Localité" ainsi créé est par défaut vide : 
 
-  ![](assets/captures_CATIMA/item/new_item_type_ex2.png)
+  ![](assets/setup/new_item_type_ex2.png)
 
 La prochaine étape est donc d'ajouter des champs descriptifs, qui ont été déterminés dans l'étape de conceptualisation. Pour la "Localité", il s'agira ainsi de créer les champs "Nom de la localité", "Canton" et "Population".
 
@@ -458,8 +469,8 @@ Pour cela, cliquer sur le bouton "+Ajouter", qui affichera une liste de champs p
 
 Pour le champ "Nom de la localité", remplir le nom du champ (et éventuelles traductions), les formes au pluriel et le slug. Il est également possible d'ajouter un texte d'aide à la saisie, et de spécifier des options d'affichage comme définir que le champ en question comme champ primaire (voir "champ primaire"). Noter également les options de saisie de données, qui permettent selon le type de champ, d'entrer une ou plusieurs données (Single vs Multiple values) et de s'assurer que le champ sera rempli par l'utilisateur (Required). Confirmer l'ajout d'un champ avec le bouton "Créer le champ".
 
-  ![](assets/captures_CATIMA/item/new_item_type_ex3.png)
-  ![](assets/captures_CATIMA/item/new_item_type_ex4.png)
+  ![](assets/setup/new_item_type_ex3.png)
+  ![](assets/setup/new_item_type_ex4.png)
 
 Cette étape, à répéter pour chaque champ du type de fiche, est globalement similaire pour tous les champs, voir "Types de champs" pour les spécifités de chaque champ.
 
@@ -475,6 +486,6 @@ Dans Catima sela se traduit par la création d'un champ "Référence" :
 
 Pour cela, sélectionner "Bâtiment" parmi les types de fiches (accessibles dans la barre latérale gauche) puis créer un nouveau champ "Référence". 
 
-  ![](assets/captures_CATIMA/item/new_item_type_ex5.png)
+  ![](assets/setup/new_item_type_ex5.png)
 
 Pour l'éditeur de données, cela se concrétisera dans l'ajout d'un nouveau bâtiment par la possiblité/obligation de choisir parmi les universités pré-existantes.
