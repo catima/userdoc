@@ -246,8 +246,9 @@ Les champs remplis lors de l'ajout de la page (slug et titres) sont facilement m
 
 L'édition du contenu de la page se fait dans la section "**Containers**". 
 
-Trois types de contenus sont possibles :
+Quatre types de contenus sont possibles :
 
+-	**Map** : Permet de générer une carte géographique affichant les données de localisation pour un type de fiche spécifique.
 -	**HTML** : Permet d'afficher un éditeur visuel afin d'écrire du texte mis en forme, des liens (URL) et d'ajouter des images ou des vidéos sans connaissance préalable. Un éditeur de code permet également aux utlisateurs avancés d'entrer directement du code HTML.
 -	**ItemList** : Ce type de contenu permet d’afficher une liste des contenus d’un type de fiches.
 -	**Markdown** : Ce langage permet l'affichage de textes, tableaux, et images avec une syntaxe simplifiée. 
@@ -256,11 +257,12 @@ Pour ajouter du contenu, cliquer sur "+Add" puis choisir le type de contenu souh
  
 ### Édition d'un conteneur de cartes géographique (Map Container)
 
-Ce type de conteneur permet de générer automatiquement une carte géographique affichant les données géographiques pour un type de fiches donné, comme ici : 
+Ce type de conteneur permet de générer automatiquement une carte géographique affichant les données géographiques pour un type de fiches donné, comme ceci : 
 
+![](assets/pages/map_container_ex1.png)
 
-
-![](assets/pages/map-container.png)
+Pour créer ce conteneur, choisir "
+![](assets/pages/map_container.png)
 
 ### Édition d'un conteneur HTML
 
