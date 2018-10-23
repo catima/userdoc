@@ -102,7 +102,7 @@ Ce champ permet de proposer une liste de choix entre plusieurs valeurs.
 
 #### Champ décimal
 
-Ce champ permet d'entrer des nombres au format décimal.
+Ce champ permet d'entrer des nombres au format décimal ("nombres à virgule").
 
 #### Champ e-mail
 
@@ -214,9 +214,65 @@ Une fois les champs remplis avec les données, il est possible d'enregistrer et 
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
 
-## Pages personnalisées : listes de types de fiches et contenus Web
+## Affichage de contenus personnalisés et styles d'affichages 
 
-Catima génère automatiquement une page par type de fiche. La rubrique "Page" permet d'ajouter des pages personnalisées comme une page d'accueil, de bibliographie ou une carte affichant des localisations géographiques. Ces pages peuvent contenir du texte, des listes de types de fiches, des blocs de code HTML ou Markdown.
+Par défaut, Catima génère un affichage par type de fiche en créant une page dédiée qui n'est pas modifiable.  
+
+Ainsi pour changer le style d'affichage des contenus (grille d'images, grille de texte ou liste) ou pour changer les champs affichés, la création d'une nouvelle page est nécessaire. 
+
+> NB : le nom utilisé pour l'affichage des fiches (nom des fiches affiché) peut-être changé sans la création d'une nouvelle page. Pour cela il s'agit d'en passer par "l'affichage des fiches" dans la section de configuration du type de fiches (voir "Affichage des fiches")
+
+Les pages peuvent contenir du texte mis en forme, du contenu (champs) issu des types de fiches, une carte géographique mais également (pour les utilisateurs avancés) du code HTML et Markdown.
+
+### Changement de l'affichage du nom des fiches  ("Display name")
+
+Par défaut Catima affiche le champ primaire comme nom de la fiche. Si aucun champ n'a été activé comme primaire, c'est le premier champ contenant du texte qui est affiché. 
+
+Le nom des fiches affiché (display name) peut cependant être différent et consister en un ou plusieurs champs aggrégés, un formatage particulier (points, virgules, parenthèses rondes ou carrées, tirets, underscore) ainsi que des effets de style (gras, italique, souligné, surligné...).
+
+Pour changer le nom des fiches affiché, dans la configuration du catalogue (section Setup), choisir le type de fiche en question et sous "**Affichage des fiches**" cliquer sur "+Nouvel affichage" :
+
+![](assets/setup/new_item_view.png)
+
+Choisir un nom pour désigner cet affichage (p.ex "nom numéroté" ou "abbréviation") et sélectionner l'option **"Utiliser comme affichage de nom**. 
+
+L'essentiel de la génération de l'affichage du nom se décrit dans la section "Template".
+
+- Le bouton "Add field" permet d'afficher les données correspondant à un champ (p.ex ici "abbréviation" et "nom de l'université")
+- Du texte peut être entré librement, ce qui permet par exemple de créer un formatage (p.ex ici usage de parenthèses entourant le "nom complet de l'université")
+- Les boutons de styles sont également disponibles (p.ex ici application du style "gras")
+
+![](assets/setup/new_item_view1.png)
+
+Ce nouvel affichage du nom des fiches s'applique maintenant partout où apparaît le nom des fiches :
+
+![](assets/setup/new_item_view_ex1.png)
+
+![](assets/setup/new_item_view_ex2.png)
+
+### Changement d'affichage des listes de fiches
+
+Par défaut les données ne contenant pas d'images sont présentées sous la forme de listes, affichant toutes les données existantes : 
+
+![](assets/setup/list_view_1_before.png)
+
+Pour changer cet affichage : dans la configuration du catalogue (Setup), choisir le type de fiche en question et sous "**Affichage des fiches**" cliquer sur "+Nouvel affichage" :
+
+![](assets/setup/new_item_view.png)
+
+Choisir un nom pour désigner cet affichage (p.ex "Affichage restreint") et sélectionner l'option **"Utiliser comme affichage de liste**. 
+
+L'essentiel de la génération de l'affichage de la liste se décrit dans la section "Template".
+
+- Le bouton "Add field" permet d'afficher les données correspondant à un champ (p.ex ici "Nom de la bibliothèque" et "Nom de l'université")
+- Du texte peut être entré librement, ce qui permet par exemple de créer un formatage (p.ex ici ajout de la mention "Université :")
+- Les boutons de styles sont également disponibles (p.ex ici application du style "gras")
+- 
+![](assets/setup/new_list_view1.png)
+
+Ce nouvel affichage des listes s'applique maintenant partout où le type de fiche est présenté sous forme de liste :
+
+![](assets/setup/list_view_2_after.png)
 
 ### Ajout d'une page
 
@@ -249,22 +305,54 @@ L'édition du contenu de la page se fait dans la section "**Containers**".
 Quatre types de contenus sont possibles :
 
 -	**Map** : Permet de générer une carte géographique affichant les données de localisation pour un type de fiche spécifique.
+-	**ItemList** : Ce type de contenu permet d’afficher une liste des contenus d’un type de fiches, notamment en changeant le style d'affichage (aperçu d'images, grille ou liste)
 -	**HTML** : Permet d'afficher un éditeur visuel afin d'écrire du texte mis en forme, des liens (URL) et d'ajouter des images ou des vidéos sans connaissance préalable. Un éditeur de code permet également aux utlisateurs avancés d'entrer directement du code HTML.
--	**ItemList** : Ce type de contenu permet d’afficher une liste des contenus d’un type de fiches.
 -	**Markdown** : Ce langage permet l'affichage de textes, tableaux, et images avec une syntaxe simplifiée. 
 
 Pour ajouter du contenu, cliquer sur "+Add" puis choisir le type de contenu souhaité. 
- 
-### Édition d'un conteneur de cartes géographique (Map Container)
 
-Ce type de conteneur permet de générer automatiquement une carte géographique affichant les données géographiques pour un type de fiches donné, comme ceci : 
+#### Édition d'un conteneur Item List
+
+Ce type de *conteneur*, permet d'afficher (sur la page personnalisée) toutes les données enregistrées dans un type de fiche donné ainsi que de changer le style d'affichage des fiches (aperçu d'images, grille ou liste)
+
+ ![](assets/pages/itemlist_container.png)
+
+Choisir un "slug" (nom court à donner au conteneur). Celui-ci apparaitra dans l'adresse web (URL) du site généré par CATIMA. Il doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
+
+> Exemple de slug : "liste-oeuvres", "work-list", "img-gallery"
+
+Le choix du style permet de changer l'affichage des fiches selon les styles suivants : 
+
+**Images (Thumb) :**
+
+ ![](assets/pages/style-thumb.png)
+
+ **Grille (Grid) :**
+
+ ![](assets/pages/style-grid.png)
+
+**Liste :**
+Avec image
+
+ ![](assets/pages/style-list-img.png)
+
+Sans image
+ ![](assets/pages/style-list-text.png)
+
+Une fois le slug et l'item choisis, enregistrer et retourner au menu *Setup* avec "*Créer conteneur*".
+
+> NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler". Le contenu du champ d'édition sera perdu. 
+
+#### Édition d'un conteneur de cartes géographique (Map Container)
+
+Ce type de conteneur permet de générer automatiquement une carte géographique affichant les données géographiques pour un type de fiches donné, comme [ceci](https://catima.unil.ch/catmanual2/fr/map-building) : 
 
 ![](assets/pages/map_container_ex1.png)
 
 Pour créer ce conteneur, choisir "
 ![](assets/pages/map_container.png)
 
-### Édition d'un conteneur HTML
+#### Édition d'un conteneur HTML
 
 Ce type de conteneur permet d'ajouter du code utilisé habituellement dans les **pages web**. 
 
@@ -303,21 +391,7 @@ Une fois le contenu HTML ajouté, enregistrer et retourner au menu *Setup* avec 
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler". Le contenu du champ d'édition sera perdu.
 
-### Édition d'un conteneur Item List
-
-Ce type de *conteneur*, permet d'afficher (sur la page personnalisée) toutes les données enregistrées dans un type de fiche donné.
-
- ![](assets/pages/itemlist_container.png)
-
-Choisir un "slug" (nom court à donner au conteneur). Celui-ci apparaitra dans l'adresse web (URL) du site généré par CATIMA. Il doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
-
-> Exemple de slug : "liste-oeuvres", "work-list", "img-gallery"
-
-Une fois le slug et l'item choisis, enregistrer et retourner au menu *Setup* avec "*Créer conteneur*".
-
-> NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler". Le contenu du champ d'édition sera perdu.
-
-### Édition d’un conteneur Markdown
+#### Édition d’un conteneur Markdown
 
 Ce type de conteneur permet d'ajouter du texte simple ou des tableaux et des images viac une syntaxe simplifiée (Markdown).  
 
