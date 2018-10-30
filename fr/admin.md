@@ -267,7 +267,7 @@ L'essentiel de la génération de l'affichage de la liste se décrit dans la sec
 - Le bouton "Add field" permet d'afficher les données correspondant à un champ (p.ex ici "Nom de la bibliothèque" et "Nom de l'université")
 - Du texte peut être entré librement, ce qui permet par exemple de créer un formatage (p.ex ici ajout de la mention "Université :")
 - Les boutons de styles sont également disponibles (p.ex ici application du style "gras")
-- 
+  
 ![](assets/setup/new_list_view1.png)
 
 Ce nouvel affichage des listes s'applique maintenant partout où le type de fiche est présenté sous forme de liste :
@@ -456,6 +456,53 @@ Les champs suivants dépendent ensuite du type de menu choisi :
 Une fois les champs remplis avec les données, il est possible d'enregistrer et retourner au menu *Setup* avec "*Créer le menu*" ou d'enregistrer et ajouter de nouvelles données avec "*Create and add another*".
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
+
+# Gestion de la consultation et de la modification de catalogue
+
+## Consultation du catalogue : gestion des membres
+
+Le site généré par Catima peut être visible publiquement, ou avoir une consultation restreinte à certaines personnes.
+
+Pour configurer ce paramètre, dans le mode "Setup", puis dans la section "Paramètres du catalogue" de la barre latérale gauche, cliquer sur "Général". 
+
+ ![](assets/setup/catalog_visibility.png)
+
+Dans la section "Options d'affichage", il est possible de changer la visibilité du catalogue avec les options suivantes : 
+
+* **"Ouvert à tous"** : le catalogue est consultable publiquement.
+* **"Ouvert aux membres"** : le catalogue est consultable uniquement par les membres du catalogue. *Voir plus loin pour l'attribution du statut de membre à un utilisateur.*
+* **"Ouvert au personnel"** : le catalogue est consultable uniquement par le personnel du catalogue (éditeurs de catalogue et administrateurs). *Voir "gestion des édition du catalogue pour l'attribution du statut d'éditeur à un utilisateur.*
+
+### Attribution du statut de membre
+
+L'attribution du statut de membre permet d'autoriser l'accès au site d'un catalogue restreint ("ouvert aux membres") à une (ou plusieurs) personne(s) disposant d'un compte Catima. 
+
+Cette attribution peut être effectuée individuellement (un utilisateur à la fois) ou en gérant un groupe de membres (p.ex une classe d'étudiants, une équipe de chercheurs) : 
+
+#### Individuellement 
+
+Dans le mode "Setup", dans la barre latérale gauche, cliquer sur "Utilisateurs et groupes". 
+
+Choisir ensuite l'utilisateur-trice auquel changer le statut vis-à-vis de ce catalogue, puis cliquer sur "Actions" et "Éditer".
+
+ ![](assets/setup/user_role.png)
+
+Choisir ensuite le statut "membre" pour autoriser la consultation d'un catalogue "ouvert aux membres". 
+
+#### Groupe de membres
+
+Dans le mode "Setup", dans la barre latérale gauche, cliquer sur "Utilisateurs et groupes" puis sur "+ Nouveau groupe : 
+
+ ![](assets/setup/new_usergroup.png)
+
+ Entrer ensuite un nom et une description pour le groupe : 
+
+  ![](assets/setup/new_usergroup1.png)
+
+Il est maintenant possible : 
+* d'ajouter des membres au groupe (icône ![](assets/setup/usergroup_icon.png)) 
+* d'attribuer un même rôle à tous les membres du groupe : 
+ ![](assets/setup/usergroup_member.png)
 
 # Exemple de réalisation d'un catalogue
 

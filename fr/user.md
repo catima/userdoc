@@ -25,3 +25,7 @@ Les favoris sont présentés par groupe en fonction du catalogue dont proviennen
 Une fois un groupe choisi, la liste des contenus favoris est présentée, permettant d'y accéder ou de supprimer le-s favoris souhaité-s.
 
 ![](assets/favs/fav_list_group2.png)
+
+# Accès à des catalogues restreints
+
+La consultation de certains catalogues est limitée à un (ou plusieurs) groupe(s) d'utilisateurs uniquement, déterminé par l'administrateur du catalogue. Pour accéder à un catalogue restreint, il est ainsi nécessaire d'être un utilisateur Catima, avoir été ajouté à un groupe du catalogue par un administrateur, et être connecté à son compte Catima. 
