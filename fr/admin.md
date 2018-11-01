@@ -222,57 +222,7 @@ Ainsi pour changer le style d'affichage des contenus (grille d'images, grille de
 
 > NB : le nom utilisé pour l'affichage des fiches (nom des fiches affiché) peut-être changé sans la création d'une nouvelle page. Pour cela il s'agit d'en passer par "l'affichage des fiches" dans la section de configuration du type de fiches (voir "Affichage des fiches")
 
-Les pages peuvent contenir du texte mis en forme, du contenu (champs) issu des types de fiches, une carte géographique mais également (pour les utilisateurs avancés) du code HTML et Markdown.
-
-### Changement de l'affichage du nom des fiches  ("Display name")
-
-Par défaut Catima affiche le champ primaire comme nom de la fiche. Si aucun champ n'a été activé comme primaire, c'est le premier champ contenant du texte qui est affiché. 
-
-Le nom des fiches affiché (display name) peut cependant être différent et consister en un ou plusieurs champs aggrégés, un formatage particulier (points, virgules, parenthèses rondes ou carrées, tirets, underscore) ainsi que des effets de style (gras, italique, souligné, surligné...).
-
-Pour changer le nom des fiches affiché, dans la configuration du catalogue (section Setup), choisir le type de fiche en question et sous "**Affichage des fiches**" cliquer sur "+Nouvel affichage" :
-
-![](assets/setup/new_item_view.png)
-
-Choisir un nom pour désigner cet affichage (p.ex "nom numéroté" ou "abbréviation") et sélectionner l'option **"Utiliser comme affichage de nom**. 
-
-L'essentiel de la génération de l'affichage du nom se décrit dans la section "Template".
-
-- Le bouton "Add field" permet d'afficher les données correspondant à un champ (p.ex ici "abbréviation" et "nom de l'université")
-- Du texte peut être entré librement, ce qui permet par exemple de créer un formatage (p.ex ici usage de parenthèses entourant le "nom complet de l'université")
-- Les boutons de styles sont également disponibles (p.ex ici application du style "gras")
-
-![](assets/setup/new_item_view1.png)
-
-Ce nouvel affichage du nom des fiches s'applique maintenant partout où apparaît le nom des fiches :
-
-![](assets/setup/new_item_view_ex1.png)
-
-![](assets/setup/new_item_view_ex2.png)
-
-### Changement d'affichage des listes de fiches
-
-Par défaut les données ne contenant pas d'images sont présentées sous la forme de listes, affichant toutes les données existantes : 
-
-![](assets/setup/list_view_1_before.png)
-
-Pour changer cet affichage : dans la configuration du catalogue (Setup), choisir le type de fiche en question et sous "**Affichage des fiches**" cliquer sur "+Nouvel affichage" :
-
-![](assets/setup/new_item_view.png)
-
-Choisir un nom pour désigner cet affichage (p.ex "Affichage restreint") et sélectionner l'option **"Utiliser comme affichage de liste**. 
-
-L'essentiel de la génération de l'affichage de la liste se décrit dans la section "Template".
-
-- Le bouton "Add field" permet d'afficher les données correspondant à un champ (p.ex ici "Nom de la bibliothèque" et "Nom de l'université")
-- Du texte peut être entré librement, ce qui permet par exemple de créer un formatage (p.ex ici ajout de la mention "Université :")
-- Les boutons de styles sont également disponibles (p.ex ici application du style "gras")
-  
-![](assets/setup/new_list_view1.png)
-
-Ce nouvel affichage des listes s'applique maintenant partout où le type de fiche est présenté sous forme de liste :
-
-![](assets/setup/list_view_2_after.png)
+Les pages peuvent contenir du texte mis en forme, du contenu (champs)issu des types de fiches, une carte géographique mais également (pour les utilisateurs avancés) du code HTML et Markdown.
 
 ### Ajout d'une page
 
@@ -457,11 +407,11 @@ Une fois les champs remplis avec les données, il est possible d'enregistrer et 
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
 
-# Gestion de la consultation et de la modification de catalogue
+# Gestion de la consultation et de l'édition des données du catalogue
 
-## Consultation du catalogue : gestion des membres
+## Consultation du catalogue : gestion des membres du catalogue
 
-Le site généré par Catima peut être visible publiquement, ou avoir une consultation restreinte à certaines personnes.
+Le site généré par Catima peut être visible publiquement, ou consultation restreinte à certaines personnes.
 
 Pour configurer ce paramètre, dans le mode "Setup", puis dans la section "Paramètres du catalogue" de la barre latérale gauche, cliquer sur "Général". 
 
@@ -495,18 +445,57 @@ Dans le mode "Setup", dans la barre latérale gauche, cliquer sur "Utilisateurs 
 
  ![](assets/setup/new_usergroup.png)
 
- Entrer ensuite un nom et une description pour le groupe : 
+ Entrer ensuite un nom et une description pour le groupe et cliquer sur "Créer un groupe 
 
   ![](assets/setup/new_usergroup1.png)
 
 Il est maintenant possible : 
 * d'ajouter des membres au groupe (icône ![](assets/setup/usergroup_icon.png)) 
-* d'attribuer un même rôle à tous les membres du groupe : 
+* d'attribuer un même rôle à tous les membres du groupe(ici "Membre") : 
  ![](assets/setup/usergroup_member.png)
+
+ > NB : Lorsque un utilisateur a un rôle attribué individuellement *et* un rôle attribué via un groupe, c'est le rôle le plus élevé qui s'applique.
+
+## Édition des données du catalogue : gestion des éditeurs
+
+Pour pouvoir ajouter et modifier des données dans un catalogue, il est nécessaire d'avoir (au minimum) un statut dit d'"Éditeur". Les personnes disposant de ce statut dans un catalogue peuvent ajouter et modifier des données mais ne peuvent pas modifier la structure d'un catalogue (à savoir créer de nouveaux types de fiches, changer les champs ou créer/modifier des pages). Un "Éditeur" peut ajouter des données et modifier celles-ci, mais seul un "Super-Éditeur" peut modifier/supprimer des données créées par d'autres personnes.
+
+### Attribution du statut d'éditeur
+
+L'attribution du statut d'éditeur permet d'autoriser l'ajout et modification des données d'un catalogue à une (ou plusieurs) personne(s) disposant d'un compte Catima. 
+
+Cette attribution peut être effectuée individuellement (un utilisateur à la fois) ou en gérant un groupe d'éditeurs (p.ex une classe d'étudiants, une équipe de chercheurs) : 
+
+#### Individuellement 
+
+Dans le mode "Setup", dans la barre latérale gauche, cliquer sur "Utilisateurs et groupes". 
+
+Choisir ensuite l'utilisateur-trice auquel changer le statut vis-à-vis de ce catalogue, puis cliquer sur "Actions" et "Éditer".
+
+ ![](assets/setup/user_role.png)
+
+Choisir ensuite le statut "Éditeur" pour autoriser cet utilisateur à ajouter et modifier ses propres données. Choisir le statut "Super-Éditeur" pour autoriser cet utilisateur à ajouter et modifier toutes les données du catalogue.
+
+#### Groupe d'éditeurs
+
+Dans le mode "Setup", dans la barre latérale gauche, cliquer sur "Utilisateurs et groupes" puis sur "+ Nouveau groupe : 
+
+ ![](assets/setup/new_usergroup.png)
+
+ Entrer ensuite un nom et une description pour le groupe et cliquer sur "Créer un groupe 
+
+  ![](assets/setup/new_usergroup1.png)
+
+Il est maintenant possible : 
+* d'ajouter des éditeurs (ou super-éditeurs) au groupe (icône ![](assets/setup/usergroup_icon.png)) 
+* d'attribuer un même rôle à tous les membres du groupe(ici "Éditeur") : 
+ ![](assets/setup/usergroup_member.png)
+
+ > NB : Lorsque un utilisateur a un rôle attribué individuellement *et* un rôle attribué via un groupe, c'est le rôle le plus élevé qui s'applique.
 
 # Exemple de réalisation d'un catalogue
 
-Afin d'illustrer la réalisation d'un catalogue du début à la fin, voici un exemple reprenant toutes les étapes décrites jusqu'à présent. Cet exemple consiste en un catalogue recensant les universités romandes et de leurs bibliothèques afin de les représenter sur une carte géographique.
+Afin d'illustrer la réalisation d'un catalogue du début à la fin, voici un exemple reprenant la plupart des étapes décrites jusqu'à présent. Cet exemple consiste en un catalogue recensant les universités romandes et de leurs bibliothèques afin de les représenter sur une carte géographique.
 
 ## Conceptualisation 
 
