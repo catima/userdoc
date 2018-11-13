@@ -6,13 +6,13 @@ Cette section décrit la première étape. Pour l'ajout des données consulter l
 
 ## Conceptualisation
 
-La démarche de conceptualisation d'un catalogue est une partie importante de la réalisation d'un catalogue : en effet ces réflexions préliminaires ont pour but d'élaborer la structure conceptuelle et logique du catalogue. Effectuer cette étape réflexive en amont facilite ensuite la réalisation concrète du catalogue au sein de Catima.
+La démarche de conceptualisation d'un catalogue est une partie importante de la réalisation d'un catalogue : en effet ces réflexions préliminaires ont pour but d'élaborer la structure conceptuelle et logique du catalogue. Effectuer cette étape réflexive en amont facilite ensuite la réalisation concrète du catalogue au sein de Catima. Catima permet non seulement de réaliser un catalogue préalablement conceptualisé en détail, mais aussi d'adopter une démarche plus libre en essayant d'ajouter petit à petit des éléments de structures puis, en ajoutant quelques données représentatives, de tester la conceptualisation et vérifier la cohérence de l'ensemble.
 
-Pour une conceptualisation efficace il est promordial de comprendre la différence entre les **données** et leur **conceptualisation**. La conceptualisation consiste ainsi en une étape de regroupement des objets que l'on souhaite décrire sous un même concept.
+Pour une conceptualisation efficace il est promordial de comprendre la différence entre les **données** et leur **conceptualisation**. La conceptualisation consiste ainsi en une étape de regroupement des objets que l'on souhaite décrire. 
 
 > Par exemple, les objets "*2001, l'Odyssée de l'espace*", "*Le Parrain*", et "*Titanic*" sont regroupés sous le même concept **"film"**.
 
-Ces concepts ont des **caractéristiques** qui les décrivent.
+Ainsi, lorsque un même contenu se répète, un besoin peut se faire sentir d'en faire un concept en relevant les **caractéristiques** qui le décrivent. 
 
 > Par exemple, le concept **"film"** peut regrouper des films de genres différents, réalisés par des personnes différentes et sortis au cinéma à des périodes différentes.
 
@@ -46,7 +46,7 @@ Dans cette étape il s'agit d'évaluer les liens que peuvent avoir les concepts 
 
 > Par exemple : Les concepts "Film" et "Réalisateur" sont liés entre eux par le fait qu'un Film a un (ou plusieurs) Réalisateur(s).
 
-Ces liens seront concrétisés dans Catima par des **"Références"**, au sein du concept le plus précis vers le concept le plus large et englobant (selon le catalogue). 
+Ces liens seront concrétisés dans Catima par des **"Références"**, au sein du concept le plus précis vers le concept le plus large et englobant (selon le catalogue). Cela permet d'afficher une liste des films correspondant à un réalisateur.
 
 > Dans notre exemple de catalogue de film, dans le concept "Réalisateur" il sera fait une référence aux Films réalisés par ce Réalisateur.
 
@@ -118,7 +118,16 @@ Ce champ permet d'entrer une localisation géographique soit en entrant manuelle
 
 #### Champ image
 
-Ce champ permet d'ajouter des fichiers images, avec d'éventuelles restrictions d'extension (par exemple uniquement .jpg ou .png)
+Ce champ permet d'ajouter des fichiers images, avec d'éventuelles restrictions d'extension (par exemple uniquement .jpg ou .png). 
+
+Il est également possible d'intégrer un champ de légende de l'image :
+
+![](assets/setup/new_field_image_legend.png)
+
+Cela permet à l'éditeur d'ajouter un texte de légende accompagnant l'image.
+
+![](assets/setup/new_field_image_legend1.png)
+
 
 #### Champ nombre entier
 
@@ -130,7 +139,17 @@ Ce champ permet de créer une référence à un autre type de fiche.
 
 #### Champ de texte
 
-Ce champ permet d'entrer du texte avec possibilités de mise en forme (gras, italique, listes, notes de bas de page).
+Ce champ permet d'entrer du texte. 
+
+L'option **"Contient du texte formaté"** propose un éditeur de texte prenant en charge des options de mise en forme (gras, italique, listes, notes de bas de page) :
+
+![](assets/setup/formated_text_editor.png)
+
+Qui s'affichent ainsi dans le site du catalogue : 
+
+![](assets/setup/formated_text_render.png)
+
+> **Attention** : une fois du texte formaté ajouté, il est vivement déconseillé de décocher la case **"Contient du texte formaté"**. En effet le formatage du texte ajoute du code informatique qui sera affiché tel quel à l'utilisateur. Recocher la case permet de rétablir l'affichage du texte formaté.
 
 #### Champ URL
 
@@ -456,6 +475,32 @@ Il est maintenant possible :
 
  > NB : Lorsque un utilisateur a un rôle attribué individuellement *et* un rôle attribué via un groupe, c'est le rôle le plus élevé qui s'applique.
 
+### Visibilité des champs 
+
+Il est possible d'avoir un catalogue visible publiquement mais de cacher certains champs au public, comme des informations uniquement utiles en interne au personnel du catalogue (p.ex un champ "Rédacteur" qui affiche l'auteur et la date des dernières modifications).
+
+Pour cela, il s'agit de se rendre dans le type de fiche où se trouve le champ, puis de cliquer sur le bouton "Action" et "Éditer le champ". 
+
+Pour restreindre la visibilité du champ aux membres et au personnel du catalogue (éditeurs et administrateurs), cocher la case correspondante dans les options d'affichage : 
+
+![](assets/setup/restrict_field_vis.png)
+
+Un champ dont la consultation est restreinte aux membres et au personnel s'accompagne d'une icône rouge de cadenas dans la configuration du type de fiche : 
+
+![](assets/setup/restricted_field.png)
+
+### Limiter les champs affichés dans les listes de fiches
+
+Par défaut les fiches affichées sous forme de listes affichent tous les champs textuels des fiches. 
+
+Pour désactiver l'affichage de la valeur d'un champ dans une liste de fiches, il s'agit, dans la partie "Setup", de cliquer sur le type de fiche, puis sur "Action" et "Editer" du champ correspondant. 
+
+Dans les "Options d'affichage", désactiver l'option "Inclure le champ dans la liste des fiches en mode consultation"
+
+![](assets/setup/exclude_field_from_listview.png)
+
+Le champ n'est maintenant plus affiché dans la liste des fiches.
+
 ## Édition des données du catalogue : gestion des éditeurs
 
 Pour pouvoir ajouter et modifier des données dans un catalogue, il est nécessaire d'avoir (au minimum) un statut dit d'"Éditeur". Les personnes disposant de ce statut dans un catalogue peuvent ajouter et modifier des données mais ne peuvent pas modifier la structure d'un catalogue (à savoir créer de nouveaux types de fiches, changer les champs ou créer/modifier des pages). Un "Éditeur" peut ajouter des données et modifier celles-ci, mais seul un "Super-Éditeur" peut modifier/supprimer des données créées par d'autres personnes.
@@ -493,13 +538,26 @@ Il est maintenant possible :
 
  > NB : Lorsque un utilisateur a un rôle attribué individuellement *et* un rôle attribué via un groupe, c'est le rôle le plus élevé qui s'applique.
 
+### Affichage des champs en mode édition
+
+Par défaut, en mode édition, tous les champs sont affichés dans la liste des fiches. Il est cependant possible de désactiver l'affichage d'un (ou plusieurs) champ(s). 
+
+Pour cela, dans la section "Setup", cliquer sur le type de fiches concerné puis sur le champ souhaité et enfin désactiver l'option "Inclure le champ dans la liste des fiches en mode édition (Data)"
+
+ ![](assets/setup/exclude_field_from_edition_listview.png)
+
+
+Le champ en question ne s'affiche maintenant plus dans la liste des fiches du mode édition. 
+
+Il reste toujours visible et modifiable lors de l'édition d'une fiche.
+
 # Exemple de réalisation d'un catalogue
 
 Afin d'illustrer la réalisation d'un catalogue du début à la fin, voici un exemple reprenant la plupart des étapes décrites jusqu'à présent. Cet exemple consiste en un catalogue recensant les universités romandes et de leurs bibliothèques afin de les représenter sur une carte géographique.
 
 ## Conceptualisation 
 
-Une manière de débuter de la conceptualisation est de représenter des données réelles ou d'exemple sous la forme d'un tableau de données. Cette étape de création fera émerger les éléments marquants du catalogue.
+Une manière de débuter la conceptualisation est de représenter des données réelles ou d'exemple sous la forme d'un tableau de données. Cette étape de création fera émerger les éléments marquants du catalogue.
 
 |  | Université de Fribourg | Université de Genève | Université de Lausanne | Université de Neuchâtel |
 |--------------------|--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -558,6 +616,8 @@ Les quatre concepts précédements relevés, "Université", "Bibliothèque", "Lo
 * Une **localité** a une et une seule **université**
 * Une **université** a une, ou plusieurs **bibliothèque(s)**
 * Une **université** a un, ou plusieurs **bâtiment(s)**
+
+Cette structure permet d'afficher toutes les bibliothèques, ainsi que tous les bâtiments d'une université.
 
 ## Ajout des types de fiches et création de champs
 
