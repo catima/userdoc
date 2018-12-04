@@ -11,9 +11,16 @@ L'accueil de la section **Data** consiste en un affichage des différentes fiche
 
 Dans la section *Data* la barre latérale gauche permet d'accéder aux données par fiches. Une fois la fiche choisie, une liste des données existantes est présentée. 
 
-![](assets/data/data.png)
+![](assets/data/data_list.png)
 
 > NB : Certains champs ont pu être cachés dans la configuration du type de fiche. Ainsi seuls Les champs pour lesquels l'option "Inclure le champ dans la liste des fiches" a été activée dans ***Setup*** seront affichés dans cette liste.
+
+## Rechercher un contenu
+Il est possible d'afficher toutes les données du catalogue contenant une chaîne de caractères en effectuant une recherche dans la barre supérieure de saisie de texte. 
+
+![](assets/data/data_list_search.png)
+
+> En cherchant "Europe", la recherche renvoit ici la seule fiche contenant le mot "Europe", en l'occurence dans le champ "Adresse". 
 
 ## Ajout de données
 

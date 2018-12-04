@@ -104,6 +104,12 @@ Ce champ permet de proposer une liste de choix entre plusieurs valeurs.
 
 Ce champ permet d'entrer des nombres au format décimal ("nombres à virgule").
 
+#### Champ rédacteur
+
+Ce champ permet d'afficher automatiquement l'éditeur de la fiche, ou la dernière personne à l'avoir mise à jour. 
+
+> **Attention** : ce champ affiche automatiquement l'adresse e-mail du/des éditeurs du champ, c'est pourquoi il peut être préférable de restreindre la visibilité de ce champ en interne en activant l'option "Restreindre le champ aux membres et au personnel" lors de l'ajout du champ.
+
 #### Champ e-mail
 
 Ce champ permet d'entrer une adresse e-mail.
@@ -127,7 +133,6 @@ Il est également possible d'intégrer un champ de légende de l'image :
 Cela permet à l'éditeur d'ajouter un texte de légende accompagnant l'image.
 
 ![](assets/setup/new_field_image_legend1.png)
-
 
 #### Champ nombre entier
 
@@ -277,6 +282,7 @@ Quatre types de contenus sont possibles :
 -	**ItemList** : Ce type de contenu permet d’afficher une liste des contenus d’un type de fiches, notamment en changeant le style d'affichage (aperçu d'images, grille ou liste)
 -	**HTML** : Permet d'afficher un éditeur visuel afin d'écrire du texte mis en forme, des liens (URL) et d'ajouter des images ou des vidéos sans connaissance préalable. Un éditeur de code permet également aux utlisateurs avancés d'entrer directement du code HTML.
 -	**Markdown** : Ce langage permet l'affichage de textes, tableaux, et images avec une syntaxe simplifiée. 
+-	**Contact** : Ce container permet d'ajouter un formulaire de contact dans une page personnalisée. 
 
 Pour ajouter du contenu, cliquer sur "+Add" puis choisir le type de contenu souhaité. 
 
@@ -366,11 +372,27 @@ Ce type de conteneur permet d'ajouter du texte simple ou des tableaux et des ima
 
  ![](assets/pages/markdown_container.png)
 
-Choisir un "slug" (nom court à donner au conteneur). Celui-ci apparaitra dans l'adresse web (URL) du site généré par CATIMA. Il doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
+Choisir un "slug" (nom court à donner au conteneur). Il doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
 
 > Exemple de slug : "liste-oeuvres", "work-list", "img-gallery"
 
 Une fois le contenu Markdown ajouté, enregistrer et retourner au menu *Setup* avec "*Créer conteneur*".
+
+> NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel). Le contenu du champ d'édition sera perdu.
+
+#### Édition d'un conteneur "Contact
+
+Ce type de conteneur permet d'ajouter un formulaire de contact à destination des visiteurs du catalogue. 
+
+ ![](assets/pages/contact_container.png)
+
+Choisir un "slug" (nom court à donner au conteneur). Il doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
+
+> Exemple de slug : "container-contact", "formulaire-contact"
+
+Puis indiquer l'adresse e-mail où seront transmis les messages écrits par les visiteurs du site.
+
+Une fois le conteneur Contact ajouté, enregistrer et retourner au menu *Setup* avec "*Créer conteneur*".
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel). Le contenu du champ d'édition sera perdu.
 
