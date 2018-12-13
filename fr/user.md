@@ -29,3 +29,12 @@ Une fois un groupe choisi, la liste des contenus favoris est présentée, permet
 # Accès à des catalogues restreints
 
 La consultation de certains catalogues est limitée à un (ou plusieurs) groupe(s) d'utilisateurs uniquement, déterminé par l'administrateur du catalogue. Pour accéder à un catalogue restreint, il est ainsi nécessaire d'être un utilisateur Catima, avoir été ajouté à un groupe du catalogue par un administrateur, et être connecté à son compte Catima. 
+
+## Afficher la liste des groupes d'appartenance
+Pour afficher la liste des groupes auxquels vous appartenez, cliquer sur votre adresse e-mail dans la barre horizontale supérieure : 
+
+![](assets/groups/access_group_list.png)
+
+Une liste des groupes d'appartenance s'affiche, avec votre rôle dans chaque groupe (utilisateur, membre, [super-]éditeur ou administrateur) et un bouton permettant de quitter le groupe : 
+
+![](assets/groups/group_list.png)
