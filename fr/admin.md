@@ -270,7 +270,7 @@ Une fois les champs remplis , il est possible d'enregistrer et retourner au menu
 
 ### Édition d'une page 
 
-Une fois la page créée, il s'agit d'y ajouter du contenu. Sélectionner "*Pages*" dans la barre de gauche. La liste récapitulative de toutes les pages s’affiche. Cliquer ensuite sur le bouton "Actions" puis "*Éditer*" correspondant à la page à paramétrer. La page d'édition suivante apparaît :
+Une fois la page créée, il s'agit d'y ajouter du contenu. Sélectionner "*Pages*" dans la barre de gauche. La liste récapitulative de toutes les pages s’affiche. Cliquer ensuite sur le bouton "Éditer" ![](assets/buttons/edit_btn.png) correspondant à la page à paramétrer. La page d'édition suivante apparaît :
 
 ![](assets/pages/edit_page.png)
 
@@ -476,7 +476,7 @@ Cette attribution peut être effectuée individuellement (un utilisateur à la f
 
 Dans le mode "Setup", dans la barre latérale gauche, cliquer sur "Utilisateurs et groupes". 
 
-Choisir ensuite l'utilisateur-trice auquel changer le statut vis-à-vis de ce catalogue, puis cliquer sur "Actions" et "Éditer".
+Choisir ensuite l'utilisateur-trice auquel changer le statut vis-à-vis de ce catalogue, puis cliquer sur le bouton "Éditer" ![](assets/buttons/edit_btn.png).
 
  ![](assets/setup/user_role.png)
 
@@ -539,7 +539,7 @@ Cette attribution peut être effectuée individuellement (un utilisateur à la f
 
 Dans le mode "Setup", dans la barre latérale gauche, cliquer sur "Utilisateurs et groupes". 
 
-Choisir ensuite l'utilisateur-trice auquel changer le statut vis-à-vis de ce catalogue, puis cliquer sur "Actions" et "Éditer".
+Choisir ensuite l'utilisateur-trice auquel changer le statut vis-à-vis de ce catalogue, puis cliquer sur le bouton "Éditer" ![](assets/buttons/edit_btn.png).
 
  ![](assets/setup/user_role.png)
 
