@@ -108,7 +108,7 @@ Ce champ permet d'entrer des nombres au format décimal ("nombres à virgule").
 
 Ce champ permet d'afficher automatiquement l'éditeur de la fiche, ou la dernière personne à l'avoir mise à jour. 
 
-> **Attention** : ce champ affiche automatiquement l'adresse e-mail du/des éditeurs du champ, c'est pourquoi il peut être préférable de restreindre la visibilité de ce champ en interne en activant l'option "Restreindre le champ aux membres et au personnel" lors de l'ajout du champ.
+> **Attention** : ce champ affiche automatiquement l'adresse e-mail du/des éditeurs du champ, c'est pourquoi il peut être préférable de restreindre la visibilité de ce champ en interne en activant l'option "Restreindre le champ au personnel" lors de l'ajout du champ.
 
 #### Champ e-mail
 
@@ -144,7 +144,7 @@ Ce champ permet de créer une référence à un autre type de fiche.
 
 #### Champ de texte
 
-Ce champ permet d'entrer du texte. 
+Ce champ permet d'entrer du texte, qu'il soit court (p.ex un nom ou un titre) ou long (p.ex texte descriptif)
 
 L'option **"Contient du texte formaté"** propose un éditeur de texte prenant en charge des options de mise en forme (gras, italique, listes, notes de bas de page) :
 
@@ -154,7 +154,9 @@ Qui s'affichent ainsi dans le site du catalogue :
 
 ![](assets/setup/formated_text_render.png)
 
-> **Attention** : une fois du texte formaté ajouté, il est vivement déconseillé de décocher la case **"Contient du texte formaté"**. En effet le formatage du texte ajoute du code informatique qui sera affiché tel quel à l'utilisateur. Recocher la case permet de rétablir l'affichage du texte formaté.
+> **NB** : Les **champs primaires** ne peuvent pas être formatés (option "Texte formaté" grisée)
+
+> **AVERSTISSEMENT** : une fois du texte formaté ajouté, il est **vivement déconseillé** de décocher la case **"Contient du texte formaté"**. En effet le formatage du texte ajoute du code informatique, et la désactivation de cette option affichera ce texte peu lisible à l'utilisateur. Recocher la case permet de rétablir l'affichage du texte formaté.
 
 #### Champ URL
 
@@ -175,7 +177,7 @@ Bien que chaque champ impose son format de données spécifiques (nombres, dates
 
 |                                               | Définition                                                                                                                           | Exemple | Remarques                                                                                                                                                                                                                              |
 |-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Utiliser comme champ primaire**             | (Facultatif/Utilisateurs Avancés) Le champ designé comme primaire est celui qui permet d'identifier de manière unique les données.   | -       | Par défaut le champ primaire est un champ caché et correspond à un nombre (qui augmente à chaque ajout de données). Cette option ne peut être activée que pour un champ à la fois (la dernière activation est celle qui est appliquée) |
+| **Utiliser comme champ primaire**             | (Facultatif/Utilisateurs Avancés) Le champ designé comme primaire est celui qui permet d'identifier de manière unique les données.   | -       | Par défaut le champ primaire est un champ caché et correspond à un nombre (qui augmente à chaque ajout de données). Cette option ne peut être activée que pour un champ à la fois (la dernière activation est celle qui est appliquée). Activer cette option bloque l'accès à l'option "texte formaté". |
 | **Inclure le champ dans la liste des fiches** | Cette option permet d'activer/désactiver l'affichage de ce champ dans le tableau des données (section "Data") pour aérer l'affichage | -       | Particulièrement utile pour les champs contenant de grands textes                                                                                          
 ## Ajout de "Contenu conditionnel" 
 
@@ -503,11 +505,11 @@ Il est possible d'avoir un catalogue visible publiquement mais de cacher certain
 
 Pour cela, il s'agit de se rendre dans le type de fiche où se trouve le champ, puis de cliquer sur le bouton "Action" et "Éditer le champ". 
 
-Pour restreindre la visibilité du champ aux membres et au personnel du catalogue (éditeurs et administrateurs), cocher la case correspondante dans les options d'affichage : 
+Pour restreindre la visibilité du champ au personnel du catalogue (éditeurs et administrateurs), cocher la case correspondante dans les options d'affichage : 
 
 ![](assets/setup/restrict_field_vis.png)
 
-Un champ dont la consultation est restreinte aux membres et au personnel s'accompagne d'une icône rouge de cadenas dans la configuration du type de fiche : 
+Un champ dont la consultation est restreinte au personnel s'accompagne d'une icône rouge de cadenas dans la configuration du type de fiche : 
 
 ![](assets/setup/restricted_field.png)
 

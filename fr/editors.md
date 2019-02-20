@@ -42,9 +42,11 @@ Une fois les champs remplis, enregistrer avec " *Enregistrer 'nom du type de fic
 
 Une fois les données enregistrées, celles-ci apparaissent dans la section *Data* sous la forme d'un tableau de données. 
 
-## Modification de données
+## Édition, duplication et suppression de fiches
 
-Pour choisir les données à modifier, sélectionner la fiche souhaitée dans la barre latérale gauche. Les données existantes s'affichent sous forme d'un tableau. Pour modifier la fiche souhaitée, cliquer sur le bouton "Actions" puis sur "Éditer" :
+### Édition d'une fiche
+
+Pour choisir la fiche à éditer, sélectionner le type de fiche correspondant dans la barre latérale gauche. Les données existantes s'affichent sous forme d'un tableau. Pour modifier la fiche souhaitée, cliquer sur le bouton "Éditer" ![](assets/buttons/edit_btn.png) pour la fiche souhaitée :
 
 ![](assets/data/edit_data.png)  
 
@@ -54,15 +56,22 @@ Une fois les modifications terminées, enregistrer avec " *Enregistrer 'nom du t
 
 Une fois les données enregistrées, celles-ci apparaissent dans la section *Data* sous la forme d'un tableau de données. 
 
-## Duplication de données
+### Duplication d'une fiche
 
-Il est possible de dupliquer une fiche en cliquant sur le bouton "Actions" puis sur "Dupliquer" : 
+Pour choisir la fiche à dupliquer, sélectionner le type de fiche correspondant dans la barre latérale gauche. Les données existantes s'affichent sous forme d'un tableau. Pour dupliquer une fiche, cliquer sur le bouton "Dupliquer" ![](assets/buttons/duplicate_btn.png) pour la fiche souhaitée : 
 
 ![](assets/data/duplicate_data.png)  
 
 Cela ouvre la même page que pour l'ajout de données, avec les données de la fiche dupliquée, qu'il est possible de modifier.
 
 Une fois les champs modifiés, il est possible d'enregistrer et retourner au menu *Data* avec "*Créer fiche de type 'nom du type de fiche'*" ou d'enregistrer et ajouter de nouvelles données avec "*Create and add another*".
+
+### Suppression d'une fiche
+
+
+Pour choisir la fiche à supprimer définitivement, sélectionner le type de fiche correspondant dans la barre latérale gauche. Les données existantes s'affichent sous forme d'un tableau. Pour supprimer une fiche, cliquer sur le bouton "Supprimer" ![](assets/buttons/delete_btn.png) pour la fiche souhaitée.
+
+Un avertissement apparaît, vous permettant de confirmer ou revenir sur votre choix.
 
 # Exemple d'ajout de données dans un catalogue
 
