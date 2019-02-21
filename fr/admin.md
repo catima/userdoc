@@ -138,6 +138,8 @@ Cela permet à l'éditeur d'ajouter un texte de légende accompagnant l'image.
 
 Ce champ permet d'entrer des nombres entiers.
 
+> L'option **"Numéro de série automatique"** permet l'attribution automatique d'une valeur numérique pour le champ "nombre entier" en question. Cela permet par exemple de créer des identifiants numériques automatiquement. La numérotation automatique concerne les _nouvelles_ fiches et commence par la plus haute valeur numérique existante pour ce champ et lui additionne "1". Si aucune valeur numérique n'existe à l'activation de cette option, alors la numérotation débute par le nombre "1".
+
 #### Champ référence
 
 Ce champ permet de créer une référence à un autre type de fiche.
@@ -146,7 +148,7 @@ Ce champ permet de créer une référence à un autre type de fiche.
 
 Ce champ permet d'entrer du texte, qu'il soit court (p.ex un nom ou un titre) ou long (p.ex texte descriptif)
 
-L'option **"Contient du texte formaté"** propose un éditeur de texte prenant en charge des options de mise en forme (gras, italique, listes, notes de bas de page) :
+> L'option **"Contient du texte formaté"** propose un éditeur de texte prenant en charge des options de mise en forme (gras, italique, listes, notes de bas de page) :
 
 ![](assets/setup/formated_text_editor.png)
 
@@ -539,7 +541,15 @@ Cette attribution peut être effectuée individuellement (un utilisateur à la f
 
 Dans le mode "Setup", dans la barre latérale gauche, cliquer sur "Utilisateurs et groupes". 
 
-Choisir ensuite l'utilisateur-trice auquel changer le statut vis-à-vis de ce catalogue, puis cliquer sur le bouton "Éditer" ![](assets/buttons/edit_btn.png).
+Une liste des utilisatrices et utlisateurs Catima s'affiche. Cette liste peut être parcourue : 
+
+Soit en utilisant les onglets en bas de page : ![](assets/setup/bottom_num_tab.png) 
+
+Soit en recherchant un utilisateur par son adresse e-mail : 
+
+![](assets/setup/user_list_search.png)
+
+Accéder ensuite à la page d'édition des droits de l'utilisateur en cliquant sur le bouton "Éditer" ![](assets/buttons/edit_btn.png) correspondant.
 
  ![](assets/setup/user_role.png)
 
