@@ -1,3 +1,63 @@
+**Table des matières**
+
+<!-- TOC depthto:3 -->
+
+- [Configuration d'un catalogue](#configuration-dun-catalogue)
+    - [Conceptualisation](#conceptualisation)
+    - [Exploration](#exploration)
+    - [Hiérarchisation et Structure](#hiérarchisation-et-structure)
+    - [Liens et Références](#liens-et-références)
+    - [Création d'un type de fiche](#création-dun-type-de-fiche)
+        - [Configuration d'un type de fiche](#configuration-dun-type-de-fiche)
+        - [Types de champs](#types-de-champs)
+            - [Champ booléen (oui/non)](#champ-booléen-ouinon)
+            - [Champ ensemble de choix](#champ-ensemble-de-choix)
+            - [Champ décimal](#champ-décimal)
+            - [Champ rédacteur](#champ-rédacteur)
+            - [Champ e-mail](#champ-e-mail)
+            - [Champ fichier](#champ-fichier)
+            - [Champ géographique](#champ-géographique)
+            - [Champ image](#champ-image)
+            - [Champ nombre entier](#champ-nombre-entier)
+            - [Champ référence](#champ-référence)
+            - [Champ de texte](#champ-de-texte)
+            - [Champ URL](#champ-url)
+        - [Création d'un champ](#création-dun-champ)
+            - [Options d'affichage des champs dans la liste des fiches](#options-daffichage-des-champs-dans-la-liste-des-fiches)
+    - [Ajout de contenu conditionnel](#ajout-de-contenu-conditionnel)
+        - [Création d'une sous-fiche](#création-dune-sous-fiche)
+        - [Édition d'une sous-fiche](#édition-dune-sous-fiche)
+        - [Ajout d'un Ensemble de choix](#ajout-dun-ensemble-de-choix)
+    - [Affichage de contenus personnalisés et styles d'affichages](#affichage-de-contenus-personnalisés-et-styles-daffichages)
+        - [Ajout d'une page](#ajout-dune-page)
+        - [Édition d'une page](#édition-dune-page)
+            - [Édition d'un conteneur Item List](#édition-dun-conteneur-item-list)
+            - [Édition d'un conteneur de cartes géographique (Map Container)](#édition-dun-conteneur-de-cartes-géographique-map-container)
+            - [Édition d'un conteneur HTML](#édition-dun-conteneur-html)
+            - [Édition d’un conteneur Markdown](#édition-dun-conteneur-markdown)
+            - [Édition d'un conteneur Contact](#édition-dun-conteneur-contact)
+        - [Organisation des conteneurs](#organisation-des-conteneurs)
+    - [Organisation de la barre de menus](#organisation-de-la-barre-de-menus)
+- [Gestion de la consultation et de l'édition des données du catalogue](#gestion-de-la-consultation-et-de-lédition-des-données-du-catalogue)
+    - [Consultation du catalogue : gestion des membres du catalogue](#consultation-du-catalogue--gestion-des-membres-du-catalogue)
+        - [Attribution du statut de membre](#attribution-du-statut-de-membre)
+            - [Individuellement](#individuellement)
+            - [Groupe de membres](#groupe-de-membres)
+        - [Visibilité des champs](#visibilité-des-champs)
+        - [Limiter les champs affichés dans les listes de fiches](#limiter-les-champs-affichés-dans-les-listes-de-fiches)
+    - [Édition des données du catalogue : gestion des éditeurs](#édition-des-données-du-catalogue--gestion-des-éditeurs)
+        - [Attribution du statut d'éditeur](#attribution-du-statut-déditeur)
+            - [Individuellement](#individuellement)
+            - [Groupe d'éditeurs](#groupe-déditeurs)
+        - [Affichage des champs en mode édition](#affichage-des-champs-en-mode-édition)
+- [Exemple de réalisation d'un catalogue](#exemple-de-réalisation-dun-catalogue)
+    - [Conceptualisation](#conceptualisation)
+        - [Types de fiches et liens](#types-de-fiches-et-liens)
+    - [Ajout des types de fiches et création de champs](#ajout-des-types-de-fiches-et-création-de-champs)
+        - [Références à d'autres champs](#références-à-dautres-champs)
+
+<!-- /TOC -->
+
 # Configuration d'un catalogue 
 
 Pour pouvoir réaliser un catalogue contenant des données, deux étapes sont à effectuer : la première est la réalisation de la structure du catalogue (configuration). La deuxième consiste en l'entrée des données. 
@@ -76,7 +136,7 @@ Une fois les champs remplis avec les données, il est possible d'enregistrer et 
 
 Une fois le type de fiche créé, ses éléments (nom, pluriel, slug) sont résumés sur la ligne grise. Il est possible de les modifier en cliquant sur le lien "Éditer le type de fiche".
 
-### Configuration d'un "type de fiche" 
+### Configuration d'un type de fiche 
 
 Une fois le type de fiche créé, il s'agit d'y ajouter les champs souhaités. 
 
@@ -181,7 +241,8 @@ Bien que chaque champ impose son format de données spécifiques (nombres, dates
 |-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Utiliser comme champ primaire**             | (Facultatif/Utilisateurs Avancés) Le champ designé comme primaire est celui qui permet d'identifier de manière unique les données.   | -       | Par défaut le champ primaire est un champ caché et correspond à un nombre (qui augmente à chaque ajout de données). Cette option ne peut être activée que pour un champ à la fois (la dernière activation est celle qui est appliquée). Activer cette option bloque l'accès à l'option "texte formaté". |
 | **Inclure le champ dans la liste des fiches** | Cette option permet d'activer/désactiver l'affichage de ce champ dans le tableau des données (section "Data") pour aérer l'affichage | -       | Particulièrement utile pour les champs contenant de grands textes                                                                                          
-## Ajout de "Contenu conditionnel" 
+
+## Ajout de contenu conditionnel
 
 Un type de fiche peut avoir des caractéristiques communes à toutes les enregistrements de données (p.ex : tous les films ont un réalisateur) mais peut également avoir des caractéristiques "conditionnelles" (p.ex : la 'Période traitée' n'est pertinente que pour les documentaires historiques et pas pour les films d'action). Cela permet lors de l'entrée de données de ne pas avoir de champs superflus à remplir.
 
@@ -204,6 +265,7 @@ Une fois choisi un nom pour la sous-fiche, il est possible d'enregistrer et reto
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler".
 > 
+
 ### Édition d'une sous-fiche
 
 Une fois la/les sous-fiches créée-s, il s'agit d'y ajouter les champs souhaités. 
@@ -218,7 +280,7 @@ Le reste de la procédure est similaire à celle de l'édition d'une fiche et d�
 
 > La notion de sous-fiche étant liée à celle de type de fiche, pour la suite de la procédure se référer si besoin à la section "Type de fiche".
 
-### Ajout d'un "Ensemble de choix"  
+### Ajout d'un Ensemble de choix  
 
 Un ensemble de choix est une liste d'éléments prédéfinis permettant de remplir un champ.
 
@@ -384,7 +446,7 @@ Une fois le contenu Markdown ajouté, enregistrer et retourner au menu *Setup* a
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel). Le contenu du champ d'édition sera perdu.
 
-#### Édition d'un conteneur "Contact
+#### Édition d'un conteneur Contact
 
 Ce type de conteneur permet d'ajouter un formulaire de contact à destination des visiteurs du catalogue. 
 
