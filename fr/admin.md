@@ -215,43 +215,40 @@ Bien que chaque champ impose son format de données spécifiques (nombres, dates
 
 ## Ajout et édition de contenu conditionnel ou sous-fiche
 
-Un type de fiche peut avoir des caractéristiques communes à toutes les enregistrements de données (p.ex : tous les films ont un réalisateur) mais peut également avoir des caractéristiques "conditionnelles" (p.ex : la 'Période traitée' n'est pertinente que pour les documentaires historiques et pas pour les films d'action). Cela permet lors de l'entrée de données de ne pas avoir de champs superflus à remplir.
+Un type de fiche peut avoir des caractéristiques communes à toutes les données (p.ex : tous les films ont un réalisateur) mais peut également avoir des caractéristiques "conditionnelles" (p.ex : la 'Période traitée' n'est pertinente que pour les documentaires historiques et pas pour les films d'action). Dans ce dernier cas, il est possible de créer une **sous-fiche** qui s'affiche uniquement lorsqu'un certain **choix** est sélectionné (p.ex : le choix de 'Période traitée' apparaît uniquement si le choix documentaire historique est sélectionné et reste invisible si le choix film d'action est sélectionné).
 
-Les caractéristiques conditionnelles sont rassemblées dans des **sous-fiches**, et apparaissent selon le **choix fait par l'éditeur du catalogue** (p.ex : choisir le genre du film fera apparaître les champs pertinents uniquement pour ce genre). 
+Cela permet de ne pas avoir de champs superflus lors de la saisie de données. 
 
-Pour permettre l'enregistrement de données de manière conditionnelle, il est nécessaire de créer : 
+Pour permettre l'enregistrement de données de manière conditionnelle, il est nécessaire de:
+  1. D'abord créer la **sous-fiche**
+  2. Puis créer l'**ensemble de choix** dans la fiche principale.  
 
-1. Une sous-fiche
-2. Un ensemble de choix
+> Il n'est pas possible de créer une sous-fiche à partir d'une autre condition qu'un ensemble de choix dans la fiche principale. 
 
-> La notion de sous-fiche étant liée à celle de type de fiche, se référer si besoin à la section "Type de fiche"].
+### 1. Création d'une sous-fiche 
 
-### Création d'une sous-fiche 
+> La notion de sous-fiche étant liée à celle de type de fiche, se référer si besoin à la section "Type de fiche".
 
 Pour ajouter une **Sous-fiche** , dans la barre de gauche, en bas de la rubrique "*Sous-fiches*", cliquer sur "**+ Nouvelle sous-fiche**". 
 
 ![](assets/categories/new_category.png)
 
 Une fois choisi un nom pour la sous-fiche, il est possible d'enregistrer et retourner au menu *Setup* avec "*Créer sous-fiche'*" ou d'enregistrer et ajouter une nouvelle sous-fiche avec "*Create and add another*".
-
-> NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler".
-> 
+ 
 
 ### Édition d'une sous-fiche
 
 Une fois la/les sous-fiches créée-s, il s'agit d'y ajouter les champs souhaités. 
 
-Pour cela, choisir la sous-fiche : dans la barre de gauche, dans la section "Sous-fiches", sélectionner la sous-fiche souhaitée. 
-
 ![](assets/categories/edit_category.png)
 
-Le reste de la procédure est similaire à celle de l'édition d'une fiche et débute par un clic sur la liste déroulante "*+ Ajouter…*" qui révèle les différents choix de champs possibles :
+La procédure est similaire à celle de l'édition d'une fiche et débute par un clic sur la liste déroulante "*+ Ajouter…*" qui révèle les différents choix de champs possibles :
 
 ![](assets/categories/add_field_category.png)
 
-> La notion de sous-fiche étant liée à celle de type de fiche, pour la suite de la procédure se référer si besoin à la section "Type de fiche".
+> Il est possible de créer plusieurs sous-fiches avec différentes conditions. 
 
-### Ajout d'un Ensemble de choix  
+### 2. Ajout d'un Ensemble de choix  
 
 Un ensemble de choix est une liste d'éléments prédéfinis permettant de remplir un champ.
 
@@ -259,21 +256,19 @@ Un ensemble de choix est une liste d'éléments prédéfinis permettant de rempl
 
 Effectuer un choix permet ainsi l'affichage d'une sous-fiche dédiée. 
 
-La liste des "Ensembles de choix" est accessible en cliquant sur "Ensembles de choix" dans la barre de gauche. Une liste des ensembles de choix existants est affichée :
+La liste des "Ensembles de choix" est accessible en cliquant sur "Ensembles de choix" dans la barre de gauche en mode *Setup*. Une liste des ensembles de choix existants est affichée :
 
 ![](assets/choice/choice_set.png)
 
-Cliquer sur "*+Nouvel ensemble de choix*" qui s’affiche en bleu, à droite dans la ligne grise. 
+Il est alors possible de sélectionner un ensemble de choix existant ou d'en créer un nouveau. 
 
-La page de paramétrages suivante apparait :
+Lors de la création ou de la modification d'un ensemble de choix, si des **sous-fiches** ont déjà été créées, un troisème champ apparaît et permet de lier un choix avec une sous-fiche. 
 
-![](assets/choice/add_choice_set.png)
+![](assets/categories/category_choice.png)
 
-Choisir un **nom** pour l'ensemble de choix, puis entrer la liste de choix possibles (nom court et éventuellement nom long) avec "+Ajouter choix". 
+Dans cet exemple, la **sous-fiche** *extra-data* s'affichera et permettra la saisie de données uniquement lorsque le choix *Droit* sera selectionné.
 
-Une fois les champs remplis avec les données, il est possible d'enregistrer et retourner au menu *Setup* avec "*Créer ensemble de choix'*" ou d'enregistrer et ajouter un nouvel ensemble de choix avec "*Create and add another*".
-
-> NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
+> Si la sous-fiche de s'affiche pas comme voulu: en mode *Setup*, sélectionner le type de fiche et attention à bien ajouter un champ avec l'ensemble de choix avec lequel la sous-fiche est reliée. 
 
 ## Affichage de contenus personnalisés et styles d'affichages 
 
