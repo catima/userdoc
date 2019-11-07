@@ -514,16 +514,22 @@ Choisir ensuite le statut "membre" pour autoriser la consultation d'un catalogue
 
 #### Groupe de membres
 
+Les groupes peuvent servir à donner différents niveaux d'accès à un certain groupe d'utilisateurs ou à ajouter un grand nombre de personnes en même temps. 
+
 Dans le mode "Setup", dans la barre latérale gauche, cliquer sur "Utilisateurs et groupes" puis sur "+ Nouveau groupe : 
 
  ![](assets/setup/new_usergroup.png)
 
- Entrer ensuite un nom et une description pour le groupe et cliquer sur "Créer un groupe 
+ Entrer ensuite un nom et une description pour le groupe. Il est possible de cocher la case "Public?", qui est spécialement utile si le but est d'ajouter beaucoup de personnes en même temps. Ceci générera un identifiant qu'il est possible de partager avec, par exemple, tous les étudiant-e-s du semestre d'Automne 2018, qui pourront ensuite rejoindre ce groupe. 
 
-  ![](assets/setup/new_usergroup1.png)
+  ![](assets/setup/new_usergroup11.png)
 
-Il est maintenant possible : 
-* d'ajouter des membres au groupe (icône ![](assets/setup/usergroup_icon.png)) 
+Pour que Catima génére cet identifiant, enregistrer les modifications en cliquant sur "Créer groupe", puis retourner dans le groupe en cliquand sur l'icône "Editer" pour pouvoir le lire et le partager. 
+
+  ![](assets/setup/new_usergroup_mdp.png)
+
+Il est aussi possible : 
+* d'ajouter des membres au groupe (icône ![](assets/setup/usergroup_icon.png)) en entrant une ou plusieurs adresses email. Dans le cas d'ajout en masse d'utilisateurs avec cette méthode, attention à ce que les adresses email soient correctement formatées: une adresse pas ligne et pas de caractère spécial. Il est conseillé de faire les invitations par petits lots plutôt que de faire tout d'un coup. 
 * d'attribuer un même rôle à tous les membres du groupe(ici "Membre") : 
  ![](assets/setup/usergroup_member.png)
 
