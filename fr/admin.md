@@ -5,27 +5,27 @@
 - [Configuration d'un catalogue](#configuration-dun-catalogue)
     - [Conceptualisation](#conceptualisation)
     - [Exploration](#exploration)
-    - [Hiérarchisation et Structure](#hiérarchisation-et-structure)
-    - [Liens et Références](#liens-et-références)
-    - [Création d'un type de fiche](#création-dun-type-de-fiche)
+    - [Hiérarchisation et Structure](#hierarchisationetstructure)
+    - [Liens et Références](#liensetref)
+    - [Création d'un type de fiche](#creationtypefiche)
         - [Configuration d'un type de fiche](#configuration-dun-type-de-fiche)
         - [Types de champs](#types-de-champs)
-        - [Création d'un champ](#création-dun-champ)
-    - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajout-et-édition-de-contenu-conditionnel-ou-sous-fiche)
-    - [Affichage de contenus personnalisés et styles d'affichages](#affichage-de-contenus-personnalisés-et-styles-daffichages)
+        - [Création d'un champ](#creationchamp)
+    - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajoutedition)
+    - [Affichage de contenus personnalisés et styles d'affichages](#affichagecontenuperso)
         - [Ajout d'une page](#ajout-dune-page)
-        - [Édition d'une page](#édition-dune-page)
+        - [Édition d'une page](#editionpage)
         - [Organisation des conteneurs](#organisation-des-conteneurs)
     - [Organisation de la barre de menus](#organisation-de-la-barre-de-menus)
-- [Gestion de la consultation et de l'édition des données du catalogue](#gestion-de-la-consultation-et-de-lédition-des-données-du-catalogue)
-    - [Consultation du catalogue : gestion des membres du catalogue](#consultation-du-catalogue--gestion-des-membres-du-catalogue)
+- [Gestion de la consultation et de l'édition des données du catalogue](#gestion)
+    - [Consultation du catalogue : gestion des membres du catalogue](#consultation)
         - [Attribution du statut de membre](#attribution-du-statut-de-membre)
-        - [Visibilité des champs](#visibilité-des-champs)
-        - [Limiter les champs affichés dans les listes de fiches](#limiter-les-champs-affichés-dans-les-listes-de-fiches)
-    - [Édition des données du catalogue : gestion des éditeurs](#édition-des-données-du-catalogue--gestion-des-éditeurs)
-        - [Attribution du statut d'éditeur](#attribution-du-statut-déditeur)
-        - [Affichage des champs en mode édition](#affichage-des-champs-en-mode-édition)
-- [Exemple de réalisation d'un catalogue](#exemple-de-réalisation-dun-catalogue)
+        - [Visibilité des champs](#visichamps)
+        - [Limiter les champs affichés dans les listes de fiches](#limiterchamps)
+    - [Édition des données du catalogue : gestion des éditeurs](#gestionediteurs)
+        - [Attribution du statut d'éditeur](#attributionstatuediteur)
+        - [Affichage des champs en mode édition](#affichagemodeedition)
+- [Exemple de réalisation d'un catalogue](#exemple)
 
 <!-- /TOC -->
 
@@ -60,7 +60,7 @@ Les étapes suivantes permettent d'effectuer une conceptualisation efficace : ex
 ## Exploration
 
 L'étape de listage consiste à lister librement tout élément pertinent à figurer dans le catalogue et à ce stade sans souci d'organisation. Dans cet exemple, il s'agit de lister par exemple une vingtaine de films qui auraient leur place dans ce catalogue.
-
+<a id="hierarchisationetstructure"></a>
 ## Hiérarchisation et Structure
 
 L'étape de structure permet de mettre de l'ordre dans les concepts précédemment listés librement. Il s'agit à présent de se demander quels sont les concepts parmi les éléments parmi ceux listés précédemment et lesquels sont des caractéristiques de chaque concept.
@@ -70,7 +70,7 @@ L'étape de structure permet de mettre de l'ordre dans les concepts précédemme
 Est considéré comme un **concept** un élément pour lequel des descriptions supplémentaires sont pertinentes pour le but du catalogue. Un élément descriptif ne devient donc pas un concept *dans l'absolu*, mais il l'est *selon le but du catalogue*.
 
 > Dans notre exemple, l'élément **Film** est un concept car le but du catalogue est d'effectuer un inventaire de films. Si il est également d'intérêt pour le catalogue de décrire les **Réalisateurs** de films (naissance, nationalité, biographie...), alors cet élément devient également un concept auquel le film fera référence. Si en revanche, évoquer le nom du/des réalisateurs du film suffit, alors l'élément "réalisateur" reste une caractéristique de "film" mais n'est pas un concept.
-
+<a id="liensetref"></a>
 ## Liens et Références
 
 Dans cette étape il s'agit d'évaluer les liens que peuvent avoir les concepts entre eux. Il est en effet fréquent que des concepts soient liés à d'autres. 
@@ -80,7 +80,7 @@ Dans cette étape il s'agit d'évaluer les liens que peuvent avoir les concepts 
 Ces liens seront concrétisés dans Catima par des **"Références"**, au sein du concept le plus précis vers le concept le plus large et englobant (selon le catalogue). Cela permet d'afficher une liste des films correspondant à un réalisateur.
 
 > Dans notre exemple de catalogue de film, dans le concept "Réalisateur" il sera fait une référence aux Films réalisés par ce Réalisateur.
-
+<a id="creationtypefiche"></a>
 ## Création d'un type de fiche 
 
 Un catalogue permet de stocker des données (texte, images, dates, etc...) structurées sous la forme de types de fiches. Les types de fiches représentent des entités conceptuelles (p.ex le concept "livre") possédant des caractéristiques définies (p.ex "auteur", "année de publication").
@@ -194,7 +194,7 @@ Qui s'affichent ainsi dans le site du catalogue :
 #### Champ URL
 
 Ce champ permet d'entrer des adresses URL.
-
+<a id="creationchamp"></a>
 ### Création d'un champ 
 
 Bien que chaque champ impose son format de données spécifiques (nombres, dates, images, etc...), une partie des informations à remplir est commune : 
@@ -212,7 +212,7 @@ Bien que chaque champ impose son format de données spécifiques (nombres, dates
 |-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Utiliser comme champ primaire**             | (Facultatif/Utilisateurs Avancés) Le champ designé comme primaire est celui qui permet d'identifier de manière unique les données.   | -       | Par défaut le champ primaire est un champ caché et correspond à un nombre (qui augmente à chaque ajout de données). Cette option ne peut être activée que pour un champ à la fois (la dernière activation est celle qui est appliquée). Activer cette option bloque l'accès à l'option "texte formaté". |
 | **Inclure le champ dans la liste des fiches** | Cette option permet d'activer/désactiver l'affichage de ce champ dans le tableau des données (section "Data") pour aérer l'affichage | -       | Particulièrement utile pour les champs contenant de grands textes                                                                                          
-
+<a id="ajoutedition"></a>
 ## Ajout et édition de contenu conditionnel ou sous-fiche
 
 Un type de fiche peut avoir des caractéristiques communes à toutes les données (p.ex : tous les films ont un réalisateur) mais peut également avoir des caractéristiques "conditionnelles" (p.ex : la 'Période traitée' n'est pertinente que pour les documentaires historiques et pas pour les films d'action). Dans ce dernier cas, il est possible de créer une **sous-fiche** qui s'affiche uniquement lorsqu'un certain **choix** est sélectionné (p.ex : le choix de 'Période traitée' apparaît uniquement si le choix documentaire historique est sélectionné et reste invisible si le choix film d'action est sélectionné).
@@ -269,7 +269,7 @@ Lors de la création ou de la modification d'un ensemble de choix, si des **sous
 Dans cet exemple, la **sous-fiche** *extra-data* s'affichera et permettra la saisie de données uniquement lorsque le choix *Droit* sera selectionné.
 
 > Si la sous-fiche de s'affiche pas comme voulu: en mode *Setup*, sélectionner le type de fiche et attention à bien ajouter un champ avec l'ensemble de choix avec lequel la sous-fiche est reliée. 
-
+<a id="creationcontenuperso"></a>
 ## Affichage de contenus personnalisés et styles d'affichages 
 
 Par défaut, Catima génère un affichage par type de fiche en créant une page dédiée qui n'est pas modifiable.  
@@ -297,7 +297,7 @@ Choisir le(s) titre(s) de la page dans les différentes langues du catalogue ain
 Une fois les champs remplis , il est possible d'enregistrer et retourner au menu *Setup* avec "Créer une page" ou d'enregistrer et ajouter de nouvelles données avec "*Créer et ajouter une autre*".
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
-
+<a id="editionpage"></a>
 ### Édition d'une page 
 
 Une fois la page créée, il s'agit d'y ajouter du contenu. Sélectionner "*Pages*" dans la barre de gauche. La liste récapitulative de toutes les pages s’affiche. Cliquer ensuite sur le bouton "Éditer" ![](assets/buttons/edit_btn.png) correspondant à la page à paramétrer. La page d'édition suivante apparaît :
@@ -480,7 +480,10 @@ Une fois les champs remplis avec les données, il est possible d'enregistrer et 
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
 
+<a id="gestion"></a>
+
 # Gestion de la consultation et de l'édition des données du catalogue
+<a id="consultation"></a>
 
 ## Consultation du catalogue : gestion des membres du catalogue
 
@@ -534,6 +537,7 @@ Il est aussi possible :
  ![](assets/setup/usergroup_member.png)
 
  > NB : Lorsque un utilisateur a un rôle attribué individuellement *et* un rôle attribué via un groupe, c'est le rôle le plus élevé qui s'applique.
+<a id="visichamps"></a>
 
 ### Visibilité des champs 
 
@@ -549,6 +553,8 @@ Un champ dont la consultation est restreinte au personnel s'accompagne d'une ic�
 
 ![](assets/setup/restricted_field.png)
 
+<a id="limiterchamps"></a>
+
 ### Limiter les champs affichés dans les listes de fiches
 
 Par défaut les fiches affichées sous forme de listes affichent tous les champs textuels des fiches. 
@@ -560,10 +566,12 @@ Dans les "Options d'affichage", désactiver l'option "Inclure le champ dans la l
 ![](assets/setup/exclude_field_from_listview.png)
 
 Le champ n'est maintenant plus affiché dans la liste des fiches.
+<a id="gestionediteurs"></a>
 
 ## Édition des données du catalogue : gestion des éditeurs
 
 Pour pouvoir ajouter et modifier des données dans un catalogue, il est nécessaire d'avoir (au minimum) un statut dit d'"Éditeur". Les personnes disposant de ce statut dans un catalogue peuvent ajouter et modifier des données mais ne peuvent pas modifier la structure d'un catalogue (à savoir créer de nouveaux types de fiches, changer les champs ou créer/modifier des pages). Un "Éditeur" peut ajouter des données et modifier celles-ci, mais seul un "Super-Éditeur" peut modifier/supprimer des données créées par d'autres personnes.
+<a id="attributionstatuediteur"></a>
 
 ### Attribution du statut d'éditeur
 
@@ -605,6 +613,7 @@ Il est maintenant possible :
  ![](assets/setup/usergroup_member.png)
 
  > NB : Lorsque un utilisateur a un rôle attribué individuellement *et* un rôle attribué via un groupe, c'est le rôle le plus élevé qui s'applique.
+<a id="affichagemodeedition"></a>
 
 ### Affichage des champs en mode édition
 
@@ -618,6 +627,7 @@ Pour cela, dans la section "Setup", cliquer sur le type de fiches concerné puis
 Le champ en question ne s'affiche maintenant plus dans la liste des fiches du mode édition. 
 
 Il reste toujours visible et modifiable lors de l'édition d'une fiche.
+<a id="exemple"></a>
 
 # Exemple de réalisation d'un catalogue
 

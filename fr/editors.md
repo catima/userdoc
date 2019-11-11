@@ -2,23 +2,25 @@
 
 <!-- TOC -->
 
-- [Affichage, ajout et modification de données](#affichage-ajout-et-modification-de-données)
-    - [Présentation](#présentation)
-    - [Affichage des tableaux de données](#affichage-des-tableaux-de-données)
+- [Affichage, ajout et modification de données](#affichageajoutmod)
+    - [Présentation](#presentation)
+    - [Affichage des tableaux de données](#affichagetableaux)
     - [Rechercher un contenu](#rechercher-un-contenu)
-    - [Ajout de données](#ajout-de-données)
-    - [Édition, duplication et suppression de fiches](#édition-duplication-et-suppression-de-fiches)
-        - [Édition d'une fiche](#édition-dune-fiche)
+    - [Ajout de données](#ajoutdonnees)
+    - [Édition, duplication et suppression de fiches](#editionduplsup)
+        - [Édition d'une fiche](#editionfiche)
         - [Duplication d'une fiche](#duplication-dune-fiche)
         - [Suppression d'une fiche](#suppression-dune-fiche)
-- [Exemple d'ajout de données dans un catalogue](#exemple-dajout-de-données-dans-un-catalogue)
+- [Exemple d'ajout de données dans un catalogue](#exemplecat)
     - [Concept](#concept)
         - [Types de fiches et liens](#types-de-fiches-et-liens)
         - [Ajout d'une fiche](#ajout-dune-fiche)
 
 <!-- /TOC -->
+<a id="affichageajoutmod"></a>
 
 # Affichage, ajout et modification de données 
+<a id="presentation"></a>
 
 ## Présentation
 
@@ -26,6 +28,7 @@ La section "Data" permet l'ajout et la modification de données du catalogue. Po
 cliquer sur "*Data*" dans la barre de menus noire (en haut du navigateur). 
 
 L'accueil de la section **Data** consiste en un affichage des différentes fiches existantes dans la barre latérale gauche. 
+<a id="affichagetableaux"></a>
 
 ## Affichage des tableaux de données
 
@@ -41,6 +44,7 @@ Il est possible d'afficher toutes les données du catalogue contenant une chaîn
 ![](assets/data/data_list_search.png)
 
 > En cherchant "Europe", la recherche renvoit ici la seule fiche contenant le mot "Europe", en l'occurence dans le champ "Adresse". 
+<a id="ajoutdonnees"></a>
 
 ## Ajout de données
 
@@ -61,8 +65,10 @@ Une fois les champs remplis avec les données, il est possible d'enregistrer et 
 Une fois les champs remplis, enregistrer avec " *Enregistrer 'nom du type de fiche'* ". Un enregistrement n'est possible que si toutes les sections obligatoires ont été remplies. Dans le cas contraire un message d'erreur apparaît et invite à corriger ou remplir les champs.
 
 Une fois les données enregistrées, celles-ci apparaissent dans la section *Data* sous la forme d'un tableau de données. 
+<a id="editionduplsup"></a>
 
 ## Édition, duplication et suppression de fiches
+<a id="editionfiche"></a>
 
 ### Édition d'une fiche
 
@@ -92,6 +98,7 @@ Une fois les champs modifiés, il est possible d'enregistrer et retourner au men
 Pour choisir la fiche à supprimer définitivement, sélectionner le type de fiche correspondant dans la barre latérale gauche. Les données existantes s'affichent sous forme d'un tableau. Pour supprimer une fiche, cliquer sur le bouton "Supprimer" ![](assets/buttons/delete_btn.png) pour la fiche souhaitée.
 
 Un avertissement apparaît, vous permettant de confirmer ou revenir sur votre choix.
+<a id="exemplecat"></a>
 
 # Exemple d'ajout de données dans un catalogue
 

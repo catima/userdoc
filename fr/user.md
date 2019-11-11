@@ -4,8 +4,8 @@
 
 - [Favoris](#favoris)
     - [Ajout de contenu](#ajout-de-contenu)
-    - [Accès à la liste des favoris](#accès-à-la-liste-des-favoris)
-- [Accès à des catalogues restreints](#accès-à-des-catalogues-restreints)
+    - [Accès à la liste des favoris](#accesfavoris)
+- [Accès à des catalogues restreints](#accescatrestreints)
 
 <!-- /TOC -->
 
@@ -17,7 +17,7 @@ Les catalogues de CATIMA disposent d'une fonctionnalité permettant d'ajouter un
 Pour ajouter un contenu aux favoris, il s'agit d'accéder à la fiche souhaitée (par une navigation dans le site ou par par les résultats d'une recherche), puis de cliquer sur le bouton "Ajouter aux favoris" sous le nom de la fiche.
 
 ![](assets/favs/add_fav.png)
-
+<a id="accesfavoris"></a>
 ## Accès à la liste des favoris
 
 La liste des favoris est accessible à 
@@ -35,7 +35,7 @@ Les favoris sont présentés par groupe en fonction du catalogue dont proviennen
 Une fois un groupe choisi, la liste des contenus favoris est présentée, permettant d'y accéder ou de supprimer le-s favoris souhaité-s.
 
 ![](assets/favs/fav_list_group2.png)
-
+<a id="accescatrestreints"></a>
 # Accès à des catalogues restreints
 
 La consultation de certains catalogues est limitée à un (ou plusieurs) groupe(s) d'utilisateurs uniquement, déterminé par l'administrateur du catalogue. Pour accéder à un catalogue restreint, il est ainsi nécessaire d'être un utilisateur Catima et d'être connecté à son compte.
