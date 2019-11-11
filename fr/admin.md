@@ -269,7 +269,7 @@ Lors de la création ou de la modification d'un ensemble de choix, si des **sous
 Dans cet exemple, la **sous-fiche** *extra-data* s'affichera et permettra la saisie de données uniquement lorsque le choix *Droit* sera selectionné.
 
 > Si la sous-fiche de s'affiche pas comme voulu: en mode *Setup*, sélectionner le type de fiche et attention à bien ajouter un champ avec l'ensemble de choix avec lequel la sous-fiche est reliée. 
-<a id="creationcontenuperso"></a>
+<a id="affichagecontenuperso"></a>
 ## Affichage de contenus personnalisés et styles d'affichages 
 
 Par défaut, Catima génère un affichage par type de fiche en créant une page dédiée qui n'est pas modifiable.  
@@ -481,10 +481,9 @@ Une fois les champs remplis avec les données, il est possible d'enregistrer et 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
 
 <a id="gestion"></a>
-
 # Gestion de la consultation et de l'édition des données du catalogue
-<a id="consultation"></a>
 
+<a id="consultation"></a>
 ## Consultation du catalogue : gestion des membres du catalogue
 
 Le site généré par Catima peut être visible publiquement, ou consultation restreinte à certaines personnes.
@@ -538,7 +537,6 @@ Il est aussi possible :
 
  > NB : Lorsque un utilisateur a un rôle attribué individuellement *et* un rôle attribué via un groupe, c'est le rôle le plus élevé qui s'applique.
 <a id="visichamps"></a>
-
 ### Visibilité des champs 
 
 Il est possible d'avoir un catalogue visible publiquement mais de cacher certains champs au public, comme des informations uniquement utiles en interne au personnel du catalogue (p.ex un champ "Rédacteur" qui affiche l'auteur et la date des dernières modifications).
@@ -554,7 +552,6 @@ Un champ dont la consultation est restreinte au personnel s'accompagne d'une ic�
 ![](assets/setup/restricted_field.png)
 
 <a id="limiterchamps"></a>
-
 ### Limiter les champs affichés dans les listes de fiches
 
 Par défaut les fiches affichées sous forme de listes affichent tous les champs textuels des fiches. 
@@ -566,13 +563,13 @@ Dans les "Options d'affichage", désactiver l'option "Inclure le champ dans la l
 ![](assets/setup/exclude_field_from_listview.png)
 
 Le champ n'est maintenant plus affiché dans la liste des fiches.
-<a id="gestionediteurs"></a>
 
+<a id="gestionediteurs"></a>
 ## Édition des données du catalogue : gestion des éditeurs
 
 Pour pouvoir ajouter et modifier des données dans un catalogue, il est nécessaire d'avoir (au minimum) un statut dit d'"Éditeur". Les personnes disposant de ce statut dans un catalogue peuvent ajouter et modifier des données mais ne peuvent pas modifier la structure d'un catalogue (à savoir créer de nouveaux types de fiches, changer les champs ou créer/modifier des pages). Un "Éditeur" peut ajouter des données et modifier celles-ci, mais seul un "Super-Éditeur" peut modifier/supprimer des données créées par d'autres personnes.
-<a id="attributionstatuediteur"></a>
 
+<a id="attributionstatuediteur"></a>
 ### Attribution du statut d'éditeur
 
 L'attribution du statut d'éditeur permet d'autoriser l'ajout et modification des données d'un catalogue à une (ou plusieurs) personne(s) disposant d'un compte Catima. 
@@ -613,8 +610,8 @@ Il est maintenant possible :
  ![](assets/setup/usergroup_member.png)
 
  > NB : Lorsque un utilisateur a un rôle attribué individuellement *et* un rôle attribué via un groupe, c'est le rôle le plus élevé qui s'applique.
-<a id="affichagemodeedition"></a>
 
+<a id="affichagemodeedition"></a>
 ### Affichage des champs en mode édition
 
 Par défaut, en mode édition, tous les champs sont affichés dans la liste des fiches. Il est cependant possible de désactiver l'affichage d'un (ou plusieurs) champ(s). 
@@ -627,8 +624,8 @@ Pour cela, dans la section "Setup", cliquer sur le type de fiches concerné puis
 Le champ en question ne s'affiche maintenant plus dans la liste des fiches du mode édition. 
 
 Il reste toujours visible et modifiable lors de l'édition d'une fiche.
-<a id="exemple"></a>
 
+<a id="exemple"></a>
 # Exemple de réalisation d'un catalogue
 
 Afin d'illustrer la réalisation d'un catalogue du début à la fin, voici un exemple reprenant la plupart des étapes décrites jusqu'à présent. Cet exemple consiste en un catalogue recensant les universités romandes et de leurs bibliothèques afin de les représenter sur une carte géographique.
