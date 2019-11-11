@@ -4,7 +4,7 @@
 
 - [Recherche](#recherche)
     - [Recherche simple](#recherche-simple)
-    - [Recherche avancée](#recherche-avanc-e)
+    - [Recherche avancée](#rechercheavancee)
 
 <!-- /TOC -->
 
@@ -22,7 +22,8 @@ La recherche simple permet d'accéder à une liste de contenus contenant un mot 
 
 Dans la barre de texte, entrer le mot souhaité (p.ex "Rowling" ou "Suisse") et cliquer sur "*Chercher*" ("Search"). Une liste des résultats trouvés apparaît permettant d'accéder au contenu souhaité, ou de réitérer sa recherche.
 
-## Recherche avancée
+<a id="rechercheavancee"></a>
+## Recherche avancée 
 
 La recherche avancée permet de d'accéder à une liste de contenus en utilisant un ou plusieurs critères de recherche **au sein d'un type de fiche**. 
 
