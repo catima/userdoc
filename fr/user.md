@@ -17,6 +17,7 @@ Les catalogues de CATIMA disposent d'une fonctionnalité permettant d'ajouter un
 Pour ajouter un contenu aux favoris, il s'agit d'accéder à la fiche souhaitée (par une navigation dans le site ou par par les résultats d'une recherche), puis de cliquer sur le bouton "Ajouter aux favoris" sous le nom de la fiche.
 
 ![](assets/favs/add_fav.png)
+
 <a id="accesfavoris"></a>
 ## Accès à la liste des favoris
 
@@ -35,6 +36,7 @@ Les favoris sont présentés par groupe en fonction du catalogue dont proviennen
 Une fois un groupe choisi, la liste des contenus favoris est présentée, permettant d'y accéder ou de supprimer le-s favoris souhaité-s.
 
 ![](assets/favs/fav_list_group2.png)
+
 <a id="accescatrestreints"></a>
 # Accès à des catalogues restreints
 

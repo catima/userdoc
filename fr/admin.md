@@ -536,6 +536,7 @@ Il est aussi possible :
  ![](assets/setup/usergroup_member.png)
 
  > NB : Lorsque un utilisateur a un rôle attribué individuellement *et* un rôle attribué via un groupe, c'est le rôle le plus élevé qui s'applique.
+
 <a id="visichamps"></a>
 ### Visibilité des champs 
 
@@ -596,15 +597,11 @@ Choisir ensuite le statut "Éditeur" pour autoriser cet utilisateur à ajouter e
 
 #### Groupe d'éditeurs
 
-Dans le mode "Setup", dans la barre latérale gauche, cliquer sur "Utilisateurs et groupes" puis sur "+ Nouveau groupe : 
+Il est possible d'attribuer le statut d'éditeur à plusieurs personnens en même temps en utilisant les groupes. Dans le mode "Setup", dans la barre latérale gauche, cliquer sur "Utilisateurs et groupes" puis sélectionner un groupe ou en créer un nouveau. 
 
- ![](assets/setup/new_usergroup.png)
+> Pour ajouter plusieurs personnes en même temps lors de la création d'un groupe, voir comment rendre l'accès au groupe public grâce à une clé d'accès [ici](#groupe-de-membres)
 
- Entrer ensuite un nom et une description pour le groupe et cliquer sur "Créer un groupe 
-
-  ![](assets/setup/new_usergroup1.png)
-
-Il est maintenant possible : 
+Il est possible : 
 * d'ajouter des éditeurs (ou super-éditeurs) au groupe (icône ![](assets/setup/usergroup_icon.png)) 
 * d'attribuer un même rôle à tous les membres du groupe(ici "Éditeur") : 
  ![](assets/setup/usergroup_member.png)
