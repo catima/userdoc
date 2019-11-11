@@ -3,7 +3,7 @@
 <!-- TOC -->
 
 - [Favoris](#favoris)
-    - [Ajout d'un contenu à la liste des favoris](#ajout-dun-contenu-à-la-liste-des-favoris)
+    - [Ajout de contenu](#ajout-de-contenu)
     - [Accès à la liste des favoris](#accès-à-la-liste-des-favoris)
 - [Accès à des catalogues restreints](#accès-à-des-catalogues-restreints)
 
@@ -13,8 +13,7 @@
 
 Les catalogues de CATIMA disposent d'une fonctionnalité permettant d'ajouter un contenu à une liste de favoris pour tous-tes les utilisateur-trice-s possédant un compte CATIA (voir [ici pour la création d'un compte](https://catima.unil.ch/fr/register)) et connecté-e-s.
 
-## Ajout d'un contenu à la liste des favoris
-
+## Ajout de contenu
 Pour ajouter un contenu aux favoris, il s'agit d'accéder à la fiche souhaitée (par une navigation dans le site ou par par les résultats d'une recherche), puis de cliquer sur le bouton "Ajouter aux favoris" sous le nom de la fiche.
 
 ![](assets/favs/add_fav.png)

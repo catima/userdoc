@@ -4,7 +4,7 @@
 
 - [Recherche](#recherche)
     - [Recherche simple](#recherche-simple)
-    - [Recherche avancée](#recherche-avancée)
+    - [Recherche avancée](#recherche-avanc-e)
 
 <!-- /TOC -->
 
