@@ -1,7 +1,9 @@
 # Ignore JetBrains IDE folder
 .idea
+**/.idea
 # Ignore VSCode IDE folder
 .vscode
-*/.vscode
+**/.vscode
+# Ignore other stuff
 .DS_Store
-*/.DS_Store
+**/.DS_Store
