@@ -2,30 +2,60 @@
 
 <!-- TOC -->
 
+- [Table des matières](#table-des-mati%C3%A8res)
 - [Configuration d'un catalogue](#configuration-dun-catalogue)
     - [Conceptualisation](#conceptualisation)
     - [Exploration](#exploration)
-    - [Hiérarchisation et Structure](#hierarchisationetstructure)
-    - [Liens et Références](#liensetref)
-    - [Création d'un type de fiche](#creationtypefiche)
+    - [Hiérarchisation et Structure](#hi%C3%A9rarchisation-et-structure)
+    - [Liens et Références](#liens-et-r%C3%A9f%C3%A9rences)
+    - [Création d'un type de fiche](#cr%C3%A9ation-dun-type-de-fiche)
         - [Configuration d'un type de fiche](#configuration-dun-type-de-fiche)
         - [Types de champs](#types-de-champs)
-        - [Création d'un champ](#creationchamp)
-    - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajoutedition)
-    - [Affichage de contenus personnalisés et styles d'affichages](#affichagecontenuperso)
+            - [Champ booléen oui/non](#champ-bool%C3%A9en-ouinon)
+            - [Champ ensemble de choix](#champ-ensemble-de-choix)
+            - [Champ décimal](#champ-d%C3%A9cimal)
+            - [Champ rédacteur](#champ-r%C3%A9dacteur)
+            - [Champ e-mail](#champ-e-mail)
+            - [Champ fichier](#champ-fichier)
+            - [Champ géographique](#champ-g%C3%A9ographique)
+            - [Champ image](#champ-image)
+            - [Champ nombre entier](#champ-nombre-entier)
+            - [Champ référence](#champ-r%C3%A9f%C3%A9rence)
+            - [Champ de texte](#champ-de-texte)
+            - [Champ URL](#champ-url)
+        - [Création d'un champ](#cr%C3%A9ation-dun-champ)
+            - [Options d'affichage des champs dans la liste des fiches](#options-daffichage-des-champs-dans-la-liste-des-fiches)
+    - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajout-et-%C3%A9dition-de-contenu-conditionnel-ou-sous-fiche)
+        - [Création d'une sous-fiche](#cr%C3%A9ation-dune-sous-fiche)
+        - [Édition d'une sous-fiche](#%C3%A9dition-dune-sous-fiche)
+        - [Ajout d'un Ensemble de choix](#ajout-dun-ensemble-de-choix)
+    - [Affichage de contenus personnalisés et styles d'affichages](#affichage-de-contenus-personnalis%C3%A9s-et-styles-daffichages)
         - [Ajout d'une page](#ajout-dune-page)
-        - [Édition d'une page](#editionpage)
+        - [Édition d'une page](#%C3%A9dition-dune-page)
+            - [Édition d'un conteneur Item List](#%C3%A9dition-dun-conteneur-item-list)
+            - [Édition d'un conteneur de cartes géographique Map Container](#%C3%A9dition-dun-conteneur-de-cartes-g%C3%A9ographique-map-container)
+            - [Édition d'un conteneur HTML](#%C3%A9dition-dun-conteneur-html)
+            - [Édition d’un conteneur Markdown](#%C3%A9dition-dun-conteneur-markdown)
+            - [Édition d'un conteneur Contact](#%C3%A9dition-dun-conteneur-contact)
         - [Organisation des conteneurs](#organisation-des-conteneurs)
     - [Organisation de la barre de menus](#organisation-de-la-barre-de-menus)
-- [Gestion de la consultation et de l'édition des données du catalogue](#gestion)
-    - [Consultation du catalogue : gestion des membres du catalogue](#consultation)
+- [Gestion de la consultation et de l'édition des données du catalogue](#gestion-de-la-consultation-et-de-l%C3%A9dition-des-donn%C3%A9es-du-catalogue)
+    - [Consultation du catalogue : gestion des membres du catalogue](#consultation-du-catalogue--gestion-des-membres-du-catalogue)
         - [Attribution du statut de membre](#attribution-du-statut-de-membre)
-        - [Visibilité des champs](#visichamps)
-        - [Limiter les champs affichés dans les listes de fiches](#limiterchamps)
-    - [Édition des données du catalogue : gestion des éditeurs](#gestionediteurs)
-        - [Attribution du statut d'éditeur](#attributionstatuediteur)
-        - [Affichage des champs en mode édition](#affichagemodeedition)
-- [Exemple de réalisation d'un catalogue](#exemple)
+            - [Individuellement](#individuellement)
+            - [Groupe de membres](#groupe-de-membres)
+        - [Visibilité des champs](#visibilit%C3%A9-des-champs)
+        - [Limiter les champs affichés dans les listes de fiches](#limiter-les-champs-affich%C3%A9s-dans-les-listes-de-fiches)
+    - [Édition des données du catalogue : gestion des éditeurs](#%C3%A9dition-des-donn%C3%A9es-du-catalogue--gestion-des-%C3%A9diteurs)
+        - [Attribution du statut d'éditeur](#attribution-du-statut-d%C3%A9diteur)
+            - [Individuellement](#individuellement)
+            - [Groupe d'éditeurs](#groupe-d%C3%A9diteurs)
+        - [Affichage des champs en mode édition](#affichage-des-champs-en-mode-%C3%A9dition)
+- [Exemple de réalisation d'un catalogue](#exemple-de-r%C3%A9alisation-dun-catalogue)
+    - [Conceptualisation](#conceptualisation)
+        - [Types de fiches et liens](#types-de-fiches-et-liens)
+    - [Ajout des types de fiches et création de champs](#ajout-des-types-de-fiches-et-cr%C3%A9ation-de-champs)
+        - [Références à d'autres champs](#r%C3%A9f%C3%A9rences-%C3%A0-dautres-champs)
 
 <!-- /TOC -->
 
@@ -129,7 +159,13 @@ Ce champ permet le choix entre deux valeurs "oui" ou "non" uniquement.
 
 #### Champ ensemble de choix
 
-Ce champ permet de proposer une liste de choix entre plusieurs valeurs.
+Ce champ permet de proposer une liste de choix hiérarchique entre plusieurs valeurs. En cliquant sur *Ensemble de choix > Éditer* depuis la page de *Set up*, on peut visualiser la hiérarchie d'un ensemble de choix. Chaque élément peut être déplacé avec le bouton à 4 flèches à gauche de chaque choix. Si un élément est lié à une sous-fiche, le nom de celle-ci apparaît à droite de l'élément.
+
+![](assets/categories/hierarchy.png)
+
+Pour éditer le nom d'un choix ou lui assigner une sous-fiche, cliquer sur le bouton *"Éditer"* sur sa droite. 
+
+L'organisation hiérarchique permet de lier les éléments entre eux. Il n'y a pas de limite quand au nombre de sous-éléments: un choix peut avoir un ou plusieurs sous-choix, qui eux mêmes peut avoir un ou plusieurs sous-choix, etc. Un choix ayant un ou plusieurs sous-choix se comporte de la même manière qu'un choix n'en ayant aucun; tous les choix peuvent être sélectionné dans une fiche et être liés à une sous-fiche indépendamment de leur niveau hérarchique.
 
 #### Champ décimal
 
@@ -254,7 +290,7 @@ Un ensemble de choix est une liste d'éléments prédéfinis permettant de rempl
 
 > Exemple : un ensemble de choix peut consister en une liste de pays, de genre cinématographique, de professions ou de mots-clés par exemple.
 
-Effectuer un choix permet ainsi l'affichage d'une sous-fiche dédiée. 
+Effectuer un choix permet ainsi l'affichage d'une sous-fiche dédiée. Un choix situé à n'importe quel niveau hiérarchique peut être lié à une sous-fiche.
 
 La liste des "Ensembles de choix" est accessible en cliquant sur "Ensembles de choix" dans la barre de gauche en mode *Setup*. Une liste des ensembles de choix existants est affichée :
 
@@ -262,13 +298,14 @@ La liste des "Ensembles de choix" est accessible en cliquant sur "Ensembles de c
 
 Il est alors possible de sélectionner un ensemble de choix existant ou d'en créer un nouveau. 
 
-Lors de la création ou de la modification d'un ensemble de choix, si des **sous-fiches** ont déjà été créées, un troisème champ apparaît et permet de lier un choix avec une sous-fiche. 
+Lors de la création ou de la modification d'un ensemble de choix, il est possible de lier une sous-fiche en éditant un choix, puis en sélectionant la sous-fiche choisie sous "Sous-fiche (optionnel)".
 
 ![](assets/categories/category_choice.png)
 
 Dans cet exemple, la **sous-fiche** *extra-data* s'affichera et permettra la saisie de données uniquement lorsque le choix *Droit* sera selectionné.
 
-> Si la sous-fiche de s'affiche pas comme voulu: en mode *Setup*, sélectionner le type de fiche et attention à bien ajouter un champ avec l'ensemble de choix avec lequel la sous-fiche est reliée. 
+> Si la sous-fiche de s'affiche pas comme voulu: en mode *Setup*, sélectionner le type de fiche et ajouter un champ avec l'ensemble de choix avec lequel la sous-fiche est reliée. 
+
 <a id="affichagecontenuperso"></a>
 ## Affichage de contenus personnalisés et styles d'affichages 
 
