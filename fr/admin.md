@@ -1,61 +1,46 @@
 # Table des matières
 
-<!-- TOC -->
-
-- [Table des matières](#table-des-mati%C3%A8res)
 - [Configuration d'un catalogue](#configuration-dun-catalogue)
     - [Conceptualisation](#conceptualisation)
-    - [Exploration](#exploration)
-    - [Hiérarchisation et Structure](#hi%C3%A9rarchisation-et-structure)
-    - [Liens et Références](#liens-et-r%C3%A9f%C3%A9rences)
-    - [Création d'un type de fiche](#cr%C3%A9ation-dun-type-de-fiche)
+    - [Hiérarchisation et Structure](#hierarchisationetstructure)
+    - [Liens et Références](#liensetref)
+    - [Création d'un type de fiche](#creationtypefiche)
         - [Configuration d'un type de fiche](#configuration-dun-type-de-fiche)
         - [Types de champs](#types-de-champs)
-            - [Champ booléen oui/non](#champ-bool%C3%A9en-ouinon)
+            - [Champ booléen oui/non](#champbool)
             - [Champ ensemble de choix](#champ-ensemble-de-choix)
-            - [Champ décimal](#champ-d%C3%A9cimal)
-            - [Champ rédacteur](#champ-r%C3%A9dacteur)
+            - [Champ décimal](#champdecimal)
+            - [Champ rédacteur](#champredaction)
             - [Champ e-mail](#champ-e-mail)
             - [Champ fichier](#champ-fichier)
-            - [Champ géographique](#champ-g%C3%A9ographique)
+            - [Champ géographique](#champgeo)
             - [Champ image](#champ-image)
             - [Champ nombre entier](#champ-nombre-entier)
-            - [Champ référence](#champ-r%C3%A9f%C3%A9rence)
+            - [Champ référence](#champreference)
             - [Champ de texte](#champ-de-texte)
             - [Champ URL](#champ-url)
-        - [Création d'un champ](#cr%C3%A9ation-dun-champ)
-            - [Options d'affichage des champs dans la liste des fiches](#options-daffichage-des-champs-dans-la-liste-des-fiches)
-    - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajout-et-%C3%A9dition-de-contenu-conditionnel-ou-sous-fiche)
-        - [Création d'une sous-fiche](#cr%C3%A9ation-dune-sous-fiche)
-        - [Édition d'une sous-fiche](#%C3%A9dition-dune-sous-fiche)
+        - [Création d'un champ](#creationchamp)
+            - [Options d'affichage des champs dans la liste des fiches](#optionsaffichage)
+    - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajoutedition)
+        - [Création d'une sous-fiche](#creationsousfiche)
+        - [Édition d'une sous-fiche](#editionsousfiche)
         - [Ajout d'un Ensemble de choix](#ajout-dun-ensemble-de-choix)
-    - [Affichage de contenus personnalisés et styles d'affichages](#affichage-de-contenus-personnalis%C3%A9s-et-styles-daffichages)
+    - [Affichage de contenus personnalisés et styles d'affichages](#affichagecontenuperso)
         - [Ajout d'une page](#ajout-dune-page)
-        - [Édition d'une page](#%C3%A9dition-dune-page)
-            - [Édition d'un conteneur Item List](#%C3%A9dition-dun-conteneur-item-list)
-            - [Édition d'un conteneur de cartes géographique Map Container](#%C3%A9dition-dun-conteneur-de-cartes-g%C3%A9ographique-map-container)
-            - [Édition d'un conteneur HTML](#%C3%A9dition-dun-conteneur-html)
-            - [Édition d’un conteneur Markdown](#%C3%A9dition-dun-conteneur-markdown)
-            - [Édition d'un conteneur Contact](#%C3%A9dition-dun-conteneur-contact)
+        - [Édition d'une page](#editionpage)
+            - [Édition d'un conteneur Item List](#editionconteneurlist)
+            - [Édition d'un conteneur de cartes géographique Map Container](#editionconteneurgeo)
+            - [Édition d'un conteneur HTML](#editionhtml)
+            - [Édition d’un conteneur Markdown](#editionmarkdown)
+            - [Édition d'un conteneur Contact](#editioncontact)
         - [Organisation des conteneurs](#organisation-des-conteneurs)
     - [Organisation de la barre de menus](#organisation-de-la-barre-de-menus)
-- [Gestion de la consultation et de l'édition des données du catalogue](#gestion-de-la-consultation-et-de-l%C3%A9dition-des-donn%C3%A9es-du-catalogue)
-    - [Consultation du catalogue : gestion des membres du catalogue](#consultation-du-catalogue--gestion-des-membres-du-catalogue)
-        - [Attribution du statut de membre](#attribution-du-statut-de-membre)
-            - [Individuellement](#individuellement)
-            - [Groupe de membres](#groupe-de-membres)
-        - [Visibilité des champs](#visibilit%C3%A9-des-champs)
-        - [Limiter les champs affichés dans les listes de fiches](#limiter-les-champs-affich%C3%A9s-dans-les-listes-de-fiches)
-    - [Édition des données du catalogue : gestion des éditeurs](#%C3%A9dition-des-donn%C3%A9es-du-catalogue--gestion-des-%C3%A9diteurs)
-        - [Attribution du statut d'éditeur](#attribution-du-statut-d%C3%A9diteur)
-            - [Individuellement](#individuellement)
-            - [Groupe d'éditeurs](#groupe-d%C3%A9diteurs)
-        - [Affichage des champs en mode édition](#affichage-des-champs-en-mode-%C3%A9dition)
-- [Exemple de réalisation d'un catalogue](#exemple-de-r%C3%A9alisation-dun-catalogue)
+    - [Gestion de la consultation et de l'édition des données du catalogue](#gestion)
+        - [Les différents statuts](#statuts)
+            - [Attribution des statuts](#attribution)
+- [Exemple de réalisation d'un catalogue](#exemple)
     - [Conceptualisation](#conceptualisation)
-        - [Types de fiches et liens](#types-de-fiches-et-liens)
-    - [Ajout des types de fiches et création de champs](#ajout-des-types-de-fiches-et-cr%C3%A9ation-de-champs)
-        - [Références à d'autres champs](#r%C3%A9f%C3%A9rences-%C3%A0-dautres-champs)
+    - [Ajout des types de fiches et création de champs](#types-de-fiches-champs)
 
 <!-- /TOC -->
 
@@ -67,7 +52,7 @@ Cette section décrit la première étape. Pour l'ajout des données consulter l
 
 ## Conceptualisation
 
-La démarche de conceptualisation d'un catalogue est une partie importante de la réalisation d'un catalogue : en effet ces réflexions préliminaires ont pour but d'élaborer la structure conceptuelle et logique du catalogue. Effectuer cette étape réflexive en amont facilite ensuite la réalisation concrète du catalogue au sein de Catima. Catima permet non seulement de réaliser un catalogue préalablement conceptualisé en détail, mais aussi d'adopter une démarche plus libre en essayant d'ajouter petit à petit des éléments de structures puis, en ajoutant quelques données représentatives, de tester la conceptualisation et vérifier la cohérence de l'ensemble.
+La démarche de conceptualisation d'un catalogue est une partie importante de la réalisation d'un catalogue : en effet ces réflexions préliminaires ont pour but d'élaborer la structure conceptuelle et logique du catalogue. Effectuer cette étape réflexive en amont facilite ensuite la réalisation concrète du catalogue au sein de CATIMA. CATIMA permet non seulement de réaliser un catalogue préalablement conceptualisé en détail, mais aussi d'adopter une démarche plus libre en essayant d'ajouter petit à petit des éléments de structures puis, en ajoutant quelques données représentatives, de tester la conceptualisation et vérifier la cohérence de l'ensemble.
 
 Pour une conceptualisation efficace il est promordial de comprendre la différence entre les **données** et leur **conceptualisation**. La conceptualisation consiste ainsi en une étape de regroupement des objets que l'on souhaite décrire. 
 
@@ -87,9 +72,6 @@ Les éléments du concept "film" peuvent ainsi être représentés dans un table
 
 Les étapes suivantes permettent d'effectuer une conceptualisation efficace : exploration, hiérarchisation et liens
 
-## Exploration
-
-L'étape de listage consiste à lister librement tout élément pertinent à figurer dans le catalogue et à ce stade sans souci d'organisation. Dans cet exemple, il s'agit de lister par exemple une vingtaine de films qui auraient leur place dans ce catalogue.
 <a id="hierarchisationetstructure"></a>
 ## Hiérarchisation et Structure
 
@@ -107,7 +89,7 @@ Dans cette étape il s'agit d'évaluer les liens que peuvent avoir les concepts 
 
 > Par exemple : Les concepts "Film" et "Réalisateur" sont liés entre eux par le fait qu'un Film a un (ou plusieurs) Réalisateur(s).
 
-Ces liens seront concrétisés dans Catima par des **"Références"**, au sein du concept le plus précis vers le concept le plus large et englobant (selon le catalogue). Cela permet d'afficher une liste des films correspondant à un réalisateur.
+Ces liens seront concrétisés dans CATIMA par des **"Références"**, au sein du concept le plus précis vers le concept le plus large et englobant (selon le catalogue). Cela permet d'afficher une liste des films correspondant à un réalisateur.
 
 > Dans notre exemple de catalogue de film, dans le concept "Réalisateur" il sera fait une référence aux Films réalisés par ce Réalisateur.
 <a id="creationtypefiche"></a>
@@ -115,7 +97,7 @@ Ces liens seront concrétisés dans Catima par des **"Références"**, au sein d
 
 Un catalogue permet de stocker des données (texte, images, dates, etc...) structurées sous la forme de types de fiches. Les types de fiches représentent des entités conceptuelles (p.ex le concept "livre") possédant des caractéristiques définies (p.ex "auteur", "année de publication").
 
-Dans Catima les concepts sont appelés "**Types de fiches**" et leurs caractéristiques des **Champs**.
+Dans CATIMA les concepts sont appelés "**Types de fiches**" et leurs caractéristiques des **Champs**.
 
 Pour accéder à la section de configuration ("Setup"), cliquer sur "Admin" dans la barre horizontale supérieure, puis choisir "Catalog Setup" dans le menu déroulant. Une interface résumant les éventuels objets existants s'affiche.
 
@@ -141,7 +123,7 @@ Une fois le type de fiche créé, ses éléments (nom, pluriel, slug) sont résu
 
 Une fois le type de fiche créé, il s'agit d'y ajouter les champs souhaités. 
 
-> NB : Les **champs** à créer dans Catima correspondent aux caractéristiques des concepts issus de l'étape de "Conceptualisation"
+> NB : Les **champs** à créer dans CATIMA correspondent aux caractéristiques des concepts issus de l'étape de "Conceptualisation"
 
 Pour ajouter un champ, cliquer sur la liste déroulant "*+ Ajouter…*" (*Add*) qui révèle les différents choix de champs possibles.
 
@@ -151,26 +133,29 @@ Pour ajouter un champ, cliquer sur la liste déroulant "*+ Ajouter…*" (*Add*) 
 
 ### Types de champs 
 
-Afin que le catalogue soit rempli par les éditeurs avec des données au bon format (p.ex nombre, date, image), il s'agit de créer des champs adaptés. Voici les types de champs disponibles dans Catima : 
+Afin que le catalogue soit rempli par les éditeurs avec des données au bon format (p.ex nombre, date, image), il s'agit de créer des champs adaptés. Voici les types de champs disponibles dans CATIMA : 
 
+<a id="champbool"></a>
 #### Champ booléen (oui/non)
 
 Ce champ permet le choix entre deux valeurs "oui" ou "non" uniquement.
 
 #### Champ ensemble de choix
 
-Ce champ permet de proposer une liste de choix hiérarchique entre plusieurs valeurs. En cliquant sur *Ensemble de choix > Éditer* depuis la page de *Set up*, on peut visualiser la hiérarchie d'un ensemble de choix. Chaque élément peut être déplacé avec le bouton à 4 flèches à gauche de chaque choix. Si un élément est lié à une sous-fiche, le nom de celle-ci apparaît à droite de l'élément.
+Ce champ permet de proposer une liste de choix hiérarchique entre plusieurs valeurs. En cliquant sur *Ensemble de choix > Éditer* depuis la page de *Set up*, on peut visualiser la hiérarchie d'un ensemble de choix. Chaque élément peut être déplacé plus haut ou plus bas dans la hérarchie avec le bouton à 4 flèches à gauche de chaque choix. Si un élément est lié à une sous-fiche, le nom de celle-ci apparaît à droite de l'élément, en bleu.
 
 ![](assets/categories/hierarchy.png)
 
-Pour éditer le nom d'un choix ou lui assigner une sous-fiche, cliquer sur le bouton *"Éditer"* sur sa droite. 
+Pour éditer le nom d'un choix ou lui assigner une sous-fiche, cliquer sur le bouton *"Éditer"* ![Edit button](assets/buttons/edit_btn.png) sur sa droite. 
 
-L'organisation hiérarchique permet de lier les éléments entre eux. Il n'y a pas de limite quand au nombre de sous-éléments: un choix peut avoir un ou plusieurs sous-choix, qui eux mêmes peut avoir un ou plusieurs sous-choix, etc. Un choix ayant un ou plusieurs sous-choix se comporte de la même manière qu'un choix n'en ayant aucun; tous les choix peuvent être sélectionné dans une fiche et être liés à une sous-fiche indépendamment de leur niveau hérarchique.
+L'organisation hiérarchique permet de lier les éléments entre eux: chaque choix peut avoir des sous-choix. Il n'y a pas de limite quand au nombre de sous-choix: un choix peut avoir un ou plusieurs sous-choix, qui eux mêmes peut avoir un ou plusieurs sous-choix, etc. Un choix ayant un ou plusieurs sous-choix se comporte de la même manière qu'un choix n'en ayant aucun; tous les choix peuvent être sélectionné dans une fiche et être liés à une sous-fiche indépendamment de leur niveau hérarchique.
 
+<a id="champdecimal"></a>
 #### Champ décimal
 
 Ce champ permet d'entrer des nombres au format décimal ("nombres à virgule").
 
+<a id="champredaction"></a>
 #### Champ rédacteur
 
 Ce champ permet d'afficher automatiquement l'éditeur de la fiche, ou la dernière personne à l'avoir mise à jour. 
@@ -185,6 +170,7 @@ Ce champ permet d'entrer une adresse e-mail.
 
 Ce champ permet d'ajouter des fichiers, avec d'éventuelles restrictions d'extension (par exemple uniquement .pdf ou .doc)
 
+<a id="champgeo"></a>
 #### Champ géographique
 
 Ce champ permet d'entrer une localisation géographique soit en entrant manuellement les valeurs de latitude et longitude soit en pointant la localisation sur une carte.
@@ -207,9 +193,23 @@ Ce champ permet d'entrer des nombres entiers.
 
 > L'option **"Numéro de série automatique"** permet l'attribution automatique d'une valeur numérique pour le champ "nombre entier" en question. Cela permet par exemple de créer des identifiants numériques automatiquement. La numérotation automatique concerne les _nouvelles_ fiches et commence par la plus haute valeur numérique existante pour ce champ et lui additionne "1". Si aucune valeur numérique n'existe à l'activation de cette option, alors la numérotation débute par le nombre "1".
 
+<a id="champreference"></a>
 #### Champ référence
 
-Ce champ permet de créer une référence à un autre type de fiche.
+Ce champ permet de créer une référence à un autre type de fiche.  
+
+**Exemple:**  
+Pour lier les *Bâtiments* aux *Universités*, créer un champ référence dans la fiche bâtiments. Lors de la saisie des données d'un bâtiment, il faudra donc choisir une université à laquelle il est lié. 
+
+Lors de la consultation des fiches, l'université référencée apparaît de la même manière que les autres champs dans la fiche du bâtiment. 
+
+![Fiche annexe Mouline](assets/setup/reference_mouline.png)
+
+Les fiches *Bâtiments* qui font référence à une univeristé sont listé en bas de la fiche Université en question. Ci-dessous la fiche de l'université de Lausanne avec liste des fiches *Bâtiments* qui lui font référence:
+
+![Fiche université de Lausanne - références](assets/setup/fiche_uni_reference.png)
+
+> Si plusieurs types de fiches font référence à une autre fiche -comme ici *Bâtiments* et *Bibliothèques* ont les deux un champ référence à la fiche *Universités*, les fiches qui lui font référence sont listées par type de fiche. 
 
 #### Champ de texte
 
@@ -230,24 +230,29 @@ Qui s'affichent ainsi dans le site du catalogue :
 #### Champ URL
 
 Ce champ permet d'entrer des adresses URL.
+
 <a id="creationchamp"></a>
 ### Création d'un champ 
 
 Bien que chaque champ impose son format de données spécifiques (nombres, dates, images, etc...), une partie des informations à remplir est commune : 
 
 
-|              | Définition                 | Exemple                           | Remarques                                                                                                                  |
-|--------------|----------------------------|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Nom          | Nom donné au nouveau champ | *Année de naissance de l'acteur*  | En cas de support de plusieurs langues, indiquer également les traductions du nom                                          |
-| Nom(pluriel) | La forme plurielle du nom  | *Années de naissance des acteurs* | En cas de support de plusieurs langues, indiquer également les traductions des formes plurielles                           |
-| Slug         | Forme simplifiée du nom    | *birthdates_actors*               | Doit être unique, n'être composé que de lettres (non accentuées), nombres et traits d'unions. Ils sont souvent en anglais. |
+| | Definition | Exemple | Remarques |
+| ---------- | ---------- |---------- | ---------- |
+| Nom | Nom donné au nouveau champ | *Année de naissance de l'acteur*  | En cas de support de plusieurs langues, indiquer également les traductions du nom |
+| Nom(pluriel) | La forme plurielle du nom  | *Années de naissance des acteurs* | En cas de support de plusieurs langues, indiquer également les traductions des formes plurielles |
+| Slug | Forme simplifiée du nom | *birthdates_actors* | Doit être unique, n'être composé que de lettres (non accentuées), nombres et traits d'unions. Ils sont souvent en anglais. |
 
+<a id="optionsaffichage"></a>
 #### Options d'affichage des champs dans la liste des fiches
 
-|                                               | Définition                                                                                                                           | Exemple | Remarques                                                                                                                                                                                                                              |
-|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Utiliser comme champ primaire**             | (Facultatif/Utilisateurs Avancés) Le champ designé comme primaire est celui qui permet d'identifier de manière unique les données.   | -       | Par défaut le champ primaire est un champ caché et correspond à un nombre (qui augmente à chaque ajout de données). Cette option ne peut être activée que pour un champ à la fois (la dernière activation est celle qui est appliquée). Activer cette option bloque l'accès à l'option "texte formaté". |
-| **Inclure le champ dans la liste des fiches** | Cette option permet d'activer/désactiver l'affichage de ce champ dans le tableau des données (section "Data") pour aérer l'affichage | -       | Particulièrement utile pour les champs contenant de grands textes                                                                                          
+| | Definition | Remarques |
+| ---------- | ---------- |---------- |
+| **Utiliser comme champ primaire**             | Le champ designé comme primaire est celui qui permet d'identifier de manière unique les données. | Par défaut le champ primaire est un champ caché et correspond à un nombre (qui augmente à chaque ajout de données). Cette option ne peut être activée que pour un champ à la fois (la dernière activation est celle qui est appliquée). Activer cette option bloque l'accès à l'option "texte formaté". |
+| **Inclure le champ dans la liste des fiches en mode édition (Data** | Activer/désactiver l'affichage de ce champ dans le tableau des données (section "Data") pour aérer l'affichage | Particulièrement utile pour les champs contenant de grands textes |
+| **Inclure le champ dans la liste des fiches en mode consultation** | Activer/désactiver l'affichage du champ lors de la consultation des données sous forme de liste par l'utilisateur final | Si l'affichage des fiches se fait sous forme de *Grid* cette option ne sera pas prise en compte. |
+| **Restreindre le champ au personnel du catalogue** | Cache ce champ pour les users et members.| Uniquement visible pour les éditeurs, super-éditeurs, reviewers et adminisatrateurs. |                                                                               
+
 <a id="ajoutedition"></a>
 ## Ajout et édition de contenu conditionnel ou sous-fiche
 
@@ -261,6 +266,7 @@ Pour permettre l'enregistrement de données de manière conditionnelle, il est n
 
 > Il n'est pas possible de créer une sous-fiche à partir d'une autre condition qu'un ensemble de choix dans la fiche principale. 
 
+<a id="creationsousfiche"></a>
 ### 1. Création d'une sous-fiche 
 
 > La notion de sous-fiche étant liée à celle de type de fiche, se référer si besoin à la section "Type de fiche".
@@ -271,7 +277,7 @@ Pour ajouter une **Sous-fiche** , dans la barre de gauche, en bas de la rubrique
 
 Une fois choisi un nom pour la sous-fiche, il est possible d'enregistrer et retourner au menu *Setup* avec "*Créer sous-fiche'*" ou d'enregistrer et ajouter une nouvelle sous-fiche avec "*Create and add another*".
  
-
+<a id="editionsousfiche"></a>
 ### Édition d'une sous-fiche
 
 Une fois la/les sous-fiches créée-s, il s'agit d'y ajouter les champs souhaités. 
@@ -284,7 +290,7 @@ La procédure est similaire à celle de l'édition d'une fiche et débute par un
 
 > Il est possible de créer plusieurs sous-fiches avec différentes conditions. 
 
-### 2. Ajout d'un Ensemble de choix  
+### 2. Ajout d'un ensemble de choix  
 
 Un ensemble de choix est une liste d'éléments prédéfinis permettant de remplir un champ.
 
@@ -309,7 +315,7 @@ Dans cet exemple, la **sous-fiche** *extra-data* s'affichera et permettra la sai
 <a id="affichagecontenuperso"></a>
 ## Affichage de contenus personnalisés et styles d'affichages 
 
-Par défaut, Catima génère un affichage par type de fiche en créant une page dédiée qui n'est pas modifiable.  
+Par défaut, CATIMA génère un affichage par type de fiche en créant une page dédiée qui n'est pas modifiable.  
 
 Ainsi pour changer le style d'affichage des contenus (grille d'images, grille de texte ou liste) ou pour changer les champs affichés, la création d'une nouvelle page est nécessaire. 
 
@@ -353,8 +359,9 @@ Quatre types de contenus sont possibles :
 -	**Markdown** : Ce langage permet l'affichage de textes, tableaux, et images avec une syntaxe simplifiée. 
 -	**Contact** : Ce container permet d'ajouter un formulaire de contact dans une page personnalisée. 
 
-Pour ajouter du contenu, cliquer sur "+Add" puis choisir le type de contenu souhaité. 
+Pour ajouter du contenu, cliquer sur "+Ajouter" puis choisir le type de contenu souhaité:
 
+<a id="editionconteneurlist"></a>
 #### Édition d'un conteneur Item List
 
 Ce type de *conteneur*, permet d'afficher (sur la page personnalisée) toutes les données enregistrées dans un type de fiche donné ainsi que de changer le style d'affichage des fiches (aperçu d'images, grille ou liste)
@@ -367,26 +374,20 @@ Choisir un "slug" (nom court à donner au conteneur). Celui-ci apparaitra dans l
 
 Le choix du style permet de changer l'affichage des fiches selon les styles suivants : 
 
-**Images (Thumb) :**
-
+- **Images (Thumb) :**
  ![](assets/pages/style-thumb.png)
-
- **Grille (Grid) :**
-
+ - **Grille (Grid) :**
  ![](assets/pages/style-grid.png)
 
-**Liste :**
-Avec image
-
- ![](assets/pages/style-list-img.png)
-
-Sans image
- ![](assets/pages/style-list-text.png)
+- **Liste :**
+    - Avec image:  
+    ![](assets/pages/style-list-img.png)
+    - Sans image:  
+    ![](assets/pages/style-list-text.png)
 
 Une fois le slug et l'item choisis, enregistrer et retourner au menu *Setup* avec "*Créer conteneur*".
 
-> NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler". Le contenu du champ d'édition sera perdu. 
-
+<a id="editionconteneurgeo"></a>
 #### Édition d'un conteneur de cartes géographique (Map Container)
 
 Ce type de conteneur permet de générer automatiquement une carte géographique affichant les données géographiques pour un type de fiches donné, comme [ceci](https://catima.unil.ch/catmanual2/fr/map-building) : 
@@ -396,6 +397,7 @@ Ce type de conteneur permet de générer automatiquement une carte géographique
 Pour créer ce conteneur, choisir "
 ![](assets/pages/map_container.png)
 
+<a id="editionhtml"></a>
 #### Édition d'un conteneur HTML
 
 Ce type de conteneur permet d'ajouter du code utilisé habituellement dans les **pages web**. 
@@ -429,12 +431,9 @@ L'édition de l'HTML se déroule dans la zone "HTML" et peut se faire de deux ma
 
 * Les utilisateurs avancés ont la possibilité d'insérer, écrire ou modifier du code HTML via le mode "Code View".
  
-> Quelque soit le mode choisi, il est possible d'afficher l'éditeur en mode **plein écran** via le bouton ![](assets/pages/fullscreen_button.png)
- 
-Une fois le contenu HTML ajouté, enregistrer et retourner au menu *Setup* avec "*Créer conteneur*".
+    > Une fois le contenu HTML ajouté, retourner en mode édition de texte avant d'enregistrer, sans quoi le contenu entré via "Code view" ne sera pas enregistré.
 
-> NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler". Le contenu du champ d'édition sera perdu.
-
+<a id="editionmarkdown"></a>
 #### Édition d’un conteneur Markdown
 
 Ce type de conteneur permet d'ajouter du texte simple ou des tableaux et des images viac une syntaxe simplifiée (Markdown).  
@@ -447,8 +446,7 @@ Choisir un "slug" (nom court à donner au conteneur). Il doit être unique et n'
 
 Une fois le contenu Markdown ajouté, enregistrer et retourner au menu *Setup* avec "*Créer conteneur*".
 
-> NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel). Le contenu du champ d'édition sera perdu.
-
+<a id="editioncontact"></a>
 #### Édition d'un conteneur Contact
 
 Ce type de conteneur permet d'ajouter un formulaire de contact à destination des visiteurs du catalogue. 
@@ -520,42 +518,49 @@ Une fois les champs remplis avec les données, il est possible d'enregistrer et 
 <a id="gestion"></a>
 # Gestion de la consultation et de l'édition des données du catalogue
 
-<a id="consultation"></a>
-## Consultation du catalogue : gestion des membres du catalogue
+Le site généré par CATIMA peut être visible publiquement, ou sa consultation restreinte à certaines personnes.
 
-Le site généré par Catima peut être visible publiquement, ou consultation restreinte à certaines personnes.
-
-Pour configurer ce paramètre, dans le mode "Setup", puis dans la section "Paramètres du catalogue" de la barre latérale gauche, cliquer sur "Général". 
+Pour configurer ce paramètre aller dans le mode "Setup", puis dans la section "Paramètres du catalogue" de la barre latérale de gauche, cliquer sur "Général". 
 
  ![](assets/setup/catalog_visibility.png)
 
 Dans la section "Options d'affichage", il est possible de changer la visibilité du catalogue avec les options suivantes : 
 
-* **"Ouvert à tous"** : le catalogue est consultable publiquement.
-* **"Ouvert aux membres"** : le catalogue est consultable uniquement par les membres du catalogue. *Voir plus loin pour l'attribution du statut de membre à un utilisateur.*
-* **"Ouvert au personnel"** : le catalogue est consultable uniquement par le personnel du catalogue (éditeurs de catalogue et administrateurs). *Voir "gestion des édition du catalogue pour l'attribution du statut d'éditeur à un utilisateur.*
+* **"Ouvert à tous"** : le catalogue est consultable publiquement, autant par des membres de CATIMA que par des personnes n'ayant pas de créé de compte
+* **"Ouvert aux membres"** : le catalogue est consultable uniquement par les membres du catalogue. 
+* **"Ouvert au personnel"** : le catalogue est consultable uniquement par le personnel du catalogue (éditeurs, super-éditeurs, reviewers et administrateurs). 
+*Voir ci-dessous pour l'attribution du statuts à un utilisateur.*
 
-### Attribution du statut de membre
+<a id="statuts"></a>
+## Les différents statuts
 
-L'attribution du statut de membre permet d'autoriser l'accès au site d'un catalogue restreint ("ouvert aux membres") à une (ou plusieurs) personne(s) disposant d'un compte Catima. 
+CATIMA propose différents statuts pouvant être attribué aux utilisateurs du catalogue; ces statuts définissent les actions possibles comme la consultation ou l'édition de fiches.  Les personnes sans compte CATIMA sont des visiteurs et doivent créer un compte pour pouvoir accéder aux autres statuts. 
 
-Cette attribution peut être effectuée individuellement (un utilisateur à la fois) ou en gérant un groupe de membres (p.ex une classe d'étudiants, une équipe de chercheurs) : 
+> Les statuts sont spécifiques à un cataglogue: il est possible d'être membre d'un catalogue et éditeur d'une autre.  
 
-#### Individuellement 
+Voici les différents rôles disponibles, ou chaque statut supérieur donne accès à toutes les fonctionnalités des statuts précédents, plus celles spécifiques à ce statut:  
 
-Dans le mode "Setup", dans la barre latérale gauche, cliquer sur "Utilisateurs et groupes". 
+- **User**: peut uniquement accéder aux catalogues publics et sauvegarder du contenu sur son profil.
+- **Member**: peut avoir accès aux catalogues restreints au publics si invité.
+- **Editor**: peut ajouter du contenu au catalogue, c'est-à-dire créer de nouvelles fiches, ainsi que modifier et supprimer les fiches qu'il a créées.
+- **Super-editor**: peut modifier toutes les fiches ainsi qu'ajouter de nouveaux choix dans les ensembles de choix. 
+- **Reviewer**: valide les fiches des *editors* et *super-editors* *(uniquement si la fonction validation est activée)*.
+- **Administrator**: a accès à toutes les options du catalogue, attribue les différents statuts.
 
-Choisir ensuite l'utilisateur-trice auquel changer le statut vis-à-vis de ce catalogue, puis cliquer sur le bouton "Éditer" ![](assets/buttons/edit_btn.png).
+<a id="attribution"></a>
+### Attribution de statuts 
+
+L'attribution de statuts est fait en accédant à l'onglet "Utilisateurs et groupes" à partir de la page "Set up". Il est possible de changer le statuts inidivuellement ou en groupe. 
+
+**Individuellement**  
+Rechercher l'utilisateur-trice et cliquer sur le bouton Éditer" ![](assets/buttons/edit_btn.png). Il est aussi possible d'inviter une nouvelle personne à participer au catalogue en cliquant sur "*+ Nouvel utilisateur*".
 
  ![](assets/setup/user_role.png)
 
-Choisir ensuite le statut "membre" pour autoriser la consultation d'un catalogue "ouvert aux membres". 
+Choisir ensuite la langue préférée et le statut de la personne avant de mettre à jour. L'utilisateur sera notifié par email des changements. 
 
-#### Groupe de membres
-
-Les groupes peuvent servir à donner différents niveaux d'accès à un certain groupe d'utilisateurs ou à ajouter un grand nombre de personnes en même temps. 
-
-Dans le mode "Setup", dans la barre latérale gauche, cliquer sur "Utilisateurs et groupes" puis sur "+ Nouveau groupe : 
+**En groupe**  
+Les groupes peuvent servir à donner différents niveaux d'accès à un certain groupe d'utilisateurs ou à ajouter un grand nombre de personnes en même temps. Après avoir cliqué sur "*+ Nouveau groupe*":
 
  ![](assets/setup/new_usergroup.png)
 
@@ -563,101 +568,18 @@ Dans le mode "Setup", dans la barre latérale gauche, cliquer sur "Utilisateurs 
 
   ![](assets/setup/new_usergroup11.png)
 
-Pour que Catima génére cet identifiant, enregistrer les modifications en cliquant sur "Créer groupe", puis retourner dans le groupe en cliquand sur l'icône "Editer" pour pouvoir le lire et le partager. 
+Pour que CATIMA génére cet identifiant, enregistrer les modifications en cliquant sur "Créer groupe", puis retourner dans le groupe en cliquand sur l'icône "Editer" pour pouvoir le lire et le partager. 
 
   ![](assets/setup/new_usergroup_mdp.png)
 
+> Pour accéder à un groupe via un identifiant secret, l'utilisateur se rend dans "Mes groupes" > colle l'identifiant du groupe dans le champ prévu à cet effet et clique sur "Rejoindre le groupe".
+
 Il est aussi possible : 
-* d'ajouter des membres au groupe (icône ![](assets/setup/usergroup_icon.png)) en entrant une ou plusieurs adresses email. Dans le cas d'ajout en masse d'utilisateurs avec cette méthode, attention à ce que les adresses email soient correctement formatées: une adresse pas ligne et pas de caractère spécial. Il est conseillé de faire les invitations par petits lots plutôt que de faire tout d'un coup. 
+* d'ajouter d'autres personnes au groupe (icône ![](assets/setup/usergroup_icon.png)) en entrant une ou plusieurs adresses email. Dans le cas d'ajout en masse d'utilisateurs avec cette méthode, attention à ce que les adresses email soient correctement formatées: une adresse pas ligne et pas de caractère spécial. Il est conseillé de faire les invitations par petits lots plutôt que de faire tout d'un coup. 
 * d'attribuer un même rôle à tous les membres du groupe(ici "Membre") : 
  ![](assets/setup/usergroup_member.png)
 
  > NB : Lorsque un utilisateur a un rôle attribué individuellement *et* un rôle attribué via un groupe, c'est le rôle le plus élevé qui s'applique.
-
-<a id="visichamps"></a>
-### Visibilité des champs 
-
-Il est possible d'avoir un catalogue visible publiquement mais de cacher certains champs au public, comme des informations uniquement utiles en interne au personnel du catalogue (p.ex un champ "Rédacteur" qui affiche l'auteur et la date des dernières modifications).
-
-Pour cela, il s'agit de se rendre dans le type de fiche où se trouve le champ, puis de cliquer sur le bouton "Action" et "Éditer le champ". 
-
-Pour restreindre la visibilité du champ au personnel du catalogue (éditeurs et administrateurs), cocher la case correspondante dans les options d'affichage : 
-
-![](assets/setup/restrict_field_vis.png)
-
-Un champ dont la consultation est restreinte au personnel s'accompagne d'une icône rouge de cadenas dans la configuration du type de fiche : 
-
-![](assets/setup/restricted_field.png)
-
-<a id="limiterchamps"></a>
-### Limiter les champs affichés dans les listes de fiches
-
-Par défaut les fiches affichées sous forme de listes affichent tous les champs textuels des fiches. 
-
-Pour désactiver l'affichage de la valeur d'un champ dans une liste de fiches, il s'agit, dans la partie "Setup", de cliquer sur le type de fiche, puis sur "Action" et "Editer" du champ correspondant. 
-
-Dans les "Options d'affichage", désactiver l'option "Inclure le champ dans la liste des fiches en mode consultation"
-
-![](assets/setup/exclude_field_from_listview.png)
-
-Le champ n'est maintenant plus affiché dans la liste des fiches.
-
-<a id="gestionediteurs"></a>
-## Édition des données du catalogue : gestion des éditeurs
-
-Pour pouvoir ajouter et modifier des données dans un catalogue, il est nécessaire d'avoir (au minimum) un statut dit d'"Éditeur". Les personnes disposant de ce statut dans un catalogue peuvent ajouter et modifier des données mais ne peuvent pas modifier la structure d'un catalogue (à savoir créer de nouveaux types de fiches, changer les champs ou créer/modifier des pages). Un "Éditeur" peut ajouter des données et modifier celles-ci, mais seul un "Super-Éditeur" peut modifier/supprimer des données créées par d'autres personnes.
-
-<a id="attributionstatuediteur"></a>
-### Attribution du statut d'éditeur
-
-L'attribution du statut d'éditeur permet d'autoriser l'ajout et modification des données d'un catalogue à une (ou plusieurs) personne(s) disposant d'un compte Catima. 
-
-Cette attribution peut être effectuée individuellement (un utilisateur à la fois) ou en gérant un groupe d'éditeurs (p.ex une classe d'étudiants, une équipe de chercheurs) : 
-
-#### Individuellement 
-
-Dans le mode "Setup", dans la barre latérale gauche, cliquer sur "Utilisateurs et groupes". 
-
-Une liste des utilisatrices et utlisateurs Catima s'affiche. Cette liste peut être parcourue : 
-
-Soit en utilisant les onglets en bas de page : ![](assets/setup/bottom_num_tab.png) 
-
-Soit en recherchant un utilisateur par son adresse e-mail : 
-
-![](assets/setup/user_list_search.png)
-
-Accéder ensuite à la page d'édition des droits de l'utilisateur en cliquant sur le bouton "Éditer" ![](assets/buttons/edit_btn.png) correspondant.
-
- ![](assets/setup/user_role.png)
-
-Choisir ensuite le statut "Éditeur" pour autoriser cet utilisateur à ajouter et modifier ses propres données. Choisir le statut "Super-Éditeur" pour autoriser cet utilisateur à ajouter et modifier toutes les données du catalogue.
-
-#### Groupe d'éditeurs
-
-Il est possible d'attribuer le statut d'éditeur à plusieurs personnens en même temps en utilisant les groupes. Dans le mode "Setup", dans la barre latérale gauche, cliquer sur "Utilisateurs et groupes" puis sélectionner un groupe ou en créer un nouveau. 
-
-> Pour ajouter plusieurs personnes en même temps lors de la création d'un groupe, voir comment rendre l'accès au groupe public grâce à une clé d'accès [ici](#groupe-de-membres)
-
-Il est possible : 
-* d'ajouter des éditeurs (ou super-éditeurs) au groupe (icône ![](assets/setup/usergroup_icon.png)) 
-* d'attribuer un même rôle à tous les membres du groupe(ici "Éditeur") : 
- ![](assets/setup/usergroup_member.png)
-
- > NB : Lorsque un utilisateur a un rôle attribué individuellement *et* un rôle attribué via un groupe, c'est le rôle le plus élevé qui s'applique.
-
-<a id="affichagemodeedition"></a>
-### Affichage des champs en mode édition
-
-Par défaut, en mode édition, tous les champs sont affichés dans la liste des fiches. Il est cependant possible de désactiver l'affichage d'un (ou plusieurs) champ(s). 
-
-Pour cela, dans la section "Setup", cliquer sur le type de fiches concerné puis sur le champ souhaité et enfin désactiver l'option "Inclure le champ dans la liste des fiches en mode édition (Data)"
-
- ![](assets/setup/exclude_field_from_edition_listview.png)
-
-
-Le champ en question ne s'affiche maintenant plus dans la liste des fiches du mode édition. 
-
-Il reste toujours visible et modifiable lors de l'édition d'une fiche.
 
 <a id="exemple"></a>
 # Exemple de réalisation d'un catalogue
@@ -718,7 +640,7 @@ Dans cet exemple, la réalisation d'un tableau permet de relever les concepts im
 
 ### Types de fiches et liens
 
-Les quatre concepts précédements relevés, "Université", "Bibliothèque", "Localité", "Bâtiment",  correspondent aux types de fiches qu'il faudra créer dans Catima.
+Les quatre concepts précédements relevés, "Université", "Bibliothèque", "Localité", "Bâtiment",  correspondent aux types de fiches qu'il faudra créer dans CATIMA.
 
 **Liens conceptuels entre les types de fiches :**
 
@@ -728,6 +650,7 @@ Les quatre concepts précédements relevés, "Université", "Bibliothèque", "Lo
 
 Cette structure permet d'afficher toutes les bibliothèques, ainsi que tous les bâtiments d'une université.
 
+<a id="types-de-fiches-champs"></a>
 ## Ajout des types de fiches et création de champs
 
 > Pour cette étape, se baser sur la section "Ajout d'un type de fiche". 
@@ -761,7 +684,7 @@ Une fois tous les champs d'un type de fiche créés, créer un nouveau type de f
 
 Lors de la conceptualisation, les concepts les plus "précis" comme par exemple "Bâtiment", font référence aux concepts dans lesquels ils sont compris, par exemple ici "Université". On attribue ainsi à chaque bâtiment une caractéristique d'appartenance à une université.
 
-Dans Catima sela se traduit par la création d'un champ "Référence" : 
+Dans CATIMA sela se traduit par la création d'un champ "Référence" : 
 
 > Dans notre exemple, il s'agira dans "Bâtiment" de faire une référence aux concepts d' "Université". 
 

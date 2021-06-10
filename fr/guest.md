@@ -1,12 +1,8 @@
 # Table des matières
 
-<!-- TOC -->
-
 - [Recherche](#recherche)
     - [Recherche simple](#recherche-simple)
     - [Recherche avancée](#rechercheavancee)
-
-<!-- /TOC -->
 
 # Recherche
 

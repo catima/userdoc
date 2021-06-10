@@ -1,7 +1,5 @@
 # Table des matières
 
-<!-- TOC -->
-
 - [Affichage, ajout et modification de données](#affichageajoutmod)
     - [Présentation](#presentation)
     - [Affichage des tableaux de données](#affichagetableaux)
@@ -16,22 +14,20 @@
         - [Types de fiches et liens](#types-de-fiches-et-liens)
         - [Ajout d'une fiche](#ajout-dune-fiche)
 
-<!-- /TOC -->
 <a id="affichageajoutmod"></a>
 # Affichage, ajout et modification de données 
+
+Une personne avec le statut d'éditeur peut ajouter de nouvelles données dans un catalogue CATIMA. Elle peut modifier les fiches qu'elle a créé mais pas celles créées pas d'autres personnes. 
 
 <a id="presentation"></a>
 ## Présentation
 
-La section "Data" permet l'ajout et la modification de données du catalogue. Pour y accéder, 
-cliquer sur "*Data*" dans la barre de menus noire (en haut du navigateur). 
-
-L'accueil de la section **Data** consiste en un affichage des différentes fiches existantes dans la barre latérale gauche. 
+La section "Data" permet l'ajout et la modification de données du catalogue. Pour y accéder, cliquer sur "*Admin*" dans la barre de menus (en haut du navigateur) puis sur le type de fiche à ajouter/modifier. L'accueil de cette section consiste en un affichage des différentes fiches existantes dans la barre latérale gauche. 
 
 <a id="affichagetableaux"></a>
 ## Affichage des tableaux de données
 
-Dans la section *Data* la barre latérale gauche permet d'accéder aux données par fiches. Une fois la fiche choisie, une liste des données existantes est présentée. 
+La barre latérale gauche permet d'accéder aux données par fiches. Une fois la fiche choisie, une liste des données existantes est présentée. 
 
 ![](assets/data/data_list.png)
 
@@ -42,28 +38,23 @@ Il est possible d'afficher toutes les données du catalogue contenant une chaîn
 
 ![](assets/data/data_list_search.png)
 
-> En cherchant "Europe", la recherche renvoit ici la seule fiche contenant le mot "Europe", en l'occurence dans le champ "Adresse". 
+> La recherche se fait sur tous les champs de la fiche. 
 
 <a id="ajoutdonnees"></a>
 ## Ajout de données
 
 Pour ajouter des données, sélectionner le type de fiche souhaité dans la barre latérale gauche. Les éventuelles données existantes s'affichent sous forme de tableau. Dans le cas contraire, une section vide apparaît en dessous du nom de la fiche.
 
-Une fois la fiche sélectionnée, cliquer sur le bouton  **Nouveau type de fiche "nom du type de fiche"**, fait s'ouvrir la page d'entrée manuelle des données, qui se présente sous la forme d'un formulaire.
+Cliquer sur le bouton  **Nouveau type de fiche "nom du type de fiche"**, fait s'ouvrir la page d'entrée manuelle des données, qui se présente sous la forme d'un formulaire.
 
 En remplissant les sections des objets avec des données, seules des données respectants les formats autorisés (définis dans la configuration) peuvent être entrées (p.ex données numériques, e-mail ou dates).
 
 Une fois les champs remplis avec les données, il est possible d'enregistrer et retourner au menu *Data* avec "*Créer fiche de type 'nom du type de fiche'*" ou d'enregistrer et ajouter de nouvelles données avec "*Create and add another*".
 
-> NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
-
 ![](assets/data/new_data_1.png)  
 ![](assets/data/new_data_2.png)  
 
-
-Une fois les champs remplis, enregistrer avec " *Enregistrer 'nom du type de fiche'* ". Un enregistrement n'est possible que si toutes les sections obligatoires ont été remplies. Dans le cas contraire un message d'erreur apparaît et invite à corriger ou remplir les champs.
-
-Une fois les données enregistrées, celles-ci apparaissent dans la section *Data* sous la forme d'un tableau de données. 
+Un enregistrement n'est possible que si toutes les sections obligatoires ont été remplies. Une fois les données enregistrées, celles-ci apparaissent dans la section *Data* sous la forme d'un tableau de données. 
 
 <a id="editionduplsup"></a>
 ## Édition, duplication et suppression de fiches
@@ -71,15 +62,11 @@ Une fois les données enregistrées, celles-ci apparaissent dans la section *Dat
 <a id="editionfiche"></a>
 ### Édition d'une fiche
 
-Pour choisir la fiche à éditer, sélectionner le type de fiche correspondant dans la barre latérale gauche. Les données existantes s'affichent sous forme d'un tableau. Pour modifier la fiche souhaitée, cliquer sur le bouton "Éditer" ![](assets/buttons/edit_btn.png) pour la fiche souhaitée :
+Pour choisir la fiche à éditer, sélectionner le type de fiche correspondant dans la barre latérale gauche. Pour modifier la fiche souhaitée, cliquer sur le bouton "Éditer" ![](assets/buttons/edit_btn.png) pour la fiche souhaitée :
 
 ![](assets/data/edit_data.png)  
 
-Pour la modification de chaque champ, la procédure et les remarques sont semblables à l'ajout de données (voir [Ajout de données](#ajout-de-données)).
-
-Une fois les modifications terminées, enregistrer avec " *Enregistrer 'nom du type de fiche'* ". Un enregistrement n'est possible que si toutes les sections obligatoires ont été remplies. Dans le cas contraire un message d'erreur apparaît et invite à corriger ou remplir les champs.
-
-Une fois les données enregistrées, celles-ci apparaissent dans la section *Data* sous la forme d'un tableau de données. 
+Pour la modification de chaque champ, la procédure et les remarques sont semblables à l'ajout de données (voir [Ajout de données](#ajoutdonnees)).
 
 ### Duplication d'une fiche
 
@@ -89,14 +76,9 @@ Pour choisir la fiche à dupliquer, sélectionner le type de fiche correspondant
 
 Cela ouvre la même page que pour l'ajout de données, avec les données de la fiche dupliquée, qu'il est possible de modifier.
 
-Une fois les champs modifiés, il est possible d'enregistrer et retourner au menu *Data* avec "*Créer fiche de type 'nom du type de fiche'*" ou d'enregistrer et ajouter de nouvelles données avec "*Create and add another*".
-
 ### Suppression d'une fiche
 
-
 Pour choisir la fiche à supprimer définitivement, sélectionner le type de fiche correspondant dans la barre latérale gauche. Les données existantes s'affichent sous forme d'un tableau. Pour supprimer une fiche, cliquer sur le bouton "Supprimer" ![](assets/buttons/delete_btn.png) pour la fiche souhaitée.
-
-Un avertissement apparaît, vous permettant de confirmer ou revenir sur votre choix.
 
 <a id="exemplecat"></a>
 # Exemple d'ajout de données dans un catalogue
