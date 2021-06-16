@@ -14,7 +14,7 @@ Une fiche peut avoir différents statuts: brouillon, attente de validation, vali
 
 # Processus de travail
 
-Lors de la création et sauvegarde d'une fiche, celle-ci a le statut de ***brouillon***. Cela indique que la fiche va encore subir des modifications ou n'est simplement pas prêtre à être publiée. 
+Lors de la création et sauvegarde d'une fiche, celle-ci a le statut de ***Brouillon***. Cela indique que la fiche va encore subir des modifications ou n'est simplement pas prêtre à être publiée. 
 ![Fiche brouillon](assets/review/reviewer-brouillon.png)
 
 Une fois les modifications terminée, le statut ***Attente de validation*** que la fiche est prête à être validée et publiée. 

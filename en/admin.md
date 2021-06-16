@@ -1,4 +1,4 @@
-An administrator has full access to the catalog and can add data as well as modify pages and the catalog's structure. 
+An administrator has full access to the catalog; they can add and modify any content as well as modify pages and the catalog's structure. 
 
 # Table of contents
 
@@ -9,24 +9,23 @@ An administrator has full access to the catalog and can add data as well as modi
 		- [Links and references](#links-and-references)
 	- [Add new item type](#add-new-item-type)
 		- [New field](#new-field)
-		- [Field types](#field-type)
-			- [Boolean field] (#boolean-field)
-			- [Choice set field] (#choice-set-field)
-			- [Date time field] (#date-time-field)
-			- [Decimal field] (#decimal-field)
-			- [Editor field] (#editor-field)
-			- [Email field] (#email-field)
-			- [File field] (#file-field)
-			- [Geographic field] (#geographic-field)
-			- [Image field] (#image-field)
-			- [Integer field] (#integer-field)
-			- [Reference field] (#reference-field)
-			- [Text field] (#text-field)
-			- [URL field] (#url-field)
-			- [Xref field] (#xref-field)
-		- [Display options] (#display-options)
+		- [Field types](#field-types)
+			- [Boolean field](#boolean-field)
+			- [Choice set field](#choice-set-field)
+			- [Date time field](#date-time-field)
+			- [Decimal field](#decimal-field)
+			- [Editor field](#editor-field)
+			- [Email field](#email-field)
+			- [File field](#file-field)
+			- [Geographic field](#geographic-field)
+			- [Image field](#image-field)
+			- [Integer field](#integer-field)
+			- [Reference field](#reference-field)
+			- [Text field](#text-field)
+			- [URL field](#url-field)
+		- [Display options](#display-options)
 	- [Categories and conditional content](#categories-and-conditional-content)
-	- [Create and edit custom pages] (#create-and-edit-custom-pages)
+	- [Create and edit custom pages](#create-and-edit-custom-pages)
 - [Manage access to data](#manage-access-to-data)
 - [Example](#Example)
 
@@ -73,11 +72,11 @@ First, acess the set up page by clicking on **Admin** > **Catalog set up** in th
 
 If some items have already been created, they will be displayed on the top-left of the page. Click on the "*New item type*" button to create a new one. 
 
-![New item type](assets/a-item.png)
+![New item type](assets/setup/a-item.png)
 
 The *New item type* form opens:
 
-![New item type form](assets/a-new_item_type.png)
+![New item type form](assets/data/a-new_item_type.png)
 
 **Name**: add the item name. If different languages are selected, all fields must be completed.  
 **Slug**: the slug is a short name that will appear in the website's address (URL). It must contain only letters (without accent), numbers and hyphens and must be short.  
@@ -97,50 +96,50 @@ To add a new field to an item:
 1. On the *set up* page, select the item in the item list
 2. Click on the **Add** button on the top right of the page
 
-![Add new field](assets/a-add_field.png)
+![Add new field](assets/setup/a-add_field.png)
 
 ### Field types
 
 Different kind of fields are available: 
 
-#####Boolean field
+##### Boolean field
 Only for YES and NO values. 
 
-#####Choice set field
+##### Choice set field
 This field accepts a choice list with many values. This fiels can accept a unique choice from a list, or multiple choices from a list. The **choice sets** found on the **Choices* page that is accessible from the left sidebar, are hierarchical. Each choice can have children which can also have their own children. This allows the user to structure the choice sets. Each choice can be selected, event those that have children.
 
-#####Date time field
+##### Date time field
 
-#####Decimal field  
+##### Decimal field  
 For decimal numbers
 
-#####Editor field  
+##### Editor field  
 Automatically displays the item's editor or the last person to modify it. 
 
-#####Email field  
+##### Email field  
 Creates a text field that only accept an email.
 
-#####File field  
+##### File field  
 To add external file to the item with the possibility to restrict the accepted files' type (*e.g. only .pdf and .png*). 
 
-#####Geographic field  
+##### Geographic field  
 The geographic field is used to set an item's location. It is set by drag and drop'ing a point on the map or with coordinates. A single items can have multiple locations: add a location by clicking on the pin below the zoom controls on the map.
 
-![](assets/a-map-field.png)
+![](assets/setup/a-map-field.png)
 
-#####Image field  
+##### Image field  
 Accepts images with optional caption.
 
-#####Integer field  
+##### Integer field  
 For integer numbers. Can also be userd to create an automatic incrementation - for exemple for id number. 
 
-#####Reference field  
+##### Reference field  
 Creates a relationship to another item. 
 
-#####Text field
+##### Text field
 Can be used to add short (*e.g. name or title*) or long (*e.g. description*) text. It is possible to choose between a formatted text editor or a simple text editor. 
 
-#####URL field  
+##### URL field  
 This field accepts URL adress and will create a link. 
 
 ### Create a new field
@@ -173,62 +172,62 @@ On the *Set up* page click on **Category > New category** in the left sidebar. I
 The process of creating a new category is the same as creating a new item: chose a name and slug then add new fields.
 
 ### 2. Link it to a choice
-In the left sidebar, select **Choices** and edit ![](assets/e-icon_edit.png) the choice set containing the choice that you want linked to the conditional content. In this example we will add conditional content to the canton *Other* in the first choice set.
+In the left sidebar, select **Choices** and edit ![](assets/buttons/edit_btn.png) the choice set containing the choice that you want linked to the conditional content. In this example we will add conditional content to the canton *Other* in the first choice set.
 
-![](assets/a-choice-set-page.png)
+![](assets/choice/a-choice-set-page.png)
 
 Edit the choice and the last option is to add conditional content; select the category that should be displayed when that choice is selected:
 
-![](assets/a-add-category.png)
+![](assets/categories/a-add-category.png)
 
 After updating the choice, the conditional content is displayed on the right side of the choice when editing the choice set:
 
-![](assets/a-conditional-choiceset.png)
+![](assets/categories/a-conditional-choiceset.png)
 
 ## Create and edit custom pages
 CATIMA has a default mode to display the item to the final user. This mode can not be modified, but we can create **pages** where the layout can be modified as needed.
 
 To add a new page, click on **Pages** in the left sidebar while in *Set up* mode and click on *New page* then add a slug and title and confirm by clicking on **Create page** - or **Create and add another** if you need to add more.
 
-![](assets/a-new-page.png)
+![](assets/pages/a-new-page.png)
 
-Then to modify the page, click on edit ![](assets/e-icon_edit.png) and the *Edit page* page will open. The slug and title can be modified and content can be added in the *Containers* section. 
+Then to modify the page, click on edit ![](assets/buttons/edit_btn.png) and the *Edit page* page will open. The slug and title can be modified and content can be added in the *Containers* section. 
 
 > If the catalog is multilingual, there will be one container per language on the *Edit page* page. Adding an elemenet to one container doesn't automatically add it to the other ones. 
 
-![](assets/a-edit-page.png)
+![](assets/pages/a-edit-page.png)
 
 Different kinds of content can be added to a page: 
 
 - **Contact**: the contact container adds a form that allows users to send an email to an adress that can be specified. 
 - **HTML**: this will allow to add text, images, URL, video through a text editor. This container also allows advanced users to add pure HTML content by clicking on code view.
-![](assets/a-html-editor.png) 
+![](assets/pages/a-html-editor.png) 
 - **Item List**: will display a list or grid of a selected item type. (e.g. to show a list of *Universities*). Different styles are availables:
 	- Grid style
-	![](assets/a-grid-style.png)
+	![](assets/pages/a-grid-style.png)
 	- List style
-	![](assets/a-list-style.png)
+	![](assets/pages/a-list-style.png)
 	- Thumb style
-	![](assets/a-thumb-style.png)
+	![](assets/pages/a-thumb-style.png)
 - **Map**: the map container is used to display a geographic map of a item type that has a geographic location attribute (e.g. location of all swiss universities with geographic field). It has different options: 
 	-  The item to be displayed on the map can be selected vie the **Item type** field. It will be possible to choose items that have a location attribute - items that don't have location attribute will not appear in the list:
-![](assets/a-map-item.png)
+![](assets/setup/a-map-item.png)
 	- The map background can be chosen with the additional layers field. If more than one is selected, the user will be able to switch between them.
-![](assets/a-map-background.png)
+![](assets/setup/a-map-background.png)
 	- The map height can be changed by changing the default height (400px) in the **Map height** attribute.
-![](assets/a-map-height.png)
+![](assets/setup/a-map-height.png)
 - **Markdown**: this container can be used to add text, images and tables with the markdown syntax. 
 - **Search**: displays the result of a previously saved search. To save the result of a search, search the CATIMA catalog while connected and click on *Save search*. The saved search are available to be displayed on pages. 
 
 To modify the elements' order on the page, move the blocks up or down with the arrows on the left:
 
-![](assets/a-move-container.png)
+![](assets/pages/a-move-container.png)
 
 ## Navigation bar
 
 The navigation bar is customizable: it is possible to add or remove items as well as change the order. To do this acces the **Menu items** settings in the left sidebar while in *Set up* mode. The current items displayed in the navigation bar are listed with their rank. An *Item type*, *Custom page* or *External URL* can be in the navigation bar. 
 
-![](assets/a-menu-items.png)
+![](assets/menus/a-menu-items.png)
 
 Settings can be adjusted by editing an existing item or creating a new one. Apart from the usual slug (short name that must only have small cap letters without accents, numbers or hypens) and title, the options are:
 
@@ -239,26 +238,17 @@ Settings can be adjusted by editing an existing item or creating a new one. Apar
 
 > It is not possible for a child item to have other children.
 
-# Manage access to data and data edition 
+# Catalog access and visibility
 
-CATIMA defines different levels of users: 
+The CATIMA website can be accessible to all visitors or restricted to members/staff only. To configure who can see it, access the **General** setting on the left sidebar: 
 
-**Users** can view the public areas of the non-restricted catalogs.  
-**Members** are users that can view the public areas of a restricted catalog.  
-**Editors** are members that can create and edit their own items in the catalog.  
-**Super-editors** are editors that can create and edit all the items in the catalog.  
-
-## Catalog access and visibility
-
-The CATIMA website can be accessible to all visitors or restricted to members only. To configure who can see it, access the **General** setting on the left sidebar: 
-
-![](assets/a-general-setting.png)
+![](assets/setup/a-general-setting.png)
 
 Choose who can see your website by changing the **Catalog visibility** option:
 
 - **Open to everyone**: the website is visible to anybody with the URL.
 - **Open to members**: can be accessed by the website's members only. *To learn how to attribute member status, see Member status further down this page.*
-- **Open to catalog staff**: the catalog is only accessible my *editors* and *administrators*. 
+- **Open to catalog staff**: the catalog is only accessible my *editors*, *super-editors*, *reviewers* and *administrators*. 
 
 Other options are accessible from this page:
 
@@ -266,20 +256,38 @@ Other options are accessible from this page:
 - **Advertize**: by checking it, your catalogue will be accessible from public CATIMA lists.
 - **Custom root page**: change the landing page 
 
+## Manage access to data and data edition 
+
+
+CATIMA has different staus that can be attributed to users; those status define what a user can or can't do within a given catalog. Guests are users that don't have a CATIMA account and must create one to have access to other status.
+
+> Status are catalog specific and a user can have different status in different catalogs. 
+
+**Users** can view the public areas of the non-restricted catalogs.  
+**Members** are users that can view the public areas of a restricted catalog.  
+**Editors** are members that can create and edit their own items in the catalog.  
+**Super-editors** are editors that can create and edit all the items in the catalog and add new choice in choice sets.
+**Reviewers** validate itesm created by **editors** and **super-editors**.
+**Administrator** have access to all the catalog's options. 
+
 ## Change status
 
-Members are catalog visitors that have a CATIMA account. By restricting the catalog's access to members only, one must be connected and authorized to see the website. To edit who can access it, got to **Users & groups** in th left sidebar.  
+It is possible to invite people to see a private catalog or colaborate by changing their status. They will get an email with the invite. To edit a user's status, got to **Users & groups** in the left sidebar on the "Set up" page.
 
-It is possible to add catalog members different ways:
+Status can be changed in two ways: 
 
-1. One person at a time: search for the user and click on edit ![](assets/e-icon_edit.png). After selcting a prefered language, their status can be updated. 
+1. One person at a time: search for the user and click on edit ![](assets/buttons/edit_btn.png). After selcting a prefered language, their status can be updated. 
 2. Use the *Group* setting: add a new group, give it a name and description.
 
-![](assets/a-new-group.png) 
+![](assets/groups/a-new-group.png) 
 
-If the "Public" checkbox is not checked, only members with an email invitation are part of the group. To add members to the group with email adresses, click on the ![](assets/a-icon-group.png) icon. 
+If the "Public" checkbox is not checked, only members with an email invitation are part of the group. To add members to the group with email adresses, click on the ![](assets/groups/usergroup_icon.png) icon. 
 
 If the "Public" checkbox is checked, CATIMA will create a password that can be shared with anybody. This pasword is the key to be part of the group. 
 > To generate the password, check the "Public" checkbox, update the group and edit it again.
 
-Users can also be give editor or super-editor status the same way.
+Users can also be given editor or super-editor status the same way.
+
+> Users won't be able to see the catalog if its visibiliy is set on *Open to members* or *Open to catalog staff.
+> Members won't be able to see the catalog if its visibility is set on *Open to catalog staff*.
+> To change the catalog's visibility, go to *Set up > General > Catalog visibility*

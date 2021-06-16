@@ -39,7 +39,7 @@ It is possible to use advanced search with boolean operators:
 
 > To display the list of all buildings from the University of Lausanne and from the University of Geneva:
 
-![Operator OR](assets/g-search_OR.png)
+![Operator OR](assets/g-search_or.png)
 
 > To display the list of the buildings from the University of Lausanne, except the ones that have "*nef*" in their name:
 
