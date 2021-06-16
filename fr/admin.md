@@ -42,8 +42,6 @@
     - [Conceptualisation](#conceptualisation)
     - [Ajout des types de fiches et création de champs](#types-de-fiches-champs)
 
-<!-- /TOC -->
-
 # Configuration d'un catalogue 
 
 Pour pouvoir réaliser un catalogue contenant des données, deux étapes sont à effectuer : la première est la réalisation de la structure du catalogue (configuration). La deuxième consiste en l'entrée des données. 
