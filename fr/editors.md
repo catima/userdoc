@@ -1,19 +1,20 @@
 # Table des matières
 
 - [Affichage, ajout et modification de données](#affichageajoutmod)
-    - [Présentation](#presentation)
-    - [Affichage des tableaux de données](#affichagetableaux)
-    - [Rechercher un contenu](#rechercher-un-contenu)
-    - [Ajout de données](#ajoutdonnees)
-    - [Statuts des fiches](#statuts-des-fiches)
-    - [Édition, duplication et suppression de fiches](#editionduplsup)
-        - [Édition d'une fiche](#editionfiche)
-        - [Duplication d'une fiche](#duplication-dune-fiche)
-        - [Suppression d'une fiche](#suppression-dune-fiche)
+   - [Présentation](#presentation)
+   - [Affichage des tableaux de données](#affichagetableaux)
+   - [Rechercher un contenu](#rechercher-un-contenu)
+   - [Ajout de données](#ajoutdonnees)
+      - [Données d'intégration de média](#donneesintegration) 
+   - [Statuts des fiches](#statuts-des-fiches)
+   - [Édition, duplication et suppression de fiches](#editionduplsup)
+      - [Édition d'une fiche](#editionfiche)
+      - [Duplication d'une fiche](#duplication-dune-fiche)
+      - [Suppression d'une fiche](#suppression-dune-fiche)
 - [Exemple d'ajout de données dans un catalogue](#exemplecat)
-    - [Concept](#concept)
-        - [Types de fiches et liens](#types-de-fiches-et-liens)
-        - [Ajout d'une fiche](#ajout-dune-fiche)
+   - [Concept](#concept)
+      - [Types de fiches et liens](#types-de-fiches-et-liens)
+      - [Ajout d'une fiche](#ajout-dune-fiche)
 
 <a id="affichageajoutmod"></a>
 # Affichage, ajout et modification de données 
@@ -56,6 +57,19 @@ Une fois les champs remplis avec les données, il est possible d'enregistrer et 
 ![](assets/data/new_data_2.png)  
 
 Un enregistrement n'est possible que si toutes les sections obligatoires ont été remplies. Une fois les données enregistrées, celles-ci apparaissent dans la section *Data* sous la forme d'un tableau de données. 
+
+<a id="donneesintegration"></a>
+### Données d'intégration de média
+
+Les champs *intégration de média par iframe* et *intégration de média par url* demandent un format spécifique.
+
+- **Intégration de média par iframe**: Récupérer la *balise iframe* depuis la page internet où se trouve le média en cliquant sur le bouton ou l'option **Partager (ou Share)** > **Embed**. Copier le texte et le coller dans le champ d'intégration de la fiche.
+Pour ajouter plus d'un média, il est possible d'insérer plusieurs balises iframe l'une après l'autre.
+![](assets/setup/integration_iframe.png)  
+
+- **Intégration de média par URL**: copier l'adresse complète de la page depuis la barre du navigateur.
+![](assets/setup/integration_url.png)  
+ 
 
 # Statuts des fiches
 

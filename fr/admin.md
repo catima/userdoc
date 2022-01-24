@@ -1,6 +1,6 @@
 # Table des matières
 
-- [Configuration d'un catalogue](#configuration-dun-catalogue)
+- [Configuration d'un catalogue](#catconfiguration)
     - [Conceptualisation](#conceptualisation)
     - [Hiérarchisation et Structure](#hierarchisationetstructure)
     - [Liens et Références](#liensetref)
@@ -8,10 +8,11 @@
         - [Configuration d'un type de fiche](#configuration-dun-type-de-fiche)
         - [Types de champs](#types-de-champs)
             - [Champ booléen oui/non](#champbool)
-            - [Champ ensemble de choix](#champ-ensemble-de-choix)
+            - [Champ ensemble de choix](#champensemble)
             - [Champ décimal](#champdecimal)
             - [Champ rédacteur](#champredaction)
-            - [Champ e-mail](#champ-e-mail)
+            - [Champ e-mail](#champemail)
+            - [Champ d'intégration (embed)](#champintegration)
             - [Champ fichier](#champ-fichier)
             - [Champ géographique](#champgeo)
             - [Champ image](#champ-image)
@@ -24,24 +25,28 @@
     - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajoutedition)
         - [Création d'une sous-fiche](#creationsousfiche)
         - [Édition d'une sous-fiche](#editionsousfiche)
-        - [Ajout d'un Ensemble de choix](#ajout-dun-ensemble-de-choix)
+        - [Ajout d'un ensemble de choix](#ajoutensemblechoix)
     - [Affichage de contenus personnalisés et styles d'affichages](#affichagecontenuperso)
-        - [Ajout d'une page](#ajout-dune-page)
+        - [Ajout d'une page](#ajoutpage)
         - [Édition d'une page](#editionpage)
             - [Édition d'un conteneur Item List](#editionconteneurlist)
             - [Édition d'un conteneur de cartes géographique Map Container](#editionconteneurgeo)
             - [Édition d'un conteneur HTML](#editionhtml)
             - [Édition d’un conteneur Markdown](#editionmarkdown)
             - [Édition d'un conteneur Contact](#editioncontact)
-        - [Organisation des conteneurs](#organisation-des-conteneurs)
+        - [Intégration de média](#integrationmediapage)
+        - [Organisation des conteneurs](#organisationconteneurs)
     - [Organisation de la barre de menus](#organisation-de-la-barre-de-menus)
+    - [Integration de média](#integrationmedia)
     - [Gestion de la consultation et de l'édition des données du catalogue](#gestion)
         - [Les différents statuts](#statuts)
             - [Attribution des statuts](#attribution)
+    - [Statistiques du catalogue](#statistiques)
 - [Exemple de réalisation d'un catalogue](#exemple)
     - [Conceptualisation](#conceptualisation)
     - [Ajout des types de fiches et création de champs](#types-de-fiches-champs)
 
+<a id="catconfiguration"></a>
 # Configuration d'un catalogue 
 
 Pour pouvoir réaliser un catalogue contenant des données, deux étapes sont à effectuer : la première est la réalisation de la structure du catalogue (configuration). La deuxième consiste en l'entrée des données. 
@@ -90,6 +95,7 @@ Dans cette étape il s'agit d'évaluer les liens que peuvent avoir les concepts 
 Ces liens seront concrétisés dans CATIMA par des **"Références"**, au sein du concept le plus précis vers le concept le plus large et englobant (selon le catalogue). Cela permet d'afficher une liste des films correspondant à un réalisateur.
 
 > Dans notre exemple de catalogue de film, dans le concept "Réalisateur" il sera fait une référence aux Films réalisés par ce Réalisateur.
+
 <a id="creationtypefiche"></a>
 ## Création d'un type de fiche 
 
@@ -138,6 +144,7 @@ Afin que le catalogue soit rempli par les éditeurs avec des données au bon for
 
 Ce champ permet le choix entre deux valeurs "oui" ou "non" uniquement.
 
+<a id="champensemble"></a>
 #### Champ ensemble de choix
 
 Ce champ permet de proposer une liste de choix hiérarchique entre plusieurs valeurs. En cliquant sur *Ensemble de choix > Éditer* depuis la page de *Set up*, on peut visualiser la hiérarchie d'un ensemble de choix. Chaque élément peut être déplacé plus haut ou plus bas dans la hérarchie avec le bouton à 4 flèches à gauche de chaque choix. Si un élément est lié à une sous-fiche, le nom de celle-ci apparaît à droite de l'élément, en bleu.
@@ -147,6 +154,11 @@ Ce champ permet de proposer une liste de choix hiérarchique entre plusieurs val
 Pour éditer le nom d'un choix ou lui assigner une sous-fiche, cliquer sur le bouton *"Éditer"* ![Edit button](assets/buttons/edit_btn.png) sur sa droite. 
 
 L'organisation hiérarchique permet de lier les éléments entre eux: chaque choix peut avoir des sous-choix. Il n'y a pas de limite quand au nombre de sous-choix: un choix peut avoir un ou plusieurs sous-choix, qui eux mêmes peut avoir un ou plusieurs sous-choix, etc. Un choix ayant un ou plusieurs sous-choix se comporte de la même manière qu'un choix n'en ayant aucun; tous les choix peuvent être sélectionné dans une fiche et être liés à une sous-fiche indépendamment de leur niveau hérarchique.
+
+Si un ensemble de choix créé n'est pas ou plus utilisé, on peut soit:
+
+- le **désactiver**: l'ensemble de choix est toujours présent en mode "Set Up" mais n'est pas utilisable en mode "Data" ni visible dans le catalogue. On peut le réactiver si besoin. 
+- le **supprimer**: l'ensemble de choix est supprimé et il n'est plus possible de le récupérer par la suite.
 
 <a id="champdecimal"></a>
 #### Champ décimal
@@ -160,9 +172,49 @@ Ce champ permet d'afficher automatiquement l'éditeur de la fiche, ou la derniè
 
 > **Attention** : ce champ affiche automatiquement l'adresse e-mail du/des éditeurs du champ, c'est pourquoi il peut être préférable de restreindre la visibilité de ce champ en interne en activant l'option "Restreindre le champ au personnel" lors de l'ajout du champ.
 
+<a id="champemail"></a>
 #### Champ e-mail
 
 Ce champ permet d'entrer une adresse e-mail.
+
+<a id="champintegration"></a>
+#### Champ d'intégration (embed) 
+
+*Pour l'intégration de média à une page, voir la rubrique [Intégration de média (embed) dans une page](#integrationmediapage).*
+
+Ce champ permet l'intégration de médias tels que des capsules interactives, des modèles 3D ou des vidéos à une fiche à partir de sites web indépendants de Catima.  Pour que l'intégration soit possible, il faut que le site sur lequel le média se trouve soit explicitement autorisé par Catima. Il doit faire partie de la **liste des domaines autorisés**.  
+
+> Exemple: afin de pouvoir publier une vidéo youtube dans une fiche, il faut que le domaine **youtube** soit autorisé par Catima - ce qui est le cas.
+
+##### Liste non-exhaustive des domaines autorisés:
+
+- Youtube (*.youtube.com)
+- Viméo (*.vimeo.com)
+
+Pour connaître la liste exhaustive des domaines autorisés (qui peut évoluer en fonction des besoins), se référer aux personnes responsables. 
+
+##### Utilisation du champ d'intégration (embed) 
+
+En plus des informations standards telles que nom, slug et options d'affichage, il faut aussi spécifier les *domaines supplémentaires* et le *format voulu*. 
+
+![](assets/setup/integration.png)
+
+1. **Dommaines supplémentaires**: choisir dans cette liste les domaines autorisés pour ce champ. *Par exemple: si le champ est uniquement pour des vidéos provenant de youtube, sélectionner Youtube. Mais si le champ est pour des vidéos provenant de youtube et/ou viméo, sélectionner Youtube et Viméo.*
+
+2. **Format voulu:** il est possible d'intégrer le média de 2 façons différentes. 
+	- *Par iframe*: cette option est pour partager un média uniquement. Les autres éléments présents sur la page ne sont pas pris en compte. Dans le cas de **Youtube**, iframe permet de partager uniquement la vidéo sans la barre de recherche youtube, le titre, les commentaires et tous les autres éléments autour. Cette option permet généralement un intégration plus propre. Un *iframe* est un simple bout de texte. 
+		- Pour intégrer un média à une fiche avec iframe en mode édition (Data): récupérer la *balise iframe* depuis la page internet où se trouve le média en cliquant sur le bouton ou l'option **Partager (ou Share)** > **Embed**. Le texte en question commence par `<iframe` et se termine par `</iframe>`. Le et le coller dans le champ d'intégration de la fiche:
+![](assets/setup/integration_iframe.png)
+Résultat lors de la consultation de la fiche:
+![](assets/setup/integration_youtube.png)
+Pour ajouter plus d'un média, il est possible d'insérer plusieurs balises iframe l'une après l'autre:
+![](assets/setup/integration_mult.png)
+*Note: Pour des raisons de sécurité, le champ intégration supprime toutes autres balises et garde uniquement la balise iframe.*
+
+	- *Par URL*: cette option permet de partager une page d'un site internet avec la mise en page, les titres et autre éléments. Ceci est surtout pratique quand un site de propose pas d'option de partage par iframe. La largeur et la hauteur sont personnalisables - par défaut 900px et 400px. 
+		> Attention: il n'est pas toujours possible d'intégrer des pages de cette manière car il faut que le site en question accepte d'être intégré par URL. Cette décision est indépendante de Catima. Par exemple, Youtube et Viméo ne permettent pas de le faire. 	
+
+Lors de la création d'un **champ d'intégration (embed)**, il est vivement conseillé de créer un titre explicite spécifiant le type d'intégration tel que *Intégration par iframe* et *Intégration par url* ou d'ajouter un texte d'aide à la saisie afin que les personnes ajoutant du contenu au catalogue sachent quel contenu ajouter.
 
 #### Champ fichier
 
@@ -288,6 +340,7 @@ La procédure est similaire à celle de l'édition d'une fiche et débute par un
 
 > Il est possible de créer plusieurs sous-fiches avec différentes conditions. 
 
+<a id="ajoutensemblechoix"></a>
 ### 2. Ajout d'un ensemble de choix  
 
 Un ensemble de choix est une liste d'éléments prédéfinis permettant de remplir un champ.
@@ -321,6 +374,7 @@ Ainsi pour changer le style d'affichage des contenus (grille d'images, grille de
 
 Les pages peuvent contenir du texte mis en forme, du contenu (champs)issu des types de fiches, une carte géographique mais également (pour les utilisateurs avancés) du code HTML et Markdown.
 
+<a id="ajoutpage"></a>
 ### Ajout d'une page
 
 Pour ajouter une page, sélectionner "Pages" dans la barre de gauche. La liste des pages existantes apparaît :
@@ -337,7 +391,6 @@ Choisir le(s) titre(s) de la page dans les différentes langues du catalogue ain
 
 Une fois les champs remplis , il est possible d'enregistrer et retourner au menu *Setup* avec "Créer une page" ou d'enregistrer et ajouter de nouvelles données avec "*Créer et ajouter une autre*".
 
-> NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
 <a id="editionpage"></a>
 ### Édition d'une page 
 
@@ -353,7 +406,7 @@ Quatre types de contenus sont possibles :
 
 -	**Map** : Permet de générer une carte géographique affichant les données de localisation pour un type de fiche spécifique.
 -	**ItemList** : Ce type de contenu permet d’afficher une liste des contenus d’un type de fiches, notamment en changeant le style d'affichage (aperçu d'images, grille ou liste)
--	**HTML** : Permet d'afficher un éditeur visuel afin d'écrire du texte mis en forme, des liens (URL) et d'ajouter des images ou des vidéos sans connaissance préalable. Un éditeur de code permet également aux utlisateurs avancés d'entrer directement du code HTML.
+-	**HTML** : Afficher un éditeur visuel afin d'écrire du texte mis en forme, des liens (URL) et d'ajouter des images ou des vidéos sans connaissance préalable. Un éditeur de code permet également aux utlisateurs avancés d'entrer directement du code HTML. C'est ce container qui permet l'intégration de médias.
 -	**Markdown** : Ce langage permet l'affichage de textes, tableaux, et images avec une syntaxe simplifiée. 
 -	**Contact** : Ce container permet d'ajouter un formulaire de contact dans une page personnalisée. 
 
@@ -378,10 +431,10 @@ Le choix du style permet de changer l'affichage des fiches selon les styles suiv
  ![](assets/pages/style-grid.png)
 
 - **Liste :**
-    - Avec image:  
-    ![](assets/pages/style-list-img.png)
-    - Sans image:  
-    ![](assets/pages/style-list-text.png)
+ - Avec image:  
+ ![](assets/pages/style-list-img.png)
+ - Sans image:  
+ ![](assets/pages/style-list-text.png)
 
 Une fois le slug et l'item choisis, enregistrer et retourner au menu *Setup* avec "*Créer conteneur*".
 
@@ -424,17 +477,16 @@ L'édition de l'HTML se déroule dans la zone "HTML" et peut se faire de deux ma
 
  ![](assets/pages/html_container_tools.png)
 
-
 **2. Édition de code en activant l'affichage "Code View"**
 
 * Les utilisateurs avancés ont la possibilité d'insérer, écrire ou modifier du code HTML via le mode "Code View".
  
-    > Une fois le contenu HTML ajouté, retourner en mode édition de texte avant d'enregistrer, sans quoi le contenu entré via "Code view" ne sera pas enregistré.
+    > Une fois le contenu HTML ajouté, retourner en mode édition de texte avant d'enregistrer, sans quoi le contenu entré via "Code view" ne sera pas enregistré !
 
 <a id="editionmarkdown"></a>
 #### Édition d’un conteneur Markdown
 
-Ce type de conteneur permet d'ajouter du texte simple ou des tableaux et des images viac une syntaxe simplifiée (Markdown).  
+Ce type de conteneur permet d'ajouter du texte simple ou des tableaux et des images via une syntaxe simplifiée (Markdown).  
 
  ![](assets/pages/markdown_container.png)
 
@@ -459,8 +511,32 @@ Puis indiquer l'adresse e-mail où seront transmis les messages écrits par les 
 
 Une fois le conteneur Contact ajouté, enregistrer et retourner au menu *Setup* avec "*Créer conteneur*".
 
-> NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel). Le contenu du champ d'édition sera perdu.
+<a id="integrationmediapage"></a>
+### Intégration de média (embed) dans une page
 
+Il est possible d'intégrer des médias tels que des vidéos, des capsules interactives ou des modèles 3D dans une page avec le conteneur HTML. Contrairement au [champ d'intégration (embed)](#champintegration) des fiches, l'intégration dans une page permet un affichage sur toute la page et une meilleure visualisation du contenu. 
+
+Pour que l'intégration soit possible, il faut que le site sur lequel le média se trouve soit explicitement autorisé par Catima. Il doit faire partie de la **liste des domaines autorisés**.  
+
+> Exemple: afin de pouvoir publier une vidéo youtube dans une fiche, il faut que le domaine **youtube** soit autorisé par Catima - ce qui est le cas.
+
+##### Liste non-exhaustive des domaines autorisés:
+
+- Youtube (*.youtube.com)
+- Viméo (*.vimeo.com)
+
+Pour connaître la liste exhaustive des domaines autorisés (qui peut évoluer en fonction des besoins), se référer aux personnes responsables. 
+
+1. Créer ou éditer un conteneur HTML et entrer en mode "Code View".
+ 	![](assets/pages/code_view.png)
+2. Récupérer la *balise iframe* depuis la page internet où se trouve le média en cliquant sur le bouton ou l'option **Partager (ou Share)** > **Embed**. Coller et copier le texte dans le conteneur HTML. Le texte en question commence par `<iframe` et se termine par `</iframe>`. 
+   ![](assets/pages/code_view_iframe.png)
+3. Retourner en mode d'édition normal pour visualiser le résultat. Cette étape est nécessaire pour sauvegarder le travail. 
+4. Sauvegarder avec *"Créer conteneur"* ou *"Enregistrer conteneur"*.
+
+> Il est possible de personnaliser l'affichage du conteneur en ajoutant du code HTML en plus de la balise iframe.  
+
+<a id="organisationconteneurs"></a>
 ### Organisation des conteneurs
 
 L'ordre des conteneurs ajoutés peut être modifié en tout temps en cliquant sur les flèches bleues **haut** ou **bas** à côté du numéro indiquant leur position (indiqués en rouge ci-dessous)
@@ -510,8 +586,6 @@ Les champs suivants dépendent ensuite du type de menu choisi :
 > NB : Il n'est pas possible d'avoir des sous-menus à l'intérieur d'un sous-menu (menus imbriqués)
 
 Une fois les champs remplis avec les données, il est possible d'enregistrer et retourner au menu *Setup* avec "*Créer le menu*" ou d'enregistrer et ajouter de nouvelles données avec "*Create and add another*".
-
-> NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
 
 <a id="gestion"></a>
 # Gestion de la consultation et de l'édition des données du catalogue
@@ -578,6 +652,29 @@ Il est aussi possible :
  ![](assets/setup/usergroup_member.png)
 
  > NB : Lorsque un utilisateur a un rôle attribué individuellement *et* un rôle attribué via un groupe, c'est le rôle le plus élevé qui s'applique.
+
+<a id="statistiques"></a>
+## Statistiques
+
+Visualiser le nombre de fois que le catalogue a été vu à partir de la rubrique **Statistiques** depuis la page "Set Up". Le graphique montre deux choses: 
+
+- le nombre de fois que le catalogue a été consulté - en bleu
+- le nombre de fois que les pages "Data" et "Set Up" ont été visualisées - en rouge
+
+![](assets/stat/chart.png)
+
+<a id="api"></a>
+## API
+
+Catima offre la possiblité de récupérer les informations en format JSON d'une manière dynamique avec une API. *Il faut que cette option soit activée par un administrateur système. Si elle ne l'est pas, prendre contact avec les responsables.*
+
+### Qui a accès au données
+
+Pour pouvoir utiliser les données avec l'API, il faut soit avoir un compte Catima et accès au catalogue dont on souhaite récupérer les données (méthode mot-de-passe), soit avoir une clé API de ce catalogue (méthode clé API). Les données accessibles avec la méthode d'authentification par mot-de-passe sont les mêmes que celles auxquelles l'utilisateur a accès alors que la méthode clé API permet un accès complet au catalogue. **Ne jamais partager une clé API publiquement.**.
+
+Créer ou supprimer une clé API depuis la rubrique **API** en mode "Set Up". Plusieurs clés peuvent exister en même temps. 
+
+L'ensemble des requêtes disponibles sont consultables dans la documentation: [](https://catimalb.unil.ch/api-docs/index.html)
 
 <a id="exemple"></a>
 # Exemple de réalisation d'un catalogue
