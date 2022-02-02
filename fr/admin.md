@@ -34,6 +34,7 @@
             - [Édition d'un conteneur HTML](#editionhtml)
             - [Édition d’un conteneur Markdown](#editionmarkdown)
             - [Édition d'un conteneur Contact](#editioncontact)
+            - [Édition d'un conteneur Search](#editionsearch)
         - [Intégration de média](#integrationmediapage)
         - [Organisation des conteneurs](#organisationconteneurs)
     - [Organisation de la barre de menus](#organisation-de-la-barre-de-menus)
@@ -84,7 +85,8 @@ L'étape de structure permet de mettre de l'ordre dans les concepts précédemme
 
 Est considéré comme un **concept** un élément pour lequel des descriptions supplémentaires sont pertinentes pour le but du catalogue. Un élément descriptif ne devient donc pas un concept *dans l'absolu*, mais il l'est *selon le but du catalogue*.
 
-> Dans notre exemple, l'élément **Film** est un concept car le but du catalogue est d'effectuer un inventaire de films. Si il est également d'intérêt pour le catalogue de décrire les **Réalisateurs** de films (naissance, nationalité, biographie...), alors cet élément devient également un concept auquel le film fera référence. Si en revanche, évoquer le nom du/des réalisateurs du film suffit, alors l'élément "réalisateur" reste une caractéristique de "film" mais n'est pas un concept.
+Dans notre exemple, l'élément **Film** est un concept car le but du catalogue est d'effectuer un inventaire de films. Si il est également d'intérêt pour le catalogue de décrire les **Réalisateurs** de films (naissance, nationalité, biographie...), alors cet élément devient également un concept auquel le film fera référence. Si en revanche, évoquer le nom du/des réalisateurs du film suffit, alors l'élément "réalisateur" reste une caractéristique de "film" mais n'est pas un concept.
+
 <a id="liensetref"></a>
 ## Liens et Références
 
@@ -94,7 +96,7 @@ Dans cette étape il s'agit d'évaluer les liens que peuvent avoir les concepts 
 
 Ces liens seront concrétisés dans CATIMA par des **"Références"**, au sein du concept le plus précis vers le concept le plus large et englobant (selon le catalogue). Cela permet d'afficher une liste des films correspondant à un réalisateur.
 
-> Dans notre exemple de catalogue de film, dans le concept "Réalisateur" il sera fait une référence aux Films réalisés par ce Réalisateur.
+Dans notre exemple de catalogue de film, dans le concept "Réalisateur" il sera fait une référence aux Films réalisés par ce Réalisateur.
 
 <a id="creationtypefiche"></a>
 ## Création d'un type de fiche 
@@ -402,13 +404,14 @@ Les champs remplis lors de l'ajout de la page (slug et titres) sont facilement m
 
 L'édition du contenu de la page se fait dans la section "**Containers**". 
 
-Quatre types de contenus sont possibles :
+Plusieurs types de contenus sont possibles :
 
 -	**Map** : Permet de générer une carte géographique affichant les données de localisation pour un type de fiche spécifique.
 -	**ItemList** : Ce type de contenu permet d’afficher une liste des contenus d’un type de fiches, notamment en changeant le style d'affichage (aperçu d'images, grille ou liste)
 -	**HTML** : Afficher un éditeur visuel afin d'écrire du texte mis en forme, des liens (URL) et d'ajouter des images ou des vidéos sans connaissance préalable. Un éditeur de code permet également aux utlisateurs avancés d'entrer directement du code HTML. C'est ce container qui permet l'intégration de médias.
 -	**Markdown** : Ce langage permet l'affichage de textes, tableaux, et images avec une syntaxe simplifiée. 
--	**Contact** : Ce container permet d'ajouter un formulaire de contact dans une page personnalisée. 
+-	**Contact** : Ce container permet d'ajouter un formulaire de contact dans une page personnalisée.
+-	**Search** : Comme le conteneur ItemList, le Search permet d'afficher une liste de fiches prédéterminées selon une recherche sauvegardée.
 
 Pour ajouter du contenu, cliquer sur "+Ajouter" puis choisir le type de contenu souhaité:
 
@@ -423,6 +426,7 @@ Choisir un "slug" (nom court à donner au conteneur). Celui-ci apparaitra dans l
 
 > Exemple de slug : "liste-oeuvres", "work-list", "img-gallery"
 
+<a id="liste"></a>
 Le choix du style permet de changer l'affichage des fiches selon les styles suivants : 
 
 - **Images (Thumb) :**
@@ -510,6 +514,33 @@ Choisir un "slug" (nom court à donner au conteneur). Il doit être unique et n'
 Puis indiquer l'adresse e-mail où seront transmis les messages écrits par les visiteurs du site.
 
 Une fois le conteneur Contact ajouté, enregistrer et retourner au menu *Setup* avec "*Créer conteneur*".
+
+<a id="editionsearch"></a>
+### Edition d'un conteneur Search
+
+ ![](assets/pages/search_cont.png)
+
+Ce conteneur affiche une liste de fiches selon un critère déterminé par une recherche préalablement sauvegardée. Cela peut être une recherche simple ou une recherche avancée. 
+
+### Recherche simple 
+
+ ![](assets/search/recherche_simple.png)
+ 
+Depuis la page d'accueil, entrer un mot-clé dans la barre de recherche et cliquer sur "Chercher".
+
+ ![](assets/search/recherche_avancee.png)
+ 
+Les paramètres de recherche avancée permettent des recherches plus précises sur un type de fiche déterminé, sur certains champs uniquement ou sur un ensemble de champs. L'image ci-dessus montre la recherche des tous les bâtiments ayant été construits avant 2000. 
+
+Dans les deux cas, il faut sauvegarder la recherche afin de pouvoir l'afficher dans une page: ![](assets/search/sauv_recherche.png)
+
+On trouve toutes les recherches sauvegardée dans le profil d'utilisateur. Cliquer sur l'adresse email en haut à droite (il faut avoir un compte Catima et être connecté), puis "Mes recherches." Par défaut, les recherches sont nommées selon la date et l'heure de la sauvegarder mais il est possible de les renommer afin de les retrouver plus facilement. 
+
+![](assets/search/rename_search.png)
+
+Lors de la création ou de l'édition d'un conteneur **Search** dans une page, la liste des recherches sauvegardées pour ce catalogue apparaît. 
+
+Le choix du style permet de changer l'affichage des fiches. Se référer à [la section ItemList ci-dessus](#liste) pour voir les différents styles disponibles. 
 
 <a id="integrationmediapage"></a>
 ### Intégration de média (embed) dans une page
@@ -674,7 +705,7 @@ Pour pouvoir utiliser les données avec l'API, il faut soit avoir un compte Cati
 
 Créer ou supprimer une clé API depuis la rubrique **API** en mode "Set Up". Plusieurs clés peuvent exister en même temps. 
 
-L'ensemble des requêtes disponibles sont consultables dans la documentation: [](https://catimalb.unil.ch/api-docs/index.html)
+L'ensemble des requêtes disponibles sont consultables [dans la documentation](https://catimalb.unil.ch/api-docs/index.html).
 
 <a id="exemple"></a>
 # Exemple de réalisation d'un catalogue
