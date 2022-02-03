@@ -154,6 +154,8 @@ Creates a text field that only accept an email.
 
 ### Embed field
 
+**For media integration in a page's container, see [Embed media in a page](#embed-media-in-a-container)*
+
 This field allows media integration such as interactive capsules, 3D models or videos to an item from websites that are independent from Catima. For the integration to be possible, the site where the media is located must be explicitly authorized explicitly by Catima. It has to be part of the **authorized domains**' list.
 
 > e.g. to add a youtube video to an item, the domain **youtube.com** has to be authorized by Catima - which it is.
@@ -210,6 +212,15 @@ For integer numbers. Can also be userd to create an automatic incrementation - f
 #### Reference field  
 
 Creates a relationship to another item. 
+
+**E.g.** Create a reference field named *"University"* in the building item to link it to a university. This makes it so when creating a new building, it is possible to link it to a university. 
+
+![](assets/data/ref_building.png)
+
+This field also appears on the university item, at the bottom with a list of all buildings that are linked to it. If different items have a reference field to it, it is sorted by item type. 
+
+![](assets/data/ref_uni.png)
+
 
 #### Text field
 
@@ -353,6 +364,30 @@ To save a search, click on *"Save search"*. It is now in the user's profile. To 
 
 ![](assets/search/my_searches.png)
 
+### Embed media in a container
+
+The HTML container allows users to integrate medias such as videos, infographics and more to pages. Unlike the [embed field](#embed-field), this method allows the content to be displayed full width on the page. 
+
+For the integration to be possible, the site where the media is located must be explicitly authorized explicitly by Catima. It has to be part of the authorized domains‘ list.
+
+e.g. to add a youtube video to an item, the domain youtube.com has to be authorized by Catima - which it is.
+Non-exhaustive list of authorized domains:
+
+Youtube (*.youtube.com)
+Viméo (*.vimeo.com)
+To know the exhaustive list of authorized domains contact the persons in charge of the project.
+
+1. Create a new or edit a HTML container and enter "Code View" mode. 
+![](assets/pages/code_view.png)
+
+2. Get the iframe tag from the internet page where the media currently is by clicking on Share > Embed. The iframe tag is some text that starts with `<iframe` and ends with `</iframe>`. Copy and paste it intot the HTML editor.
+![](assets/pages/code_view_iframe.png)
+
+3. Click on the "Code View" button again to go back to standard editing more. 
+4. Save your work by clicking on the save or create container button. 
+
+> It is critical to switch back to normal editing more before saving or creating the container with the button at the bottom of the page, otherwise the changes will be lost !
+
 ### Tip
 
 To modify the elements' order on the page, move the blocks up or down with the arrows on the left:
@@ -372,6 +407,15 @@ Settings can be adjusted by editing an existing item or creating a new one. Apar
 	- To add *Child* menu items - options that will appear when the parent is clicked, create a new item or edit an existing one and add the *Parent* item in the parent field.   
 
 > It is not possible for a child item to have other children.
+
+## Statistics
+
+The **Stats** tab in the Set up page tracks catalog's visitors. 
+
+- The blue line is external users 
+- The red one is editors and administrators on the Data and Setup page. 
+
+![](assets/setup/stats.png)
 
 # Catalog access and visibility
 
