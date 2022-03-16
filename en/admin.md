@@ -136,6 +136,32 @@ When a choice set is not in use anymore, there are two options:
 - **deactivate** it: this option leaves the choice set available in "Set up" but can't be used in "Data". It can be reactivated if needed.
 - **delete** it: completely deletes the choice set.
 
+#### Compound field
+
+The compound field can automate data aggregation. It is defined in "Set up" more and doesn't need any input in "Data" mode afterwards.
+
+**Example** 
+
+![Compound field example](assets/setup/compound_ex.png)
+
+Here the compound field named "Description" gets data from "Locality's Name", "Canton" and "Population" fields.
+
+This is what it looks like in "Set up" mode: 
+
+![Compound field entry](assets/setup/compound_option.png)
+
+When setting up a compound field, the field that can be used are listed under "Add field". When adding a field, it is important to not modify the value and brackets `{{locality-population}}` otherwise the reference won't work. It is also possible to format the text within the text editor. 
+
+> Don't forget to add a text for each language. If this is not done, the field will appear empty.
+
+When adding a new item, this field will be automatically created. The editor doesn't need to add anything.
+
+![Fiche avec champ composé](assets/setup/compound_data.png)
+
+**Notes**: it is possible to hide some fields so that the information only appears in the compound field. For this example we might want to hide "Canton" and "Population". To do so, enter "Set up" mode, select the item and edit ![](assets/buttons/edit_btn.png) the field to be hidden. Check "Restrict this field to catalog staff" and save. Private fields have a red lock in "Set up" mode and won't appear to the visitors. 
+
+![](assets/setup/compound_lock.png)
+
 #### Date time field
 
 The date-time format goes from **year** only to **year, month, day, hour, minute and second**. 
