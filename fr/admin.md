@@ -9,6 +9,7 @@
         - [Types de champs](#types-de-champs)
             - [Champ booléen oui/non](#champbool)
             - [Champ ensemble de choix](#champensemble)
+            - [Champ composé](#champcompose)
             - [Champ décimal](#champdecimal)
             - [Champ rédacteur](#champredaction)
             - [Champ e-mail](#champemail)
@@ -161,6 +162,37 @@ Si un ensemble de choix créé n'est pas ou plus utilisé, on peut soit:
 
 - le **désactiver**: l'ensemble de choix est toujours présent en mode "Set Up" mais n'est pas utilisable en mode "Data" ni visible dans le catalogue. On peut le réactiver si besoin. 
 - le **supprimer**: l'ensemble de choix est supprimé et il n'est plus possible de le récupérer par la suite.
+
+<a id="champcompose"></a>
+#### Champ composé
+
+Le champ composé permet l'aggrégation de données automatique. Il est défini en mode "Set Up" et ne nécessite pas la saisie de données par les personnes éditant le catalogue en mode "Data". 
+
+**Exemple** 
+
+Voici un exemple de fiche avec un champ composé appelé "Description": 
+
+![Fiche avec champ composé](assets/compound/compound_field.png)
+
+Le champ "Description" reprend les données des champs "Nom de la localité", "Canton" et "Population" et crée une phrase. 
+
+En mode "Set Up", ce texte est définit de la manière suivante: 
+
+![Fiche avec champ composé](assets/compound/compound_setup.png)
+
+Les champs qui peuvent être utilisés (champs de texte non-formatté et décimal) sont listés sous "Ajouter un champ". Afin d'utiliser une valeur provenant d'un autre champ -par exemple le nombre d'habitant, définit ici comme `{{locality-population}}` il est important de ne pas modifier la structure d'intégration et bien garder les 2 accolades ainsi que le texte à l'intérieur.  
+Il est possible de formatter le texte. 
+
+> Ne pas oublier de remplir l'éditeur pour toutes les langues activées sur le catalogue sous peine d'affichage d'un champ vide.
+
+Lors de l'ajout ou de l'édition d'un fiche, ce champ n'est pas modifiable et ce créée automatiquement grâce aux informations entrées dans les champs précédents. 
+
+![Fiche avec champ composé](assets/compound/compound_data.png)
+
+**Notes**: il est possible de cacher certains champs aux visiteurs du catalogue. Ici, on aimerait peut-être laisser apparaître uniquement le nom de la ville et la description créée par le champ composé.  
+Pour ce faire, depuis le mode "Set Up", sélectionner la fiche en question et éditer ![](assets/buttons/edit_btn.png) le champ à cacher. Sous options d'affichage, cocher "Restreindre le champ au personnel du catalogue". On voit ci-dessous que les champs "Canton" et "Population" ne sont pas visibles par tous. 
+
+![](assets/compound/compound_restricted.png)
 
 <a id="champdecimal"></a>
 #### Champ décimal
