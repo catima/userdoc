@@ -206,6 +206,23 @@ Ce champ permet d'afficher automatiquement l'éditeur de la fiche, ou la derniè
 
 > **Attention** : ce champ affiche automatiquement l'adresse e-mail du/des éditeurs du champ, c'est pourquoi il peut être préférable de restreindre la visibilité de ce champ en interne en activant l'option "Restreindre le champ au personnel" lors de l'ajout du champ.
 
+**_Options de saisie des données:_**  
+Les options sont "Afficher le dernier éditeur" et "Afficher les dates de création et modification"; il est possible d'en sélectionner une, deux ou aucune. Suivant les options choisies, le champs affichera des informations différentes. 
+
+- Aucune
+
+ ![](assets/redac/crea_nodate.png)
+- Uniquement "Afficher le dernier éditeur"
+
+ ![](assets/redac/edit_nodate.png)
+- Uniquement "Afficher les dates de création et modification"
+
+ ![](assets/redac/crea_date.png)
+- Les deux options sélectionnées
+
+ ![](assets/redac/edit_date.png)
+
+
 <a id="champemail"></a>
 #### Champ e-mail
 
