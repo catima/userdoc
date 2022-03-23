@@ -180,16 +180,12 @@ Automatically displays the item's editor or the last person to modify it.
 The two options are "Display updater" and "Display timstamp". Depending on which options are checked -one, both or none- the field's content will change. 
 
 - No data entry option checked
-
  ![](assets/redac/crea_nodate.png)
 - Only "Display updater" is checked
-
  ![](assets/redac/edit_nodate.png)
 - Only "Display timestamp" is checked
-
  ![](assets/redac/crea_date.png)
 - Both options are checked
-
  ![](assets/redac/edit_date.png)
 
 #### Email field  

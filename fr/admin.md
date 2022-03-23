@@ -210,16 +210,12 @@ Ce champ permet d'afficher automatiquement l'éditeur de la fiche, ou la derniè
 Les options sont "Afficher le dernier éditeur" et "Afficher les dates de création et modification"; il est possible d'en sélectionner une, deux ou aucune. Suivant les options choisies, le champs affichera des informations différentes. 
 
 - Aucune
-
  ![](assets/redac/crea_nodate.png)
 - Uniquement "Afficher le dernier éditeur"
-
  ![](assets/redac/edit_nodate.png)
 - Uniquement "Afficher les dates de création et modification"
-
  ![](assets/redac/crea_date.png)
 - Les deux options sélectionnées
-
  ![](assets/redac/edit_date.png)
 
 
