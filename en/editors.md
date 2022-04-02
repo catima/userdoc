@@ -3,8 +3,9 @@ A catalog's editor can view the website and add new items/content to it, but not
 # Table of contents
 
 - [Display items](#display-items)
-- [Add item](#add-item)
+- [Add a new item](#add-item)
 - [Item status](#item-status)
+- [Suggestions managment](#suggestions)
 - [Edit, duplicate and delete item](#editduplicatedelete)
 
 # Display items
@@ -37,6 +38,23 @@ By default, an item has the ***Draft*** status. This means it is not ready to be
 The item will be published in the catalog after a reviewer's approval and will have the ***Approved*** status. If some changes are necessary before publishing it, the item will have the ***Rejected*** status. It is possible to edit the data and check the "Ready for review" checkbox again when ready.
 
 > Items with the ***Approved*** status are the only ones published in the catalog. 
+
+# Suggestions 
+
+*This feature is only available if activated by the administrator.*
+
+Suggestions are made by the catalog's users and visitors and work like private comment so users can notify editors and administrators about a specific item. They are is visible in data mode. A grey number ![New item type form](assets/buttons/suggestions_btn.png) next to the item indicates the number of suggestions that haven't been validated or deleted.  
+They can be accessed by editing ![New item type form](assets/buttons/edit_btn.png) the item.
+
+![New item type form](assets/sug/data_suggestions.png)
+
+There are 3 options: 
+
+- **1**: read suggestion:
+
+ ![](assets/sug/read_suggestion.png)
+- **2**: validate suggestion: the icon will turn green and the suggestion stays visible
+- **3**: delete suggestion
 
 <a id="editduplicatedelete"></a>
 # Edit, duplicate, and delete item

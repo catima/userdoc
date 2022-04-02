@@ -9,7 +9,6 @@
         - [Types de champs](#types-de-champs)
             - [Champ booléen oui/non](#champbool)
             - [Champ ensemble de choix](#champensemble)
-            - [Champ composé](#champcompose)
             - [Champ décimal](#champdecimal)
             - [Champ rédacteur](#champredaction)
             - [Champ e-mail](#champemail)
@@ -43,6 +42,7 @@
     - [Gestion de la consultation et de l'édition des données du catalogue](#gestion)
         - [Les différents statuts](#statuts)
             - [Attribution des statuts](#attribution)
+    - [API et mode data only](#api)
     - [Statistiques du catalogue](#statistiques)
 - [Exemple de réalisation d'un catalogue](#exemple)
     - [Conceptualisation](#conceptualisation)
@@ -120,6 +120,39 @@ Remplir le nom du type de fiche et sa forme plurielle. Si le support de plusieur
 
 > Exemple : Pour un type de fiche "Acteurs de films", le slug peut être "movies-actors"
 
+Si l'option **Afficher les champs vides** n'est pas sélectionnée, les champs qui ne contiennent aucune données ne seront pas vu par les visiteurs du catalogue.  
+
+<a id="suggestions"></a>
+#### Suggestions 
+
+L'option **Suggestions** permet aux visiteurs du catalogue d'envoyer leur suggestions aux éditeurs/administrateurs. Celles-ci n'apparaissent pas publiquement (comme le feraient des commentaires) mais sont envoyées par email à l'adresse définie et se retrouvent dans le mode data.
+
+Pour activer cette option, sélectionner **Activer les suggestions**. Les utilisateurs ont besoin d'un compte Catima pour envoyer leurs suggestions. Afin que des visiteurs sans compte Catima puissent aussi envoyer leurs suggestions, activer **Autoriser les suggestions anonymes**.
+
+![](assets/sug/setup_suggestions.png)
+
+Un petit icône apparaît en haut à droite des fiches pour lesquelles il est possible de faire des suggestions. Celui-ci est visible uniquement pas les utilisateurs connecté à Catima si l'option de suggestions anonymes n'est pas activées, à tout le monde sinon:
+
+![](assets/sug/item_with_suggestion.png)
+
+En cliquant dessus, une interface apparaît pour y écrire du texte (avec un dispositif anti-spam) et l'envoyer: 
+
+![](assets/sug/write_suggestion.png)
+
+Une fois la suggestion faite, un email est de notification est envoyé à l'adresse spécifiée. Elle apparaît aussi en mode **Data** par une pastille à côté de la fiche en question ![](assets/buttons/suggestions_btn.png) indiquant le nombre de suggestions à traiter.
+
+Cliquer sur ![](assets/buttons/edit_btn.png) pour édtier la fiche et retrouver toutes les suggestions affichée sur la gauche. 
+
+ ![](assets/sug/data_suggestions.png)
+
+Les options disponibles sont les suivantes: 
+
+- **1**: voir la suggestion:
+
+ ![](assets/sug/read_suggestion.png)
+- **2**: valider la suggestion: l'icône deviendra vert et la suggestion reste visible
+- **3**: supprimer la suggestion
+
 Une fois les champs remplis avec les données, il est possible d'enregistrer et retourner au menu *Data* avec "*Créer fiche de type*" ou d'enregistrer et ajouter un nouveau type de fiche avec "*Create and add another*".
 
 > NB : Il est possible d'annuler à tout moment en cliquant sur "Annuler" (Cancel).
@@ -163,37 +196,6 @@ Si un ensemble de choix créé n'est pas ou plus utilisé, on peut soit:
 - le **désactiver**: l'ensemble de choix est toujours présent en mode "Set Up" mais n'est pas utilisable en mode "Data" ni visible dans le catalogue. On peut le réactiver si besoin. 
 - le **supprimer**: l'ensemble de choix est supprimé et il n'est plus possible de le récupérer par la suite.
 
-<a id="champcompose"></a>
-#### Champ composé
-
-Le champ composé permet l'aggrégation de données automatique. Il est défini en mode "Set Up" et ne nécessite pas la saisie de données par les personnes éditant le catalogue en mode "Data". 
-
-**Exemple** 
-
-Voici un exemple de fiche avec un champ composé appelé "Description": 
-
-![Fiche avec champ composé](assets/compound/compound_field.png)
-
-Le champ "Description" reprend les données des champs "Nom de la localité", "Canton" et "Population" et crée une phrase. 
-
-En mode "Set Up", ce texte est définit de la manière suivante: 
-
-![Fiche avec champ composé](assets/compound/compound_setup.png)
-
-Les champs qui peuvent être utilisés (champs de texte non-formatté et décimal) sont listés sous "Ajouter un champ". Afin d'utiliser une valeur provenant d'un autre champ -par exemple le nombre d'habitant, définit ici comme `{{locality-population}}` il est important de ne pas modifier la structure d'intégration et bien garder les 2 accolades ainsi que le texte à l'intérieur.  
-Il est possible de formatter le texte. 
-
-> Ne pas oublier de remplir l'éditeur pour toutes les langues activées sur le catalogue sous peine d'affichage d'un champ vide.
-
-Lors de l'ajout ou de l'édition d'un fiche, ce champ n'est pas modifiable et ce créée automatiquement grâce aux informations entrées dans les champs précédents. 
-
-![Fiche avec champ composé](assets/compound/compound_data.png)
-
-**Notes**: il est possible de cacher certains champs aux visiteurs du catalogue. Ici, on aimerait peut-être laisser apparaître uniquement le nom de la ville et la description créée par le champ composé.  
-Pour ce faire, depuis le mode "Set Up", sélectionner la fiche en question et éditer ![](assets/buttons/edit_btn.png) le champ à cacher. Sous options d'affichage, cocher "Restreindre le champ au personnel du catalogue". On voit ci-dessous que les champs "Canton" et "Population" ne sont pas visibles par tous. 
-
-![](assets/compound/compound_restricted.png)
-
 <a id="champdecimal"></a>
 #### Champ décimal
 
@@ -205,19 +207,6 @@ Ce champ permet d'entrer des nombres au format décimal ("nombres à virgule").
 Ce champ permet d'afficher automatiquement l'éditeur de la fiche, ou la dernière personne à l'avoir mise à jour. 
 
 > **Attention** : ce champ affiche automatiquement l'adresse e-mail du/des éditeurs du champ, c'est pourquoi il peut être préférable de restreindre la visibilité de ce champ en interne en activant l'option "Restreindre le champ au personnel" lors de l'ajout du champ.
-
-**_Options de saisie des données:_**  
-Les options sont "Afficher le dernier éditeur" et "Afficher les dates de création et modification"; il est possible d'en sélectionner une, deux ou aucune. Suivant les options choisies, le champs affichera des informations différentes. 
-
-- Aucune
- ![](assets/redac/crea_nodate.png)
-- Uniquement "Afficher le dernier éditeur"
- ![](assets/redac/edit_nodate.png)
-- Uniquement "Afficher les dates de création et modification"
- ![](assets/redac/crea_date.png)
-- Les deux options sélectionnées
- ![](assets/redac/edit_date.png)
-
 
 <a id="champemail"></a>
 #### Champ e-mail
@@ -452,40 +441,51 @@ L'édition du contenu de la page se fait dans la section "**Containers**".
 Plusieurs types de contenus sont possibles :
 
 -	**Map** : Permet de générer une carte géographique affichant les données de localisation pour un type de fiche spécifique.
--	**ItemList** : Ce type de contenu permet d’afficher une liste des contenus d’un type de fiches, notamment en changeant le style d'affichage (aperçu d'images, grille ou liste)
+-	**ItemList** : Ce type de contenu permet d’afficher une liste des contenus d’un type de fiches, notamment en changeant le style d'affichage (aperçu d'images, grille, liste ou line) *Maximum un par page*
 -	**HTML** : Afficher un éditeur visuel afin d'écrire du texte mis en forme, des liens (URL) et d'ajouter des images ou des vidéos sans connaissance préalable. Un éditeur de code permet également aux utlisateurs avancés d'entrer directement du code HTML. C'est ce container qui permet l'intégration de médias.
 -	**Markdown** : Ce langage permet l'affichage de textes, tableaux, et images avec une syntaxe simplifiée. 
 -	**Contact** : Ce container permet d'ajouter un formulaire de contact dans une page personnalisée.
--	**Search** : Comme le conteneur ItemList, le Search permet d'afficher une liste de fiches prédéterminées selon une recherche sauvegardée.
+-	**Search** : Comme le conteneur ItemList, le Search permet d'afficher une liste de fiches prédéterminées selon une recherche sauvegardée. *Maximum un par page
 
 Pour ajouter du contenu, cliquer sur "+Ajouter" puis choisir le type de contenu souhaité:
 
 <a id="editionconteneurlist"></a>
 #### Édition d'un conteneur Item List
 
-Ce type de *conteneur*, permet d'afficher (sur la page personnalisée) toutes les données enregistrées dans un type de fiche donné ainsi que de changer le style d'affichage des fiches (aperçu d'images, grille ou liste)
+Ce type de *conteneur*, permet d'afficher (sur la page personnalisée) toutes les données enregistrées dans un type de fiche donné ainsi que de changer le style d'affichage des fiches (aperçu d'images, grille, liste ou line).
 
- ![](assets/pages/itemlist_container.png)
+> **Attention**: il n'est pas possibled d'avoir plus d'un conteneur *Item List* par page.
+
+ ![](assets/pages/itemlist-fields.png)
 
 Choisir un "slug" (nom court à donner au conteneur). Celui-ci apparaitra dans l'adresse web (URL) du site généré par CATIMA. Il doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
 
-> Exemple de slug : "liste-oeuvres", "work-list", "img-gallery"
+> **Exemple de slug**: "liste-oeuvres", "work-list", "img-gallery"
 
-<a id="liste"></a>
+Choisir aussi un ordre d'affichage *ascendant* ou *descendant*, par champ, date de création ou date de modification. Dans le cas des affichages par images, grille ou liste, le champ sélectionné est le champ primaire. Pour l'affichage de type line, il est possible de sélectionner le champ voulu parmis la liste de champs disponibles.
+
+> **Exemple en mode line**: nous avons un type de fiche *Livre* qui contient les champs *Titre* (champ primaire), *Auteur*, *Date de publication* et *Image*. Le tri des fiches se fera selon le *Titre* (champ primaire) en mode images, gille ou liste. En mode line, il est possible de choisir de faire le tri selon le *Titre*, l'*Auteur* ou la *Date de publication*. Comme il n'est pas possible de classifier des image d'une manière ascendante (ou descendante), ce champ n'est pas sélectionnable pour le tri.  
+
 Le choix du style permet de changer l'affichage des fiches selon les styles suivants : 
 
-- **Images (Thumb) :**
- ![](assets/pages/style-thumb.png)
- - **Grille (Grid) :**
- ![](assets/pages/style-grid.png)
+#### Images (thumb):
+![](assets/pages/style-thumb.png)
 
-- **Liste :**
+#### Grille (grid):
+![](assets/pages/style-grid.png)
+
+#### Liste:
  - Avec image:  
  ![](assets/pages/style-list-img.png)
  - Sans image:  
  ![](assets/pages/style-list-text.png)
+ 
+#### Line (ligne):
+![](assets/pages/style-list-line-open.png)
 
-Une fois le slug et l'item choisis, enregistrer et retourner au menu *Setup* avec "*Créer conteneur*".
+Le style *line* affiche les fiches le long d'une ligne verticale; il permet le tri par date ou ordre alphabétique. Le visiteur peut ouvrir ou fermer les fiches et les classer par ordre ascendant ou descendant. Dans l'image ci-dessous, on a choisi *Tout fermer* avant d'ouvrir une seule fiche.
+
+![](assets/pages/style-list-line-closed.png)
 
 <a id="editionconteneurgeo"></a>
 #### Édition d'un conteneur de cartes géographique (Map Container)
@@ -564,6 +564,8 @@ Une fois le conteneur Contact ajouté, enregistrer et retourner au menu *Setup* 
 ### Edition d'un conteneur Search
 
  ![](assets/pages/search_cont.png)
+ 
+> **Attention**: il n'est pas possibled d'avoir plus d'un conteneur *Searcht* par page.
 
 Ce conteneur affiche une liste de fiches selon un critère déterminé par une recherche préalablement sauvegardée. Cela peut être une recherche simple ou une recherche avancée. 
 
@@ -751,6 +753,20 @@ Pour pouvoir utiliser les données avec l'API, il faut soit avoir un compte Cati
 Créer ou supprimer une clé API depuis la rubrique **API** en mode "Set Up". Plusieurs clés peuvent exister en même temps. 
 
 L'ensemble des requêtes disponibles sont consultables [dans la documentation](https://catimalb.unil.ch/api-docs/index.html).
+
+### Mode data only
+
+Avec cette option activée, Catima est utilisé uniquement pour stocker les données et ne générera pas de site pour voir les fiches et naviguer entre elles.
+
+**En mode data only:**
+
+- les fiches ne sont pas accessibles via un navigateur par des visiteurs (pas de site)
+- pas d'options de visualisation (menu, pages, statistiques)
+- l'accès au catalogue par statut (editeur, reviewer, administrateur) est toujours possible
+
+Ceci est utile si le catalogue est utilisé uniquement comme base de données et ne nécessite pas de site pour leur visualisation. 
+
+*Il faut que cette option soit activée par un administrateur système. En cas d'intérêt, prendre contact avec les responsables.*
 
 <a id="exemple"></a>
 # Exemple de réalisation d'un catalogue

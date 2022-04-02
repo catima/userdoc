@@ -33,8 +33,13 @@ An administrator has full access to the catalog; they can add and modify any con
 		- [Map container](#map-container)
 		- [Markdown container](#markdown-container)
 		- [Search container](#search-container)
-- [Manage access to data](#manage-access-to-data)
-- [Example](#Example)
+	- [Embed media in a page](#embed-media-in-a-container)
+	- [Customize navigation bar](#navigation-bar)
+	- [Statistics](#statistics)
+	- [API and data only mode](#api)
+	- [Catalog access](#catalog-access-and-visibility)
+		- [Manage access to data](#access-to-data-and-data-edition)
+		- [Change a user's status](#change-status)
 
 # Catalog configuration
 
@@ -89,7 +94,7 @@ If some items have already been created, they will be displayed on the top-left 
 
 The *New item type* form opens:
 
-![New item type form](assets/data/a-new_item_type.png)
+![New item type form](assets/data/new_item_type.png)
 
 **Name**: add the item name. If different languages are selected, all fields must be completed.  
 **Slug**: the slug is a short name that will appear in the website's address (URL). It must contain only letters (without accent), numbers and hyphens and must be short.  
@@ -97,7 +102,37 @@ The *New item type* form opens:
 
 In the **Display options**, if ***Display empty fields*** is selected, all fields will appear to the catalog's visitors, even if those are empty. If you do not wish empty fields to be shown, deselect this option. 
 
-### New field
+## Suggestions
+
+**Suggestions** are a way for catalog's users to send their comments to the editors and administrators. This could be used to notify about an error in a specific item. Those **Suggestions** are private and not publicly displayed on the catalog; they are sent by email to the adress defined by the administrator and are visible in data mode. 
+
+To activate this option, select **Enable suggestions**. Unless the **Enable anonymous suggestions** is checked, only users with a Catima account can send suggestions. 
+
+![New item type form](assets/data/setup_suggestions.png)
+
+If suggestions are allowed for an item type, a button will appear on the top right of the screen:
+
+![New item type form](assets/sug/item_with_suggestion.png)
+
+When clicking, an interface will appear to write the comment:
+
+![New item type form](assets/sug/write_suggestion.png)
+
+When a suggestion is made, a notification is sent to the specified email adress and the suggestion is visible in data mode. A grey number ![New item type form](assets/buttons/suggestions_btn.png) next to the item indicates the number of suggestions that haven't been validated or deleted.  
+They can be accessed by editing ![New item type form](assets/buttons/edit_btn.png) the item.
+
+![New item type form](assets/sug/data_suggestions.png)
+
+There are 3 options: 
+
+- **1**: read suggestion:
+
+ ![](assets/sug/read_suggestion.png)
+- **2**: validate suggestion: the icon will turn green and the suggestion stays visible
+- **3**: delete suggestion
+
+## New field
+
 Once the new item created, it is time to add fields that will hold the data. Fields are the item's *features*. 
 
 > A "*Movie*" item's fields could be a text field for the title, a date field for the release date and a choiceset field for its genre.
@@ -109,9 +144,7 @@ To add a new field to an item:
 1. On the *set up* page, select the item in the item list
 2. Click on the **Add** button on the top right of the page
 
-![Add new field](assets/setup/a-add_field.png)
-
-### Field types
+## Field types
 
 In order for the catalog to be filled in by the editors with data in the right format (e.g. number, date, image), it is necessary to create appropriate fields. Here are the types of fields available in CATIMA :
 
@@ -136,32 +169,6 @@ When a choice set is not in use anymore, there are two options:
 - **deactivate** it: this option leaves the choice set available in "Set up" but can't be used in "Data". It can be reactivated if needed.
 - **delete** it: completely deletes the choice set.
 
-#### Compound field
-
-The compound field can automate data aggregation. It is defined in "Set up" more and doesn't need any input in "Data" mode afterwards.
-
-**Example** 
-
-![Compound field example](assets/setup/compound_ex.png)
-
-Here the compound field named "Description" gets data from "Locality's Name", "Canton" and "Population" fields.
-
-This is what it looks like in "Set up" mode: 
-
-![Compound field entry](assets/setup/compound_option.png)
-
-When setting up a compound field, the field that can be used are listed under "Add field". When adding a field, it is important to not modify the value and brackets `{{locality-population}}` otherwise the reference won't work. It is also possible to format the text within the text editor. 
-
-> Don't forget to add a text for each language. If this is not done, the field will appear empty.
-
-When adding a new item, this field will be automatically created. The editor doesn't need to add anything.
-
-![Fiche avec champ composé](assets/setup/compound_data.png)
-
-**Notes**: it is possible to hide some fields so that the information only appears in the compound field. For this example we might want to hide "Canton" and "Population". To do so, enter "Set up" mode, select the item and edit ![](assets/buttons/edit_btn.png) the field to be hidden. Check "Restrict this field to catalog staff" and save. Private fields have a red lock in "Set up" mode and won't appear to the visitors. 
-
-![](assets/setup/compound_lock.png)
-
 #### Date time field
 
 The date-time format goes from **year** only to **year, month, day, hour, minute and second**. 
@@ -173,20 +180,6 @@ For decimal numbers
 #### Editor field  
 
 Automatically displays the item's editor or the last person to modify it. 
-
-> **Warning** : Please note that this field will automatically show the editor's email address. Because of this it might be better to restrict this field to catalog staff by checking this option in the field's "Display options".
-
-**_Data entry options_**  
-The two options are "Display updater" and "Display timstamp". Depending on which options are checked -one, both or none- the field's content will change. 
-
-- No data entry option checked
- ![](assets/redac/crea_nodate.png)
-- Only "Display updater" is checked
- ![](assets/redac/edit_nodate.png)
-- Only "Display timestamp" is checked
- ![](assets/redac/crea_date.png)
-- Both options are checked
- ![](assets/redac/edit_date.png)
 
 #### Email field  
 
@@ -337,10 +330,10 @@ Different kind of content containers can be added to a page:
 
 - **Contact**: adds a form that allows users to send an email to specified email adress. 
 - **HTML**: displays a visual editor to write formatted text, links (URLs) and add images or videos. A code editor also allows advanced users to enter HTML code directly. It is this container that is used to embed media. 
-- **Item List**: this container display a list of a selected item. Different styles are availables (list, grid, thumb). 
+- **Item List**: this container display a list of a selected item. Different styles are availables (list, grid, thumb). *Maximum one per page*
 - **Map**: displays a map with a specified item type's localisation. The item must have a *Geographic field*. 
 - **Markdown**: to add text, tables and images with Markdown syntax.
-- **Search**: displays the results of a previously saved search.
+- **Search**: displays the results of a previously saved search. *Maximum one per page*
 
 ### Contact container
 
@@ -357,14 +350,35 @@ This will allow to add text, images, URL, video through a text editor. This cont
 
 ### Item List container
 
-Displays a list or grid of a selected item type. (e.g. to show a list of *Universities*). Different styles are availables:
-	- Grid style
-	![](assets/pages/a-grid-style.png)
-	- List style
-	![](assets/pages/a-list-style.png)
-	- Thumb style
-	![](assets/pages/a-thumb-style.png)
-	
+Displays all items of an item type in a list, grid, thumb or line style (e.g. to show a list of all *Universities*). Different styles are availables:
+
+> **Note**: it is not possible to have more than one Item List container on the same page. 
+
+![](assets/pages/item-fields.png)
+
+After selecting a unique slug and the item type to be displayed, choose to sort the items in *ascending* or *descending* order (alphabetically), creation date or modification date. With grid, list and thumb styles the order (ascending or descending) is created based on the primary field. Whith line style, a new option appears and it is possible to choose the field to sort the items. 
+
+> **Example**: let's say we have an item type **Book** with the following fields: *Title* (primary field), *Author*, *Publishing date* and *Illustration*. When chosing grid, list or thumb style sorting is done on *Title*. With line style it can be on *Title*, *Author* or *Publishing date*. *Illustration* will not be a possible choice as it can't be alphabetically sorted. 
+
+#### Grid style
+![](assets/pages/a-grid-style.png)
+
+#### List style
+- With images 
+![](assets/pages/a-list-style.png)
+- Without image
+![](assets/pages/list-noimage.png)
+
+#### Thumb style
+![](assets/pages/a-thumb-style.png)
+
+#### Line style
+![](assets/pages/line-open.png)
+
+This style displays the items vertically along a line. The user can choose to see the items in a ascending or descending order and to see all the items or none with *Close all* and *Open all*. It is then possible to only see some of the items using the small arrows.
+
+![](assets/pages/line-closed.png)
+
 ### Map container 
 
 The map container is used to display a geographic map of a item type that has a geographic location attribute (e.g. location of all swiss universities with geographic field). It has different options: 
@@ -386,6 +400,8 @@ This container can be used to add text, images and tables with the markdown synt
 
 ![](assets/pages/search_container.png)
 
+> **Note**: it is not possible to have more than one Search container on the same page. 
+> 
 Displays the result of a previously saved simple or advanced search. The "Style" settings changes the way the items are displayed. It is the same styles as listed in the [ItemList Container section](#item-list-container): Grid Style, List Style and Thumb Style. 
 
 #### Simple search 
@@ -448,6 +464,7 @@ Settings can be adjusted by editing an existing item or creating a new one. Apar
 
 > It is not possible for a child item to have other children.
 
+
 ## Statistics
 
 The **Stats** tab in the Set up page tracks catalog's visitors. 
@@ -469,6 +486,18 @@ Create and delete API keys in from the **API** tab in "Set Up" mode. It is possi
 
 More informations for API requests can be foud [in the documentation](https://catimalb.unil.ch/api-docs/index.html).
 
+### Data only mode
+
+A data only mode can be activated is Catima is only used to store data and a frontend catalog is not needed to access and visualize the items.
+
+**In data only mode:**
+
+- items can not be accessed via a catalog site by visitors
+- there are no visualization options (menu, pages, visitors' statistics)
+- access to data and set up mode can still be separated by role (editor, reviewer, administrator)
+
+*This option has to be activated by a system administrator. Contact the persons in charge of the project if interested.*
+
 
 # Catalog access and visibility
 
@@ -488,7 +517,7 @@ Other options are accessible from this page:
 - **Advertize**: by checking it, your catalogue will be accessible from public CATIMA lists.
 - **Custom root page**: change the landing page 
 
-## Manage access to data and data edition 
+## Access to data and data edition 
 
 
 CATIMA has different staus that can be attributed to users; those status define what a user can or can't do within a given catalog. Guests are users that don't have a CATIMA account and must create one to have access to other status.

@@ -11,6 +11,7 @@
       - [Édition d'une fiche](#editionfiche)
       - [Duplication d'une fiche](#duplication-dune-fiche)
       - [Suppression d'une fiche](#suppression-dune-fiche)
+   - [Gestion des suggestions](#suggestions)
 - [Exemple d'ajout de données dans un catalogue](#exemplecat)
    - [Concept](#concept)
       - [Types de fiches et liens](#types-de-fiches-et-liens)
@@ -71,7 +72,7 @@ Pour ajouter plus d'un média, il est possible d'insérer plusieurs balises ifra
 ![](assets/setup/integration_url.png)  
  
 
-# Statuts des fiches
+## Statuts des fiches
 
 *Cette fonction est disponible uniquement si spécifiquement activée par l'administrateur.* 
 
@@ -85,6 +86,7 @@ La fiche sera alors publiée dans le catalogue dès validation de celle-ci par u
 
 <a id="editionduplsup"></a>
 ## Édition, duplication et suppression de fiches
+
 > Il n'est pas possible de modifier ou supprimer des fiches créées par d'autre éditeurs. 
 
 <a id="editionfiche"></a>
@@ -109,6 +111,25 @@ Cela ouvre la même page que pour l'ajout de données, avec les données de la f
 Pour choisir la fiche à supprimer définitivement, sélectionner le type de fiche correspondant dans la barre latérale gauche. Les données existantes s'affichent sous forme d'un tableau. Pour supprimer une fiche, cliquer sur le bouton "Supprimer" ![](assets/buttons/delete_btn.png) pour la fiche souhaitée.
 
 <a id="exemplecat"></a>
+
+# Suggestions 
+
+*Cette fonction est disponible uniquement si spécifiquement activée par l'administrateur.* 
+
+Les suggestions sont faites par les visiteurs du catalogue et permettent d'envoyer des commentaires aux éditeurs et administrateurs. Elles apparaissent par une pastille à côté de la fiche pour laquelle la suggestion a été faite ![](assets/buttons/suggestions_btn.png) indiquant le nombre de suggestions à traiter.
+
+Cliquer sur ![](assets/buttons/edit_btn.png) pour édtier la fiche et retrouver toutes les suggestions affichée sur la gauche. 
+
+ ![](assets/sug/data_suggestions.png)
+
+Les options disponibles sont les suivantes: 
+
+- **1**: voir la suggestion:
+
+ ![](assets/sug/read_suggestion.png)
+- **2**: valider la suggestion: l'icône deviendra vert et la suggestion reste visible
+- **3**: supprimer la suggestion
+- 
 # Exemple d'ajout de données dans un catalogue
 
 Afin d'illustrer l'ajout de données dans un catalogue, voici un exemple reprenant toutes les étapes décrites jusqu'à présent. Cet exemple consiste en un catalogue recensant les universités romandes et de leurs bibliothèques afin de les représenter sur une carte géographique.
