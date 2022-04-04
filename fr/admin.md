@@ -454,7 +454,7 @@ Pour ajouter du contenu, cliquer sur "+Ajouter" puis choisir le type de contenu 
 
 Ce type de *conteneur*, permet d'afficher (sur la page personnalisée) toutes les données enregistrées dans un type de fiche donné ainsi que de changer le style d'affichage des fiches (aperçu d'images, grille, liste ou line).
 
-> **Attention**: il n'est pas possibled d'avoir plus d'un conteneur *Item List* par page.
+> **Attention**: il n'est pas possible d'avoir plus d'un conteneur *Item List* par page.
 
  ![](assets/pages/itemlist-fields.png)
 
