@@ -125,11 +125,12 @@ They can be accessed by editing ![New item type form](assets/buttons/edit_btn.pn
 
 There are 3 options: 
 
-- **1**: read suggestion:
+**1**: read suggestion:  
+**2**: validate suggestion: the icon will turn green and the suggestion stays visible  
+**3**: delete suggestion
+
 
  ![](assets/sug/read_suggestion.png)
-- **2**: validate suggestion: the icon will turn green and the suggestion stays visible
-- **3**: delete suggestion
 
 ## New field
 
@@ -219,8 +220,8 @@ In addition to the usual information such as title, slug and display options, it
 		
 		> Note: due to security reasons, any other HTML tag with be deleted, the field only accepts *iframe tags*. 
 		 
-	- *with URL*: this options allows to share a complete web page with media, titles and other elements. It is convenient to use when a media can not be shared with *iframe*. Height and width can be changed, by default 400px and 900px respectively. 
-	> Note: it isn't always possible to use this method as the website needs to accept to be embeded this way - which sometimes is not the case. This decision is independent of Catima. E.g. Youtube and Vimeo don't allow it.
+*with URL*: this options allows to share a complete web page with media, titles and other elements. It is convenient to use when a media can not be shared with *iframe*. Height and width can be changed, by default 400px and 900px respectively.  
+> Note: it isn't always possible to use this method as the website needs to accept to be embeded this way - which sometimes is not the case. This decision is independent of Catima. E.g. Youtube and Vimeo don't allow it.
 	
 It is highly recommended to be specific when creating an **embed field** and add a meaninful title and/or to use *data editing help text* to let the editors know what kind of content is expected.  
 

@@ -19,7 +19,7 @@ The *data* section is where items can be added and modified and is accessible by
 To add an item to the database:
 
 1. Select the item type in the top-left list
-2. Click on the **New item** button
+2. Click on the **New "item name"** button
 
 The page that will open the manual data entry page where informations can be added. Each section only accept a specific type of predefined data (text, email, numbers...).
 Once saved, the new item will appear in the data list with other similar items.
@@ -48,13 +48,13 @@ They can be accessed by editing ![New item type form](assets/buttons/edit_btn.pn
 
 ![New item type form](assets/sug/data_suggestions.png)
 
-There are 3 options: 
+There are 3 options:  
 
-- **1**: read suggestion:
+**1**: read suggestion:  
+**2**: validate suggestion: the icon will turn green and the suggestion stays visible  
+**3**: delete suggestion  
 
- ![](assets/sug/read_suggestion.png)
-- **2**: validate suggestion: the icon will turn green and the suggestion stays visible
-- **3**: delete suggestion
+![](assets/sug/read_suggestion.png)
 
 <a id="editduplicatedelete"></a>
 # Edit, duplicate, and delete item

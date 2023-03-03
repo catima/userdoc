@@ -48,7 +48,7 @@ Il est possible d'afficher toutes les données du catalogue contenant une chaîn
 
 Pour ajouter des données, sélectionner le type de fiche souhaité dans la barre latérale gauche. Les éventuelles données existantes s'affichent sous forme de tableau. Dans le cas contraire, une section vide apparaît en dessous du nom de la fiche.
 
-Cliquer sur le bouton  **Nouveau type de fiche "nom du type de fiche"**, fait s'ouvrir la page d'entrée manuelle des données, qui se présente sous la forme d'un formulaire.
+Cliquer sur le bouton  **Nouvelle fiche "nom du type de fiche"**, fait s'ouvrir la page d'entrée manuelle des données, qui se présente sous la forme d'un formulaire.
 
 En remplissant les sections des objets avec des données, seules des données respectants les formats autorisés (définis dans la configuration) peuvent être entrées (p.ex données numériques, e-mail ou dates).
 
@@ -118,18 +118,17 @@ Pour choisir la fiche à supprimer définitivement, sélectionner le type de fic
 
 Les suggestions sont faites par les visiteurs du catalogue et permettent d'envoyer des commentaires aux éditeurs et administrateurs. Elles apparaissent par une pastille à côté de la fiche pour laquelle la suggestion a été faite ![](assets/buttons/suggestions_btn.png) indiquant le nombre de suggestions à traiter.
 
-Cliquer sur ![](assets/buttons/edit_btn.png) pour édtier la fiche et retrouver toutes les suggestions affichée sur la gauche. 
+Cliquer sur ![](assets/buttons/edit_btn.png) pour éditer la fiche et retrouver toutes les suggestions affichée sur la gauche. 
 
  ![](assets/sug/data_suggestions.png)
 
 Les options disponibles sont les suivantes: 
 
-- **1**: voir la suggestion:
-
+**1**: voir la suggestion:  
+**2**: valider la suggestion: l'icône deviendra vert et la suggestion reste visible  
+**3**: supprimer la suggestion  
  ![](assets/sug/read_suggestion.png)
-- **2**: valider la suggestion: l'icône deviendra vert et la suggestion reste visible
-- **3**: supprimer la suggestion
-- 
+
 # Exemple d'ajout de données dans un catalogue
 
 Afin d'illustrer l'ajout de données dans un catalogue, voici un exemple reprenant toutes les étapes décrites jusqu'à présent. Cet exemple consiste en un catalogue recensant les universités romandes et de leurs bibliothèques afin de les représenter sur une carte géographique.
