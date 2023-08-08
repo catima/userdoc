@@ -1,52 +1,75 @@
 # Table des matières
 
-- [Configuration d'un catalogue](#catconfiguration)
-    - [Conceptualisation](#conceptualisation)
-    - [Hiérarchisation et Structure](#hierarchisationetstructure)
-    - [Liens et Références](#liensetref)
-    - [Création d'un type de fiche](#creationtypefiche)
-        - [Configuration d'un type de fiche](#configuration-dun-type-de-fiche)
-        - [Types de champs](#types-de-champs)
-            - [Champ booléen oui/non](#champbool)
-            - [Champ ensemble de choix](#champensemble)
-            - [Champ décimal](#champdecimal)
-            - [Champ rédacteur](#champredaction)
-            - [Champ e-mail](#champemail)
-            - [Champ d'intégration (embed)](#champintegration)
-            - [Champ fichier](#champ-fichier)
-            - [Champ géographique](#champgeo)
-            - [Champ image](#champ-image)
-            - [Champ nombre entier](#champ-nombre-entier)
-            - [Champ référence](#champreference)
-            - [Champ de texte](#champ-de-texte)
-            - [Champ URL](#champ-url)
-        - [Création d'un champ](#creationchamp)
-            - [Options d'affichage des champs dans la liste des fiches](#optionsaffichage)
-    - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajoutedition)
-        - [Création d'une sous-fiche](#creationsousfiche)
-        - [Édition d'une sous-fiche](#editionsousfiche)
-        - [Ajout d'un ensemble de choix](#ajoutensemblechoix)
-    - [Affichage de contenus personnalisés et styles d'affichages](#affichagecontenuperso)
-        - [Ajout d'une page](#ajoutpage)
-        - [Édition d'une page](#editionpage)
-            - [Édition d'un conteneur Item List](#editionconteneurlist)
-            - [Édition d'un conteneur de cartes géographique Map Container](#editionconteneurgeo)
-            - [Édition d'un conteneur HTML](#editionhtml)
-            - [Édition d’un conteneur Markdown](#editionmarkdown)
-            - [Édition d'un conteneur Contact](#editioncontact)
-            - [Édition d'un conteneur Search](#editionsearch)
-        - [Intégration de média](#integrationmediapage)
-        - [Organisation des conteneurs](#organisationconteneurs)
-    - [Organisation de la barre de menus](#organisation-de-la-barre-de-menus)
-    - [Integration de média](#integrationmedia)
-    - [Gestion de la consultation et de l'édition des données du catalogue](#gestion)
-        - [Les différents statuts](#statuts)
-            - [Attribution des statuts](#attribution)
-    - [API et mode data only](#api)
-    - [Statistiques du catalogue](#statistiques)
-- [Exemple de réalisation d'un catalogue](#exemple)
-    - [Conceptualisation](#conceptualisation)
-    - [Ajout des types de fiches et création de champs](#types-de-fiches-champs)
+- [Table des matières](#table-des-matières)
+- [Configuration d'un catalogue](#configuration-dun-catalogue)
+  - [Conceptualisation](#conceptualisation)
+  - [Hiérarchisation et Structure](#hiérarchisation-et-structure)
+  - [Liens et Références](#liens-et-références)
+  - [Création d'un type de fiche](#création-dun-type-de-fiche)
+      - [Suggestions](#suggestions)
+    - [Configuration d'un type de fiche](#configuration-dun-type-de-fiche)
+    - [Types de champs](#types-de-champs)
+      - [Champ booléen (oui/non)](#champ-booléen-ouinon)
+      - [Champ ensemble de choix](#champ-ensemble-de-choix)
+      - [Champ décimal](#champ-décimal)
+      - [Champ rédacteur](#champ-rédacteur)
+      - [Champ e-mail](#champ-e-mail)
+      - [Champ d'intégration (embed)](#champ-dintégration-embed)
+        - [Liste non-exhaustive des domaines autorisés:](#liste-non-exhaustive-des-domaines-autorisés)
+        - [Utilisation du champ d'intégration (embed)](#utilisation-du-champ-dintégration-embed)
+      - [Champ fichier](#champ-fichier)
+      - [Champ géographique](#champ-géographique)
+      - [Champ image](#champ-image)
+      - [Champ nombre entier](#champ-nombre-entier)
+      - [Champ référence](#champ-référence)
+      - [Champ de texte](#champ-de-texte)
+      - [Champ URL](#champ-url)
+      - [Champ datation](#champ-datation)
+        - [Exemple d'utilisation](#exemple-dutilisation)
+        - [Différences entre les champs "Datation" et "Date"](#différences-entre-les-champs-datation-et-date)
+    - [Création d'un champ](#création-dun-champ)
+      - [Options d'affichage des champs dans la liste des fiches](#options-daffichage-des-champs-dans-la-liste-des-fiches)
+    - [Création d'un champ de type datation](#création-dun-champ-de-type-datation)
+      - [Étape 1: Création d'un ensemble de choix de type datation](#étape-1-création-dun-ensemble-de-choix-de-type-datation)
+      - [Étape 2: Création du champ datation](#étape-2-création-du-champ-datation)
+  - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajout-et-édition-de-contenu-conditionnel-ou-sous-fiche)
+    - [1. Création d'une sous-fiche](#1-création-dune-sous-fiche)
+    - [Édition d'une sous-fiche](#édition-dune-sous-fiche)
+    - [2. Ajout d'un ensemble de choix](#2-ajout-dun-ensemble-de-choix)
+  - [Affichage de contenus personnalisés et styles d'affichages](#affichage-de-contenus-personnalisés-et-styles-daffichages)
+    - [Ajout d'une page](#ajout-dune-page)
+    - [Édition d'une page](#édition-dune-page)
+      - [Édition d'un conteneur Item List](#édition-dun-conteneur-item-list)
+      - [Images (thumb):](#images-thumb)
+      - [Grille (grid):](#grille-grid)
+      - [Liste:](#liste)
+      - [Line (ligne):](#line-ligne)
+      - [Édition d'un conteneur de cartes géographique (Map Container)](#édition-dun-conteneur-de-cartes-géographique-map-container)
+      - [Édition d'un conteneur HTML](#édition-dun-conteneur-html)
+      - [Édition d’un conteneur Markdown](#édition-dun-conteneur-markdown)
+      - [Édition d'un conteneur Contact](#édition-dun-conteneur-contact)
+    - [Edition d'un conteneur Search](#edition-dun-conteneur-search)
+    - [Recherche simple](#recherche-simple)
+    - [Intégration de média (embed) dans une page](#intégration-de-média-embed-dans-une-page)
+        - [Liste non-exhaustive des domaines autorisés:](#liste-non-exhaustive-des-domaines-autorisés-1)
+    - [Organisation des conteneurs](#organisation-des-conteneurs)
+  - [Organisation de la barre de menus](#organisation-de-la-barre-de-menus)
+- [Gestion de la consultation et de l'édition des données du catalogue](#gestion-de-la-consultation-et-de-lédition-des-données-du-catalogue)
+  - [Les différents statuts](#les-différents-statuts)
+    - [Attribution de statuts](#attribution-de-statuts)
+  - [Statistiques](#statistiques)
+  - [API](#api)
+    - [Qui a accès au données](#qui-a-accès-au-données)
+    - [Mode data only](#mode-data-only)
+- [Exemple de réalisation d'un catalogue](#exemple-de-réalisation-dun-catalogue)
+  - [Conceptualisation](#conceptualisation-1)
+  - [|Population](#population)
+  - [|Site web](#site-web)
+  - [|Université ==\> **concept "Université"**](#université--concept-université)
+  - [|Université  ==\> **concept "Université"**](#université---concept-université)
+    - [Types de fiches et liens](#types-de-fiches-et-liens)
+  - [Ajout des types de fiches et création de champs](#ajout-des-types-de-fiches-et-création-de-champs)
+    - [Références à d'autres champs](#références-à-dautres-champs)
 
 <a id="catconfiguration"></a>
 # Configuration d'un catalogue 
@@ -317,11 +340,34 @@ Qui s'affichent ainsi dans le site du catalogue :
 
 Ce champ permet d'entrer des adresses URL.
 
+#### Champ datation
+
+Le champ de datation est un champ qui permet **la datation plus ou moins souple** d'une fiche. Celui-ci se différencie du champ date/heure en offrant la possibilité de prendre en compte des périodes en plus de dates précises.
+Des recherches par date peuvent ensuite être effectuées selon une période, prédéfinie ou définie par l'utilisateur lors de la saisie, ou selon une date précise.
+
+Ce champ accepte deux types de formats pour l'entrée de dates lors de la création de nouvelles fiches:
+
+- entrée manuelle par date/heure: pour chaque fiche ajoutée, saisir un début et une fin de période manuellement
+- entrée par ensemble de choix: créer préalablement un ensemble de choix *de type datation* et le peupler de périodes pertinentes pour le projet. Sélectionner ensuite un choix au moment de créer la fiche.
+
+> Les deux options peuvent être proposées pour un même type de fiche. Il est alors possible de choisir entre une période prédéfinie ou d'en créer une manuellement au moment de la saisie d'une nouvelle fiche. **Cependant, il n'est pas possible de saisir les deux formats dans une même fiche.**
+
+##### Exemple d'utilisation
+
+Pour un projet d'inventaire d'objets d'un bâtiment du patrimoine suisse, Catima est utilisé pour le référencement et la datation des collections. Si les informations disponibles pour dater un objet peuvent parfois être assez vagues au début du processus (style de l'objet, usage d'une technique, nom d'une manufacture), au fur et à mesure de l'avancement du projet et de la découvertes de nouveaux documents et indices, la datation des objet se précise. C'est dans cette perspective que la datation par ensemble de choix qui permet d'attribuer plusieurs indices datés (style, artisan, usage d'une technique) a été conçue. Si une preuve devait apparaître permettant de dater plus précisément l'objet (par exemple découverte d'une lettre qui indique l'année exacte de la création de l'objet), alors la datation de l'objet pourrait passer en entrée manuelle pour la saisie d'une date précise.
+
+Ensuite, une personne visitant le catalogue pourra effectuer des recherches selon la datation des objets recensés. Elle pourra rechercher des dates précises et trouver les objets datés de cette date ou qui incluent cette date dans la période qui leur a été attribuée. Elle pourra effectuer des recherches par période en entrant manuellement des dates de début et de fin ou en sélectionnant une période prédéfinie dans une liste de choix. Elle pourra également croiser les période, exclure des dates ou croiser les critères avec d'autre champs.
+
+##### Différences entre les champs "Datation" et "Date"
+
+Le champ **Date** permet l'entrée d'une date précise sur une fiche. Cette date doit être unique. Cela peut être par exemple la date de naissance d'une personne, l'année de construction d'un bâtiment ou l'heure et la date d'une représentation.
+
+Le champ de **Datation** accepte une date de début et une date de fin, permettant la création de périodes et la recherche sur toutes les dates contenues dans cette période.
+
 <a id="creationchamp"></a>
 ### Création d'un champ 
 
-Bien que chaque champ impose son format de données spécifiques (nombres, dates, images, etc...), une partie des informations à remplir est commune : 
-
+Bien que chaque champ impose son format de données spécifiques (nombres, dates, images, etc...), une partie des informations à remplir est commune :
 
 | | Definition | Exemple | Remarques |
 | ---------- | ---------- |---------- | ---------- |
@@ -338,6 +384,107 @@ Bien que chaque champ impose son format de données spécifiques (nombres, dates
 | **Inclure le champ dans la liste des fiches en mode édition (Data** | Activer/désactiver l'affichage de ce champ dans le tableau des données (section "Data") pour aérer l'affichage | Particulièrement utile pour les champs contenant de grands textes |
 | **Inclure le champ dans la liste des fiches en mode consultation** | Activer/désactiver l'affichage du champ lors de la consultation des données sous forme de liste par l'utilisateur final | Si l'affichage des fiches se fait sous forme de *Grid* cette option ne sera pas prise en compte. |
 | **Restreindre le champ au personnel du catalogue** | Cache ce champ pour les users et members.| Uniquement visible pour les éditeurs, super-éditeurs, reviewers et adminisatrateurs. |                                                                               
+### Création d'un champ de type datation
+
+Quelques questions doivent être résolues avant de commencer la création d'un champ **Datation**.
+
+1. Quel est le niveau de précision: par période, par année, par jour/mois/année ?
+2. Est-ce que les dates/périodes sont exclusivement après JC ou des dates/période avant JC sont aussi possibles ?
+3. Quelles méthodes de saisie doivent être proposées ?
+    - Saisie manuelle par date/heure uniquement (passer directement à l'étape 2 pour créer le champ datation)
+    - Entrée par ensemble de choix (commencer par l'étape 1 pour configurer un ensemble de choix avant la création du champ datation lui-même)
+    - Les deux (commencer à l'étape 1 pour configurer un ensemble de choix de type datation)
+
+> Des modifications du champ sont possibles par la suite mais peuvent entrainer la perte de certaines données.
+
+#### Étape 1: Création d'un ensemble de choix de type datation
+
+Cette étape est nécessaire pour la saisie de dates par ensemble de choix et doit être effectuée préalablement à la création du champ datation.
+
+En mode **Setup**, sélectionner **Ensemble de choix** dans la colonne de gauche et cliquer sur *+ Nouvel ensemble de choix*. Sélectionner le type *Datation*, choisir si les dates avant JC sont autorisées ou non ainsi que le format.
+
+*Le format, ainsi que le type d'ensemble de choix (Datation ou Standard) ne peuvent plus être modifiés une fois l'ensemble de choix créé.*
+
+> Il est recommandé de choisir le format le plus large possible. Si la datation se fait par siècle, choisir **Y** (années) uniquement et non un format plus fin  qui incluerait des mois et jours sans quoi cela peut poser des conflits lors des recherches. Si une datation par jour/mois/année est nécessaire, choisir **YMD** et ne pas inclure les heures et secondes.
+
+![](assets/datation/creation_ens_choix.png)
+
+Editer l'ensemble de choix nouvellement créé et cliquer sur *+ Nouveau choix* pour ajouter une nouvelle période ou date précise. Il y a plusieurs possibilités:
+
+- les champs *Date de début* et *Date de fin* sont remplis par deux dates différentes. Ils définissent une période allant d'une date à une autre, toutes les dates entre les deux étant aussi incluses.
+- uniquement le champ *Date de début* est rempli. Il définit une période après la date de début indiquée, date de début incluse.
+- uniquement le champ *Date de fin* est rempli. Il définit une période avant la date de fin indiquée, date de fin incluse.
+- Remplir les deux champs avec les mêmes informations permet de définir une date fixe. Par exemple *Date de début*: 1990 et *Date de fin*: 1990.
+
+![](assets/datation/avantJCvsnon.png)
+
+> Les dates de début et de fin sont **inclusives**. Une période définie avec la date de début **1990** et la date de fin **1999** comprend les années 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998 et 1999. Faire ensuite une recherche sur une ou plusieurs de ces années retournera les fiches datées de cette période.
+
+**Hiérarchie des choix**
+Lors de la création d'un choix, il est possible de lui associer un **parent**.
+![](assets/datation/choix_parent.png)
+
+La hiérarchie des choix est visible dans le mode **Set up** de l'ensemble de choix. Pour modifier l’ordre, sélectionner l’élément en cliquant sur la croix et le déplacer à l’emplacement désiré de la hiérarchie. ![](datation/hierarchie.png)
+
+**ATTENTION** il n'est pas recommandé de créer plusieurs niveaux de hiérarchisation des choix car cela entraîne de la confusion lors de la recherche par choix parent. Lors d'une recherche par ensemble de choix, les enfants d'enfants ne sont pas inclus.
+
+**Exemple**
+![](assets/datation/3niveaux.png)
+
+- Le choix 20ème siècle
+  - Le choix Seconde Guerre Mondiale est l'enfant de 20ème siècle
+    - Le choix année 1940 est l'enfant de Seconde Guerre Mondiale
+
+**Incidence sur la recherche**
+On recherche les objets datés du 20ème siècle sans inclure les enfants
+
+![](assets/datation/20emesansenfants.png)
+
+> Aucun enfant ne ressort dans la recherche
+
+![](assets/datation/20emeresultat.png)
+
+On recherche les objets datés du 20ème siècle en incluant les enfants
+
+![](assets/datation/20emeavecenfants.png)
+
+> Le premier niveau d'enfants ressort
+
+![](assets/datation/20emeavecresultat.png)
+
+On recherche les objets datés de la Seconde Guerre Mondiale sans inclure les enfants
+
+![](assets/datation/secondeguerresans.png)
+
+> Le choix parent ne ressort plus
+
+![](assets/datation/secondeguerresansresultat.png)
+
+On recherche les objets datés de la Seconde Guerre Mondiale en incluant les enfants
+
+> Le choix enfant ressort mais pas le choix parent
+
+![](assets/datation/secondeguerreavec.png)
+
+On recherche les objets datés du 20ème siècle en incluant les enfants **OU** les objets datés de la Seconde Guerre Mondiale en incluant les enfants
+
+![](assets/datation/20emeouseconde.png)
+
+> Les 3 niveaux ressortent
+
+![](assets/datation/20emeouseconderesultat.png)
+
+#### Étape 2: Création du champ datation
+
+En mode **Set Up**, sélectionner le type de fiche sur la colonne de gauche et cliquer sur *+ Ajouter > Champ de datation*. En plus du nom, nom au pluriel et slug ainsi que des options d'affichage, le dernier paramètre définit le ou les formats utilisés pour la saisie des données:
+
+1. **Manuelle**: cocher cette case pour permettre l'entrée manuelle de dates et périodes. Le format des données est défini en choisissant une option dans le menu déroulant. *Pour permettre l'utilisation de dates avant JC, cocher la case sous le menu déroulant*.
+2. **Par ensemble de choix**: cocher cette case et sélectionner un ensemble de choix **de type datation** pour permettre la sélection de dates ou périodes selon un ensemble de choix préalablement créé. L'acceptation ou non de dates négatives est définie directement dans les paramètres de l'ensemble de choix dans *Set up > Ensemble de choix*.
+
+**ATTENTION** si les deux types de formats de saisie sont activés (manuelle et par ensemble de choix), veiller à avoir défini le même format de dates pour les deux types de saisie. Par exemple: si les périodes prédéfinies dans l'ensemble de choix sont en années la saisie doit également être en années.
+
+![](assets/datation/config_datation.png)
+
 
 <a id="ajoutedition"></a>
 ## Ajout et édition de contenu conditionnel ou sous-fiche
@@ -397,7 +544,7 @@ Lors de la création ou de la modification d'un ensemble de choix, il est possib
 
 Dans cet exemple, la **sous-fiche** *extra-data* s'affichera et permettra la saisie de données uniquement lorsque le choix *Droit* sera selectionné.
 
-> Si la sous-fiche de s'affiche pas comme voulu: en mode *Setup*, sélectionner le type de fiche et ajouter un champ avec l'ensemble de choix avec lequel la sous-fiche est reliée. 
+> Si la sous-fiche de s'affiche pas comme voulu: en mode *Setup*, sélectionner le type de fiche et ajouter un champ avec l'ensemble de choix avec lequel la sous-fiche est reliée.
 
 <a id="affichagecontenuperso"></a>
 ## Affichage de contenus personnalisés et styles d'affichages 
