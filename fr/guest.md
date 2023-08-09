@@ -2,12 +2,12 @@
 
 - [Table des matières](#table-des-matières)
 - [Recherche](#recherche)
-  - [Recherche simple](#recherche-simple)
-  - [Recherche avancée](#recherche-avancée)
-    - [Opérateurs de recherche](#opérateurs-de-recherche)
-  - [Recherche sur le champ datation](#recherche-sur-le-champ-datation)
-    - [Recherche simple](#recherche-simple-1)
-    - [Recherche avancée](#recherche-avancée-1)
+  - [Recherche simple](#recherchesimple)
+  - [Recherche avancée](#rechercheavancee)
+    - [Opérateurs de recherche](#operateurs)
+  - [Recherche sur le champ datation](#recherchedatation)
+    - [Recherche simple](#recherchedatationsimple)
+    - [Recherche avancée](#recherchedatationavancee)
 
 # Recherche
 
@@ -40,6 +40,7 @@ Pour sélectionner plus d'une option parmi les choix proposés (par exemple "Uni
 Une fois les différents champs souhaités remplis, cliquer sur "*Chercher*" ("Search"). Une liste des résultats trouvés apparaît permettant d'accéder au contenu souhaité. Pour modifier la recherche, revenir en arrière à l'aide du bouton précédent (<-) de votre navigateur.
 
 
+<a id="operateurs"></a>
 ### Opérateurs de recherche
 
 Une recherche avancée s'effectue en entrant un ou plusieurs critères de recherche puis : en les cumulant (par défaut, opérateur "**ET**"), en les excluant (opérateur "**SAUF**") ou en élargissant (opérateur "**OU**").
@@ -76,11 +77,13 @@ Le champ **Date** permet l'entrée d'une date précise sur une fiche. Cette date
 
 Le champ de **Datation** accepte une date de début et une date de fin, permettant la création de périodes et la recherche sur toutes les dates contenues dans cette période.
 
+<a id="recherchedatationsimple"></a>
 ### Recherche simple
 
 Rechercher une date dans la barre de recherche retournera uniquement les fiches dans lesquelles les caractères recherchés figurent tels quels dans un des champs. Une recherche simple ne permet pas de calculer des périodes.
 Ainsi, entrer deux dates dans la barre de recherche ne calculera pas une période mais retournera les fiches dans lesquelles figurent textuellement les deux dates.
 
+<a id="recherchedatationavancee"></a>
 ### Recherche avancée
 
 Une recherche avancée sur le champ datation permet de préciser des périodes de plusieurs façons différentes.
