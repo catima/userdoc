@@ -31,6 +31,8 @@
       - [Options d'affichage des champs dans la liste des fiches](#options-daffichage-des-champs-dans-la-liste-des-fiches)
     - [Création d'un champ de type datation](#création-dun-champ-de-type-datation)
       - [Étape 1: Création d'un ensemble de choix de type datation](#étape-1-création-dun-ensemble-de-choix-de-type-datation)
+        - [Hiérarchie des choix](#hiérarchie-des-choix)
+          - [Incidence sur la recherche](#incidence-sur-la-recherche)
       - [Étape 2: Création du champ datation](#étape-2-création-du-champ-datation)
   - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajout-et-édition-de-contenu-conditionnel-ou-sous-fiche)
     - [1. Création d'une sous-fiche](#1-création-dune-sous-fiche)
@@ -420,7 +422,8 @@ Editer l'ensemble de choix nouvellement créé et cliquer sur *+ Nouveau choix* 
 
 > Les dates de début et de fin sont **inclusives**. Une période définie avec la date de début **1990** et la date de fin **1999** comprend les années 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998 et 1999. Faire ensuite une recherche sur une ou plusieurs de ces années retournera les fiches datées de cette période.
 
-**Hiérarchie des choix**
+##### Hiérarchie des choix
+
 Lors de la création d'un choix, il est possible de lui associer un **parent**.
 ![](assets/datation/choix_parent.png)
 
@@ -435,7 +438,8 @@ La hiérarchie des choix est visible dans le mode **Set up** de l'ensemble de ch
   - Le choix Seconde Guerre Mondiale est l'enfant de 20ème siècle
     - Le choix année 1940 est l'enfant de Seconde Guerre Mondiale
 
-**Incidence sur la recherche**
+###### Incidence sur la recherche
+
 On recherche les objets datés du 20ème siècle sans inclure les enfants
 
 ![](assets/datation/20emesansenfants.png)
@@ -481,7 +485,8 @@ En mode **Set Up**, sélectionner le type de fiche sur la colonne de gauche et c
 1. **Manuelle**: cocher cette case pour permettre l'entrée manuelle de dates et périodes. Le format des données est défini en choisissant une option dans le menu déroulant. *Pour permettre l'utilisation de dates avant JC, cocher la case sous le menu déroulant*.
 2. **Par ensemble de choix**: cocher cette case et sélectionner un ensemble de choix **de type datation** pour permettre la sélection de dates ou périodes selon un ensemble de choix préalablement créé. L'acceptation ou non de dates négatives est définie directement dans les paramètres de l'ensemble de choix dans *Set up > Ensemble de choix*.
 
-**ATTENTION** si les deux types de formats de saisie sont activés (manuelle et par ensemble de choix), veiller à avoir défini le même format de dates pour les deux types de saisie. Par exemple: si les périodes prédéfinies dans l'ensemble de choix sont en années la saisie doit également être en années.
+**ATTENTION !** Si les deux types de saisie sont activés (manuelle et par ensemble de choix), il est recommandé de choisir le même format de date.
+Le cas échéant, veiller à avoir défini des formats **cohérents**. Le format de date le plus large doit toujours être inclus dans le format le plus fin. Par exemple, si l'ensemble de choix est en années, la saisie manuelle peut-être en mois-années mais pas uniquement en mois.
 
 ![](assets/datation/config_datation.png)
 

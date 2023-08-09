@@ -6,7 +6,6 @@
   - [Recherche avancée](#recherche-avancée)
     - [Opérateurs de recherche](#opérateurs-de-recherche)
   - [Recherche sur le champ datation](#recherche-sur-le-champ-datation)
-    - [Différences entre les champs "Datation" et "Date"](#différences-entre-les-champs-datation-et-date)
     - [Recherche simple](#recherche-simple-1)
     - [Recherche avancée](#recherche-avancée-1)
 
@@ -18,6 +17,7 @@ Les recherches simple et avancées sont accessibles depuis la page d'accueil du 
 
 ![](assets/search/search.png)
 
+<a id="recherchesimple"></a>
 ## Recherche simple
 
 La recherche simple permet d'accéder à une liste de contenus contenant un mot ou une expression (chaîne de caractères). 
@@ -71,8 +71,7 @@ En choisissant l'opérateur "OU", on souhaite obtenir une liste de résultats co
 <a id="recherchedatation"></a>
 ## Recherche sur le champ datation
 
-### Différences entre les champs "Datation" et "Date"
-
+**Différences entre les champs "Datation" et "Date"**
 Le champ **Date** permet l'entrée d'une date précise sur une fiche. Cette date doit être unique. Cela peut être par exemple la date de naissance d'une personne, l'année de construction d'un bâtiment ou l'heure et la date d'une représentation.
 
 Le champ de **Datation** accepte une date de début et une date de fin, permettant la création de périodes et la recherche sur toutes les dates contenues dans cette période.
@@ -98,6 +97,9 @@ Les critères peuvent être cumulés à l'aide des opérateurs de recherche "et"
 
 L'opérateur qui se trouve avant la première ligne (6) se réfère aux autres champs de recherche. Tous les autres permettent de faire entrer en interaction plusieurs critères à l'intérieur du champ datation.
 >  **Rappel:**
+> 
 > **ET** (6): tous les critères doivent être remplis
+> 
 > **OU** (7): l'un ou l'autre des critères doit être rempli
+> 
 > **SAUF** (8): le critère doit être exclu

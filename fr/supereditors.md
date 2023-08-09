@@ -22,6 +22,7 @@ Remplir les informations demandées puis cliquer sur "Créer" pour ajouter le ch
 
 Il n'est pas possible pour un super-éditeur de supprimer des choix existants.
 
+<a id="ajout-choix-datation"></a>
 ## Ajouter des choix dans les ensembles de choix de type datation
 
 Cliquer sur *+ Nouveau choix* pour ajouter une nouvelle période ou date précise. Il y a plusieurs possibilités:
