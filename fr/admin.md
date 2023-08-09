@@ -369,7 +369,7 @@ Bien que chaque champ impose son format de données spécifiques (nombres, dates
 | **Restreindre le champ au personnel du catalogue** | Cache ce champ pour les users et members.| Uniquement visible pour les éditeurs, super-éditeurs, reviewers et adminisatrateurs. |                                                                               
 
 <a id="creationdatation"></a>
-### Création d'un champ de type datation
+### Création d'un champ datation
 
 Quelques questions doivent être résolues avant de commencer la création d'un champ **Datation**.
 
