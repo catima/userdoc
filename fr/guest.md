@@ -5,7 +5,7 @@
   - [Recherche simple](#recherchesimple)
   - [Recherche avancée](#rechercheavancee)
     - [Opérateurs de recherche](#operateurs)
-  - [Recherche sur le champ datation](#recherchedatation)
+- [Recherche sur le champ datation](#recherchedatation)
     - [Recherche simple](#recherchedatationsimple)
     - [Recherche avancée](#recherchedatationavancee)
 
