@@ -1,77 +1,54 @@
 # Table des matières
 
-- [Table des matières](#table-des-matières)
-- [Configuration d'un catalogue](#configuration-dun-catalogue)
-  - [Conceptualisation](#conceptualisation)
-  - [Hiérarchisation et Structure](#hiérarchisation-et-structure)
-  - [Liens et Références](#liens-et-références)
-  - [Création d'un type de fiche](#création-dun-type-de-fiche)
-      - [Suggestions](#suggestions)
-    - [Configuration d'un type de fiche](#configuration-dun-type-de-fiche)
-    - [Types de champs](#types-de-champs)
-      - [Champ booléen (oui/non)](#champ-booléen-ouinon)
-      - [Champ ensemble de choix](#champ-ensemble-de-choix)
-      - [Champ décimal](#champ-décimal)
-      - [Champ rédacteur](#champ-rédacteur)
-      - [Champ e-mail](#champ-e-mail)
-      - [Champ d'intégration (embed)](#champ-dintégration-embed)
-        - [Liste non-exhaustive des domaines autorisés:](#liste-non-exhaustive-des-domaines-autorisés)
-        - [Utilisation du champ d'intégration (embed)](#utilisation-du-champ-dintégration-embed)
-      - [Champ fichier](#champ-fichier)
-      - [Champ géographique](#champ-géographique)
-      - [Champ image](#champ-image)
-      - [Champ nombre entier](#champ-nombre-entier)
-      - [Champ référence](#champ-référence)
-      - [Champ de texte](#champ-de-texte)
-      - [Champ URL](#champ-url)
-      - [Champ datation](#champ-datation)
-        - [Exemple d'utilisation](#exemple-dutilisation)
-        - [Différences entre les champs "Datation" et "Date"](#différences-entre-les-champs-datation-et-date)
-    - [Création d'un champ](#création-dun-champ)
-      - [Options d'affichage des champs dans la liste des fiches](#options-daffichage-des-champs-dans-la-liste-des-fiches)
-    - [Création d'un champ de type datation](#création-dun-champ-de-type-datation)
-      - [Étape 1: Création d'un ensemble de choix de type datation](#étape-1-création-dun-ensemble-de-choix-de-type-datation)
-        - [Hiérarchie des choix](#hiérarchie-des-choix)
-          - [Incidence sur la recherche](#incidence-sur-la-recherche)
-      - [Étape 2: Création du champ datation](#étape-2-création-du-champ-datation)
-  - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajout-et-édition-de-contenu-conditionnel-ou-sous-fiche)
-    - [1. Création d'une sous-fiche](#1-création-dune-sous-fiche)
-    - [Édition d'une sous-fiche](#édition-dune-sous-fiche)
-    - [2. Ajout d'un ensemble de choix](#2-ajout-dun-ensemble-de-choix)
-  - [Affichage de contenus personnalisés et styles d'affichages](#affichage-de-contenus-personnalisés-et-styles-daffichages)
-    - [Ajout d'une page](#ajout-dune-page)
-    - [Édition d'une page](#édition-dune-page)
-      - [Édition d'un conteneur Item List](#édition-dun-conteneur-item-list)
-      - [Images (thumb):](#images-thumb)
-      - [Grille (grid):](#grille-grid)
-      - [Liste:](#liste)
-      - [Line (ligne):](#line-ligne)
-      - [Édition d'un conteneur de cartes géographique (Map Container)](#édition-dun-conteneur-de-cartes-géographique-map-container)
-      - [Édition d'un conteneur HTML](#édition-dun-conteneur-html)
-      - [Édition d’un conteneur Markdown](#édition-dun-conteneur-markdown)
-      - [Édition d'un conteneur Contact](#édition-dun-conteneur-contact)
-    - [Edition d'un conteneur Search](#edition-dun-conteneur-search)
-    - [Recherche simple](#recherche-simple)
-    - [Intégration de média (embed) dans une page](#intégration-de-média-embed-dans-une-page)
-        - [Liste non-exhaustive des domaines autorisés:](#liste-non-exhaustive-des-domaines-autorisés-1)
-    - [Organisation des conteneurs](#organisation-des-conteneurs)
-  - [Organisation de la barre de menus](#organisation-de-la-barre-de-menus)
-- [Gestion de la consultation et de l'édition des données du catalogue](#gestion-de-la-consultation-et-de-lédition-des-données-du-catalogue)
-  - [Les différents statuts](#les-différents-statuts)
-    - [Attribution de statuts](#attribution-de-statuts)
-  - [Statistiques](#statistiques)
-  - [API](#api)
-    - [Qui a accès au données](#qui-a-accès-au-données)
-    - [Mode data only](#mode-data-only)
-- [Exemple de réalisation d'un catalogue](#exemple-de-réalisation-dun-catalogue)
-  - [Conceptualisation](#conceptualisation-1)
-  - [|Population](#population)
-  - [|Site web](#site-web)
-  - [|Université ==\> **concept "Université"**](#université--concept-université)
-  - [|Université  ==\> **concept "Université"**](#université---concept-université)
-    - [Types de fiches et liens](#types-de-fiches-et-liens)
-  - [Ajout des types de fiches et création de champs](#ajout-des-types-de-fiches-et-création-de-champs)
-    - [Références à d'autres champs](#références-à-dautres-champs)
+- [Configuration d'un catalogue](#catconfiguration)
+    - [Conceptualisation](#conceptualisation)
+    - [Hiérarchisation et Structure](#hierarchisationetstructure)
+    - [Liens et Références](#liensetref)
+    - [Création d'un type de fiche](#creationtypefiche)
+        - [Configuration d'un type de fiche](#configuration-dun-type-de-fiche)
+        - [Types de champs](#types-de-champs)
+            - [Champ booléen oui/non](#champbool)
+            - [Champ ensemble de choix](#champensemble)
+            - [Champ décimal](#champdecimal)
+            - [Champ rédacteur](#champredaction)
+            - [Champ e-mail](#champemail)
+            - [Champ d'intégration (embed)](#champintegration)
+            - [Champ fichier](#champ-fichier)
+            - [Champ géographique](#champgeo)
+            - [Champ image](#champ-image)
+            - [Champ nombre entier](#champ-nombre-entier)
+            - [Champ référence](#champreference)
+            - [Champ de texte](#champ-de-texte)
+            - [Champ URL](#champ-url)
+            - [Champ datation](#champ-datation)
+        - [Création d'un champ](#creationchamp)
+            - [Options d'affichage des champs dans la liste des fiches](#optionsaffichage)
+        - [Création d'un champ datation](#creationdatation)
+    - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajoutedition)
+        - [Création d'une sous-fiche](#creationsousfiche)
+        - [Édition d'une sous-fiche](#editionsousfiche)
+        - [Ajout d'un ensemble de choix](#ajoutensemblechoix)
+    - [Affichage de contenus personnalisés et styles d'affichages](#affichagecontenuperso)
+        - [Ajout d'une page](#ajoutpage)
+        - [Édition d'une page](#editionpage)
+            - [Édition d'un conteneur Item List](#editionconteneurlist)
+            - [Édition d'un conteneur de cartes géographique Map Container](#editionconteneurgeo)
+            - [Édition d'un conteneur HTML](#editionhtml)
+            - [Édition d’un conteneur Markdown](#editionmarkdown)
+            - [Édition d'un conteneur Contact](#editioncontact)
+            - [Édition d'un conteneur Search](#editionsearch)
+        - [Intégration de média](#integrationmediapage)
+        - [Organisation des conteneurs](#organisationconteneurs)
+    - [Organisation de la barre de menus](#organisation-de-la-barre-de-menus)
+    - [Integration de média](#integrationmedia)
+    - [Gestion de la consultation et de l'édition des données du catalogue](#gestion)
+        - [Les différents statuts](#statuts)
+            - [Attribution des statuts](#attribution)
+    - [API et mode data only](#api)
+    - [Statistiques du catalogue](#statistiques)
+- [Exemple de réalisation d'un catalogue](#exemple)
+    - [Conceptualisation](#conceptualisation)
+    - [Ajout des types de fiches et création de champs](#types-de-fiches-champs)
 
 <a id="catconfiguration"></a>
 # Configuration d'un catalogue 
@@ -220,6 +197,8 @@ Si un ensemble de choix créé n'est pas ou plus utilisé, on peut soit:
 - le **désactiver**: l'ensemble de choix est toujours présent en mode "Set Up" mais n'est pas utilisable en mode "Data" ni visible dans le catalogue. On peut le réactiver si besoin. 
 - le **supprimer**: l'ensemble de choix est supprimé et il n'est plus possible de le récupérer par la suite.
 
+La hierarchie des choix dans les ensembles de choix standard ou de type datation a un impact important sur la recherche. Plus les choix sont bas dans la hierarchie plus il sera difficile de les faire ressortir lors de la recherche par ensemble de choix.
+
 <a id="champdecimal"></a>
 #### Champ décimal
 
@@ -338,10 +317,12 @@ Qui s'affichent ainsi dans le site du catalogue :
 
 > **AVERSTISSEMENT** : une fois du texte formaté ajouté, il est **vivement déconseillé** de décocher la case **"Contient du texte formaté"**. En effet le formatage du texte ajoute du code informatique, et la désactivation de cette option affichera ce texte peu lisible à l'utilisateur. Recocher la case permet de rétablir l'affichage du texte formaté.
 
+<a id="champ-url"></a>
 #### Champ URL
 
 Ce champ permet d'entrer des adresses URL.
 
+<a id="champ-datation"></a>
 #### Champ datation
 
 Le champ de datation est un champ qui permet **la datation plus ou moins souple** d'une fiche. Celui-ci se différencie du champ date/heure en offrant la possibilité de prendre en compte des périodes en plus de dates précises.
@@ -386,6 +367,8 @@ Bien que chaque champ impose son format de données spécifiques (nombres, dates
 | **Inclure le champ dans la liste des fiches en mode édition (Data** | Activer/désactiver l'affichage de ce champ dans le tableau des données (section "Data") pour aérer l'affichage | Particulièrement utile pour les champs contenant de grands textes |
 | **Inclure le champ dans la liste des fiches en mode consultation** | Activer/désactiver l'affichage du champ lors de la consultation des données sous forme de liste par l'utilisateur final | Si l'affichage des fiches se fait sous forme de *Grid* cette option ne sera pas prise en compte. |
 | **Restreindre le champ au personnel du catalogue** | Cache ce champ pour les users et members.| Uniquement visible pour les éditeurs, super-éditeurs, reviewers et adminisatrateurs. |                                                                               
+
+<a id="creationdatation"></a>
 ### Création d'un champ de type datation
 
 Quelques questions doivent être résolues avant de commencer la création d'un champ **Datation**.
@@ -422,6 +405,7 @@ Editer l'ensemble de choix nouvellement créé et cliquer sur *+ Nouveau choix* 
 
 > Les dates de début et de fin sont **inclusives**. Une période définie avec la date de début **1990** et la date de fin **1999** comprend les années 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998 et 1999. Faire ensuite une recherche sur une ou plusieurs de ces années retournera les fiches datées de cette période.
 
+<a id="hierarchie-choix"></a>
 ##### Hiérarchie des choix
 
 Lors de la création d'un choix, il est possible de lui associer un **parent**.
@@ -477,6 +461,9 @@ On recherche les objets datés du 20ème siècle en incluant les enfants **OU** 
 > Les 3 niveaux ressortent
 
 ![](assets/datation/20emeouseconderesultat.png)
+
+##### En résumé
+La hierarchie des choix dans les ensembles de choix standard ou de type datation a un impact important sur la recherche. Plus les choix sont bas dans la hierarchie plus il sera difficile de les faire ressortir lors de la recherche par ensemble de choix.
 
 #### Étape 2: Création du champ datation
 

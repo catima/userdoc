@@ -94,4 +94,4 @@ On recherche les objets datés du 20ème siècle en incluant les enfants **OU** 
 
 ### En résumé
 
-La hierarchie des choix dans les ensembles de choix standard ou de type datation a un impact important sur la recherche. Plus les choix sont bas dans la hierarchie plus il sera difficile de les faire ressortir lors de la recherche par ensemble de choix.
+La hierarchie des choix dans les ensembles de choix standard ou de type datation a un impact important sur la recherche. Plus les choix sont bas dans la hiérarchie plus il sera difficile de les faire ressortir lors de la recherche par ensemble de choix.
