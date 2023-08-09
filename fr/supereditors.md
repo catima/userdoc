@@ -1,14 +1,12 @@
 # Table des matières
 
-- [Table des matières](#table-des-matières)
-  - [Ajout de choix dans les ensembles de choix](#ajout-de-choix-dans-les-ensembles-de-choix)
-  - [Ajouter des choix dans les ensembles de choix de type datation](#ajouter-des-choix-dans-les-ensembles-de-choix-de-type-datation)
-    - [Hiérarchie des choix](#hiérarchie-des-choix)
+- [Ajout de choix dans les ensembles de choix](#ajout-choix)
+- [Ajout des choix de type datation](#ajoutchoixdatation)
+- [Choix parents et choix enfants](#choixparents)
 
 En plus de la création de nouvelles fiches, un super-éditeur peut modifier toutes les fiches existantes et ajouter des choix dans les ensembles de choix.
 
 <a id="ajout-choix"></a>
-
 ## Ajout de choix dans les ensembles de choix
 
 Pour ajouter un nouveau choix, lors de l'ajout ou de la modification d'une fiche avec une option "Ensemble de choix", cliquer sur ![Ajouter](assets/buttons/add_btn.png).
@@ -22,7 +20,7 @@ Remplir les informations demandées puis cliquer sur "Créer" pour ajouter le ch
 
 Il n'est pas possible pour un super-éditeur de supprimer des choix existants.
 
-<a id="ajout-choix-datation"></a>
+<a id="ajoutchoixdatation"></a>
 ## Ajouter des choix dans les ensembles de choix de type datation
 
 Cliquer sur *+ Nouveau choix* pour ajouter une nouvelle période ou date précise. Il y a plusieurs possibilités:
@@ -36,7 +34,8 @@ Cliquer sur *+ Nouveau choix* pour ajouter une nouvelle période ou date précis
 
 > Les dates de début et de fin sont **inclusives**. Une période définie avec la date de début **1990** et la date de fin **1999** comprend les années 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998 et 1999. Faire ensuite une recherche sur une ou plusieurs de ces années retournera les fiches datées de cette période.
 
-### Hiérarchie des choix
+<a id="choixparents"></a>
+## Choix parents et choix enfants
 
 Lors de la création d'un choix, il est possible de lui associer un **parent**.
 ![](assets/datation/choix_parent.png)
@@ -45,14 +44,16 @@ La hiérarchie des choix est visible dans le mode **Set up** de l'ensemble de ch
 
 **ATTENTION** il n'est pas recommandé de créer plusieurs niveaux de hiérarchisation des choix car cela entraîne de la confusion lors de la recherche par choix parent. Lors d'une recherche par ensemble de choix, les enfants d'enfants ne sont pas inclus.
 
-**Exemple**
+### Exemple
+
 ![](assets/datation/3niveaux.png)
 
 - Le choix 20ème siècle
   - Le choix Seconde Guerre Mondiale est l'enfant de 20ème siècle
-    - Le choix année 1940 est l'enfant de Seconde Guerre Mondiale
+  		- Le choix année 1940 est l'enfant de Seconde Guerre Mondiale
 
-**Incidence sur la recherche**
+#### Incidence sur la recherche
+
 On recherche les objets datés du 20ème siècle sans inclure les enfants
 
 ![](assets/datation/20emesansenfants.png)
@@ -79,9 +80,9 @@ On recherche les objets datés de la Seconde Guerre Mondiale sans inclure les en
 
 On recherche les objets datés de la Seconde Guerre Mondiale en incluant les enfants
 
-> Le choix enfant ressort mais pas le choix parent
-
 ![](assets/datation/secondeguerreavec.png)
+
+> Le choix enfant ressort mais pas le choix parent
 
 On recherche les objets datés du 20ème siècle en incluant les enfants **OU** les objets datés de la Seconde Guerre Mondiale en incluant les enfants
 
@@ -90,3 +91,7 @@ On recherche les objets datés du 20ème siècle en incluant les enfants **OU** 
 > Les 3 niveaux ressortent
 
 ![](assets/datation/20emeouseconderesultat.png)
+
+### En résumé
+
+La hierarchie des choix dans les ensembles de choix standard ou de type datation a un impact important sur la recherche. Plus les choix sont bas dans la hierarchie plus il sera difficile de les faire ressortir lors de la recherche par ensemble de choix.
