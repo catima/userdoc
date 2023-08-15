@@ -197,7 +197,7 @@ Si un ensemble de choix créé n'est pas ou plus utilisé, on peut soit:
 - le **désactiver**: l'ensemble de choix est toujours présent en mode "Set Up" mais n'est pas utilisable en mode "Data" ni visible dans le catalogue. On peut le réactiver si besoin. 
 - le **supprimer**: l'ensemble de choix est supprimé et il n'est plus possible de le récupérer par la suite.
 
-La hierarchie des choix dans les ensembles de choix standard ou de type datation a un impact important sur la recherche. Plus les choix sont bas dans la hierarchie plus il sera difficile de les faire ressortir lors de la recherche par ensemble de choix.
+La hiérarchie des choix dans les ensembles de choix standard ou de type datation a un impact important sur la recherche. Plus les choix sont bas dans la hiérarchie plus il sera difficile de les faire ressortir lors de la recherche par ensemble de choix.
 
 <a id="champdecimal"></a>
 #### Champ décimal
@@ -463,7 +463,7 @@ On recherche les objets datés du 20ème siècle en incluant les enfants **OU** 
 ![](assets/datation/20emeouseconderesultat.png)
 
 ##### En résumé
-La hierarchie des choix dans les ensembles de choix standard ou de type datation a un impact important sur la recherche. Plus les choix sont bas dans la hierarchie plus il sera difficile de les faire ressortir lors de la recherche par ensemble de choix.
+La hiérachie des choix dans les ensembles de choix standard ou de type datation a un impact important sur la recherche. Plus les choix sont bas dans la hiérarchie plus il sera difficile de les faire ressortir lors de la recherche par ensemble de choix.
 
 #### Étape 2: Création du champ datation
 
