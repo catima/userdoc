@@ -1,6 +1,5 @@
 # Table des matières
 
-- [Table des matières](#table-des-matières)
 - [Configuration d'un catalogue](#configuration-dun-catalogue)
   - [Conceptualisation](#conceptualisation)
   - [Hiérarchisation et Structure](#hiérarchisation-et-structure)
@@ -15,8 +14,6 @@
       - [Champ rédacteur](#champ-rédacteur)
       - [Champ e-mail](#champ-e-mail)
       - [Champ d'intégration (embed)](#champ-dintégration-embed)
-        - [Liste non-exhaustive des domaines autorisés:](#liste-non-exhaustive-des-domaines-autorisés)
-        - [Utilisation du champ d'intégration (embed)](#utilisation-du-champ-dintégration-embed)
       - [Champ fichier](#champ-fichier)
       - [Champ géographique](#champ-géographique)
       - [Champ image](#champ-image)
@@ -25,20 +22,9 @@
       - [Champ de texte](#champ-de-texte)
       - [Champ URL](#champ-url)
       - [Champ datation](#champ-datation)
-        - [Exemple d'utilisation](#exemple-dutilisation)
-        - [Différences entre les champs "Datation" et "Date"](#différences-entre-les-champs-datation-et-date)
     - [Création d'un champ](#création-dun-champ)
-      - [Options d'affichage des champs dans la liste des fiches](#options-daffichage-des-champs-dans-la-liste-des-fiches)
     - [Création d'un champ datation](#création-dun-champ-datation)
-      - [Étape 1: Création d'un ensemble de choix de type datation](#étape-1-création-dun-ensemble-de-choix-de-type-datation)
-        - [Hiérarchie des choix](#hiérarchie-des-choix)
-          - [Incidence sur la recherche](#incidence-sur-la-recherche)
-        - [En résumé](#en-résumé)
-      - [Étape 2: Création du champ datation](#étape-2-création-du-champ-datation)
   - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajout-et-édition-de-contenu-conditionnel-ou-sous-fiche)
-    - [1. Création d'une sous-fiche](#1-création-dune-sous-fiche)
-    - [Édition d'une sous-fiche](#édition-dune-sous-fiche)
-    - [2. Ajout d'un ensemble de choix](#2-ajout-dun-ensemble-de-choix)
   - [Affichage de contenus personnalisés et styles d'affichages](#affichage-de-contenus-personnalisés-et-styles-daffichages)
     - [Ajout d'une page](#ajout-dune-page)
     - [Édition d'une page](#édition-dune-page)
@@ -54,7 +40,6 @@
     - [Edition d'un conteneur Search](#edition-dun-conteneur-search)
     - [Recherche simple](#recherche-simple)
     - [Intégration de média (embed) dans une page](#intégration-de-média-embed-dans-une-page)
-        - [Liste non-exhaustive des domaines autorisés:](#liste-non-exhaustive-des-domaines-autorisés-1)
     - [Organisation des conteneurs](#organisation-des-conteneurs)
   - [Organisation de la barre de menus](#organisation-de-la-barre-de-menus)
 - [Gestion de la consultation et de l'édition des données du catalogue](#gestion-de-la-consultation-et-de-lédition-des-données-du-catalogue)
@@ -66,10 +51,6 @@
     - [Mode data only](#mode-data-only)
 - [Exemple de réalisation d'un catalogue](#exemple-de-réalisation-dun-catalogue)
   - [Conceptualisation](#conceptualisation-1)
-  - [|Population](#population)
-  - [|Site web](#site-web)
-  - [|Université ==\> **concept "Université"**](#université--concept-université)
-  - [|Université  ==\> **concept "Université"**](#université---concept-université)
     - [Types de fiches et liens](#types-de-fiches-et-liens)
   - [Ajout des types de fiches et création de champs](#ajout-des-types-de-fiches-et-création-de-champs)
     - [Références à d'autres champs](#références-à-dautres-champs)
@@ -937,6 +918,7 @@ Ceci est utile si le catalogue est utilisé uniquement comme base de données et
 
 Afin d'illustrer la réalisation d'un catalogue du début à la fin, voici un exemple reprenant la plupart des étapes décrites jusqu'à présent. Cet exemple consiste en un catalogue recensant les universités romandes et de leurs bibliothèques afin de les représenter sur une carte géographique.
 
+<a id="conceptualisation"></a>
 ## Conceptualisation 
 
 Une manière de débuter la conceptualisation est de représenter des données réelles ou d'exemple sous la forme d'un tableau de données. Cette étape de création fera émerger les éléments marquants du catalogue.
