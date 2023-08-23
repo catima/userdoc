@@ -1,2 +1,2 @@
 # FAQ Catima
-  - [admin doc](../fr/admin.md)
+  - [admin doc](fr/admin.md)
