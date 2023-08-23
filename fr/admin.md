@@ -348,7 +348,7 @@ Ce champ permet d'entrer des adresses URL.
 
 <a id="champ-datation"></a>
 #### Champ datation
-> Le champ datation est un champ très complexe. Vous trouverez [ici un exemple complet](assets/exempledatation.md) de l'utilisation du champ ainsi que de son comportement lors des recherches.
+> Le champ datation est un champ très complexe. Vous trouverez [ici un exemple complet](assets/datation/exempledatation.pdf) de l'utilisation du champ ainsi que de son comportement lors des recherches.
 
 Le champ de datation est un champ qui permet **la datation plus ou moins souple** d'une fiche. Celui-ci se différencie du champ date/heure en offrant la possibilité de prendre en compte des périodes en plus de dates précises.
 Des recherches par date peuvent ensuite être effectuées selon une période, prédéfinie ou définie par l'utilisateur lors de la saisie, ou selon une date précise.
