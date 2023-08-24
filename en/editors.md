@@ -4,7 +4,7 @@ A catalog's editor can view the website and add new items/content to it, but not
 
 - [Display items](#display-items)
 - [Add a new item](#add-item)
-	- [Dating data](#datingdata)
+	- [datation data](#datationdata)
 - [Item status](#item-status)
 - [Suggestions managment](#suggestions)
 - [Edit, duplicate and delete item](#editduplicatedelete)
@@ -27,11 +27,11 @@ Once saved, the new item will appear in the data list with other similar items.
 
 ![New item](assets/data/e-data_new.png)
 
-<a id="datingdata"></a>
-### Dating Data
-> The dating field is a very complex field for which [a complete manual](assets/datation/exampledatation.pdf) has been produced, as well as an [example catalog](https://catima.unil.ch/datation-exple/en) showing how the field is used and how it behaves when searched.
+<a id="datationdata"></a>
+### Datation Data
+> The datation field is a very complex field for which [a complete manual](assets/datation/exampledatation.pdf) has been produced, as well as an [example catalog](https://catima.unil.ch/datation-exple/en) showing how the field is used and how it behaves when searched.
 
-The dating field is a field that allows for **flexible dating** of an item. It differentiates itself from the date/time field by offering the ability to consider periods in addition to specific dates.
+The datation field is a field that allows for **flexible datation** of an item. It differentiates itself from the date/time field by offering the ability to consider periods in addition to specific dates.
 
 Subsequently searches by date can be performed based on predefined periods, user-defined periods, or based on a specific date.
 
@@ -44,7 +44,7 @@ This field accepts two types of formats for entering dates when creating new ite
 
 #### Manual Entry
 
-With manual dating, there are several input possibilities:
+With manual datation, there are several input possibilities:
 
 - The *Start Date* and *End Date* fields are filled with two different dates. They define a period from one date to another, including all dates between them.
 - The *Start Date* and *End Date* fields are filled with the same information. They define a fixed date. For example, *Start Date*: 1990 and *End Date*: 1990.
@@ -57,7 +57,7 @@ With manual dating, there are several input possibilities:
 
 #### Through a Choice Set
 
-Select one or more choices from the dropdown list. Dating through a choice set allows assigning one or more different periods to the same record.
+Select one or more choices from the dropdown list. datation through a choice set allows assigning one or more different periods to the same record.
 
 ![](assets/datation/choiceentry.png)
 
