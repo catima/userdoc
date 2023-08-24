@@ -50,7 +50,8 @@ It is possible to use advanced search with boolean operators:
  
 
 <a id="searchdate"></a>
-## Searching the Date Field
+## Searching the Dating Field
+> The dating field is a very complex field for which [a complete manual](assets/datation/exampledatation.md) has been produced, as well as an [example catalog](https://catima.unil.ch/datation-exple/en) showing how the field is used and how it behaves when searched.
 
 **Differences between "Date" and "Dating" Fields**
 

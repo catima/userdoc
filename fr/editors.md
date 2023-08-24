@@ -74,6 +74,7 @@ Pour ajouter plus d'un média, il est possible d'insérer plusieurs balises ifra
 
 <a id="donneesdatation"></a>
 ### Données de type datation
+> Le champ datation est un champ très complexe pour lequel a été réalisé [un manuel complet](assets/datation/exempledatation.md) ainsi qu'un [catalogue d'exemple](https://catima.unil.ch/datation-exple/fr) de l'utilisation du champ ainsi que de son comportement lors des recherches.
 
 Le champ de datation est un champ qui permet **la datation plus ou moins souple** d'une fiche. Celui-ci se différencie du champ date/heure en offrant la possibilité de prendre en compte des périodes en plus de dates précises.
 Des recherches par date peuvent ensuite être effectuées selon une période, prédéfinie ou définie par l'utilisateur lors de la saisie, ou selon une date précise.

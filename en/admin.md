@@ -270,6 +270,7 @@ This field accepts URL adress and will create a link.
 
 <a id="datation-field"></a>
 #### Datation field
+> The dating field is a very complex field for which [a complete manual](assets/datation/exampledatation.md) has been produced, as well as an [example catalog](https://catima.unil.ch/datation-exple/en) showing how the field is used and how it behaves when searched.
 
 The datation field is a field that allows for **flexible datation** of an item. It differs from the date/time field by offering the possibility of considering periods in addition to specific dates.
 Searches by date can then be conducted based on a predefined period, user-defined period, or according to a specific date.
