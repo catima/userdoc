@@ -3,7 +3,7 @@ A super-editor can add and edit any item as well as add choices to existing choi
 # Table of content
 
 - [Add new choice to choice set](#add-new-choice-to-choice-set)
-- [Add new choice to dating choice set](#addperiodchoice)
+- [Add new choice to datation choice set](#addperiodchoice)
 - [Choice hierarchy](#choicehierachy)
 
 ## Add new choice to choice set 
@@ -18,7 +18,7 @@ Fill in the blank and click on "Create" to add a new choice to the choice set.
 It is not possible for super-editors to delete existing choices or choice set. 
 
 <a id="addperiodchoice"></a>
-## Add new period to a dating choice set
+## Add new period to a datation choice set
 
 Add a new choice by clicking *+ New Choice* to add a new period or specific date. There are several possibilities:
 
