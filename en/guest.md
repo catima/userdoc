@@ -5,7 +5,7 @@ A guest is a user that doesn't have a CATIMA account. The accessibility (e.g. ed
 - [Search](#search)
 	- [Simple search](#simple-search)
 	- [Advanced search](#advanced-search)
-- [Search on dating field](#searchdate)
+- [Search on datation field](#searchdate)
 	- [Simple search](#simplesearchdate)
 	- [Advanced search](#advancedsearchdate)
 
@@ -50,10 +50,10 @@ It is possible to use advanced search with boolean operators:
  
 
 <a id="searchdate"></a>
-## Searching the Dating Field
-> The dating field is a very complex field for which [a complete manual](assets/datation/exampledatation.pdf) has been produced, as well as an [example catalog](https://catima.unil.ch/datation-exple/en) showing how the field is used and how it behaves when searched.
+## Searching the datation Field
+> The datation field is a very complex field for which [a complete manual](assets/datation/exampledatation.pdf) has been produced, as well as an [example catalog](https://catima.unil.ch/datation-exple/en) showing how the field is used and how it behaves when searched.
 
-**Differences between "Date" and "Dating" Fields**
+**Differences between "Date" and "datation" Fields**
 
 The **Date** field allows the entry of a specific date on a record. This date must be unique. For example, it could be a person's birthdate, a building's construction year, or the date and time of a performance.
 
@@ -69,15 +69,15 @@ Thus, entering two dates in the search bar won't calculate a period but will ret
 <a id="advancedsearchdate"></a>
 ### Advanced Search
 
-An advanced search on the dating field allows specifying periods in several different ways.
+An advanced search on the datation field allows specifying periods in several different ways.
 
 ![](assets/datation/advancedsearch.png)
 
-The dating field allows manual date entry. The dropdowns on the right allow specifying whether the search is for an exact date (1), after a date (2), or before a date (3).
+The datation field allows manual date entry. The dropdowns on the right allow specifying whether the search is for an exact date (1), after a date (2), or before a date (3).
 
 The dropdown (4) enables searches through a choice set.
 
-The ***Exclude*** criterion (5) allows excluding one or the other of the dating format. Excluding records with **manual dating** will only return records with **choice set dating** and vice versa.
+The ***Exclude*** criterion (5) allows excluding one or the other of the datation format. Excluding records with **manual datation** will only return records with **choice set datation** and vice versa.
 
 The criteria can be combined using the search operators "and," "or," and "exclude," which are located on the left.
 
