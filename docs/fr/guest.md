@@ -2,12 +2,14 @@
 
 - [Table des matières](#table-des-matières)
 - [Recherche](#recherche)
-  - [Recherche simple](#recherchesimple)
-  - [Recherche avancée](#rechercheavancee)
-    - [Opérateurs de recherche](#operateurs)
-- [Recherche sur le champ datation](#recherchedatation)
-    - [Recherche simple](#recherchedatationsimple)
-    - [Recherche avancée](#recherchedatationavancee)
+  - [Recherche simple](#recherche-simple)
+  - [Recherche avancée](#recherche-avancée)
+    - [Opérateurs de recherche](#opérateurs-de-recherche)
+  - [Recherche sur le champ datation](#recherche-sur-le-champ-datation)
+    - [Recherche simple](#recherche-simple-1)
+    - [Recherche avancée](#recherche-avancée-1)
+
+<span name="guestsearch">
 
 # Recherche
 
@@ -16,6 +18,8 @@ Les catalogues de CATIMA disposent d'une fonctionnalité de recherche permettant
 Les recherches simple et avancées sont accessibles depuis la page d'accueil du catalogue, en cliquant sur le nom du catalogue tout à gauche de la barre de menus :
 
 ![](assets/search/search.png)
+
+</span>
 
 <a id="recherchesimple"></a>
 ## Recherche simple
