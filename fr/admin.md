@@ -2,58 +2,58 @@
 
 - [Configuration d'un catalogue](#configuration-dun-catalogue)
   - [Conceptualisation](#conceptualisation)
-  - [Hiérarchisation et Structure](#hiérarchisation-et-structure)
-  - [Liens et Références](#liens-et-références)
-  - [Création d'un type de fiche](#création-dun-type-de-fiche)
+  - [Hiérarchisation et Structure](#hierarchisationetstructure)
+  - [Liens et Références](#liensetref)
+  - [Création d'un type de fiche](#creationtypefiche)
       - [Suggestions](#suggestions)
     - [Configuration d'un type de fiche](#configuration-dun-type-de-fiche)
     - [Types de champs](#types-de-champs)
-      - [Champ booléen (oui/non)](#champ-booléen-ouinon)
+      - [Champ booléen (oui/non)](#champbool)
       - [Champ ensemble de choix](#champ-ensemble-de-choix)
-      - [Champ décimal](#champ-décimal)
-      - [Champ rédacteur](#champ-rédacteur)
+      - [Champ décimal](#champdecimal)
+      - [Champ rédacteur](#champredaction)
       - [Champ e-mail](#champ-e-mail)
-      - [Champ d'intégration (embed)](#champ-dintégration-embed)
+      - [Champ d'intégration (embed)](#champintegration)
       - [Champ fichier](#champ-fichier)
-      - [Champ géographique](#champ-géographique)
+      - [Champ géographique](#champgeo)
       - [Champ image](#champ-image)
       - [Champ nombre entier](#champ-nombre-entier)
-      - [Champ référence](#champ-référence)
+      - [Champ référence](#champreference)
       - [Champ de texte](#champ-de-texte)
       - [Champ URL](#champ-url)
       - [Champ datation](#champ-datation)
-    - [Création d'un champ](#création-dun-champ)
-    - [Création d'un champ datation](#création-dun-champ-datation)
-  - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajout-et-édition-de-contenu-conditionnel-ou-sous-fiche)
-  - [Affichage de contenus personnalisés et styles d'affichages](#affichage-de-contenus-personnalisés-et-styles-daffichages)
+    - [Création d'un champ](#creationchamp)
+    - [Création d'un champ datation](#creationdatation)
+  - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajoutedition)
+  - [Affichage de contenus personnalisés et styles d'affichages](#affichagecontenuperso)
     - [Ajout d'une page](#ajout-dune-page)
-    - [Édition d'une page](#édition-dune-page)
-      - [Édition d'un conteneur Item List](#édition-dun-conteneur-item-list)
+    - [Édition d'une page](#editionpage)
+      - [Édition d'un conteneur Item List](#editionconteneurlist)
       - [Images (thumb):](#images-thumb)
       - [Grille (grid):](#grille-grid)
       - [Liste:](#liste)
       - [Line (ligne):](#line-ligne)
-      - [Édition d'un conteneur de cartes géographique (Map Container)](#édition-dun-conteneur-de-cartes-géographique-map-container)
-      - [Édition d'un conteneur HTML](#édition-dun-conteneur-html)
-      - [Édition d’un conteneur Markdown](#édition-dun-conteneur-markdown)
-      - [Édition d'un conteneur Contact](#édition-dun-conteneur-contact)
-    - [Edition d'un conteneur Search](#edition-dun-conteneur-search)
-    - [Recherche simple](#recherche-simple)
-    - [Intégration de média (embed) dans une page](#intégration-de-média-embed-dans-une-page)
-    - [Organisation des conteneurs](#organisation-des-conteneurs)
+      - [Édition d'un conteneur de cartes géographique (Map Container)](#editionconteneurgeo)
+      - [Édition d'un conteneur HTML](#editionhtml)
+      - [Édition d’un conteneur Markdown](#editionmarkdown)
+      - [Édition d'un conteneur Contact](#editioncontact)
+    - [Edition d'un conteneur Search](#editionsearch)
+    - [Recherche simple](#recherchesimple)
+    - [Intégration de média (embed) dans une page](#integrationmediapage)
+    - [Organisation des conteneurs](#organisationconteneurs)
   - [Organisation de la barre de menus](#organisation-de-la-barre-de-menus)
-- [Gestion de la consultation et de l'édition des données du catalogue](#gestion-de-la-consultation-et-de-lédition-des-données-du-catalogue)
-  - [Les différents statuts](#les-différents-statuts)
+- [Gestion de la consultation et de l'édition des données du catalogue](#gestionconsultation)
+  - [Les différents statuts](#statuts)
     - [Attribution de statuts](#attribution-de-statuts)
   - [Statistiques](#statistiques)
   - [API](#api)
-    - [Qui a accès au données](#qui-a-accès-au-données)
+    - [Qui a accès au données](#accesdonnes)
     - [Mode data only](#mode-data-only)
-- [Exemple de réalisation d'un catalogue](#exemple-de-réalisation-dun-catalogue)
-  - [Conceptualisation](#conceptualisation-1)
-    - [Types de fiches et liens](#types-de-fiches-et-liens)
-  - [Ajout des types de fiches et création de champs](#ajout-des-types-de-fiches-et-création-de-champs)
-    - [Références à d'autres champs](#références-à-dautres-champs)
+- [Exemple de réalisation d'un catalogue](#exemple)
+  - [Conceptualisation](#conceptualisation)
+    - [Types de fiches et liens](#typesfichesliens)
+  - [Ajout des types de fiches et création de champs](#typesdeficheschamps)
+    - [Références à d'autres champs](#referenceautrechamp)
 
 <a id="catconfiguration"></a>
 # Configuration d'un catalogue 
@@ -714,6 +714,7 @@ Une fois le conteneur Contact ajouté, enregistrer et retourner au menu *Setup* 
 
 Ce conteneur affiche une liste de fiches selon un critère déterminé par une recherche préalablement sauvegardée. Cela peut être une recherche simple ou une recherche avancée. 
 
+<a id="recherchesimple"></a>
 ### Recherche simple 
 
  ![](assets/search/recherche_simple.png)
@@ -810,7 +811,7 @@ Les champs suivants dépendent ensuite du type de menu choisi :
 
 Une fois les champs remplis avec les données, il est possible d'enregistrer et retourner au menu *Setup* avec "*Créer le menu*" ou d'enregistrer et ajouter de nouvelles données avec "*Create and add another*".
 
-<a id="gestion"></a>
+<a id="gestionconsultation"></a>
 # Gestion de la consultation et de l'édition des données du catalogue
 
 Le site généré par CATIMA peut être visible publiquement, ou sa consultation restreinte à certaines personnes.
@@ -891,6 +892,7 @@ Visualiser le nombre de fois que le catalogue a été vu à partir de la rubriqu
 
 Catima offre la possiblité de récupérer les informations en format JSON d'une manière dynamique avec une API. *Il faut que cette option soit activée par un administrateur système. Si elle ne l'est pas, prendre contact avec les responsables.*
 
+<a id="accesdonnes">
 ### Qui a accès au données
 
 Pour pouvoir utiliser les données avec l'API, il faut soit avoir un compte Catima et accès au catalogue dont on souhaite récupérer les données (méthode mot-de-passe), soit avoir une clé API de ce catalogue (méthode clé API). Les données accessibles avec la méthode d'authentification par mot-de-passe sont les mêmes que celles auxquelles l'utilisateur a accès alors que la méthode clé API permet un accès complet au catalogue. **Ne jamais partager une clé API publiquement.**.
@@ -971,6 +973,7 @@ Dans cet exemple, la réalisation d'un tableau permet de relever les concepts im
 |Université  ==> **concept "Université"**
 ---
 
+<a id="typesfichesliens">
 ### Types de fiches et liens
 
 Les quatre concepts précédements relevés, "Université", "Bibliothèque", "Localité", "Bâtiment",  correspondent aux types de fiches qu'il faudra créer dans CATIMA.
@@ -983,7 +986,7 @@ Les quatre concepts précédements relevés, "Université", "Bibliothèque", "Lo
 
 Cette structure permet d'afficher toutes les bibliothèques, ainsi que tous les bâtiments d'une université.
 
-<a id="types-de-fiches-champs"></a>
+<a id="typesdeficheschamps"></a>
 ## Ajout des types de fiches et création de champs
 
 > Pour cette étape, se baser sur la section "Ajout d'un type de fiche". 
@@ -1013,6 +1016,7 @@ Cette étape, à répéter pour chaque champ du type de fiche, est globalement s
 
 Une fois tous les champs d'un type de fiche créés, créer un nouveau type de fiche par ordre de complexité croissante, jusqu'à avoir créé tous les types de fiches avec tous leurs champs. 
 
+<a id="referenceautrechamp">
 ### Références à d'autres champs 
 
 Lors de la conceptualisation, les concepts les plus "précis" comme par exemple "Bâtiment", font référence aux concepts dans lesquels ils sont compris, par exemple ici "Université". On attribue ainsi à chaque bâtiment une caractéristique d'appartenance à une université.
