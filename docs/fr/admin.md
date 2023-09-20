@@ -102,7 +102,7 @@ Ces liens seront concrétisés dans CATIMA par des **"Références"**, au sein d
 Dans notre exemple de catalogue de film, dans le concept "Réalisateur" il sera fait une référence aux Films réalisés par ce Réalisateur.
 
 <a id="creationtypefiche"></a>
-## Création d'un type de fiche 
+## Création d'un type de fiche {#creation-type-fiche}
 
 Un catalogue permet de stocker des données (texte, images, dates, etc...) structurées sous la forme de types de fiches. Les types de fiches représentent des entités conceptuelles (p.ex le concept "livre") possédant des caractéristiques définies (p.ex "auteur", "année de publication").
 
