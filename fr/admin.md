@@ -1016,12 +1016,12 @@ Cette étape, à répéter pour chaque champ du type de fiche, est globalement s
 
 Une fois tous les champs d'un type de fiche créés, créer un nouveau type de fiche par ordre de complexité croissante, jusqu'à avoir créé tous les types de fiches avec tous leurs champs. 
 
-<a id="referenceautrechamp">
+<a id="referenceautrechamp"></a>
 ### Références à d'autres champs 
 
 Lors de la conceptualisation, les concepts les plus "précis" comme par exemple "Bâtiment", font référence aux concepts dans lesquels ils sont compris, par exemple ici "Université". On attribue ainsi à chaque bâtiment une caractéristique d'appartenance à une université.
 
-Dans CATIMA sela se traduit par la création d'un champ "Référence" : 
+Dans CATIMA cela se traduit par la création d'un champ "Référence" : 
 
 > Dans notre exemple, il s'agira dans "Bâtiment" de faire une référence aux concepts d' "Université". 
 
