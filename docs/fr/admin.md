@@ -79,7 +79,7 @@ Les éléments du concept "film" peuvent ainsi être représentés dans un table
 
 Les étapes suivantes permettent d'effectuer une conceptualisation efficace : exploration, hiérarchisation et liens
 
-<a id="hierarchisationetstructure"></a>
+<a id="hierarchisationetstructure" sandbox="allow-scripts"></a>
 ## Hiérarchisation et Structure
 
 L'étape de structure permet de mettre de l'ordre dans les concepts précédemment listés librement. Il s'agit à présent de se demander quels sont les concepts parmi les éléments parmi ceux listés précédemment et lesquels sont des caractéristiques de chaque concept.
