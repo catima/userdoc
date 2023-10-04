@@ -2,6 +2,18 @@
 <html lang="fr">
 <head>
 <title>FAQ Catima</title>
+<script>
+    const iframe = document.getElementById('myIframe'); // Replace 'myIframe' with the actual ID of your iframe element
+
+  // Function to scroll the iframe to a specific ID
+  function scrollToId(id) {
+    if (iframe && iframe.contentWindow) {
+      iframe.contentWindow.location.hash = id;
+    }
+  }
+  // Call the function to scroll to a specific ID (e.g., "creationtypefiche")
+  scrollToId("creationtypefiche");
+</script>
 </head>
 <body>
   <h1>FAQ Catima</h1>
@@ -9,16 +21,9 @@
   <details>
     <summary>Comment créer un nouveau type de fiche ?</summary>
     <br>
-    <iframe src="https://catima.github.io/userdoc/fr/admin.html#creationtypefiche" scrolling="no" frameborder="1" width="845" height="1460" allow-scripts></iframe>
+    <iframe src="https://catima.github.io/userdoc/fr/admin.html" frameborder="1" width="845" height="1460" allow-scripts></iframe>
     <p>(admin)
       pas besoin de changer entre l'explication des types de fiches et la partie sur les suggestions</p>
     </details>
-    <details>
-      <summary>Comment créer du contenu conditionnel ?</summary>
-      <br>
-      <iframe name="contenu-conditionnel" src="https://catima.github.io/userdoc/fr/admin.html#ajoutedition" scrolling="no" frameborder="1" width="845" height="1460" allow-scripts></iframe>
-      <p>(admin)
-        pas besoin de changer toute la partie</p>    
-      </details>
 </body>
 </html>
