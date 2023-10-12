@@ -48,3 +48,5 @@ Une liste des groupes d'appartenance s'affiche, avec votre rôle dans chaque gro
 
 Entrez l'identifiant dans la case "Identifiant du groupe" pour accéder à un groupe secret.
 ![](assets/groups/new_groupid.png)
+
+{% include_relative guest.md %}
