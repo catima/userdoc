@@ -7,9 +7,9 @@
 <a id="creationtypefiche"></a>
 ## Création d'un type de fiche {#creation-type-fiche}
 
-{% include_relative sous-parties/creationtypefiche.md %}
+{% include creationtypefiche.md %}
 
 <a id="ajoutedition"></a>
 ## Ajout et édition de contenu conditionnel ou sous-fiche
 
-{% include_relative sous-parties/ajoutedition.md %}
+{% include ajoutedition.md %}
