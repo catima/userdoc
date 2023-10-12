@@ -15,3 +15,11 @@
 {% include ajoutedition.md %}
 
 </details>
+
+### Comment créer du contenu conditionnel ?
+
+[expand] 
+{% include ajoutedition.md %}
+[/expand]
+
+{% include text-expand.html %}
