@@ -6,12 +6,10 @@
 
 {% include_relative test_test/sous-parties/creationtypefiche.md %}
 
-
 </details>
 
 <details><summary><a>Comment créer du contenu conditionnel ?</a></summary>
 
 {% include_relative test_test/sous-parties/ajoutedition.md %}
-
 
 </details>
