@@ -18,8 +18,10 @@
 
 ### Comment créer du contenu conditionnel ?
 
-[expand] 
+[expand]
+
 {% include ajoutedition.md %}
+
 [/expand]
 
 {% include text-expand.html %}
