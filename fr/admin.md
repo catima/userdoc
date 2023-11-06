@@ -9,46 +9,42 @@
     - [Configuration d'un type de fiche](#configuration-dun-type-de-fiche)
     - [Types de champs](#types-de-champs)
       - [Champ booléen (oui/non)](#champbool)
-      - [Champ ensemble de choix](#champ-ensemble-de-choix)
+      - [Champ ensemble de choix](#champensemble)
       - [Champ décimal](#champdecimal)
       - [Champ rédacteur](#champredaction)
-      - [Champ e-mail](#champ-e-mail)
+      - [Champ e-mail](#champemail)
       - [Champ d'intégration (embed)](#champintegration)
-      - [Champ fichier](#champ-fichier)
+      - [Champ fichier](#champfichier)
       - [Champ géographique](#champgeo)
-      - [Champ image](#champ-image)
-      - [Champ nombre entier](#champ-nombre-entier)
+      - [Champ image](#champimage)
+      - [Champ nombre entier](#champnombrentier)
       - [Champ référence](#champreference)
-      - [Champ de texte](#champ-de-texte)
+      - [Champ de texte](#champtexte)
       - [Champ URL](#champ-url)
       - [Champ datation](#champ-datation)
     - [Création d'un champ](#creationchamp)
     - [Création d'un champ datation](#creationdatation)
   - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajoutedition)
   - [Affichage de contenus personnalisés et styles d'affichages](#affichagecontenuperso)
-    - [Ajout d'une page](#ajout-dune-page)
+    - [Ajout d'une page](#ajoutpage)
     - [Édition d'une page](#editionpage)
       - [Édition d'un conteneur Item List](#editionconteneurlist)
-      - [Images (thumb):](#images-thumb)
-      - [Grille (grid):](#grille-grid)
-      - [Liste:](#liste)
-      - [Line (ligne):](#line-ligne)
       - [Édition d'un conteneur de cartes géographique (Map Container)](#editionconteneurgeo)
       - [Édition d'un conteneur HTML](#editionhtml)
       - [Édition d’un conteneur Markdown](#editionmarkdown)
       - [Édition d'un conteneur Contact](#editioncontact)
-    - [Edition d'un conteneur Search](#editionsearch)
+    	- [Edition d'un conteneur Search](#editionsearch)
     - [Recherche simple](#recherchesimple)
     - [Intégration de média (embed) dans une page](#integrationmediapage)
     - [Organisation des conteneurs](#organisationconteneurs)
-  - [Organisation de la barre de menus](#organisation-de-la-barre-de-menus)
+  - [Organisation de la barre de menus](#organisationbarremenu)
 - [Gestion de la consultation et de l'édition des données du catalogue](#gestionconsultation)
   - [Les différents statuts](#statuts)
-    - [Attribution de statuts](#attribution-de-statuts)
+    - [Attribution de statuts](#attribution)
   - [Statistiques](#statistiques)
   - [API](#api)
     - [Qui a accès au données](#accesdonnes)
-    - [Mode data only](#mode-data-only)
+    - [Mode data only](#mode-data)
 - [Exemple de réalisation d'un catalogue](#exemple)
   - [Conceptualisation](#conceptualisation)
     - [Types de fiches et liens](#typesfichesliens)
@@ -261,6 +257,7 @@ Pour ajouter plus d'un média, il est possible d'insérer plusieurs balises ifra
 
 Lors de la création d'un **champ d'intégration (embed)**, il est vivement conseillé de créer un titre explicite spécifiant le type d'intégration tel que *Intégration par iframe* et *Intégration par url* ou d'ajouter un texte d'aide à la saisie afin que les personnes ajoutant du contenu au catalogue sachent quel contenu ajouter.
 
+<a id="champfichier"></a>
 #### Champ fichier
 
 Ce champ permet d'ajouter des fichiers, avec d'éventuelles restrictions d'extension (par exemple uniquement .pdf ou .doc)
@@ -268,8 +265,11 @@ Ce champ permet d'ajouter des fichiers, avec d'éventuelles restrictions d'exten
 <a id="champgeo"></a>
 #### Champ géographique
 
-Ce champ permet d'entrer une localisation géographique soit en entrant manuellement les valeurs de latitude et longitude soit en pointant la localisation sur une carte.
+Ce champ permet d'entrer une localisation géographique soit en entrant manuellement les valeurs de latitude et longitude soit en pointant la localisation sur une carte, il permet également d'ajouter des lignes et des polygones à la carte. En mode set-up, il est possible de choisir le niveau de zoom initial de la carte, c'est-à-dire le niveau auquel la carte sera zoomée à l'ouverture de la fiche. Plus le zoom est proche, plus la carte sera zoomée sur le(s) lieu(x) spécifié(s).
 
+![](assets/setup/geography_zoom.png)
+
+<a id="champimage"></a>
 #### Champ image
 
 Ce champ permet d'ajouter des fichiers images, avec d'éventuelles restrictions d'extension (par exemple uniquement .jpg ou .png). 
@@ -282,6 +282,7 @@ Cela permet à l'éditeur d'ajouter un texte de légende accompagnant l'image.
 
 ![](assets/setup/new_field_image_legend1.png)
 
+<a id="champnombrentier"></a>
 #### Champ nombre entier
 
 Ce champ permet d'entrer des nombres entiers.
@@ -306,6 +307,7 @@ Les fiches *Bâtiments* qui font référence à une univeristé sont listé en b
 
 > Si plusieurs types de fiches font référence à une autre fiche -comme ici *Bâtiments* et *Bibliothèques* ont les deux un champ référence à la fiche *Universités*, les fiches qui lui font référence sont listées par type de fiche. 
 
+<a id="champtexte"></a>
 #### Champ de texte
 
 Ce champ permet d'entrer du texte, qu'il soit court (p.ex un nom ou un titre) ou long (p.ex texte descriptif)
@@ -613,19 +615,23 @@ Choisir aussi un ordre d'affichage *ascendant* ou *descendant*, par champ, date 
 
 Le choix du style permet de changer l'affichage des fiches selon les styles suivants : 
 
+<a id="images-thumb"></a>
 #### Images (thumb):
 ![](assets/pages/style-thumb.png)
 
+<a id="grille-grid"></a>
 #### Grille (grid):
 ![](assets/pages/style-grid.png)
 
+<a id="liste-list"></a>
 #### Liste:
  - Avec image:  
  ![](assets/pages/style-list-img.png)
  - Sans image:  
  ![](assets/pages/style-list-text.png)
  
-#### Line (ligne):
+<a id="ligne-line"></a>
+#### Ligne (line):
 ![](assets/pages/style-list-line-open.png)
 
 Le style *line* affiche les fiches le long d'une ligne verticale; il permet le tri par date ou ordre alphabétique. Le visiteur peut ouvrir ou fermer les fiches et les classer par ordre ascendant ou descendant. Dans l'image ci-dessous, on a choisi *Tout fermer* avant d'ouvrir une seule fiche.
@@ -769,6 +775,7 @@ L'ordre des conteneurs ajoutés peut être modifié en tout temps en cliquant su
 
 Une fois satisfait de l'organisation de vos conteneurs, **enregistrer** en cliquant sur "Update page" ou annuler avec "Cancel".
 
+<a id="organisationbarremenu"></a>
 ## Organisation de la barre de menus
 
 Cette rubrique permet d'**organiser la présentation** de la barre de menus, permettant de naviguer dans le site. Par défaut, les onglets permettent d'accéder aux différents types de fiches, classés par ordre alphabétique. Créer un nouveau menu permet de changer le nom des menus dans la barre horizontale supérieure, mais aussi de créer un accès facile à des pages personnalisées (voir la section "Pages personnalisées")
@@ -901,6 +908,7 @@ Créer ou supprimer une clé API depuis la rubrique **API** en mode "Set Up". Pl
 
 L'ensemble des requêtes disponibles sont consultables [dans la documentation](https://catimalb.unil.ch/api-docs/index.html).
 
+<a id="mode-data">
 ### Mode data only
 
 Avec cette option activée, Catima est utilisé uniquement pour stocker les données et ne générera pas de site pour voir les fiches et naviguer entre elles.
