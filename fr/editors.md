@@ -6,7 +6,8 @@
    - [Rechercher un contenu](#rechercher-un-contenu)
    - [Ajout de données](#ajoutdonnees)
       - [Données d'intégration de média](#donneesintegration)
-      - [Données de type datation](#donneesdatation) 
+      - [Données de type datation](#donneesdatation)
+      - [Données géographiques](#donneesgeo)
    - [Statuts des fiches](#statuts-des-fiches)
    - [Édition, duplication et suppression de fiches](#editionduplsup)
       - [Édition d'une fiche](#editionfiche)
@@ -105,7 +106,7 @@ Sélectionner un ou plusieurs choix dans la liste déroulante. La datation par e
 
 ![](assets/datation/saisieparchoix.png)
 
-
+<a id="donneesgeo"></a>
 ### Données géographiques
 Le champ géographiques permet d'ajouter des points, des lignes et des polygones à une carte. 
 
