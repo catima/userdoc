@@ -21,6 +21,7 @@
       - [Champ référence](#champreference)
       - [Champ de texte](#champtexte)
       - [Champ URL](#champ-url)
+      - [Champ composé](#champ-compose)
       - [Champ datation](#champ-datation)
     - [Création d'un champ](#creationchamp)
     - [Création d'un champ datation](#creationdatation)
@@ -322,7 +323,7 @@ Qui s'affichent ainsi dans le site du catalogue :
 
 > **NB** : Les **champs primaires** ne peuvent pas être formatés (option "Texte formaté" grisée)
 
-> **AVERSTISSEMENT** : une fois du texte formaté ajouté, il est **vivement déconseillé** de décocher la case **"Contient du texte formaté"**. En effet le formatage du texte ajoute du code informatique, et la désactivation de cette option affichera ce texte peu lisible à l'utilisateur. Recocher la case permet de rétablir l'affichage du texte formaté.
+> **AVERTISSEMENT** : une fois du texte formaté ajouté, il est **vivement déconseillé** de décocher la case **"Contient du texte formaté"**. En effet le formatage du texte ajoute du code informatique, et la désactivation de cette option affichera ce texte peu lisible à l'utilisateur. Recocher la case permet de rétablir l'affichage du texte formaté.
 
 <a id="champ-url"></a>
 #### Champ URL
@@ -362,7 +363,7 @@ Le champ s'affichera différement lorsque le catlogue est en anglais
 
 ![](assets/compound/fiche-film-en.png)
 
-> ATTENTION ! Si les informations doivent figurer de la même façon dans toutes les langues il est nécessaire copier et coller le canevas dans les deux langues
+> ATTENTION ! Si les informations doivent figurer de la même façon dans toutes les langues, il est nécessaire copier et coller le canevas dans toutes les langues du catalogue.
 
 <a id="champ-datation"></a>
 #### Champ datation
