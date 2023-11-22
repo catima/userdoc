@@ -70,7 +70,7 @@ Les champs *intégration de média par iframe* et *intégration de média par ur
 Pour ajouter plus d'un média, il est possible d'insérer plusieurs balises iframe l'une après l'autre.
 ![](assets/setup/integration_iframe.png)  
 
-- **Intégration de média par URL**: copier l'adresse complète de la page depuis la barre du navigateur.
+- **Intégration de média par URL**: copier l'adresse complète de la page depuis la barre d'adresse du navigateur.
 ![](assets/setup/integration_url.png)  
 
 <a id="donneesdatation"></a>

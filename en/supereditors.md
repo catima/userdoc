@@ -6,6 +6,7 @@ A super-editor can add and edit any item as well as add choices to existing choi
 - [Add new choice to datation choice set](#addperiodchoice)
 - [Choice hierarchy](#choicehierachy)
 
+<a id="add-new-choice-to-choice-set"></a>
 ## Add new choice to choice set 
 It is possible to add a new choice in a choice set when editing or creating an item with a "Choice set" field. Simply click on add ![Add](assets/buttons/add_btn.png).
 

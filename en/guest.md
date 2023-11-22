@@ -9,6 +9,7 @@ A guest is a user that doesn't have a CATIMA account. The accessibility (e.g. ed
 	- [Simple search](#simplesearchdate)
 	- [Advanced search](#advancedsearchdate)
 
+<a id="search"></a>
 # Search
 
 All CATIMA's databases have a search features that can be used to look for elements through keywords. It can be a simple search with one keyword or a more advanced one that can include multiple keywords and exclude others.   
@@ -20,6 +21,7 @@ Both are accessible through the catalog's search bar on the homepage.
 
 It is possible to search the full database with a simple search. Just enter the enter a word or list of words and click on the search button.
 
+<a id="advanced-search"></a>
 ## Advanced search
 
 The advanced search is for searching within **elements of a specific item**. To access the advanced search page, click on the *Advanced* link on the right side of the search button; you will be redirected to a new page. 

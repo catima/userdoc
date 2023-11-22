@@ -6,11 +6,13 @@ A reviewer can approve or reject an item created by (super-)editors.
 - [Workfow](#workflow)
 - [Approve or reject an item](#approve-or-reject-an-item)
 
+<a id="status"></a>
 # Status
 
 An item can have one of the following status: draf, review, approved or rejected. This status is displayed in the list view of each item in the "Data" section: 
 ![Data section - status](assets/review/status.png)
 
+<a id="workflow"></a>
 # Workflow
 
 By default, an item has the ***Draft*** status. This means that this item isn't ready yet and more modifications will be made. 
@@ -25,6 +27,7 @@ Reviewers can now approve or reject the item. If approved, it will be published 
 If some modifications are needed before publishing the item, the reviewer and set the ***Reject*** status. It is not published and the item will be modified before being submitted for review again. 
 ![Rejected status](assets/review/rejected.png) 
 
+<a id="approve-or-reject-an-item"></a>
 # Approve or reject and item
 
 To approve or reject and item, click on the edit button ![Edit button](assets/buttons/edit_btn.png) of an item that has the ***Review*** status. This will open the edit page and show a yellow box where the thow options are available.

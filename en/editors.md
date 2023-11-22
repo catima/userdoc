@@ -4,18 +4,21 @@ A catalog's editor can view the website and add new items/content to it, but not
 
 - [Display items](#display-items)
 - [Add a new item](#add-item)
+	- [Embedded data](#embed-data)
 	- [Datation data](#datationdata)
 	- [Geographic data](#geographicdata)
 - [Item status](#item-status)
 - [Suggestions managment](#suggestions)
 - [Edit, duplicate and delete item](#editduplicatedelete)
 
+<a id="display-items"></a>
 # Display items
 
 The *data* section is where items can be added and modified and is accessible by clickin on **admin** in the navigation bar.  All items are listed in the left side. By clicking on one, the list of data related to this item is displayed. It is possible to search for a specific term using the search bar located at the top of the page.
 
 ![The data section](assets/data/e-data_list.png)
 
+<a id="add-item"></a>
 # Add item
 
 To add an item to the database:
@@ -27,6 +30,20 @@ The page that will open the manual data entry page where informations can be add
 Once saved, the new item will appear in the data list with other similar items.
 
 ![New item](assets/data/e-data_new.png)
+
+<a id="embed-data"></a>
+### Embendded Data
+
+The fields *embed media using iframe* and *embed media using url* requiere a specific format.
+
+- **Embed media using iframe**: To retrieve the iframe tag from the webpage where the media is located, click on the button or option **Share** > **Embed**. Copy the text and paste it into the integration field of the card.
+To add more than one media, it's possible to insert multiple iframe tags one after the other. 
+
+![](assets/setup/embed_iframe.png)  
+
+- **Embed media using URL**: copy the full page's URL from the adress bar.
+
+![](assets/setup/embed_url.png) 
 
 <a id="datationdata"></a>
 ### Datation Data
@@ -77,7 +94,7 @@ Click on the *edit* icon to move the points that form a zone or an itinerary or 
 
 > CAUTION ! Once the modifications are saved in the geographic field, don't forget to save the item so the changes are saved to the database. 
 
-
+<a id="item-status"></a>
 # Item status
 
 *This feature is only available if activated by the administrator.*
@@ -91,6 +108,7 @@ The item will be published in the catalog after a reviewer's approval and will h
 
 > Items with the ***Approved*** status are the only ones published in the catalog. 
 
+<a id="suggestions"></a>
 # Suggestions 
 
 *This feature is only available if activated by the administrator.*

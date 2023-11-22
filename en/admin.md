@@ -7,26 +7,28 @@ An administrator has full access to the catalog; they can add and modify any con
 	- [Exploration](#exploration)
 	- [Ranking and structure](#ranking-and-structure)
 	- [Links and references](#links-and-references)
+	- [Suggestions](#suggestions)
 	- [Add new item type](#add-new-item-type)
-		- [New field](#new-field)
-		- [Field types](#field-types)
-			- [Boolean field](#boolean-field)
-			- [Choice set field](#choice-set-field)
-			- [Date time field](#date-time-field)
-			- [Decimal field](#decimal-field)
-			- [Editor field](#editor-field)
-			- [Email field](#email-field)
-			- [Embed field (media integration)](#embed-field)
-			- [File field](#file-field)
-			- [Geographic field](#geographic-field)
-			- [Image field](#image-field)
-			- [Integer field](#integer-field)
-			- [Reference field](#reference-field)
-			- [Text field](#text-field)
-			- [URL field](#url-field)
-			- [Compound field](#compound-field)
-			- [Datation field](#datation-field)
-		- [Display options](#display-options)
+	- [New field](#new-field)
+	- [Field types](#field-types)
+		- [Boolean field](#boolean-field)
+		- [Choice set field](#choice-set-field)
+		- [Date time field](#date-time-field)
+		- [Decimal field](#decimal-field)
+		- [Editor field](#editor-field)
+		- [Email field](#email-field)
+		- [Embed field (media integration)](#embed-field)
+		- [File field](#file-field)
+		- [Geographic field](#geographic-field)
+		- [Image field](#image-field)
+		- [Integer field](#integer-field)
+		- [Reference field](#reference-field)
+		- [Text field](#text-field)
+		- [URL field](#url-field)
+		- [Compound field](#compound-field)
+		- [Datation field](#datation-field)
+		- [Create new field](#create-new-field)
+			- [Display options](#display-options)
 		- [Create datation field](#createdatation)
 	- [Categories and conditional content](#categories-and-conditional-content)
 	- [Create and edit custom pages](#create-and-edit-custom-pages)
@@ -44,10 +46,12 @@ An administrator has full access to the catalog; they can add and modify any con
 		- [Manage access to data](#access-to-data-and-data-edition)
 		- [Change a user's status](#change-status)
 
+<a id="catalog-configuration"></a>
 # Catalog configuration
 
 Building a new catalog is a two-step process: first, define the catalog's structure, then start to add data. This section will go over the first step; the data entry process is described in the editors section above.
 
+<a id="conceptualization"></a>
 ## Conceptualization
 
 It is important to consider the type of data that will be added to the catalog and how it will be structured before starting to add it. This reflective stage will help define catalog's conceptual and logical structure and facilitate the realization in CATIMA.  
@@ -64,10 +68,12 @@ When there are multiple objects (or data) of one type each can have different fe
 
 The next steps show one way to conceptualize a dataset. 
 
+<a id="exploration"></a>
 ## Exploration
 
 Freely list all elements that will be added to the databse without worrying about any kind of order. In our example, we want to list about 20 movies.
 
+<a id="ranking-and-structure"></a>
 ## Ranking and structure
 
 We will now add some order to the list of elements. We want to find what are the important concepts and what features do they have. 
@@ -75,6 +81,7 @@ We will now add some order to the list of elements. We want to find what are the
 
 In the movie example, the core concept is ***Movie*** since the catalog's goal is to list movies. But ***Director*** can also be a concept if it is considered useful to know additional features about them such as "*Date of birth*", "*Nationality*" or "*Biography*".  
 
+<a id="links-and-references"></a>
 ## Links and references
 
 Next, we will consider the relationship that each concept can have with other concepts. It is common for a concept to have a connection to one or more concepts. 
@@ -84,7 +91,7 @@ In CATIMA, those relationships are *References*. By adding a *Reference* field t
 
 In CATIMA, concepts are called ***Items*** and their features ***Fields***.  
 
-
+<a id="add-new-item-type"></a>
 ## Add new item type
 
 After deciding which concepts and features will be used in the catalog, it is time to start adding item types. No data is added yet, this is where the item types and its fields are defined.  
@@ -105,6 +112,7 @@ The *New item type* form opens:
 
 In the **Display options**, if ***Display empty fields*** is selected, all fields will appear to the catalog's visitors, even if those are empty. If you do not wish empty fields to be shown, deselect this option. 
 
+<a id="suggestions"></a>
 ## Suggestions
 
 **Suggestions** are a way for catalog's users to send their comments to the editors and administrators. This could be used to notify about an error in a specific item. Those **Suggestions** are private and not publicly displayed on the catalog; they are sent by email to the adress defined by the administrator and are visible in data mode. 
@@ -135,6 +143,7 @@ There are 3 options:
 
  ![](assets/sug/read_suggestion.png)
 
+<a id="new-field"></a>
 ## New field
 
 Once the new item created, it is time to add fields that will hold the data. Fields are the item's *features*. 
@@ -148,14 +157,17 @@ To add a new field to an item:
 1. On the *set up* page, select the item in the item list
 2. Click on the **Add** button on the top right of the page
 
+<a id="field-types"></a>
 ## Field types
 
 In order for the catalog to be filled in by the editors with data in the right format (e.g. number, date, image), it is necessary to create appropriate fields. Here are the types of fields available in CATIMA :
 
+<a id="boolean-field"></a>
 #### Boolean field
 
 Only for "Yes" and "No" values. 
 
+<a id="choice-set-field"></a>
 #### Choice set field
 
 This field is for a hierarchical choice list with multiple values. It can accept a only a single selection or multiple ones. Here is an example of what the choice set field looks like when adding data:
@@ -173,22 +185,27 @@ When a choice set is not in use anymore, there are two options:
 - **deactivate** it: this option leaves the choice set available in "Set up" but can't be used in "Data". It can be reactivated if needed.
 - **delete** it: completely deletes the choice set.
 
+<a id="date-time-field"></a>
 #### Date time field
 
 The date-time format goes from **year** only to **year, month, day, hour, minute and second**. 
 
+<a id="decimal-field"></a>
 #### Decimal field  
 
 For decimal numbers
 
+<a id="editor-field"></a>
 #### Editor field  
 
 Automatically displays the item's editor or the last person to modify it. 
 
+<a id="email-field"></a>
 #### Email field  
 
 Creates a text field that only accept an email.
 
+<a id="embed-field"></a>
 ### Embed field
 
 **For media integration in a page's container, see [Embed media in a page](#embed-media-in-a-container)*
@@ -228,10 +245,12 @@ In addition to the usual information such as title, slug and display options, it
 	
 It is highly recommended to be specific when creating an **embed field** and add a meaninful title and/or to use *data editing help text* to let the editors know what kind of content is expected.  
 
+<a id="file-field"></a>
 #### File field  
 
 To add external file to the item with the possibility to restrict the accepted files' type (*e.g. only .pdf and .png*). 
 
+<a id="geographic-field"></a>
 #### Geographic field  
 
 The geographic field is used to set an item's location. It is set by drag and drop'ing a point on the map or with coordinates. It also allows to add lines and polygons to the map. In set-up mode it is possible to choose the initial zoom level i.e. how zoomed the map will be when the item is openened.
@@ -239,14 +258,17 @@ A single items can have multiple locations.
 
 ![](assets/setup/geography_zoom.png)
 
+<a id="image-field"></a>
 #### Image field  
 
 Accepts images with optional caption.
 
+<a id="integer-field"></a>
 #### Integer field  
 
 For integer numbers. Can also be userd to create an automatic incrementation - for exemple for id number. 
 
+<a id="reference-field"></a>
 #### Reference field  
 
 Creates a relationship to another item. 
@@ -259,13 +281,14 @@ This field also appears on the university item, at the bottom with a list of all
 
 ![](assets/data/ref_uni.png)
 
-
+<a id="text-field"></a>
 #### Text field
 
 Can be used to add short (*e.g. name or title*) or long (*e.g. description*) text. It is possible to choose between a formatted text editor or a simple text editor. 
 
 > If this field is used as a primary field, formatted text is not possible and will be deactivated. 
 
+<a id="url-field"></a>
 #### URL field  
 
 This field accepts URL adress and will create a link. 
@@ -330,6 +353,7 @@ The **date** field allows the entry of a specific date on a record. This date mu
 
 The **datation** field accepts a start date and an end date, allowing for the creation of periods and searches on all dates contained within that period.
 
+<a id="create-new-field"></a>
 ### Create a new field
 
 A field name and slug must be chosen when creating a new field for an item:
@@ -340,6 +364,7 @@ A field name and slug must be chosen when creating a new field for an item:
 | **Name (plural)** | The new field's name - plural form | *Actors' birthdays* | - |
 | **Slug** | Short and unique name | *birthday_actors* | Only accepts letters without accents and hypens. |
 
+<a id="display-options"></a>
 #### Display options 
 
 When creating a new field, the following options can be selected:
@@ -461,7 +486,7 @@ Otherwise, ensure that you have defined **consistent** formats. The widest date 
 
 ![](assets/datation/config_datation.png)
 
-
+<a id="categories-and-conditional-content"></a>
 ## Categories and conditional content
 
 An item type can have content that is common to all items (e.g. all movies have a director) but can also have conditional content (e. g. the "Period" field is relevant for *historical documentary* but not for *action movies*). It is possible to create a **category** that is displayed only if a certain **choice** is selected. In our example, the option *Period* can be show to the editor creating a new item only if the choice *Historical documentary* is displayed and otherwise hidden.  
@@ -488,6 +513,7 @@ After updatation the choice, the conditional content is displayed on the right s
 
 ![](assets/categories/a-conditional-choiceset.png)
 
+<a id="create-and-edit-custom-pages"></a>
 ## Create and edit custom pages
 
 CATIMA has a default mode to display the item to the final user. This mode can not be modified, but we can create **pages** where the layout can be modified as needed.
@@ -511,12 +537,14 @@ Different kind of content containers can be added to a page:
 - **Markdown**: to add text, tables and images with Markdown syntax.
 - **Search**: displays the results of a previously saved search. *Maximum one per page*
 
+<a id="contact-container"></a>
 ### Contact container
 
 Simply add a slug (must be unique and only letter, numbers and hypens) and an email adress. The messages will be sent directly to that specified adress.
 
 ![](assets/pages/contact_container.png)
 
+<a id="html-container"></a>
 ### HTML container 
 
 This will allow to add text, images, URL, video through a text editor. This container also allows advanced users to add pure HTML content by clicking on "Code View".
@@ -524,6 +552,7 @@ This will allow to add text, images, URL, video through a text editor. This cont
 
 > When using "Code View* it is critical to switch back to normal (by clicking the the "Code View" button again) before saving the container. If this step is skipped, the work won't be saved !
 
+<a id="item-list-container"></a>
 ### Item List container
 
 Displays all items of an item type in a list, grid, thumb or line style (e.g. to show a list of all *Universities*). Different styles are availables:
@@ -555,6 +584,7 @@ This style displays the items vertically along a line. The user can choose to se
 
 ![](assets/pages/line-closed.png)
 
+<a id="map-container"></a>
 ### Map container 
 
 The map container is used to display a geographic map of a item type that has a geographic location attribute (e.g. location of all swiss universities with geographic field). It has different options: 
@@ -568,10 +598,12 @@ The map container is used to display a geographic map of a item type that has a 
 Example of a map container:
 ![](assets/pages/map_container.png)
 
+<a id="markdown-container"></a>
 ### Markdown container 
 
 This container can be used to add text, images and tables with the markdown syntax. 
 
+<a id="search-container"></a>
 ### Search container
 
 ![](assets/pages/search_container.png)
@@ -596,6 +628,7 @@ To save a search, click on *"Save search"*. It is now in the user's profile. To 
 
 ![](assets/search/my_searches.png)
 
+<a id="embed-media-in-a-container"></a>
 ### Embed media in a container
 
 The HTML container allows users to integrate medias such as videos, infographics and more to pages. Unlike the [embed field](#embed-field), this method allows the content to be displayed full width on the page. 
@@ -625,6 +658,7 @@ To know the exhaustive list of authorized domains contact the persons in charge 
 To modify the elements' order on the page, move the blocks up or down with the arrows on the left:
 ![](assets/pages/a-move-container.png)
 
+<a id="navigation-bar"></a>
 ## Navigation bar
 
 The navigation bar is customizable: it is possible to add or remove items as well as change the order. To do this acces the **Menu items** settings in the left sidebar while in *Set up* mode. The current items displayed in the navigation bar are listed with their rank. An *Item type*, *Custom page* or *External URL* can be in the navigation bar. 
@@ -640,7 +674,7 @@ Settings can be adjusted by editing an existing item or creating a new one. Apar
 
 > It is not possible for a child item to have other children.
 
-
+<a id="statistics"></a>
 ## Statistics
 
 The **Stats** tab in the Set up page tracks catalog's visitors. 
@@ -650,6 +684,7 @@ The **Stats** tab in the Set up page tracks catalog's visitors.
 
 ![](assets/setup/stats.png)
 
+<a id="api"></a>
 ## API 
 
 Catima offers the possibility to get a catalog's informations through an API. *This option has to be activated by a system administrator. To activate your catalog's API, contact the persons in charge of the project.*
@@ -675,6 +710,7 @@ A data only mode can be activated is Catima is only used to store data and a fro
 *This option has to be activated by a system administrator. Contact the persons in charge of the project if interested.*
 
 
+<a id="catalog-access-and-visibility"></a>
 # Catalog access and visibility
 
 The CATIMA website can be accessible to all visitors or restricted to members/staff only. To configure who can see it, access the **General** setting on the left sidebar: 
@@ -693,6 +729,7 @@ Other options are accessible from this page:
 - **Advertize**: by checking it, your catalogue will be accessible from public CATIMA lists.
 - **Custom root page**: change the landing page 
 
+<a id="access-to-data-and-data-edition"></a>
 ## Access to data and data edition 
 
 
@@ -707,6 +744,7 @@ CATIMA has different staus that can be attributed to users; those status define 
 **Reviewers** validate itesm created by **editors** and **super-editors**.
 **Administrator** have access to all the catalog's options. 
 
+<a id="change-status"></a>
 ## Change status
 
 It is possible to invite people to see a private catalog or colaborate by changing their status. They will get an email with the invite. To edit a user's status, got to **Users & groups** in the left sidebar on the "Set up" page.

@@ -5,6 +5,7 @@ CATIMA's catalog users and people that have a CATIMA account and are connected. 
 - [Favorites](#favorites)
 - [Access restricted catalogs](#access-restricted-catalogs)
 
+<a id="favorites"></a>
 # Favorites
 
 After creating an account, CATIMA users can save content to their *Favorites*. The *Favorites* can have content from different CATIMA catalogs and are linked to a unique user. 
@@ -21,6 +22,7 @@ The *Favorites* list is accessible to all connected users by clicking on
 
 ![Acess to favorites](assets/favs/u-menu_email.png)
 
+<a id="access-restricted-catalogs"></a>
 # Access restricted catalogs
 
 Some CATIMA databases may be restricted to some users or group of users. To access a restrcited database, one must first have a CATIMA account and be connected.  
