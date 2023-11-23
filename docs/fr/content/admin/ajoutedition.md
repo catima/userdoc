@@ -15,7 +15,7 @@ Pour permettre l'enregistrement de données de manière conditionnelle, il est n
 
 Pour ajouter une **Sous-fiche** , dans la barre de gauche, en bas de la rubrique "*Sous-fiches*", cliquer sur "**+ Nouvelle sous-fiche**". 
 
-![](assets/categories/new_category.png)
+![](../../assets/categories/new_category.png)
 
 Une fois choisi un nom pour la sous-fiche, il est possible d'enregistrer et retourner au menu *Setup* avec "*Créer sous-fiche'*" ou d'enregistrer et ajouter une nouvelle sous-fiche avec "*Create and add another*".
  
@@ -24,11 +24,11 @@ Une fois choisi un nom pour la sous-fiche, il est possible d'enregistrer et reto
 
 Une fois la/les sous-fiches créée-s, il s'agit d'y ajouter les champs souhaités. 
 
-![](assets/categories/edit_category.png)
+![](../../assets/categories/edit_category.png)
 
 La procédure est similaire à celle de l'édition d'une fiche et débute par un clic sur la liste déroulante "*+ Ajouter…*" qui révèle les différents choix de champs possibles :
 
-![](assets/categories/add_field_category.png)
+![](../../assets/categories/add_field_category.png)
 
 > Il est possible de créer plusieurs sous-fiches avec différentes conditions. 
 
@@ -43,13 +43,13 @@ Effectuer un choix permet ainsi l'affichage d'une sous-fiche dédiée. Un choix 
 
 La liste des "Ensembles de choix" est accessible en cliquant sur "Ensembles de choix" dans la barre de gauche en mode *Setup*. Une liste des ensembles de choix existants est affichée :
 
-![](assets/choice/choice_set.png)
+![](../../assets/choice/choice_set.png)
 
 Il est alors possible de sélectionner un ensemble de choix existant ou d'en créer un nouveau. 
 
 Lors de la création ou de la modification d'un ensemble de choix, il est possible de lier une sous-fiche en éditant un choix, puis en sélectionant la sous-fiche choisie sous "Sous-fiche (optionnel)".
 
-![](assets/categories/category_choice.png)
+![](../../assets/categories/category_choice.png)
 
 Dans cet exemple, la **sous-fiche** *extra-data* s'affichera et permettra la saisie de données uniquement lorsque le choix *Droit* sera selectionné.
 
