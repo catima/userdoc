@@ -14,6 +14,6 @@
 
 # Valider ou rejeter une fiche
 
-{% include_relative content/reviewer/validerourejeterunefiche %}
+{% include_relative content/reviewer/validerourejeterunefiche.md %}
 
 
