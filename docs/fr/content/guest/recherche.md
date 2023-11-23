@@ -2,4 +2,4 @@ Les catalogues de CATIMA disposent d'une fonctionnalité de recherche permettant
 
 Les recherches simple et avancées sont accessibles depuis la page d'accueil du catalogue, en cliquant sur le nom du catalogue tout à gauche de la barre de menus :
 
-![](../../assets/search/search.png)
+![](assets/search/search.png)
