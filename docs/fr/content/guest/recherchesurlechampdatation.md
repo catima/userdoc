@@ -16,7 +16,7 @@ Ainsi, entrer deux dates dans la barre de recherche ne calculera pas une périod
 
 Une recherche avancée sur le champ datation permet de préciser des périodes de plusieurs façons différentes.
 
-![](../../assets/datation/recherche_avancee.png)
+![](assets/datation/recherche_avancee.png)
 
 Les champs dates permettent de rechercher des dates manuellement. Les listes déroulantes à droite permettent de préciser si la recherche se fait sur une date exacte (1), après une date (2) ou avant une date (3).
 
