@@ -9,8 +9,8 @@
 
 [expand]
 
-<!--- {% include ajoutedition.md %} --->
+fichier a intégrer
 
 [/expand]
 
-<!---- {% include text-expand.html %} ---->
+
