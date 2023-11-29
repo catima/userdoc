@@ -57,7 +57,7 @@
 <a id="editionduplsup"></a>
 ## Édition, duplication et suppression de fiches
 
-{% include_relative content/editors/editionetsuppressiondefiches.md %}
+{% include_relative content/editors/editionduplicationetsuppressiondefiches.md %}
 
 <a id="suggestions"></a>
 
