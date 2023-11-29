@@ -1,0 +1,1 @@
+La section "Data" permet l'ajout et la modification de données du catalogue. Pour y accéder, cliquer sur "*Admin*" dans la barre de menus (en haut du navigateur) puis sur le type de fiche à ajouter/modifier. L'accueil de cette section consiste en un affichage des différentes fiches existantes dans la barre latérale gauche. 

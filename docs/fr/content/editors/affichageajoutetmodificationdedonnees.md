@@ -1,0 +1,1 @@
+Une personne avec le statut d'éditeur peut ajouter de nouvelles données dans un catalogue CATIMA. Elle peut modifier les fiches qu'elle a créé mais pas celles créées pas d'autres personnes. 
