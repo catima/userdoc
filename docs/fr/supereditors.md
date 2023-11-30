@@ -9,14 +9,14 @@ En plus de la création de nouvelles fiches, un super-éditeur peut modifier tou
 <a id="ajout-choix"></a>
 ## Ajout de choix dans les ensembles de choix
 
-{% include_relative content/supereditor/ajoutdechoixdanslesensemblesdechoix.md %}
+{% include_relative content/supereditors/ajoutdechoixdanslesensemblesdechoix.md %}
 
 <a id="ajoutchoixdatation"></a>
 ## Ajouter des choix dans les ensembles de choix de type datation
 
-{% include_relative content/supereditor/ajoutdeschoixdetypedatation.md %}
+{% include_relative content/supereditors/ajoutdeschoixdetypedatation.md %}
 
 <a id="choixparents"></a>
 ## Choix parents et choix enfants
 
-{% include_relative content/supereditor/choixparentsetchoixenfants.md %}
+{% include_relative content/supereditors/choixparentsetchoixenfants.md %}
