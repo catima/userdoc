@@ -10,6 +10,13 @@ fichier a intégrer
 
 
 ## Ajout et modification de données
+
+### Comment créer un nouveau type de fiche ?
+[expand]
+
+{% include_relative content/admin/commentcreerunnouveautypedefiche.md %}
+
+[/expand]
 <details><summary><a>Comment créer un nouveau type de fiche ?</a></summary>
 
 ### Informations sur cette question
@@ -189,3 +196,6 @@ dans deux niveau , éditeur et admin
 
 voir comment résumer les deux séparer tout en résumant ?
 </details>
+
+
+{% include text-expand.html %}
