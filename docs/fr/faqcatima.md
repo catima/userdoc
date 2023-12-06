@@ -1,7 +1,5 @@
 # FAQ CATIMA
 
-<body>
-
 ## Ajout et modification de données
 
 ### Comment créer un nouveau type de fiche ?
@@ -11,4 +9,3 @@
 [/expand]
 
 {% include text-expand.html %}
-</body>
