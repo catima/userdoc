@@ -14,7 +14,7 @@ fichier a intégrer
 ### Comment créer un nouveau type de fiche ?
 [expand]
 
-{% include_relative content/admin/creationduntypedefiche.md %}
+{% include_relative fr/content/admin/commentcreerunnouveautypedefiche.md %}
 
 [/expand]
 <details><summary><a>Comment créer un nouveau type de fiche ?</a></summary>
