@@ -275,7 +275,7 @@ Il est également possible de choisir la couleur des polygones et des lignes qui
 
 ![](assets/geography/geography_colors.png)
 
-**Ordre des champs géographiques**
+##### Ordre des champs géographiques
 Attention, si plusieurs champs géographiques sont ajoutés au catalogue, les fonctionnalités qui s'appuient sur des données géographiques, tel que la [recherche avancée](#rechercheavancee) par champ géographique ou les [conteneurs de cartes géographiques](#editionconteneurgeo), **prennent uniquement en compte les données du premier champ géographique en fonction de leur position dans le mode set-up.**
 
 <a id="champimage"></a>
