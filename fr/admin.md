@@ -36,6 +36,7 @@
       - [Édition d'un conteneur Contact](#editioncontact)
     	- [Edition d'un conteneur Search](#editionsearch)
     - [Recherche simple](#recherchesimple)
+    - [Recherche avancée](#rechercheavancee)
     - [Intégration de média (embed) dans une page](#integrationmediapage)
     - [Organisation des conteneurs](#organisationconteneurs)
   - [Organisation de la barre de menus](#organisationbarremenu)
@@ -269,6 +270,13 @@ Ce champ permet d'ajouter des fichiers, avec d'éventuelles restrictions d'exten
 Ce champ permet d'entrer une localisation géographique soit en entrant manuellement les valeurs de latitude et longitude soit en pointant la localisation sur une carte, il permet également d'ajouter des lignes et des polygones à la carte. En mode set-up, il est possible de choisir le niveau de zoom initial de la carte, c'est-à-dire le niveau auquel la carte sera zoomée à l'ouverture de la fiche. Plus le zoom est proche, plus la carte sera zoomée sur le(s) lieu(x) spécifié(s). Une fiche peut avoir plusieurs emplacments.
 
 ![](assets/setup/geography_zoom.png)
+
+Il est également possible de choisir la couleur des polygones et des lignes qui pourront être ajoutés à la carte.
+
+![](assets/geography/geography_colors.png)
+
+**Ordre des champs géographiques**
+Attention, si plusieurs champs géographiques sont ajoutés au catalogue, les fonctionnalités qui s'appuient sur des données géographiques, tel que la [recherche avancée](#rechercheavancee) par champ géographique ou les [conteneurs de cartes géographiques](#editionconteneurgeo), **prennent uniquement en compte les données du premier champ géographique en fonction de leur position dans le mode set-up.**
 
 <a id="champimage"></a>
 #### Champ image
@@ -762,6 +770,9 @@ Ce conteneur affiche une liste de fiches selon un critère déterminé par une r
  ![](assets/search/recherche_simple.png)
  
 Depuis la page d'accueil, entrer un mot-clé dans la barre de recherche et cliquer sur "Chercher".
+
+<a id="rechercheavancee"></a>
+### Recherche avancée
 
  ![](assets/search/recherche_avancee.png)
  

@@ -258,6 +258,13 @@ A single items can have multiple locations.
 
 ![](assets/setup/geography_zoom.png)
 
+The field also allows to choose the colors of the polygons and the lines that will be placed on the map:
+
+![](assets/geography/geography_colors.png)
+
+**Geographic fields order**
+Warning, if there are multiple geographic fields in the catalog, the features that use georaphic data, like the advanced search on the geographic field or the map containers, **only take into account the data stored in the first geographic field as they are positioned in the set-up.**
+
 <a id="image-field"></a>
 #### Image field  
 
