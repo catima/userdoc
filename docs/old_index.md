@@ -9,7 +9,7 @@
 
 [expand]
 
-{% include ajoutedition.md %}
+{% include_relative fr/content/admin/affichagedecontenuspersonnalisesetstylesdaffichages.md %}
 
 [/expand]
 
