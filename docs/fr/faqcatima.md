@@ -5,7 +5,9 @@
 ### Comment créer un nouveau type de fiche ?
 
 [expand]
+
 {% include_relative content/admin/creationduntypedefiche.md %}
+
 [/expand]
 
-{% include text-expand.html %}
+{% include relative assets/text-expand.html %}
