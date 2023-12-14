@@ -10,4 +10,4 @@
 
 [/expand]
 
-{% include relative assets/text-expand.html %}
+{% include_relative assets/text-expand.html %}
