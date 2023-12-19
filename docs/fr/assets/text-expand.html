@@ -1,16 +1,25 @@
 <script>
     
-    var elements = document.querySelectorAll('p');
-    Array.prototype.forEach.call(elements, function(el, i){
-        if(el.innerHTML=='[expand]') {
-            var parentcontent = el.parentNode.innerHTML.replace('<p>[expand]</p>','<div class="expand" style="display: none; height: 0; overflow: hidden;">').replace('<p>[/expand]</p>','</div>');
-            el.parentNode.innerHTML = parentcontent;
-        }
-    });
+    var expandableParagraphs = document.querySelectorAll('p');
+    Array.prototype.forEach.call(expandableParagraphs, function(paragraph, i){
+        if(paragraph.innerHTML.includes('[expand]')) {
+            var content = paragraph.innerHTML.replace('[expand]', '<div class="expand" style="display: none; height: 0; overflow: hidden;">');
+                content = content.replace('[/expand]', '</div>');
+                paragraph.innerHTML = content;
+                
+                var expandDiv = paragraph.querySelector('.expand');
+                var linkSpan = document.createElement('span');
+                linkSpan.innerHTML = '..&nbsp; <a href="#" style="cursor: pointer;">Read more &rarr;</a>';
+                linkSpan.querySelector('a').addEventListener('click', function(event) {
+                    event.preventDefault();
+                    expandDiv.style.display = 'block';
+                    expandDiv.style.height = 'auto';
+                    linkSpan.style.display = 'none';
+                });
+                
+                paragraph.appendChild(linkSpan);
+            }
+        });
 
-    var elements = document.querySelectorAll('div.expand');
-    Array.prototype.forEach.call(elements, function(el, i){
-        el.previousElementSibling.innerHTML = el.previousElementSibling.innerHTML + '<span>..&nbsp; <a href="#" style="cursor: pointer;" onclick="this.parentNode.parentNode.nextElementSibling.style.display = \'block\'; this.parentNode.parentNode.nextElementSibling.style.height = \'auto\'; this.parentNode.style.display = \'none\';">Read&nbsp;more&nbsp;&rarr;</a></span>';
-    });
 
 </script>
