@@ -148,3 +148,5 @@ pas dans la doc -> à créer ?
 [/expand]
 
 {% include_relative assets/text-expand.html %} <!-- appelle le fichier html dans lequel le javascript du readmore est stocké -->
+
+
