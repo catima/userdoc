@@ -4,11 +4,11 @@
 
 ### Comment créer un nouveau type de fiche ?
 
-[expand]
+<div class="expand" style="display: none; height: 0; overflow: hidden;">
 
 {% include_relative content/admin/creationduntypedefiche.md %}
 
-[/expand]
+</div>
 
 ### Comment créer du contenu conditionnel ?
 
@@ -30,7 +30,7 @@
 [expand]
 
 {% include_relative content/editors/donneesdintegrationdemedia.md %}
-
+y
 [/expand]
 
 ### Comment ajouter une vidéo ou du contenu multimédia dans une **page** ?
