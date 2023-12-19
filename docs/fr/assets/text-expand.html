@@ -13,18 +13,39 @@
         el.previousElementSibling.innerHTML = el.previousElementSibling.innerHTML + '<span>..&nbsp; <a href="#" style="cursor: pointer;" onclick="this.parentNode.parentNode.nextElementSibling.style.display = \'block\'; this.parentNode.parentNode.nextElementSibling.style.height = \'auto\'; this.parentNode.style.display = \'none\';">En&nbsp;savoir&nbsp;plus&nbsp;&rarr;</a></span>';
     }); */
 
-    var elements = document.querySelectorAll('p');
-Array.prototype.forEach.call(elements, function(el, i){
-    if (el.innerHTML.includes('[expand]')) {
-        var parentContent = el.parentNode.innerHTML.replace(/\[expand\]/g, '<div class="expand" style="display: none; height: 0; overflow: hidden;">').replace(/\[\/expand\]/g, '</div>');
-        el.parentNode.innerHTML = parentContent;
-    }
-});
-
-var expandDivs = document.querySelectorAll('div.expand');
-Array.prototype.forEach.call(expandDivs, function(el, i){
-    el.previousElementSibling.innerHTML += '<span>..&nbsp; <a href="#" style="cursor: pointer;" onclick="expandContent(this);">En savoir plus &rarr;</a></span>';
-});
+// Recherche de tous les éléments <p> contenant [expand]
+    var expandParagraphs = document.querySelectorAll('p:contains("[expand]")');
+    
+    expandParagraphs.forEach(function(el) {
+        if (el.innerHTML.trim() === '[expand]') {
+            // Création de l'élément div.expand correspondant
+            var expandDiv = document.createElement('div');
+            expandDiv.className = 'expand';
+            expandDiv.style.display = 'none';
+            expandDiv.style.height = '0';
+            expandDiv.style.overflow = 'hidden';
+            
+            // Remplacement de l'élément <p> par le nouvel élément <div>
+                el.parentNode.replaceChild(expandDiv, el);
+            }
+        });
+        
+        // Ajout du lien pour afficher le contenu caché
+        var expandDivs = document.querySelectorAll('div.expand');
+        
+        expandDivs.forEach(function(el) {
+            var linkSpan = document.createElement('span');
+            linkSpan.innerHTML = '..&nbsp; <a href="#" style="cursor: pointer;">En savoir plus &rarr;</a>';
+            linkSpan.querySelector('a').addEventListener('click', function(event) {
+                event.preventDefault();
+                el.style.display = 'block';
+                el.style.height = 'auto';
+                linkSpan.style.display = 'none';
+            });
+            
+            // Ajout du lien après le contenu caché
+            el.previousElementSibling.appendChild(linkSpan);
+        });
 
 
 </script>
