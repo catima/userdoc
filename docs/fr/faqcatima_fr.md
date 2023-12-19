@@ -4,7 +4,7 @@
 
 ### Comment créer un nouveau type de fiche ?
 
-<div class="expand" style="display: none; height: 0; overflow: hidden;">
+<div class="expandable-content">
 
 {% include_relative content/admin/creationduntypedefiche.md %}
 
