@@ -11,6 +11,7 @@
 
 [/expand]
 
+<!----
 ### Comment créer du contenu conditionnel ?
 
 [expand]
@@ -18,7 +19,7 @@
 {% include_relative content/admin/ajoutetditiondecontenuconditionnelousousfiche.md %}
 [/expand]
 
-<!--- ### Comment modifier les informations d'une fiche existante ?
+### Comment modifier les informations d'une fiche existante ?
 
 [expand]
 
