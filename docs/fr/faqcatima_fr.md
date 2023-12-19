@@ -2,11 +2,16 @@
 
 ## Ajout et modification de données
 
+
 ### Comment créer un nouveau type de fiche ?
 
 <div class="expandable-content">
 
+[expand]
+
 {% include_relative content/admin/creationduntypedefiche.md %}
+
+[/expand]
 
 </div>
 

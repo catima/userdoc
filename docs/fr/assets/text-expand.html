@@ -13,24 +13,23 @@
         el.previousElementSibling.innerHTML = el.previousElementSibling.innerHTML + '<span>..&nbsp; <a href="#" style="cursor: pointer;" onclick="this.parentNode.parentNode.nextElementSibling.style.display = \'block\'; this.parentNode.parentNode.nextElementSibling.style.height = \'auto\'; this.parentNode.style.display = \'none\';">En&nbsp;savoir&nbsp;plus&nbsp;&rarr;</a></span>';
     }); */
 
-// Sélection des éléments avec la classe "expandable-content"
-var expandableContents = document.querySelectorAll('.expandable-content');
+    var expandableContents = document.querySelectorAll('.expandable-content');
 
 Array.prototype.forEach.call(expandableContents, function(el, i){
-    var linkSpan = document.createElement('span');
-    linkSpan.innerHTML = '..&nbsp; <a href="#" style="cursor: pointer;">En savoir plus &rarr;</a>';
-    linkSpan.querySelector('a').addEventListener('click', function(event) {
-        event.preventDefault();
-        el.classList.add('expanded'); // Ajoute une classe pour définir l'état étendu
-        linkSpan.style.display = 'none';
-    });
-
-    // Ajout du lien après chaque élément "expandable-content"
-    el.appendChild(linkSpan);
-
-    // Masque initialement le contenu étendu
-    el.classList.remove('expanded');
+    var expandTag = el.innerHTML.trim();
+    if (expandTag === '[expand]') {
+        el.innerHTML = el.innerHTML.replace('[expand]', '<div class="expand" style="display: none; height: 0; overflow: hidden;">');
+        el.innerHTML += '<span>..&nbsp; <a href="#" style="cursor: pointer;" onclick="expandContent(this);">Read more &rarr;</a></span>';
+    }
 });
+
+function expandContent(link) {
+    var expandableContent = link.parentNode.parentNode.querySelector('.expand');
+    expandableContent.style.display = 'block';
+    expandableContent.style.height = 'auto';
+    link.parentNode.style.display = 'none';
+}
+
 
 
 </script>
