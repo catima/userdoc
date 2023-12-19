@@ -5,15 +5,11 @@
 
 ### Comment créer un nouveau type de fiche ?
 
-<div class="expandable-content">
-
 [expand]
 
 {% include_relative content/admin/creationduntypedefiche.md %}
 
 [/expand]
-
-</div>
 
 ### Comment créer du contenu conditionnel ?
 
@@ -22,7 +18,7 @@
 {% include_relative content/admin/ajoutetditiondecontenuconditionnelousousfiche.md %}
 [/expand]
 
-### Comment modifier les informations d'une fiche existante ?
+<!--- ### Comment modifier les informations d'une fiche existante ?
 
 [expand]
 
@@ -150,7 +146,7 @@ pas dans la doc -> à créer ?
 
 {% include_relative content/admin/suggestions.md %}
 
-[/expand]
+[/expand] --->
 
 {% include_relative assets/text-expand.html %} <!-- appelle le fichier html dans lequel le javascript du readmore est stocké -->
 
