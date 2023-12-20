@@ -1,30 +1,16 @@
-
 <script>
-
-var elements = document.querySelectorAll('p');
-    Array.prototype.forEach.call(elements, function(el, i) {
-        var content = el.innerHTML.trim();
-        
-        while (content.includes('[expand]') && content.includes('[/expand]')) {
-            var start = content.indexOf('[expand]');
-            var end = content.indexOf('[/expand]') + 9; // Length of '[/expand]' is 9 characters
-            var expandableContent = content.substring(start + 8, end - 9);
-            
-            var visibleContent = content.substring(0, start);
-            var expandLink = document.createElement('a');
-            expandLink.href = '#';
-            expandLink.textContent = 'Read more →';
-            
-            expandLink.onclick = function() {
-                el.innerHTML = visibleContent + expandableContent;
-                return false;
-            };
-            
-            el.innerHTML = visibleContent;
-            el.appendChild(expandLink);
-            content = content.substring(end);
+    
+    var elements = document.querySelectorAll('p');
+    Array.prototype.forEach.call(elements, function(el, i){
+        while(el.innerHTML=='[expand]') {
+            var parentcontent = el.parentNode.innerHTML.replace('<p>[expand]</p>','<div class="expand" style="display: none; height: 0; overflow: hidden;">').replace('<p>[/expand]</p>','</div>');
+            el.parentNode.innerHTML = parentcontent;
         }
     });
 
+    var elements = document.querySelectorAll('div.expand');
+    Array.prototype.forEach.call(elements, function(el, i){
+        el.previousElementSibling.innerHTML = el.previousElementSibling.innerHTML + '<span>..&nbsp; <a href="#" style="cursor: pointer;" onclick="this.parentNode.parentNode.nextElementSibling.style.display = \'block\'; this.parentNode.parentNode.nextElementSibling.style.height = \'auto\'; this.parentNode.style.display = \'none\';">Read&nbsp;more&nbsp;&rarr;</a></span>';
+    });
 
 </script>
