@@ -5,21 +5,15 @@
 
 ### Comment créer un nouveau type de fiche ?
 
-<div class="content">
 
 {% include_relative content/admin/creationduntypedefiche.md %}
 
-</div>
-
-<p class="right"><a href="#" id="read-more">Read more</a></p>
 
 ### Comment créer du contenu conditionnel ?
 
-<div>
 
 {% include_relative content/admin/ajoutetditiondecontenuconditionnelousousfiche.md %}
 
-</div>
 
 <!--
 

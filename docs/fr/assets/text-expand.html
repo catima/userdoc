@@ -1,11 +1,25 @@
 
-<style>
-    .content {
-        display: none;
-    }
-</style>
-
-
 <script>
+
+var elements = document.querySelectorAll('p');
+Array.prototype.forEach.call(elements, function(el, i) {
+  var content = el.innerHTML.trim();
+
+  if (content.includes('[expand]') && content.includes('[/expand]')) {
+    var expandedContent = content.substring(content.indexOf('[expand]') + 8, content.indexOf('[/expand]'));
+    var expandLink = document.createElement('a');
+    expandLink.href = '#';
+    expandLink.textContent = 'Read more →';
+
+    expandLink.onclick = function() {
+      el.innerHTML = expandedContent;
+      return false;
+    };
+
+    el.innerHTML = el.innerHTML.replace('[expand]', '').replace('[/expand]', '');
+    el.appendChild(expandLink);
+  }
+});
+
 
 </script>
