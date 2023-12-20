@@ -2,7 +2,6 @@
 
 ## Ajout et modification de données
 
-
 ### Comment créer un nouveau type de fiche ? [Lire la suite → ](#nouveau-type-de-fiche)
 
 ### Comment créer du contenu conditionnel ? [Lire la suite → ](#contenu-conditionnel)
@@ -23,7 +22,6 @@
 
 ### Comment modifier la barre de navigation du catalogue ? [Lire la suite → ](#modifier-la-barre-de-naviguation)
 
-
 ## Collaboration et accès
 
 ### Comment inviter des personnes à collaborer sur un catalogue ? [Lire la suite → ](#inviter-des-collaborateurs)
@@ -33,7 +31,6 @@
 ### Comment inviter des personnes en masse ?
 
 pas de doc détaillée **-> dans attribution**
-
 
 ### Quels sont les différents rôles possibles ? [Lire la suite → ](#les-diff&eacute;rents-statuts)
 
@@ -51,23 +48,33 @@ pas dans la doc **-> à créer ?**
 
 ### Nouveau type de fiche
 
-{% include_relative content/admin/creationduntypedefiche.md %} 
+{% include_relative content/admin/creationduntypedefiche.md %}
+
+----
 
 ### Contenu conditionnel
 
 {% include_relative content/admin/ajoutetditiondecontenuconditionnelousousfiche.md %}
 
+----
+
 ### Modifier une fiche
 
 {% include_relative content/editors/editionduplicationetsuppressiondefiches.md %}
+
+----
 
 ### Intégration de média
 
 {% include_relative content/editors/donneesdintegrationdemedia.md %}
 
+----
+
 ### Intégration de média dans une page
 
 {% include_relative content/admin/integrationdemediadansunepage.md %}
+
+----
 
 ### Contenu personnalisé
 
@@ -84,34 +91,52 @@ pas dans la doc **-> à créer ?**
 
 {% include_relative content/admin/editiondunepage.md %}
 
+----
+
 ### Affichage des fiches
 
 {% include_relative content/admin/editiondunconteneuritemlist.md %}
+
+----
 
 ### Affichage sur une carte
 
 {% include_relative content/admin/editiondunconteneurdecartesgeographique.md %}
 
+----
+
 ### Modifier la barre de naviguation
 
 {% include_relative content/admin/organisationdelabarredemenus.md %}
+
+----
 
 ### Inviter des collaborateurs
 
 {% include_relative content/admin/attributiondesstatuts.md %}
 
+----
+
 ### Restreindre un catalogue
 
 {% include_relative content/admin/gestiondelaconsultationetdeleditiondesdonneesducatalogue.md %}
+
+----
 
 ### Les différents statuts
 
 {% include_relative content/admin/lesdifferentsstatuts.md %}
 
+----
+
 ### Validation des fiches
 
 {% include_relative content/editors/statutdesfiches.md %}
 
+----
+
 ### Suggestions
 
 {% include_relative content/admin/suggestions.md %}
+
+----
