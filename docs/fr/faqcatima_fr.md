@@ -6,7 +6,11 @@
 ### Comment créer un nouveau type de fiche ?
 
 
-[expand] {% include_relative content/admin/creationduntypedefiche.md %} [/expand]
+[expand] 
+
+{% include_relative content/admin/creationduntypedefiche.md %} 
+
+[/expand]
 
 
 ### Comment créer du contenu conditionnel ?
