@@ -3,25 +3,11 @@
 ## Ajout et modification de données
 
 
-### Comment créer un nouveau type de fiche ?
-
-
-[expand] 
+### Comment créer un nouveau type de fiche ? [Lire la suite → ](#nouveau-type-de-fiche)
 
 {% include_relative content/admin/creationduntypedefiche.md %} 
 
-[/expand]
-
-
-### Comment créer du contenu conditionnel ?
-
-[expand]
-
-{% include_relative content/admin/ajoutetditiondecontenuconditionnelousousfiche.md %}
-
-[/expand]
-
-<!--
+### Comment créer du contenu conditionnel ? [Lire la suite → ](#contenu-conditionnel)
 
 ### Comment modifier les informations d'une fiche existante ?
 
@@ -151,8 +137,18 @@ pas dans la doc -> à créer ?
 
 {% include_relative content/admin/suggestions.md %}
 
-[/expand] --->
+[/expand]
 
-{% include_relative assets/text-expand.html %} <!-- appelle le fichier html dans lequel le javascript du readmore est stocké -->
+
+### Nouveau type de fiche
+
+{% include_relative content/admin/creationduntypedefiche.md %} 
+
+### Contenu conditionnel
+
+{% include_relative content/admin/ajoutetditiondecontenuconditionnelousousfiche.md %}
+
+
+<!----{% include_relative assets/text-expand.html %} <!-- appelle le fichier html dans lequel le javascript du readmore est stocké -->
 
 
