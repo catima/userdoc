@@ -1,26 +1,11 @@
-<script>
-    
-    var paragraphs = document.querySelectorAll('p');
-    
-    paragraphs.forEach(function(paragraph) {
-        if (paragraph.innerHTML.includes('[expand]')) {
-            var content = paragraph.innerHTML.replace(/\[expand\]/g, '<div class="expand" style="display: none; height: 0; overflow: hidden;">');
-                content = content.replace(/\[\/expand\]/g, '</div>');
-                paragraph.innerHTML = content;
-                
-                var expandDivs = paragraph.querySelectorAll('div.expand');
-                expandDivs.forEach(function(expandDiv) {
-                    expandDiv.previousElementSibling.innerHTML += '<span>..&nbsp; <a href="#" style="cursor: pointer;" onclick="expandContent(this);">Read more &rarr;</a></span>';
-                });
-            }
-        });
-        
-        function expandContent(link) {
-            var expandableContent = link.parentNode.parentNode.nextElementSibling;
-            expandableContent.style.display = 'block';
-            expandableContent.style.height = 'auto';
-            link.parentNode.style.display = 'none';
-        }
 
+<style>
+    .content {
+        display: none;
+    }
+</style>
+
+
+<script>
 
 </script>
