@@ -1,6 +1,6 @@
 # FAQ CATIMA
 
-Documentation simplfifiée de [CATIMA](https://catima.github.io/userdoc/) organisée sous forme de questions.
+Documentation simplifiée de [CATIMA](https://catima.github.io/userdoc/) organisée sous forme de questions.
 
 ## Ajout et modification de données
 
