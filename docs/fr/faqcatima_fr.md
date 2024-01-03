@@ -1,5 +1,7 @@
 # FAQ CATIMA
 
+Documentation simplfifiée de [CATIMA](https://catima.github.io/userdoc/) organisée sous forme de questions.
+
 ## Ajout et modification de données
 
 ### Comment créer un nouveau type de fiche ? [Lire la suite → ](#nouveau-type-de-fiche)
