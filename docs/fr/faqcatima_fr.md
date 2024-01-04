@@ -2,7 +2,7 @@
 
 Documentation simplifiée de [CATIMA](https://catima.github.io/userdoc/) organisée sous forme de questions.
 
-{% include_relative fr/introduction.md %}
+{% include_relative introduction.md %}
 
 {% include_relative content/admin/integrationdemediadansunepage.md %}
 
