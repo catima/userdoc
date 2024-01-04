@@ -1,3 +1,5 @@
+{% include_relative fr/introduction.md %}
+
 # Table des matières
 
 - [Configuration d'un catalogue](#configuration-dun-catalogue)
