@@ -1,3 +1,5 @@
+{% include_relative introduction.md %}
+
 An administrator has full access to the catalog; they can add and modify any content as well as modify pages and the catalog's structure. 
 
 # Table of contents

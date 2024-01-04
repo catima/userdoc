@@ -1,3 +1,5 @@
+{% include_relative introduction.md %}
+
 A catalog's editor can view the website and add new items/content to it, but not modify pages and structure.
 
 # Table of contents

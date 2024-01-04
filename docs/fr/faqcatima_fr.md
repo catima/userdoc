@@ -4,8 +4,6 @@ Documentation simplifiée de [CATIMA](https://catima.github.io/userdoc/) organis
 
 {% include_relative introduction.md %}
 
-{% include_relative content/admin/integrationdemediadansunepage.md %}
-
 ## Ajout et modification de données
 
 ### Comment créer un nouveau type de fiche ? [Lire la suite → ](#nouveau-type-de-fiche)

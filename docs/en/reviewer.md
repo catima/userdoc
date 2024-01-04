@@ -1,3 +1,5 @@
+{% include_relative introduction.md %}
+
 A reviewer can approve or reject an item created by (super-)editors. 
 
 # Table of content

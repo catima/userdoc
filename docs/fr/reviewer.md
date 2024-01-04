@@ -1,3 +1,5 @@
+{% include_relative introduction.md %}
+
 # Table des matières
 
 - [Statuts des fiches](#statuts-des-fiches)

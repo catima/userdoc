@@ -1,3 +1,5 @@
+{% include_relative introduction.md %}
+
 # Table des matières
 
 - [Ajout de choix dans les ensembles de choix](#ajout-choix)

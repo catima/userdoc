@@ -1,3 +1,5 @@
+{% include_relative introduction.md %}
+
 A super-editor can add and edit any item as well as add choices to existing choice sets. 
 
 # Table of content

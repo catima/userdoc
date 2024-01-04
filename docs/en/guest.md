@@ -1,3 +1,5 @@
+{% include_relative introduction.md %}
+
 A guest is a user that doesn't have a CATIMA account. The accessibility (e.g. editing items) is limited, but it is still possible to search in the catalog and view its content.
 
 # Table of content
