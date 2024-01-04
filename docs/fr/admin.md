@@ -1,4 +1,4 @@
-{% include_relative fr/introduction.md %}
+{% include_relative introduction.md %}
 
 # Table des matières
 
