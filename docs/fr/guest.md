@@ -1,5 +1,3 @@
-{% include_relative introduction.md %}
-
 # Table des matières
 
 - [Recherche](#recherche)

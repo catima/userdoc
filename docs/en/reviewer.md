@@ -1,4 +1,4 @@
-{% include_relative introduction.md %}
+# Catalog's reviewer documentation
 
 A reviewer can approve or reject an item created by (super-)editors. 
 

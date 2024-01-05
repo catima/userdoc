@@ -1,4 +1,4 @@
-{% include_relative introduction.md %}
+# Catalog's administrator documentation
 
 An administrator has full access to the catalog; they can add and modify any content as well as modify pages and the catalog's structure. 
 

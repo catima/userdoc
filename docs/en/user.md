@@ -1,4 +1,4 @@
-{% include_relative introduction.md %}
+# Catalog's user documentation
 
 CATIMA's catalog users and people that have a CATIMA account and are connected. While connected, it is possible to add content to the favorites. 
 

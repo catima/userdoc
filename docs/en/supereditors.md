@@ -1,4 +1,4 @@
-{% include_relative introduction.md %}
+# Catalog's supereditor documentation
 
 A super-editor can add and edit any item as well as add choices to existing choice sets. 
 
