@@ -1,0 +1,16 @@
+# Site Settings
+name: Catima's userdoc
+title: null
+description: A brief description of your site
+theme: jekyll-theme-minimal # Change this to your preferred theme
+
+# Plug in's
+plugins:
+- jekyll-remote-theme
+
+# GitHub Pages Configuration
+remote_theme: pages-themes/primer@v0.2.0
+
+
+# Additional Settings (Optional)
+
