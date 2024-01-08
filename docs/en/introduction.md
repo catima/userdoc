@@ -1,4 +1,4 @@
-# Introduction: What is CATIMA ?
+## Introduction: What is CATIMA ?
 
 CATIMA is a project developped by the [Faculty of Arts](https://unil.ch/lettres) and the [Faculty of Geosciences and Environment](https://unil.ch/gse) of the [University of Lausanne](https://unil.ch/).  
 Access CATIMA: [https://catima.unil.ch](https://catima.unil.ch).
