@@ -1,7 +1,3 @@
----
-layout: default
-title: Administrateur de catalogue
----
 # Table des matières
 
 - [Configuration d'un catalogue](#configuration-dun-catalogue)
