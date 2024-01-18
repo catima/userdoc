@@ -1,3 +1,4 @@
+
 ## Introduction: Qu'est-ce que CATIMA ?
 
 CATIMA est un projet informatique développé par la [Faculté des lettres](https://unil.ch/lettres) et la [Faculté des géosciences et de l'environnement (FGSE)](https://unil.ch/gse) de [l'Université de Lausanne](https://unil.ch/). Le logiciel est accessible via l'URL [https://catima.unil.ch](https://catima.unil.ch). 

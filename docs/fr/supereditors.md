@@ -1,3 +1,8 @@
+---
+layout: default
+title: Super-éditeur de catalogue
+---
+
 # Table des matières
 
 - [Ajout de choix dans les ensembles de choix](#ajout-choix)

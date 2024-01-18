@@ -1,3 +1,8 @@
+---
+layout: default
+title: Visiteur de catalogue
+---
+
 # Table des matières
 
 - [Recherche](#recherche)

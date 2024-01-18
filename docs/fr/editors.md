@@ -1,3 +1,8 @@
+---
+layout: default
+title: Éditeur de catalogue
+---
+
 # Table des matières
 
 - [Affichage, ajout et modification de données](#affichageajoutmod)

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Superviseur de catalogue
+---
+
 # Table des matières
 
 - [Statuts des fiches](#statuts-des-fiches)

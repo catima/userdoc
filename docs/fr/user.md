@@ -1,3 +1,8 @@
+---
+layout: default
+title: Utilisateur de catalogue
+---
+
 # Table des matières
 
 - [Favoris](#favoris)
