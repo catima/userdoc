@@ -1,8 +1,3 @@
----
-layout: default
-title: FAQ Catima
----
-
 # FAQ CATIMA
 
 Documentation simplifiée de [CATIMA](https://catima.github.io/userdoc/) organisée sous forme de questions.
