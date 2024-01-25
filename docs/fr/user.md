@@ -1,3 +1,8 @@
+---
+title: user
+navbar: fr-sidenav-user.html
+---
+
 # Table des matières
 
 - [Favoris](#favoris)

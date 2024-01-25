@@ -1,3 +1,8 @@
+---
+title: user
+navbar: fr-sidenav-editors.html
+---
+
 # Table des matières
 
 - [Affichage, ajout et modification de données](#affichageajoutmod)

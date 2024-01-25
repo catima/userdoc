@@ -1,3 +1,8 @@
+---
+title: admin
+navbar: fr-sidenav-admin.html 
+---
+
 # Table des matières
 
 - [Configuration d'un catalogue](#configuration-dun-catalogue)
