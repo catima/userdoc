@@ -1,21 +1,89 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  {% seo %}
+  <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  {% include head-custom.html %}
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    {% include head-custom.html %}
-  </head>
-  <body>
-    <div class="container-lg px-3 my-5 markdown-body">
+    .navbar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 20%;
+      border-right: grey 1px solid;
+      overflow-y: auto; /* Ajoute une barre de défilement si le contenu dépasse la hauteur */
+      padding: 5% 20px 5% 0;
+    }
 
-      {{ content }}
+    .navbar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar li {
+      text-align: left;
+      padding: 15px 0 0 15px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      text-align: left;
+      color: #0777D9;
+      display:inline;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .navbar ul {
+      display: list-item;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+  </style>
+</head>
+<body>
+  {% if page.navbar %} <!-- récupère le chemin du fichier contenant les liens des titres -->
+    <div class="navbar">
+
+      {% include {{ page.navbar }} %} <!--inclu le fichier html contenant les liens des titres -->
 
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-  </body>
+    
+    <div class="container-lg px-3 my-5 markdown-body" style="margin-left: 20%; padding: 20px;">
+    
+    
+      {{ content }}
+      
+    </div>
+  
+    {% else %} <!-- si la page n'a pas de barre de navigation le contenu est affiché normalement-->
+    <div class="container-lg px-3 my-5 markdown-body">
+    
+      {{ content }}
+      
+    </div>
+
+  {% endif %} 
+    
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+  <script>anchors.add();</script>
+</body>
 </html>
