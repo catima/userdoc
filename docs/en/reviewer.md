@@ -3,7 +3,7 @@ title: Catalog reviewer
 navbar: en-sidenav-reviewer.html
 ---
 
-A reviewer can approve or reject an item created by (super-)editors. 
+A reviewer can approve or reject an item created by (super-)editors.
 
 ## Table of content
 

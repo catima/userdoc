@@ -1,1 +1,1 @@
-Only for "Yes" and "No" values. 
+Only for "Yes" and "No" values.

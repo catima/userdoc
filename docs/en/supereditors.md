@@ -3,7 +3,7 @@ title: Catalog super-editor
 navbar: en-sidenav-supereditors.html
 ---
 
-A super-editor can add and edit any item as well as add choices to existing choice sets. 
+A super-editor can add and edit any item as well as add choices to existing choice sets.
 
 ## Table of content
 
@@ -13,7 +13,7 @@ A super-editor can add and edit any item as well as add choices to existing choi
 
 <a id="add-new-choice-to-choice-set"></a>
 
-## Add new choice to choice set 
+## Add new choice to choice set
 
 {% include_relative content/supereditors/addnewchoicetochoiceset.md %}
 

@@ -1,6 +1,6 @@
-The **Stats** tab in the Set up page tracks catalog's visitors. 
+The **Stats** tab in the Set up page tracks catalog's visitors.
 
-- The blue line is external users 
-- The red one is editors and administrators on the Data and Setup page. 
+- The blue line is external users
+- The red one is editors and administrators on the Data and Setup page.
 
-![](assets/setup/stats.png)
+![i](assets/setup/stats.png)

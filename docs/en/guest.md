@@ -5,31 +5,34 @@ navbar: en-sidenav-guest.html
 
 A guest is a user that doesn't have a CATIMA account. The accessibility (e.g. editing items) is limited, but it is still possible to search in the catalog and view its content.
 
-# Table of content
+## Table of content
 
 - [Search](#search)
-	- [Advanced search](#advanced-search)
+  - [Advanced search](#advanced-search)
 - [Search on datation field](#searchdate)
-	- [Simple search](#simplesearchdate)
-	- [Advanced search on the datation field](#advancedsearchdate)
+  - [Simple search](#simplesearchdate)
+  - [Advanced search on the datation field](#advancedsearchdate)
 
 <a id="search"></a>
-# Search
+
+## Search
 
 {% include_relative content/guest/search.md %}
 
 <a id="advanced-search"></a>
-## Advanced search
+
+### Advanced search
 
 {% include_relative content/guest/advancedsearch.md %}
- 
 
 <a id="searchdate"></a>
-## Searching the datation Field
+
+### Searching the datation Field
 
 {% include_relative content/guest/searchingthedatationfield.md %}
 
 <a id="advancedsearchdate"></a>
-### Advanced Search
+
+#### Advanced Search
 
 {% include_relative content/guest/advancedsearchonthedatationfield.md %}

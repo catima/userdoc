@@ -9,16 +9,14 @@ navbar: fr-sidenav-reviewer.html
 - [Processus de travail](#processus-de-travail)
 - [Valider ou rejeter une fiche](#valider-ou-rejeter-une-fiche)
 
-# Statuts des fiches
+## Statuts des fiches
 
 {% include_relative content/reviewer/statutsdesfiches.md %}
 
-# Processus de travail
+## Processus de travail
 
 {% include_relative content/reviewer/processusdetravail.md %}
 
-# Valider ou rejeter une fiche
+## Valider ou rejeter une fiche
 
 {% include_relative content/reviewer/validerourejeterunefiche.md %}
-
-

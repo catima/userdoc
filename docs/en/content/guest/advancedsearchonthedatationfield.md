@@ -1,6 +1,6 @@
 An advanced search on the datation field allows specifying periods in several different ways.
 
-![](assets/datation/advancedsearch.png)
+![Advanced search](assets/datation/advancedsearch.png)
 
 The datation field allows manual date entry. The dropdowns on the right allow specifying whether the search is for an exact date (1), after a date (2), or before a date (3).
 
@@ -12,10 +12,10 @@ The criteria can be combined using the search operators "and," "or," and "exclud
 
 The operator before the first row (6) refers to other search fields. All others allow multiple criteria within the date field to interact.
 
->  **Reminder:**
-> 
+> **Reminder:**
+>
 > **AND** (6): all criteria must be fulfilled
-> 
+>
 > **OR** (7): either of the criteria must be fulfilled
-> 
+>
 > **EXCLUDE** (8): the criterion must be excluded

@@ -2,7 +2,7 @@ After deciding which concepts and features will be used in the catalog, it is ti
 
 First, acess the set up page by clicking on **Admin** > **Catalog set up** in the navigation bar. One must be connected to CATIMA and and be an administrator to perform this action.  
 
-If some items have already been created, they will be displayed on the top-left of the page. Click on the "*New item type*" button to create a new one. 
+If some items have already been created, they will be displayed on the top-left of the page. Click on the "*New item type*" button to create a new one.
 
 ![New item type](assets/setup/a-item.png)
 
@@ -14,4 +14,4 @@ The *New item type* form opens:
 **Slug**: the slug is a short name that will appear in the website's address (URL). It must contain only letters (without accent), numbers and hyphens and must be short.  
 > Example: for the item "University" the slug could be "uni".
 
-In the **Display options**, if ***Display empty fields*** is selected, all fields will appear to the catalog's visitors, even if those are empty. If you do not wish empty fields to be shown, deselect this option. 
+In the **Display options**, if ***Display empty fields*** is selected, all fields will appear to the catalog's visitors, even if those are empty. If you do not wish empty fields to be shown, deselect this option.

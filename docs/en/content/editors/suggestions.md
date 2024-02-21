@@ -11,4 +11,4 @@ There are 3 options:
 **2**: validate suggestion: the icon will turn green and the suggestion stays visible  
 **3**: delete suggestion  
 
-![](assets/sug/read_suggestion.png)
+![Read suggestions](assets/sug/read_suggestion.png)
