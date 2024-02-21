@@ -1,8 +1,11 @@
-# Catalog's administrator documentation
+---
+title: Catalog administrator
+navbar: en-sidenav-admin.html 
+---
 
 An administrator has full access to the catalog; they can add and modify any content as well as modify pages and the catalog's structure. 
 
-# Table of contents
+## Table of contents
 
 - [Catalog configuration](#catalog-configuration)
 	- [Conceptualization](#conceptualization)

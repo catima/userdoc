@@ -1,4 +1,7 @@
-# Catalog's editor documentation
+---
+title: Catalog editor
+navbar: en-sidenav-editors.html 
+---
 
 A catalog's editor can view the website and add new items/content to it, but not modify pages and structure.
 
