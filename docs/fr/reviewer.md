@@ -1,4 +1,9 @@
-# Table des matières
+---
+title: Superviseur de catalogue
+navbar: fr-sidenav-reviewer.html
+---
+
+## Table des matières
 
 - [Statuts des fiches](#statuts-des-fiches)
 - [Processus de travail](#processus-de-travail)

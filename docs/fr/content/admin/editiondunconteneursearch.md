@@ -11,6 +11,8 @@ Ce conteneur affiche une liste de fiches selon un critère déterminé par une r
  
 Depuis la page d'accueil, entrer un mot-clé dans la barre de recherche et cliquer sur "Chercher".
 
+
+<a id="rechercheavancee"></a>
  ![](assets/search/recherche_avancee.png)
  
 Les paramètres de recherche avancée permettent des recherches plus précises sur un type de fiche déterminé, sur certains champs uniquement ou sur un ensemble de champs. L'image ci-dessus montre la recherche des tous les bâtiments ayant été construits avant 2000. 

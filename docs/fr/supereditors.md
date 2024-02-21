@@ -1,4 +1,9 @@
-# Table des matières
+---
+title: Super-éditeur de catalogue
+navbar: fr-sidenav-supereditors.html
+---
+
+## Table des matières
 
 - [Ajout de choix dans les ensembles de choix](#ajout-choix)
 - [Ajout des choix de type datation](#ajoutchoixdatation)

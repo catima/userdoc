@@ -1,9 +1,9 @@
 ---
-title: user
+title: Éditeur de catalogue
 navbar: fr-sidenav-editors.html
 ---
 
-# Table des matières
+## Table des matières
 
 - [Affichage, ajout et modification de données](#affichageajoutmod)
    - [Présentation](#presentation)

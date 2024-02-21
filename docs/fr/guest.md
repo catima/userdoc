@@ -1,4 +1,9 @@
-# Table des matières
+---
+title: Visiteur de catalogue
+navbar: fr-sidenav-guest.html
+---
+
+## Table des matières
 
 - [Recherche](#recherche)
   - [Recherche simple](#recherche-simple)
