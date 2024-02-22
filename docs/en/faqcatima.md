@@ -1,6 +1,4 @@
 
-<a id="site-nav"></a>
-
 # CATIMA FAQ
 
 Simplified documentation of [CATIMA](https://catima.github.io/userdoc/) organized in a question format.

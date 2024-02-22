@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
   {% seo %}
   <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   {% include head-custom.html %}
@@ -66,10 +68,22 @@
     .navbar a:hover {
       text-decoration: underline;
     }
+
+    .sidebar__top {
+      position: fixed;
+      bottom: 1.5em;
+      right: 3em;
+      z-index: 10;
+    }
+    .md-48 {
+      font-size: 48px !important;
+    }
     
   </style>
 </head>
 <body>
+
+  <a id="site-nav"></a>
 
   {% if page.navbar %} <!-- récupère le chemin du fichier contenant les liens des titres -->
     <div class="navbar">
@@ -94,6 +108,10 @@
     </div>
 
   {% endif %} 
+
+  <aside class="sidebar__top">
+    <a href="#site-nav"><span class="material-symbols-outlined md-48">arrow_circle_up</span></a>
+    </aside>
     
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
