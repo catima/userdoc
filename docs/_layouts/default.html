@@ -15,6 +15,7 @@
     }
 
     .navbar {
+      list-style: none;
       position: fixed;
       left: 0;
       top: 0;
@@ -26,15 +27,32 @@
     }
 
     .navbar ul {
+      display: list-item;
       list-style-type: none;
       padding: 0;
       margin: 0;
     }
 
-    .navbar li {
-      text-align: left;
-      padding: 15px 0 0 15px;
+    .navbar ul > li {
+      list-style-type: disc;
+      list-style-position: inside;
+      padding-left: 10px;
+      padding-top: 5px;
+
     }
+
+    .navbar ul > li > ul > li {
+      list-style-type: circle;
+    }
+
+    .navbar ul > li > ul > li > ul > li {
+      list-style-type: square;
+    }
+    .navbar ul > li > ul > li > ul > li > ul > li {
+      list-style-type: disc;
+    }
+
+
 
     .navbar a {
       text-decoration: none;
@@ -47,13 +65,6 @@
 
     .navbar a:hover {
       text-decoration: underline;
-    }
-
-    .navbar ul {
-      display: list-item;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
     }
     
   </style>
