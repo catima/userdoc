@@ -5,7 +5,7 @@ navbar: en-sidenav-editors.html
 
 A catalog's editor can view the website and add new items/content to it, but not modify pages and structure.
 
-## Table of contents
+<!-- ## Table of contents
 
 - [Display items](#display-items)
 - [Add a new item](#add-item)
@@ -14,7 +14,7 @@ A catalog's editor can view the website and add new items/content to it, but not
   - [Geographic data](#geographicdata)
 - [Item status](#item-status)
 - [Suggestions managment](#suggestions)
-- [Edit, duplicate and delete item](#editduplicatedelete)
+- [Edit, duplicate and delete item](#editduplicatedelete) -->
 
 <a id="display-items"></a>
 

@@ -4,10 +4,10 @@ navbar: en-sidenav-user.html
 ---
 CATIMA's catalog users and people that have a CATIMA account and are connected. While connected, it is possible to add content to the favorites.
 
-## Table of contents
+<!-- ## Table of contents
 
 - [Favorites](#favorites)
-- [Access restricted catalogs](#access-restricted-catalogs)
+- [Access restricted catalogs](#access-restricted-catalogs) -->
 
 <a id="favorites"></a>
 

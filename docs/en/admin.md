@@ -5,7 +5,7 @@ navbar: en-sidenav-admin.html
 
 An administrator has full access to the catalog; they can add and modify any content as well as modify pages and the catalog's structure.
 
-## Table of contents
+<!-- ## Table of contents
 
 - [Catalog configuration](#catalog-configuration)
   - [Conceptualization](#conceptualization)
@@ -49,7 +49,7 @@ An administrator has full access to the catalog; they can add and modify any con
     - [API and data only mode](#api)
     - [Catalog access](#catalog-access-and-visibility)
       - [Manage access to data](#access-to-data-and-data-edition)
-      - [Change a user's status](#change-status)
+      - [Change a user's status](#change-status) -->
 
 <a id="catalog-configuration"></a>
 

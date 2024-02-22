@@ -3,13 +3,13 @@ title: Visiteur de catalogue
 navbar: fr-sidenav-guest.html
 ---
 
-## Table des matières
+<!-- ## Table des matières
 
 - [Recherche](#recherche)
   - [Recherche simple](#recherche-simple)
   - [Recherche avancée](#recherche-avancée)
     - [Opérateurs de recherche](#opérateurs-de-recherche)
-  - [Recherche sur le champ datation](#recherche-sur-le-champ-datation)
+  - [Recherche sur le champ datation](#recherche-sur-le-champ-datation) -->
 
 ## Recherche
 

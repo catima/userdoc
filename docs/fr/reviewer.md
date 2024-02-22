@@ -3,11 +3,11 @@ title: Superviseur de catalogue
 navbar: fr-sidenav-reviewer.html
 ---
 
-## Table des matières
+<!-- ## Table des matières
 
 - [Statuts des fiches](#statuts-des-fiches)
 - [Processus de travail](#processus-de-travail)
-- [Valider ou rejeter une fiche](#valider-ou-rejeter-une-fiche)
+- [Valider ou rejeter une fiche](#valider-ou-rejeter-une-fiche) -->
 
 ## Statuts des fiches
 

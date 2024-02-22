@@ -5,11 +5,11 @@ navbar: en-sidenav-reviewer.html
 
 A reviewer can approve or reject an item created by (super-)editors.
 
-## Table of content
+<!-- ## Table of content
 
 - [Status](#status)
 - [Workfow](#workflow)
-- [Approve or reject an item](#approve-or-reject-an-item)
+- [Approve or reject an item](#approve-or-reject-an-item) -->
 
 <a id="status"></a>
 

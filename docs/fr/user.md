@@ -3,12 +3,12 @@ title: Utilisateur de catalogue
 navbar: fr-sidenav-user.html
 ---
 
-## Table des matières
+<!-- ## Table des matières
 
 - [Favoris](#favoris)
   - [Ajout de contenu](#ajout-de-contenu)
   - [Accès à la liste des favoris](#accesfavoris)
-- [Accès à des catalogues restreints](#accescatrestreints)
+- [Accès à des catalogues restreints](#accescatrestreints) -->
 
 ## Favoris
 

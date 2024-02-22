@@ -5,11 +5,11 @@ navbar: en-sidenav-supereditors.html
 
 A super-editor can add and edit any item as well as add choices to existing choice sets.
 
-## Table of content
+<!-- ## Table of content
 
 - [Add new choice to choice set](#add-new-choice-to-choice-set)
 - [Add new period to datation choice set](#addperiodchoice)
-- [Choice hierarchy](#choicehierachy)
+- [Choice hierarchy](#choicehierachy) -->
 
 <a id="add-new-choice-to-choice-set"></a>
 

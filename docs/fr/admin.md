@@ -3,7 +3,7 @@ title: Administrateur de catalogue
 navbar: fr-sidenav-admin.html 
 ---
 
-## Table des matières
+<!-- ## Table des matières
 
 - [Configuration d'un catalogue](#configuration-dun-catalogue)
   - [Conceptualisation](#conceptualisation)
@@ -50,7 +50,7 @@ navbar: fr-sidenav-admin.html
     - [Attribution de statuts](#attribution)
   - [Statistiques](#statistiques)
   - [API](#api)
-- [Exemple de réalisation d'un catalogue](#exemple)
+- [Exemple de réalisation d'un catalogue](#exemple) -->
 
 <a id="catconfiguration"></a>
 

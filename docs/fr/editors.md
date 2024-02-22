@@ -3,7 +3,7 @@ title: Éditeur de catalogue
 navbar: fr-sidenav-editors.html
 ---
 
-## Table des matières
+<!-- ## Table des matières
 
 - [Affichage, ajout et modification de données](#affichageajoutmod)
   - [Présentation](#presentation)
@@ -16,7 +16,7 @@ navbar: fr-sidenav-editors.html
   - [Statuts des fiches](#statuts-des-fiches)
   - [Édition, duplication et suppression de fiches](#editionduplsup)
   - [Gestion des suggestions](#suggestions)
-- [Exemple d'ajout de données dans un catalogue](#exemplecat)
+- [Exemple d'ajout de données dans un catalogue](#exemplecat) -->
 
 <a id="affichageajoutmod"></a>
 

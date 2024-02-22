@@ -1,6 +1,4 @@
----
-layout: faq
----
+
 <a id="site-nav"></a>
 
 # CATIMA FAQ
