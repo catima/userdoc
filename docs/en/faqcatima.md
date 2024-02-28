@@ -5,25 +5,25 @@ Simplified documentation of [CATIMA](https://catima.github.io/userdoc/) organize
 
 ## Adding and Editing Data
 
-### How to create a new record type? [Read more →](#new-item-type)
+### How to create a new item type? [Read more →](#new-item-type)
 
 ### How to create conditional content? [Read more →](#conditional-content)
 
-### How to modify the information of an existing record? [Read more →](#edit-an-item)
+### How to edit the information of an existing item? [Read more →](#edit-an-item)
 
-### How to add a video or multimedia content to a **record**? [Read more →](#embed-media)
+### How to embed media in an **item**? [Read more →](#embed-media)
 
-### How to add a video or multimedia content to a **page**? [Read more →](#embed-media-in-a-page)
+### How to embed media in a **page**? [Read more →](#embed-media-in-a-page)
 
-### How to create a customized page? [Read more →](#custom-content)
+### How to create a custom page? [Read more →](#custom-content)
 
 ## Data Display
 
-### How to define or change the display of a record type? [Read more →](#item-list-container)
+### How to define or change the display of a item type? [Read more →](#item-list-container)
 
-### How to display records on a geographical map? [Read more →](#map-container)
+### How to display items on a geographical map? [Read more →](#map-container)
 
-### How to modify the catalog navigation bar? [Read more →](#custom-navigation-bar)
+### How to customize the catalog's navigation bar? [Read more →](#custom-navigation-bar)
 
 ## Collaboration and Access
 
@@ -63,7 +63,7 @@ Not in the documentation **-> to be created?** -->
 
 ----
 
-### Embed media
+### Embed media in an item
 
 {% include_relative content/editors/embeddeddata.md %}
 
