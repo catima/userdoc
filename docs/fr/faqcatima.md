@@ -26,13 +26,9 @@ Documentation simplifiée de [CATIMA](https://catima.github.io/userdoc/) organis
 
 ## Collaboration et accès
 
-### Comment inviter des personnes à collaborer sur un catalogue ? [Lire la suite →](#inviter-des-collaborateurs)
+### Comment inviter des personnes ou des groupes sur un catalogue ? [Lire la suite →](#inviter-des-collaborateurs)
 
 ### Comment restreindre la visibilité du catalogue à certains membres ? [Lire la suite →](#restreindre-un-catalogue)
-
-### Comment inviter des personnes en masse ?
-
-pas de doc détaillée **-> dans attribution**
 
 ### Quels sont les différents rôles possibles ? [Lire la suite →](#les-diff&eacute;rents-statuts)
 
@@ -40,9 +36,9 @@ pas de doc détaillée **-> dans attribution**
 
 ### Comment fonctionne le système de validation de fiches par les reviewers ? [Lire la suite →](#validation-des-fiches)
 
-### Comment créer et gérer un catalogue multilingue ?
+<!-- ### Comment créer et gérer un catalogue multilingue ?
 
-pas dans la doc **-> à créer ?**
+pas dans la doc **-> à créer ?** -->
 
 ### Comment autoriser l'envoi de commentaire par les visiteurs du catalogue ? [Lire la suite →](#suggestions)
 
