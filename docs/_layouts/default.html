@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!-- Retrieves the icon for the scroll to top button -->
 
   {% seo %}
   <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
@@ -24,7 +24,7 @@
       height: 100%;
       width: 20%;
       border-right: grey 1px solid;
-      overflow-y: auto; /* Ajoute une barre de défilement si le contenu dépasse la hauteur */
+      overflow-y: auto; /* Adds a scrollbar if the contents is overflowing */
       padding: 5% 20px 5% 0;
     }
 
@@ -36,7 +36,7 @@
     }
 
     .navbar ul > li {
-      list-style-type: disc;
+      list-style-type: disc; /* Adds a disc for titles 1 */
       list-style-position: inside;
       padding-left: 10px;
       padding-top: 5px;
@@ -44,14 +44,14 @@
     }
 
     .navbar ul > li > ul > li {
-      list-style-type: circle;
+      list-style-type: circle; /* Add a circle for titles 2 */
     }
 
     .navbar ul > li > ul > li > ul > li {
-      list-style-type: square;
+      list-style-type: square; /* Adds a square for titles 3 */
     }
     .navbar ul > li > ul > li > ul > li > ul > li {
-      list-style-type: disc;
+      list-style-type: disc; /* Adds a disc for titles 4 */
     }
 
 
@@ -76,31 +76,31 @@
       z-index: 10;
     }
     .md-48 {
-      font-size: 48px !important;
+      font-size: 48px !important; /* Changes the size of the scroll to top button */
     }
     
   </style>
 </head>
 <body>
 
-  <a id="site-nav"></a>
+  <a id="site-nav"></a> <!-- Title to scroll back to top of the page -->
 
-  {% if page.navbar %} <!-- récupère le chemin du fichier contenant les liens des titres -->
-    <div class="navbar">
+  {% if page.navbar %} <!-- tests if the page has a navbar variable in her head -->
+    <div class="navbar"> <!-- The layout creates the navbar in a div-->
 
-      {% include {{ page.navbar }} %} <!--inclu le fichier html contenant les liens des titres -->
+      {% include {{ page.navbar }} %} <!--includes the html file of the page's navbar -->
 
     </div>
     
-    <div class="container-lg px-3 my-5 markdown-body" style="margin-left: 20%; padding: 20px;">
+    <div class="container-lg px-3 my-5 markdown-body" style="margin-left: 20%; padding: 20px;"> <!-- The content of the page is displayed next to the navbar-->
 
-      <h1> {{ page.title }} </h1>
+      <h1> {{ page.title }} </h1> <!-- The title of the page is displayed-->
     
       {{ content }}
       
     </div>
   
-    {% else %} <!-- si la page n'a pas de barre de navigation le contenu est affiché normalement-->
+    {% else %} <!-- If the page doesn't have a navbar variable, the content is displayed in the middle-->
     <div class="container-lg px-3 my-5 markdown-body">
     
       {{ content }}
@@ -109,7 +109,7 @@
 
   {% endif %} 
 
-  <aside class="sidebar__top">
+  <aside class="sidebar__top"> <!-- The scroll to top button that scrolls back to the site-nav title -->
     <a href="#site-nav"><span class="material-symbols-outlined md-48">arrow_circle_up</span></a>
     </aside>
     
