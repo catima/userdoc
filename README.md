@@ -25,12 +25,12 @@ Each language contains different folders and files organized as follows:
 
 	`{% include_relative content/*role*/*filename*.md %}`
 
-- A ***content*** folder containing the textual content of the documentation in markdown.
-    - Content is organized into folders by **statuses (admin, user, editor, etc.)**. Each folder contains markdown files that contain markdown documentation **divided into parts relative to the role index (see next point)**.
+- A ***content*** directory containing the textual content of the documentation in markdown.
+    - _Content_ is organized into folders by **statuses (admin, user, editor, etc.)**. Each folder contains markdown files that contain markdown documentation **divided by titles and undertitles**.
         
         > Individual markdown files are named after the part of the index they are attached to; the nomenclature is as follows: the title of the part in lowercase, without accents or special characters, all attached + .md.
         
-        > Images appearing in the various parts must be called with the relative path **from the parent file that includes the individual parts and not from the content/*role* folder**. This is imperative for the images to display in the documentation via the *include_relative* tag.
+        > Images appearing in the various content file must be called with the relative path **from the parent file that includes the individual parts and not from the content/*role* folder**. This is imperative for the images to display in the documentation via the *include_relative* tag.
 - A *faqcatima.md* file.
     - It contains titles formulated as questions that refer to different parts of the documentation integrated into the document with the same syntax as in the parent files 
 
