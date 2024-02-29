@@ -36,7 +36,7 @@ Each language contains different folders and files organized as follows:
 
 > ⚠️ **Any new file that calls parts of the documentation with the *include_relative* syntax must be located in the same directory as the assets folder so that the images are displayed correctly. ⚠️**
 
-## Maintaining the Github.io Mini-Site
+## Maintaining the Github.io Website
 
 The documentation is hosted on GitHub Pages, which allows hosting a mini-site for free directly from a GitHub repository; this functionality is powered by [Jekyll](https://jekyllrb.com).
 
