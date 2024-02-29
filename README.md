@@ -6,30 +6,33 @@ For each language, there is one folder (currently the [fr](docs/fr) and [en](doc
 
 ## How it works
 
-On Catima: users have access to buttons that brings them to the documentation based on their status(es).
+On Catima the users have access to buttons that brings them to the online documentation based on their status(es).
 
-The content of the documentation is contained in small files divided by roles and titles that can be found in the *content* directory. The documentation is brought together in "parent" files containing each titles and their content embedded underneath. They are divided in statuses and a FAQ file.
+The content of the documentation is contained in small files divided by roles and titles that can be found in the *content* directory. The documentation is brought together in "parent" files that acts as front and contains each titles and their content embedded underneath. They are divided by statuses and a FAQ file.
 
 To update the doc: You edit the content of the markdown files inside the *content* directory. The parent files don't need to be edited unless you added a file in the *content* directory.
 
-## How to maintain
+## What you need to know and how to maintain
 
 The documentation is stored in the *docs* directory and is divided by language; currently, there is a *fr* directory and an *en* directory.
 
-Each language contains different folders and files, each containing elements of the documentation organized as follows:
+Each language contains different folders and files organized as follows:
 
 - An ***assets*** folder containing images used in the documentation.
-    - Images are organized into different folders named after the features they are associated with.
-- Markdown files divided by **statuses (admin, user, editor, etc.)** containing the complete documentation for each status they act as fronts for our website. Each files has a head containing the title of the page and a "navbar" variable where the title of the file's corresponding navbar is referenced. Each file contains a skeleton composed of **titles and subtitles** referenced in the navbar (see navbar doc below) preceded by an HTML <a> tag carrying an id corresponding to each link in the navbar (making the menu clickable in all circumstances). The **content of each part is included using the *[include_relative](https://jekyllrb.com/docs/includes/)* syntax** provided by Jekyll. Files are retrieved as follows:
+
+    > Images are organized into different folders named after the features they are associated with.
+- Markdown files divided by **statuses (admin, user, editor, etc.)** containing the complete documentation for each status, they act as fronts for our website. Each files has a head containing the title of the page and a "navbar" variable where the title of the file's corresponding navbar is referenced. Each file contains a skeleton composed of **titles and subtitles** referenced in the navbar (see the navbar doc below) preceded by an HTML `<a>` tag carrying an id corresponding to each link in the navbar (making the menu clickable in all circumstances). The **content of each part is included using the *[include_relative](https://jekyllrb.com/docs/includes/)* syntax** provided by Jekyll. Files are retrieved as follows:
 
 	`{% include_relative content/*role*/*filename*.md %}`
 
 - A ***content*** folder containing the textual content of the documentation in markdown.
-    - Content is organized into folders by **role (admin, user, editor, etc.)**. Each folder contains markdown files that contain markdown documentation **divided into parts relative to the role index (see next point)**.
-        - Individual markdown files are named after the part of the index they are attached to; the nomenclature is as follows: the title of the part in lowercase, without accents or special characters, all attached + .md.
-        - Images appearing in the various parts must be called with the relative path **from the parent file that includes the individual parts and not from the content/*role* folder**. This is imperative for the images to display in the documentation via the *include_relative* tag.
+    - Content is organized into folders by **statuses (admin, user, editor, etc.)**. Each folder contains markdown files that contain markdown documentation **divided into parts relative to the role index (see next point)**.
+        
+        > Individual markdown files are named after the part of the index they are attached to; the nomenclature is as follows: the title of the part in lowercase, without accents or special characters, all attached + .md.
+        
+        > Images appearing in the various parts must be called with the relative path **from the parent file that includes the individual parts and not from the content/*role* folder**. This is imperative for the images to display in the documentation via the *include_relative* tag.
 - A *faqcatima.md* file.
-    - Containing titles formulated as questions that refer to different parts of the documentation integrated into the document with the same syntax as in the parent files 
+    - It contains titles formulated as questions that refer to different parts of the documentation integrated into the document with the same syntax as in the parent files 
 
 > ⚠️ **Any new file that calls parts of the documentation with the *include_relative* syntax must be located in the same directory as the assets folder so that the images are displayed correctly. ⚠️**
 
@@ -46,32 +49,29 @@ The site requires two additional directories:
 
 ### How to add a navbar to your page
 
-Create an HTML file in the _includes folder named *fr/en*-sidenav-*role*.html.
+1. Create an HTML file in the ***_includes*** folder named **fr/en**-sidenav-**role**.html.
 
-Add an unordered list to the html file containing the page's titles and undertitle.
+2. Add an unordered list to the html file containing the page's titles and undertitle.
 
-In the markdown document, add a head:
+3. In the markdown document, add a head:
 
-```markdown
----
-title: *Title of your page*
-navbar: name of the file created in include
----
-```
+	```
+	---
+	title: Title of your page
+	navbar: Name of the file created in include
+	---
 
-The default layout adds a navigation bar if the markdown file contains the link to the HTML file with the navigation bar content.
-
-Otherwise, it displays the content normally.
+The default layout automatically adds a navigation bar if the markdown file contains the link to the HTML file with the navigation bar content. Otherwise, it displays the content normally.
 
 ### How to test your changes locally
 
 Because the documentation doesn't have a staging, any changes in the doc must be tested locally before being pushed to the Github repository.
 
-Ruby, Jekyll, and bundler must be installed as indicated in the following procedure [https://jekyllrb.com/docs/installation/](https://jekyllrb.com/docs/installation/).
+Ruby, Jekyll, and bundler must previously be installed as indicated in the following procedure [https://jekyllrb.com/docs/installation/](https://jekyllrb.com/docs/installation/).
 
 The userdoc repository must be cloned locally.
 
-In the file located at the root of the site (docs folders), create a file named "Gemfile" containing the following:
+In the file located at the root of the site (in this case the *docs* folder), create a file named "Gemfile" containing the following:
 
 ```ruby
 source "https://rubygems.org"
