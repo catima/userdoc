@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <!-- Retrieves the icon for the scroll to top button -->
+
+  {% seo %}
+  <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  {% include head-custom.html %}
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      list-style: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 20%;
+      border-right: grey 1px solid;
+      overflow-y: auto; /* Adds a scrollbar if the contents is overflowing */
+      padding: 5% 20px 5% 0;
+    }
+
+    .navbar ul {
+      display: list-item;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar ul > li {
+      list-style-type: disc; /* Adds a disc for titles 1 */
+      list-style-position: inside;
+      padding-left: 10px;
+      padding-top: 5px;
+
+    }
+
+    .navbar ul > li > ul > li {
+      list-style-type: circle; /* Add a circle for titles 2 */
+    }
+
+    .navbar ul > li > ul > li > ul > li {
+      list-style-type: square; /* Adds a square for titles 3 */
+    }
+    .navbar ul > li > ul > li > ul > li > ul > li {
+      list-style-type: disc; /* Adds a disc for titles 4 */
+    }
+
+
+
+    .navbar a {
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      text-align: left;
+      color: #0777D9;
+      display:inline;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .sidebar__top {
+      position: fixed;
+      bottom: 1.5em;
+      right: 3em;
+      z-index: 10;
+    }
+    .md-48 {
+      font-size: 48px !important; /* Changes the size of the scroll to top button */
+    }
+    
+  </style>
+</head>
+<body>
+
+  <a id="site-nav"></a> <!-- Title to scroll back to top of the page -->
+
+  {% if page.navbar %} <!-- tests if the page has a navbar variable in her head -->
+    <div class="navbar"> <!-- The layout creates the navbar in a div-->
+
+      {% include {{ page.navbar }} %} <!--includes the html file of the page's navbar -->
+
+    </div>
+    
+    <div class="container-lg px-3 my-5 markdown-body" style="margin-left: 20%; padding: 20px;"> <!-- The content of the page is displayed next to the navbar-->
+
+      <h1> {{ page.title }} </h1> <!-- The title of the page is displayed-->
+    
+      {{ content }}
+      
+    </div>
+  
+    {% else %} <!-- If the page doesn't have a navbar variable, the content is displayed in the middle-->
+    <div class="container-lg px-3 my-5 markdown-body">
+    
+      {{ content }}
+      
+    </div>
+
+  {% endif %} 
+
+  <aside class="sidebar__top"> <!-- The scroll to top button that scrolls back to the site-nav title -->
+    <a href="#site-nav"><span class="material-symbols-outlined md-48">arrow_circle_up</span></a>
+    </aside>
+    
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+  <script>anchors.add();</script>
+</body>
+</html>
