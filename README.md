@@ -23,7 +23,7 @@ Each language contains different folders and files organized as follows:
     > Images are organized into different folders named after the features they are associated with.
 - Markdown files divided by **statuses (admin, user, editor, etc.)** containing the complete documentation for each status, they act as fronts for our website. Each files has a head containing the title of the page and a "navbar" variable where the title of the file's corresponding navbar is referenced. Each file contains a skeleton composed of **titles and subtitles** referenced in the navbar (see the navbar doc below) preceded by an HTML `<a>` tag carrying an id corresponding to each link in the navbar (making the menu clickable in all circumstances). The **content of each part is included using the *[include_relative](https://jekyllrb.com/docs/includes/)* syntax** provided by Jekyll. Files are retrieved as follows:
 
-	`{% include_relative content/*role*/*filename*.md %}`
+	`{% include_relative content/*status*/*filename*.md %}`
 
 - A ***content*** directory containing the textual content of the documentation in markdown.
     - _Content_ is organized into folders by **statuses (admin, user, editor, etc.)**. Each folder contains markdown files that contain markdown documentation **divided by titles and undertitles**.
