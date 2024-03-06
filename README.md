@@ -49,7 +49,7 @@ The site requires two additional directories:
 
 ### How to add a navbar to your page
 
-1. Create an HTML file in the ***_includes*** folder named **fr/en**-sidenav-**role**.html.
+1. Create an HTML file in the ***_includes*** folder named **fr/en**-sidenav-**status**.html.
 
 2. Add an unordered list to the html file containing the page's titles and undertitle.
 
