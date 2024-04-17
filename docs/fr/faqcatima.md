@@ -109,10 +109,10 @@ pas dans la doc **-> à créer ?** -->
 {% include_relative content/admin/organisationdelabarredemenus.md %}
 
 ----
-
+<!--
 ### Inviter des collaborateurs
 
-{% include_relative content/admin/attributiondesstatuts.md %}
+TODO -->
 
 ----
 
