@@ -11,11 +11,11 @@ Cette FAQ est spécialement conçue pour regrouper la documentation relative à 
 
 ### Comment ajouter manuellement des utilisateur-ice-s à un groupe ? [Lire la suite →](#ajoutergroupe)
 
-### Comment inviter des utilisateur-ices à un groupe via un identifiant secret ? [Lire la suite →](#identifiantgroupe)
+### Comment inviter des utilisateur-ices à un groupe avec un identifiant secret ? [Lire la suite →](#identifiantgroupe)
 
-## Invité-e-s
+## Utilisateur-ice-s
 
-### Comment rejoindre un catalogue via un identifiant secret ? [Lire la suite →](#rejoindrecatalogue)
+### Comment rejoindre un catalogue avec un identifiant secret ? [Lire la suite →](#rejoindrecatalogue)
 
 
 ---
