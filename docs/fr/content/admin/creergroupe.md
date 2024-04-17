@@ -6,7 +6,7 @@ Pour créer un groupe, cliquer sur "*+ Nouveau groupe*":
 
  Entrer ensuite un nom et une description pour le groupe.
  
- Définir si le group est actif ou non via la case *Actif?*. Un groupe inactif n'aura pas accès au catalogue. La case actif peut être cochée ou décochée à tout moment en revenant dans les paramètres du groupe via le bouton *Éditer*
+ Définir si le group est actif ou non via la case *Actif?*. Un groupe inactif n'aura pas accès au catalogue. La case actif peut être cochée ou décochée à tout moment en revenant dans les paramètres du groupe via le bouton *Éditer* [Edit Button](assets/buttons/edit_btn.png).
 
 
  Cliquer sur créer un groupe.

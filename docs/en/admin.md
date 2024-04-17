@@ -305,6 +305,23 @@ An administrator has full access to the catalog; they can add and modify any con
 
 <a id="change-status"></a>
 
-## Change status
+### Change statuses
 
-{% include_relative content/admin/changestatus.md %}
+{% include_relative content/admin/adduser.md %}
+
+{% include_relative content/admin/inviteuser.md %}
+
+<a id="groups"></a>
+
+### Creating and managing groups
+
+{% include_relative content/admin/creategroup.md %}
+
+### Manually adding users
+
+{% include_relative content/admin/addgroup.md %}
+
+### Inviting users with a private id
+
+{% include_relative content/admin/groupid.md %}
+
