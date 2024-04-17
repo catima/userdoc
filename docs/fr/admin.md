@@ -296,7 +296,24 @@ navbar: fr-sidenav-admin.html
 
 ### Attribution de statuts
 
-{% include_relative content/admin/attributiondesstatuts.md %}
+{% include_relative content/admin/ajouterutilisateur.md %}
+
+{% include_relative content/admin/inviterutilisateur.md %}
+
+<a id="groups"></a>
+
+### Créer et gérer des groupes
+
+{% include_relative content/admin/creergroupe.md %}
+
+### Ajouter des utilisateur-ice-s manuellement
+
+{% include_relative content/admin/ajoutergroupe.md %}
+
+### Inviter des utilisateur-ice-s avec un identifiant
+
+{% include_relative content/admin/identifiantgroupe.md %}
+
 
 <a id="statistiques"></a>
 
