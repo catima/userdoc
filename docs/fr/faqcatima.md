@@ -26,7 +26,7 @@ Documentation simplifiée de [CATIMA](https://catima.github.io/userdoc/) organis
 
 ## Collaboration et accès
 
-### Comment inviter des personnes ou des groupes sur un catalogue ? [Lire la suite →](#inviter-des-collaborateurs)
+### Comment inviter des personnes ou des groupes sur un catalogue ? [Lire la suite →](#attribution)
 
 ### Comment restreindre la visibilité du catalogue à certains membres ? [Lire la suite →](#restreindre-un-catalogue)
 
@@ -109,10 +109,27 @@ pas dans la doc **-> à créer ?** -->
 {% include_relative content/admin/organisationdelabarredemenus.md %}
 
 ----
-<!--
-### Inviter des collaborateurs
+<a id="attribution"></a>
 
-TODO -->
+### Attribution de statuts
+
+Il existe une FAQ consacrée à toutes les questions concernant l'imvitation d'utilisateur-ice-s sur un catalogue [consultable ici](https://catima.github.io/userdoc/fr/faqinvitation.html).
+
+{% include_relative content/admin/ajouterutilisateur.md %}
+
+{% include_relative content/admin/inviterutilisateur.md %}
+
+### Créer et gérer des groupes
+
+{% include_relative content/admin/creergroupe.md %}
+
+### Ajouter des utilisateur-ice-s manuellement
+
+{% include_relative content/admin/ajoutergroupe.md %}
+
+### Inviter des utilisateur-ice-s avec un identifiant
+
+{% include_relative content/admin/identifiantgroupe.md %}
 
 ----
 
