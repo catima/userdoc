@@ -113,7 +113,17 @@ Not in the documentation **-> to be created?** -->
 
 ### Invite collaborators
 
-{% include_relative content/admin/changestatus.md %}
+There is a specific FAQ dedicated to the informations related to the invitation of collaborators and groups on catalog [available here](https://catima.github.io/userdoc/en/faqinvitation.html).
+
+{% include_relative content/admin/adduser.md %}
+
+{% include_relative content/admin/inviteuser.md %}
+
+{% include_relative content/admin/creategroup.md %}
+
+{% include_relative content/admin/addgroup.md %}
+
+{% include_relative content/admin/groupid.md %}
 
 ----
 
