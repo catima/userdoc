@@ -23,17 +23,17 @@ This FAQ is specially designed to gather documentation related to inviting one o
 
 ---
 
-#### Statuses in Catima
-
 <a id="roles"></a>
+
+#### Statuses in Catima 
 
 {% include_relative content/admin/accesstodataanddataedition.md %}
 
 ---
 
-#### Manage catalog's accessiblity
-
 <a id="access"></a>
+
+#### Manage catalog's accessiblity
 
 {% include_relative content/admin/catalogaccessandvisibility.md %}
 
