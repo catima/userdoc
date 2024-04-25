@@ -1,4 +1,6 @@
 > Le champ datation est un champ très complexe pour lequel a été réalisé [un manuel complet](assets/datation/exempledatation.pdf) ainsi qu'un [catalogue d'exemple](https://catima.unil.ch/datation-exple/fr) de l'utilisation du champ ainsi que de son comportement lors des recherches.
+>
+> Pour une explication en vidéo de la création du champ datation [cliquer ici](https://catima.unil.ch/datation-exple/fr/documentation)
 
 Le champ de datation est un champ qui permet **la datation plus ou moins souple** d'une fiche. Celui-ci se différencie du champ date/heure en offrant la possibilité de prendre en compte des périodes en plus de dates précises.
 Des recherches par date peuvent ensuite être effectuées selon une période, prédéfinie ou définie par l'utilisateur lors de la saisie, ou selon une date précise.
