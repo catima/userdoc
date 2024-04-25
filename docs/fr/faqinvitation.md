@@ -3,6 +3,10 @@ Cette FAQ est spécialement conçue pour regrouper la documentation relative à 
 
 ## Administrateur
 
+### Quels sont les différents statuts possibles dans Catima ? [Lire la suite →](#statuts)
+
+### Comment gérer l'accès à un catalogue Catima ? [Lire la suite →](#acces)
+
 ### Comment ajouter un-e utilisateur-ice possédant déjà un compte Catima ? [Lire la suite →](#ajouterutilisateur)
 
 ### Comment inviter un-e utilisateur-ice ne possédant pas encore un compte Catima ? [Lire la suite →](#inviterutilisateur)
@@ -17,6 +21,20 @@ Cette FAQ est spécialement conçue pour regrouper la documentation relative à 
 
 ### Comment rejoindre un catalogue avec un identifiant secret ? [Lire la suite →](#rejoindrecatalogue)
 
+
+---
+<a id="statuts"></a>
+
+#### Les différents statuts possibles dans Catima
+
+{% include_relative content/admin/lesdifferentsstatuts.md %}
+
+---
+<a id="acces"></a>
+
+#### Gérer l'accès à un catalogue Catima
+
+{% include_relative content/admin/gestiondelaconsultationetdeleditiondesdonneesducatalogue.md %}
 
 ---
 <a id="ajouterutilisateur"></a>

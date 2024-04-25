@@ -1,4 +1,4 @@
-CATIMA propose différents statuts pouvant être attribué aux utilisateurs du catalogue; ces statuts définissent les actions possibles comme la consultation ou l'édition de fiches.  Les personnes sans compte CATIMA sont des visiteurs et doivent créer un compte pour pouvoir accéder aux autres statuts. 
+CATIMA propose différents statuts pouvant être attribués aux utilisateurs du catalogue; ces statuts définissent les actions possibles comme la consultation ou l'édition de fiches.  Les personnes sans compte CATIMA sont des visiteurs et doivent créer un compte pour pouvoir accéder aux autres statuts. 
 
 > Les statuts sont spécifiques à un cataglogue: il est possible d'être membre d'un catalogue et éditeur d'une autre.  
 

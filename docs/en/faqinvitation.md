@@ -3,6 +3,10 @@ This FAQ is specially designed to gather documentation related to inviting one o
 
 ## Administrator
 
+### What are the different possible statuses in Catima ? [Read more →](#roles)
+
+### How can I manage the access to my catalog ? [Read more →](#access)
+
 ### How to add a user who already has a Catima account? [Read more →](#adduser)
 
 ### How to invite a user who does not yet have a Catima account? [Read more →](#inviteuser)
@@ -16,6 +20,22 @@ This FAQ is specially designed to gather documentation related to inviting one o
 ## Users
 
 ### How to join a catalog with a private id ? [Read more →](#joincatalog)
+
+---
+
+#### Statuses in Catima
+
+<a id="roles"></a>
+
+{% include_relative content/admin/accesstodataanddataedition.md %}
+
+---
+
+#### Manage catalog's accessiblity
+
+<a id="access"></a>
+
+{% include_relative content/admin/catalogaccessandvisibility.md %}
 
 ---
 
