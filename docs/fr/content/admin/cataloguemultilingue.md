@@ -1,4 +1,3 @@
-## Catalogue multilingue
 
 Il est possible de configurer Catima en français, anglais, allemand ou italien. Catima permet également de créer des catalogues multilingues, permettant aux utilisateurs de naviguer entres les langues lors de la consultation du catalogue. Les catalogues multilingues impliquent cependant un certains nombres de paramètres à prendre en compte. Il est donc conseillé de lire attentivement cette documentation.
 
