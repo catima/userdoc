@@ -286,6 +286,12 @@ navbar: fr-sidenav-admin.html
 
 {% include_relative content/admin/gestiondelaconsultationetdeleditiondesdonneesducatalogue.md %}
 
+<a id="cataloguemultilingue"></a>
+
+## Catalogue multilingue
+
+{% include_relative content/admin/cataloguemultilingue.md %}
+
 <a id="statuts"></a>
 
 ## Les différents statuts
