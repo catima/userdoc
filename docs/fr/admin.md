@@ -280,17 +280,18 @@ navbar: fr-sidenav-admin.html
 
 {% include_relative content/admin/organisationdelabarredemenus.md %}
 
+<a id="cataloguemultilingue"></a>
+
+## Catalogue multilingue
+
+{% include_relative content/admin/cataloguemultilingue.md %}
+
 <a id="gestionconsultation"></a>
 
 ## Gestion de la consultation et de l'édition des données du catalogue
 
 {% include_relative content/admin/gestiondelaconsultationetdeleditiondesdonneesducatalogue.md %}
 
-<a id="cataloguemultilingue"></a>
-
-## Catalogue multilingue
-
-{% include_relative content/admin/cataloguemultilingue.md %}
 
 <a id="statuts"></a>
 
