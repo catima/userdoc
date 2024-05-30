@@ -189,7 +189,7 @@ An administrator has full access to the catalog; they can add and modify any con
 
 {% include_relative content/admin/urlfield.md %}
 
-<a id="compound-field"></a>
+<a id="compound-field-1"></a>
 
 ### Compound field
 
@@ -290,6 +290,13 @@ An administrator has full access to the catalog; they can add and modify any con
 ## API
 
 {% include_relative content/admin/api.md %}
+
+<a id="multilingual-catalog"></a>
+
+## Multilingual Catalog
+
+{% include_relative content/admin/multilingualcatalog.md %}
+
 
 <a id="catalog-access-and-visibility"></a>
 
