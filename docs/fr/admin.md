@@ -82,123 +82,123 @@ navbar: fr-sidenav-admin.html
 
 <a id="suggestions"></a>
 
-### Suggestions
+## Suggestions
 
 {% include_relative content/admin/suggestions.md %}
 
-### Configuration d'un type de fiche
+## Configuration d'un type de fiche
 
 {% include_relative content/admin/configurationduntypedefiche.md %}
 
-### Types de champs
+## Types de champs
 
 {% include_relative content/admin/typesdechamps.md %}
 
 <a id="champbool"></a>
 
-#### Champ booléen (oui/non)
+### Champ booléen (oui/non)
 
 {% include_relative content/admin/champbouleens.md %}
 
 <a id="champensemble"></a>
 
-#### Champ ensemble de choix
+### Champ ensemble de choix
 
 {% include_relative content/admin/champensembledechoix.md %}
 
 <a id="champdecimal"></a>
 
-#### Champ décimal
+### Champ décimal
 
 {% include_relative content/admin/champdecimal.md %}
 
 <a id="champredaction"></a>
 
-#### Champ rédacteur
+### Champ rédacteur
 
 {% include_relative content/admin/champredacteur.md %}
 
 <a id="champemail"></a>
 
-#### Champ e-mail
+### Champ e-mail
 
 {% include_relative content/admin/champemail.md %}
 
 <a id="champintegration"></a>
 
-#### Champ d'intégration (embed)
+### Champ d'intégration (embed)
 
 {% include_relative content/admin/champdintegration.md %}
 
 <a id="champfichier"></a>
 
-#### Champ fichier
+### Champ fichier
 
 {% include_relative content/admin/champfichier.md %}
 
 <a id="champgeo"></a>
 
-#### Champ géographique
+### Champ géographique
 
 {% include_relative content/admin/champgeographique.md %}
 
 <a id="champimage"></a>
 
-#### Champ image
+### Champ image
 
 {% include_relative content/admin/champimage.md %}
 
 <a id="champnombrentier"></a>
 
-#### Champ nombre entier
+### Champ nombre entier
 
 {% include_relative content/admin/champnombreentier.md %}
 
 <a id="champreference"></a>
 
-#### Champ référence
+### Champ référence
 
 {% include_relative content/admin/champreference.md %}
 
 <a id="champtexte"></a>
 
-#### Champ de texte
+### Champ de texte
 
 {% include_relative content/admin/champdetexte.md %}
 
 <a id="champ-url"></a>
 
-#### Champ URL
+### Champ URL
 
 {% include_relative content/admin/champurl.md %}
 
 <a id="champ-compose"></a>
 
-#### Champ composé
+### Champ composé
 
 {% include_relative content/admin/champcompose.md %}
 
 <a id="champ-datation"></a>
 
-#### Champ datation
+### Champ datation
 
 {% include_relative content/admin/champdatation.md %}
 
 <a id="creationchamp"></a>
 
-### Création d'un champ
+## Création d'un champ
 
 {% include_relative content/admin/creationdunchamp.md %}
 
 <a id="optionsaffichage"></a>
 
-#### Options d'affichage des champs dans la liste des fiches
+### Options d'affichage des champs dans la liste des fiches
 
 {% include_relative content/admin/optionsdaffichagedeschampsdanslalistedesfiches.md %}
 
 <a id="creationdatation"></a>
 
-### Création d'un champ datation
+## Création d'un champ datation
 
 {% include_relative content/admin/creationdunchampdatation.md %}
 
@@ -258,7 +258,7 @@ navbar: fr-sidenav-admin.html
 
 <a id="editionsearch"></a>
 
-### Edition d'un conteneur Search
+#### Edition d'un conteneur Search
 
 {% include_relative content/admin/editiondunconteneursearch.md %}
 
