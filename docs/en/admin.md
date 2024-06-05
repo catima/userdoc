@@ -149,7 +149,7 @@ An administrator has full access to the catalog; they can add and modify any con
 
 <a id="file-field"></a>
 
-#### File field  
+### File field  
 
 {% include_relative content/admin/filefield.md %}
 
@@ -203,19 +203,19 @@ An administrator has full access to the catalog; they can add and modify any con
 
 <a id="create-new-field"></a>
 
-### Create a new field
+## Create a new field
 
 {% include_relative content/admin/createanewfield.md %}
 
 <a id="display-options"></a>
 
-#### Display options
+### Display options
 
 {% include_relative content/admin/displayoption.md %}
 
 <a id="createdatation"></a>
 
-### Create a datation field
+## Create a datation field
 
 {% include_relative content/admin/createadatationfield.md %}
 
