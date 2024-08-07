@@ -34,3 +34,11 @@ Pour ajouter plus d'un média, il est possible d'insérer plusieurs balises ifra
 > Attention: il n'est pas toujours possible d'intégrer des pages de cette manière car il faut que le site en question accepte d'être intégré par URL. Cette décision est indépendante de Catima. Par exemple, Youtube et Viméo ne permettent pas de le faire.
 
 Lors de la création d'un **champ d'intégration (embed)**, il est vivement conseillé de créer un titre explicite spécifiant le type d'intégration tel que *Intégration par iframe* et *Intégration par url* ou d'ajouter un texte d'aide à la saisie afin que les personnes ajoutant du contenu au catalogue sachent quel contenu ajouter.
+
+##### Intégration avec dilps et tiresias
+
+Pour permettre l'intégration de fiches provenant des bases de données [dilps.unil.ch](https://dilps.unil.ch/home) et [tiresia.unil.ch](https://tiresias.unil.ch/home) il faut choisir le type d'intégration **url** et ne pas oublier d'autoriser le ou les domaines concernés dans la liste des domaines autorisés.
+
+![](assets/data/allow-domains.png)
+
+> Attention à ne pas changer le type d'intégration d'un champ déjà existant  au risque de perdre les intégration préalablement ajoutées dans les données. Si un nouveau type d'intégration est nécessaire, créer un nouveau champ d'intégration en précisant le type d'intégration dans le titre.
