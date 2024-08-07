@@ -37,7 +37,7 @@ It is highly recommended to be specific when creating an **embed field** and add
 
 ##### Embed dilps et tiresias pages
 
-To allow the embedding of pages from the dilps.unil.ch or tiresias.unil.ch databases it is necessary to choose the **url** format and to not forget to select the relevant domains in the allowed domains list.
+To allow the embedding of pages from the dilps.unil.ch or tiresias.unil.ch databases it is necessary to choose the **url** format and to not forget to select the relevant domains in the authorized domains list.
 
 ![](assets/data/allow-domains.png)
 
