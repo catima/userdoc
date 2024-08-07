@@ -34,3 +34,11 @@ In addition to the usual information such as title, slug and display options, it
 > Note: it isn't always possible to use this method as the website needs to accept to be embeded this way - which sometimes is not the case. This decision is independent of Catima. E.g. Youtube and Vimeo don't allow it.
 
 It is highly recommended to be specific when creating an **embed field** and add a meaninful title and/or to use *data editing help text* to let the editors know what kind of content is expected.
+
+##### Embed dilps et tiresias pages
+
+To allow the embedding of pages from the dilps.unil.ch or tiresias.unil.ch databases it is necessary to choose the **url** format and to not forget to select the relevant domains in the allowed domains list.
+
+![](assets/data/allow-domains.png)
+
+> Be careful not to change the format of an existing embed field to avoid loosing embeds previously logged in the data. If having a new format is necesssary, create a new embed field with a title stating clearly the type of format it allows.
