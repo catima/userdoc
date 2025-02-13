@@ -310,6 +310,10 @@ An administrator has full access to the catalog; they can add and modify any con
 
 {% include_relative content/admin/accesstodataanddataedition.md %}
 
+<a id="displayinsearchengines"></a>
+
+{% include_relative content/admin/displayingcataloginsearchengines.md %}
+
 <a id="change-status"></a>
 
 ### Change statuses
