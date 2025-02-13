@@ -292,6 +292,10 @@ navbar: fr-sidenav-admin.html
 
 {% include_relative content/admin/gestiondelaconsultationetdeleditiondesdonneesducatalogue.md %}
 
+<a id="moteursderecherches"></a>
+
+{% include_relative content/admin/indexationdanslesmoteursderecherches.md %}
+
 
 <a id="statuts"></a>
 
