@@ -1,0 +1,2 @@
+
+À l'intérieur du champ référence, en mode set-up, les sysadmin on la possibilité de changer le label de la référence de la fiche dans une autre. Dans le champ référence en plus de pouvoir choisir les types de fiches dans lesquels les fiches seront référencées, les sysadmin peuvent changer le titre par défaut de la référence, cette fonctionnalité permet notamment de référencer deux fois une même fiches dans une autre. (exemple: dans une fiche "photo" référencer une fiche "personne" en tant d'auteur et personne identifiée)
