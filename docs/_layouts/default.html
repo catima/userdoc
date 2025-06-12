@@ -54,19 +54,20 @@
       list-style-type: disc; /* Adds a disc for titles 4 */
     }
 
+    a {
+      color: #438cc8;
+    }
 
+    a:hover {
+      text-decoration: underline;
+    }
 
     .navbar a {
       text-decoration: none;
       font-family: Arial, sans-serif;
       font-size: 15px;
       text-align: left;
-      color: #0777D9;
       display:inline;
-    }
-
-    .navbar a:hover {
-      text-decoration: underline;
     }
 
     .sidebar__top {
@@ -88,30 +89,30 @@
   {% if page.navbar %} <!-- tests if the page has a navbar variable in her head -->
     <div class="navbar"> <!-- The layout creates the navbar in a div-->
 
-      <img style="padding: 20px; position: relative; top: 0px" src="images/catima-logo-short.png" alt="">
-
       {% include {{ page.navbar }} %} <!--includes the html file of the page's navbar -->
-
-      <img style="padding: 20px; position: relative; bottom: 0px;"  src="images/unilogo_noir_72dpi-fca564fb80ca8b38a3103158f806c02699e86334b477817b7b08dc41494d08d3.png" alt="">
 
     </div>
     
     <div class="container-lg px-3 my-5 markdown-body" style="margin-left: 20%; padding: 20px;"> <!-- The content of the page is displayed next to the navbar-->
+      
+      <img style="margin-left: -1%;" id="logo-full" src="https://raw.githubusercontent.com/catima/userdoc/refs/heads/master/docs/_layouts/images/catima-logo-500x58-ac6f3bb12add3aed98765bfb93423504069d1868f41e86c72b274de0dcca1c5d-2.png" alt="">
 
       <h1> {{ page.title }} </h1> <!-- The title of the page is displayed-->
-    
+   
       {{ content }}
+
+      <img style="padding-top: 5px;"  src="https://github.com/catima/userdoc/blob/master/docs/_layouts/images/unilogo_noir_72dpi-fca564fb80ca8b38a3103158f806c02699e86334b477817b7b08dc41494d08d3.png?raw=true" alt="">
       
     </div>
   
     {% else %} <!-- If the page doesn't have a navbar variable, the content is displayed in the middle-->
     <div class="container-lg px-3 my-5 markdown-body">
       
-      <img style="margin-left: -1%;" id="logo-full" src="/assets/catima-logo-500x58-ac6f3bb12add3aed98765bfb93423504069d1868f41e86c72b274de0dcca1c5d-2.png" alt="">
+      <img style="margin-left: -1%;" id="logo-full" src="https://raw.githubusercontent.com/catima/userdoc/refs/heads/master/docs/_layouts/images/catima-logo-500x58-ac6f3bb12add3aed98765bfb93423504069d1868f41e86c72b274de0dcca1c5d-2.png" alt="">
     
       {{ content }}
 
-      <img style="padding: 5px;"  src="images/unilogo_noir_72dpi-fca564fb80ca8b38a3103158f806c02699e86334b477817b7b08dc41494d08d3.png" alt="">
+      <img style="padding-top: 5px;"  src="https://github.com/catima/userdoc/blob/master/docs/_layouts/images/unilogo_noir_72dpi-fca564fb80ca8b38a3103158f806c02699e86334b477817b7b08dc41494d08d3.png?raw=true" alt="">
 
     </div>
 
