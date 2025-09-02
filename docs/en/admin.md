@@ -1,55 +1,12 @@
 ---
-title: Catalog administrator
+title: Catalog administrator 
+
+[comment]: #
+
 navbar: en-sidenav-admin.html 
 ---
 
 An administrator has full access to the catalog; they can add and modify any content as well as modify pages and the catalog's structure.
-
-<!-- ## Table of contents
-
-- [Catalog configuration](#catalog-configuration)
-  - [Conceptualization](#conceptualization)
-  - [Exploration](#exploration)
-  - [Ranking and structure](#ranking-and-structure)
-  - [Links and references](#links-and-references)
-  - [Suggestions](#suggestions)
-  - [Add new item type](#add-new-item-type)
-  - [New field](#new-field)
-  - [Field types](#field-types)
-    - [Boolean field](#boolean-field)
-    - [Choice set field](#choice-set-field)
-    - [Date time field](#date-time-field)
-    - [Decimal field](#decimal-field)
-    - [Editor field](#editor-field)
-    - [Email field](#email-field)
-    - [Embed field (media integration)](#embed-field)
-    - [File field](#file-field)
-    - [Geographic field](#geographic-field)
-    - [Image field](#image-field)
-    - [Integer field](#integer-field)
-    - [Reference field](#reference-field)
-    - [Text field](#text-field)
-    - [URL field](#url-field)
-    - [Compound field](#compound-field)
-    - [Datation field](#datation-field)
-    - [Create new field](#create-new-field)
-      - [Display options](#display-options)
-    - [Create datation field](#createdatation)
-    - [Categories and conditional content](#categories-and-conditional-content)
-    - [Create and edit custom pages](#create-and-edit-custom-pages)
-      - [Contact container](#contact-container)
-      - [HTML container](#html-container)
-      - [Item List container](#item-list-container)
-      - [Map container](#map-container)
-      - [Markdown container](#markdown-container)
-      - [Search container](#search-container)
-    - [Embed media in a page](#embed-media-in-a-container)
-    - [Customize navigation bar](#navigation-bar)
-    - [Statistics](#statistics)
-    - [API and data only mode](#api)
-    - [Catalog access](#catalog-access-and-visibility)
-      - [Manage access to data](#access-to-data-and-data-edition)
-      - [Change a user's status](#change-status) -->
 
 <a id="catalog-configuration"></a>
 

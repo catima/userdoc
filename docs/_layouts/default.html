@@ -11,11 +11,12 @@
   <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   {% include head-custom.html %}
   <style>
+    /* CSS code applied to the default layout of all pages */
     body {
       margin: 0;
       padding: 0;
     }
-
+    
     .navbar {
       list-style: none;
       position: fixed;
@@ -63,7 +64,6 @@
     }
 
     .navbar a {
-      text-decoration: none;
       font-family: Arial, sans-serif;
       font-size: 15px;
       text-align: left;
@@ -84,42 +84,42 @@
 </head>
 <body>
 
-  <a id="site-nav"></a> <!-- Title to scroll back to top of the page -->
+  <a id="site-nav"></a> <!-- Link to scroll back to top of the page -->
 
-  {% if page.navbar %} <!-- tests if the page has a navbar variable in her head -->
-    <div class="navbar"> <!-- The layout creates the navbar in a div-->
+  {% if page.navbar %} <!-- tests if the page has a navbar variable in the head of the front file -->
+    <div class="navbar"> <!--The layout creates the navbar in a div-->
 
-      {% include {{ page.navbar }} %} <!--includes the html file of the page's navbar -->
+      {% include {{ page.navbar }} %} <!--includes the html file of the page's navbar, this property is fixed in the head of the front file -->
 
     </div>
     
     <div class="container-lg px-3 my-5 markdown-body" style="margin-left: 20%; padding: 20px;"> <!-- The content of the page is displayed next to the navbar-->
       
-      <img style="margin-left: -1%;" id="logo-full" src="https://raw.githubusercontent.com/catima/userdoc/refs/heads/master/docs/_layouts/images/catima-logo-500x58-ac6f3bb12add3aed98765bfb93423504069d1868f41e86c72b274de0dcca1c5d-2.png" alt="">
+      <img style="margin-left: -1%;" id="logo-full" src="https://raw.githubusercontent.com/catima/userdoc/refs/heads/master/docs/_layouts/images/catima-logo-500x58-ac6f3bb12add3aed98765bfb93423504069d1868f41e86c72b274de0dcca1c5d-2.png" alt=""> <!-- Adds the Catima logo at the top of the body without it overflowing on the navbar-->
 
-      <h1> {{ page.title }} </h1> <!-- The title of the page is displayed-->
+      <h1> {{ page.title }} </h1> <!-- The title of the page is displayed, this property is fixed in the front file's head-->
    
-      {{ content }}
+      {{ content }} <!--The content of the page is displayed after the logo and the title-->
 
-      <img style="padding-top: 5px;"  src="https://github.com/catima/userdoc/blob/master/docs/_layouts/images/unilogo_noir_72dpi-fca564fb80ca8b38a3103158f806c02699e86334b477817b7b08dc41494d08d3.png?raw=true" alt="">
+      <img style="padding-top: 5px;"  src="https://github.com/catima/userdoc/blob/master/docs/_layouts/images/unilogo_noir_72dpi-fca564fb80ca8b38a3103158f806c02699e86334b477817b7b08dc41494d08d3.png?raw=true" alt=""> <!-- Adds the UNIL logo at the bottom of the body without it overflowing on the navbar-->
       
-    </div>
+    </div> <!--End of the side bar layout-->
   
     {% else %} <!-- If the page doesn't have a navbar variable, the content is displayed in the middle-->
     <div class="container-lg px-3 my-5 markdown-body">
       
-      <img style="margin-left: -1%;" id="logo-full" src="https://raw.githubusercontent.com/catima/userdoc/refs/heads/master/docs/_layouts/images/catima-logo-500x58-ac6f3bb12add3aed98765bfb93423504069d1868f41e86c72b274de0dcca1c5d-2.png" alt="">
+      <img style="margin-left: -1%;" id="logo-full" src="https://raw.githubusercontent.com/catima/userdoc/refs/heads/master/docs/_layouts/images/catima-logo-500x58-ac6f3bb12add3aed98765bfb93423504069d1868f41e86c72b274de0dcca1c5d-2.png" alt=""> <!-- Adds the Catima logo at the top of the body-->
     
-      {{ content }}
+      {{ content }} <!--The content of the page is displayed after the logo-->
 
-      <img style="padding-top: 5px;"  src="https://github.com/catima/userdoc/blob/master/docs/_layouts/images/unilogo_noir_72dpi-fca564fb80ca8b38a3103158f806c02699e86334b477817b7b08dc41494d08d3.png?raw=true" alt="">
+      <img style="padding-top: 5px;"  src="https://github.com/catima/userdoc/blob/master/docs/_layouts/images/unilogo_noir_72dpi-fca564fb80ca8b38a3103158f806c02699e86334b477817b7b08dc41494d08d3.png?raw=true" alt=""> <!-- Adds the UNIL logo at the bottom of the body-->
 
     </div>
 
   {% endif %} 
 
   <aside class="sidebar__top"> <!-- The scroll to top button that scrolls back to the site-nav title -->
-    <a href="#site-nav"><span class="material-symbols-outlined md-48">arrow_circle_up</span></a>
+    <a href="#site-nav"><span class="material-symbols-outlined md-48">arrow_circle_up</span></a> <!--The scroll to top button navigates to the link placed at the very top of the page -->
     </aside>
     
   </div>
