@@ -3,11 +3,10 @@ title: Superviseur de catalogue
 navbar: fr-sidenav-reviewer.html
 ---
 
-<!-- ## Table des matières
+<!-- The value of title will be the h1 of the page.
+The value of navbar points to the title of the sidenav file in the _include folder, to be associated with the page. Its presence or absence determines the alignment of the layout -->
 
-- [Statuts des fiches](#statuts-des-fiches)
-- [Processus de travail](#processus-de-travail)
-- [Valider ou rejeter une fiche](#valider-ou-rejeter-une-fiche) -->
+<!--This is the front file. Every role has its own. Every <a> element points to a link in the navigation html file. Every <a> element is followed by the title of the content and is followed by a call to the content of the page using the include_relative syntax of Jekyll. -->
 
 ## Statuts des fiches
 

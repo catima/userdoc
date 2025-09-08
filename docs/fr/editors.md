@@ -3,20 +3,10 @@ title: Éditeur de catalogue
 navbar: fr-sidenav-editors.html
 ---
 
-<!-- ## Table des matières
+<!-- The value of title will be the h1 of the page.
+The value of navbar points to the title of the sidenav file in the _include folder, to be associated with the page. Its presence or absence determines the alignment of the layout -->
 
-- [Affichage, ajout et modification de données](#affichageajoutmod)
-  - [Présentation](#presentation)
-  - [Affichage des tableaux de données](#affichagetableaux)
-  - [Rechercher un contenu](#rechercher-un-contenu)
-  - [Ajout de données](#ajoutdonnees)
-    - [Données d'intégration de média](#donneesintegration)
-    - [Données de type datation](#donneesdatation)
-    - [Données géographiques](#donneesgeo)
-  - [Statuts des fiches](#statuts-des-fiches)
-  - [Édition, duplication et suppression de fiches](#editionduplsup)
-  - [Gestion des suggestions](#suggestions)
-- [Exemple d'ajout de données dans un catalogue](#exemplecat) -->
+<!--This is the front file. Every role has its own. Every <a> element points to a link in the navigation html file. Every <a> element is followed by the title of the content and is followed by a call to the content of the page using the include_relative syntax of Jekyll. -->
 
 <a id="affichageajoutmod"></a>
 

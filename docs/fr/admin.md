@@ -1,56 +1,12 @@
 ---
-title: Administrateur de catalogue
+title: Administrateur de catalogue 
 navbar: fr-sidenav-admin.html 
 ---
 
-<!-- ## Table des matières
+<!-- The value of title will be the h1 of the page.
+The value of navbar points to the title of the sidenav file in the _include folder, to be associated with the page. Its presence or absence determines the alignment of the layout -->
 
-- [Configuration d'un catalogue](#configuration-dun-catalogue)
-  - [Conceptualisation](#conceptualisation)
-  - [Hiérarchisation et Structure](#hierarchisationetstructure)
-  - [Liens et Références](#liensetref)
-  - [Création d'un type de fiche](#creationtypefiche)
-    - [Suggestions](#suggestions)
-    - [Configuration d'un type de fiche](#configuration-dun-type-de-fiche)
-    - [Types de champs](#types-de-champs)
-      - [Champ booléen (oui/non)](#champbool)
-      - [Champ ensemble de choix](#champensemble)
-      - [Champ décimal](#champdecimal)
-      - [Champ rédacteur](#champredaction)
-      - [Champ e-mail](#champemail)
-      - [Champ d'intégration (embed)](#champintegration)
-      - [Champ fichier](#champfichier)
-      - [Champ géographique](#champgeo)
-      - [Champ image](#champimage)
-      - [Champ nombre entier](#champnombrentier)
-      - [Champ référence](#champreference)
-      - [Champ de texte](#champtexte)
-      - [Champ URL](#champ-url)
-      - [Champ composé](#champ-compose)
-      - [Champ datation](#champ-datation)
-    - [Création d'un champ](#creationchamp)
-    - [Création d'un champ datation](#creationdatation)
-  - [Ajout et édition de contenu conditionnel ou sous-fiche](#ajoutedition)
-  - [Affichage de contenus personnalisés et styles d'affichages](#affichagecontenuperso)
-    - [Ajout d'une page](#ajoutpage)
-    - [Édition d'une page](#editionpage)
-      - [Édition d'un conteneur Item List](#editionconteneurlist)
-      - [Édition d'un conteneur de cartes géographique (Map Container)](#editionconteneurgeo)
-      - [Édition d'un conteneur HTML](#editionhtml)
-      - [Édition d’un conteneur Markdown](#editionmarkdown)
-      - [Édition d'un conteneur Contact](#editioncontact)
-      - [Edition d'un conteneur Search](#editionsearch)
-    - [Recherche simple](#recherchesimple)
-    - [Recherche avancée](#rechercheavancee)
-    - [Intégration de média (embed) dans une page](#integrationmediapage)
-    - [Organisation des conteneurs](#organisationconteneurs)
-  - [Organisation de la barre de menus](#organisationbarremenu)
-- [Gestion de la consultation et de l'édition des données du catalogue](#gestionconsultation)
-  - [Les différents statuts](#statuts)
-    - [Attribution de statuts](#attribution)
-  - [Statistiques](#statistiques)
-  - [API](#api)
-- [Exemple de réalisation d'un catalogue](#exemple) -->
+<!--This is the front file. Every role has its own. Every <a> element points to a link in the navigation html file. Every <a> element is followed by the title of the content and is followed by a call to the content of the page using the include_relative syntax of Jekyll. -->
 
 <a id="catconfiguration"></a>
 

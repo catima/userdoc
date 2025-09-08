@@ -2,6 +2,8 @@
 title: Administrateur Système de Catima
 ---
 
+<!-- Documentation file for Catima STAFF only-->
+
 # Administrateur Système de Catima
 
 ## Affichage des fiches
