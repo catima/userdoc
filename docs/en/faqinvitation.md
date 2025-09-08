@@ -1,3 +1,6 @@
+
+<!-- This is a FAQ front file. FAQs don't have side navigation bars. They start with a list of questions organized by themes and pointing to elements lower in the page. In the second part of the file, every content part is called under a title using the include_relative syntax of Jekyll -->
+
 # FAQ Invitation
 This FAQ is specially designed to gather documentation related to inviting one or more users to a Catima catalog.
 
