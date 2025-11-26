@@ -15,16 +15,4 @@ Comme indiqué en (2) ci-dessus, cliquer sur le **Menu édition** correspondant.
 
 Dans la page d'édition du catalogue, ajouter les mots-clés dans le champ **'comments'**.
 
-Les mots-clés doivent suivre toutes ces **régles de formatage** pour être interprétés comme mot-clé:
-- commencer par #
-- ne contenir que des lettres, en minuscule, en masjucules ou le caractère _ (*underscore*)
-- ne pas contenir d'espace entre les mots
-
 ![](assets/admin/admin_add_kw.png)
-
-**Utilité des mots clés**
-
-Les mots-clés peuvent servir plusieurs objectifs, par exemple:
-- identifier la section ou le partenaire institutionnel d'un catalogue 
-- identifier les catalogues utiles de type *DEMO* ou *TEST*
-- identifier une action à entreprendre, par exemple avec des mots-clés comme *catalogue_a_compléter* , *catalogue_a_réviser* , ceci en fonction des besoins de l'administrateur système
