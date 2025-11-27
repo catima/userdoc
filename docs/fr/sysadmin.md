@@ -13,3 +13,7 @@ title: Administrateur Système de Catima
 ## Label de la référence
 
 {% include_relative content/sysadmin/labeldelareference.md %}
+
+## Utiliser des mots-clés
+
+{% include_relative content/sysadmin/keywords.md %}
