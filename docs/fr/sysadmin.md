@@ -15,8 +15,6 @@ title: Administrateur Système de Catima
 
 {% include_relative content/sysadmin/labeldelareference.md %}
 
-<a id="keywords"></a>
-
 ## Utiliser des mots-clés
 
 {% include_relative content/sysadmin/keywords.md %}
