@@ -1,3 +1,8 @@
+L'ajout d'une page avec un contenu utile se fait en 3 étapes:
+- **Etape 1** - Ajouter une page (détails ici)
+- **Etape 2.1** - <a href="#editionpage">Editer la page</a> (étape suivante)
+- **Etape 2.2** - Ajouter un ou plusieurs conteneur(s), par exemple <a href="#editionconteneurgeo">un conteneur MAP</a> (étape finale)
+
 Pour ajouter une page, sélectionner "Pages" dans la barre de gauche. La liste des pages existantes apparaît :
 
 ![](assets/pages/page.png)

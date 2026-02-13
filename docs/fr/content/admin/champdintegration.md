@@ -30,7 +30,7 @@ Pour ajouter plus d'un média, il est possible d'insérer plusieurs balises ifra
 
 > *Note: Pour des raisons de sécurité, le champ intégration supprime toutes autres balises et garde uniquement la balise iframe.*  
 
-***Par URL***: cette option permet de partager une page d'un site internet avec la mise en page, les titres et autre éléments. Ceci est surtout pratique quand un site de propose pas d'option de partage par iframe. La largeur et la hauteur sont personnalisables - par défaut 900px et 400px.   
+***Par URL***: cette option permet de partager une page d'un site internet avec la mise en page, les titres et autre éléments. Ceci est surtout pratique quand un site ne propose pas d'option de partage par iframe. La largeur et la hauteur sont personnalisables - par défaut 900px et 400px.   
 > Attention: il n'est pas toujours possible d'intégrer des pages de cette manière car il faut que le site en question accepte d'être intégré par URL. Cette décision est indépendante de Catima. Par exemple, Youtube et Viméo ne permettent pas de le faire.
 
 Lors de la création d'un **champ d'intégration (embed)**, il est vivement conseillé de créer un titre explicite spécifiant le type d'intégration tel que *Intégration par iframe* et *Intégration par url* ou d'ajouter un texte d'aide à la saisie afin que les personnes ajoutant du contenu au catalogue sachent quel contenu ajouter.

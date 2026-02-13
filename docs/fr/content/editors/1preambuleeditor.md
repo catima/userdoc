@@ -1,0 +1,6 @@
+Si vous ne trouvez pas d'information sur une fonctionnalité dans cette page, cherchez dans la documentation liée à un rôle qui a moins de droits. En effet, la documentation des fonctionnalités de CATIMA est répartie comme suit:
+- **Recherche et navigation** - ces fonctionnalités sont décrites dans les pages d'aide liées aux rôles <a href="./guest">Visiteur</a> ou <a href="./user">Utilisateur</a>
+- **DATA** - les fonctionnalités liées au menu DATA se trouvent dans l'aide destinée aux rôles <a href="./editors">Editeur</a>, <a href="./supereditors">Super-éditeur</a> ou <a href="./reviewer">Superviseur</a>
+- **SETUP** - les fonctionnalités accessibles dans le menu SETUP sont décrites dans les pages de documentation du rôle **Admin**
+
+**Note**: si vous avez le rôle **Admin** dans un autre catalogue et vous souhaitez accéder à l'aide pour les administrateurs de catalogue, ouvrez l'aide depuis un catalogue dont vous êtes l'administrateur (contactez-nous si cette proposition est peu commode pour vous).

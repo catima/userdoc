@@ -7,11 +7,19 @@ navbar: fr-sidenav-admin.html
 The value of navbar points to the title of the sidenav file in the _include folder, to be associated with the page. Its presence or absence determines the alignment of the layout -->
 
 <!--This is the front file. Every role has its own. Every <a> element points to a link in the navigation html file. Every <a> element is followed by the title of the content and is followed by a call to the content of the page using the include_relative syntax of Jekyll. -->
+_________________
+
+
+<a id="1preambuleadmin"></a>
+
+## Préambule
+{% include_relative content/admin/1preambuleadmin.md %}
+
+_________________
 
 <a id="catconfiguration"></a>
 
 ## Configuration d'un catalogue
-
 {% include_relative content/admin/configurationduncatalogue.md %}
 
 ## Conceptualisation
@@ -167,79 +175,66 @@ The value of navbar points to the title of the sidenav file in the _include fold
 <a id="affichagecontenuperso"></a>
 
 ## Affichage de contenus personnalisés et styles d'affichages
-
 {% include_relative content/admin/affichagedecontenuspersonnalisesetstylesdaffichages.md %}
 
 <a id="ajoutpage"></a>
 
 ### Ajout d'une page
-
 {% include_relative content/admin/ajoutdunepage.md %}
 
 <a id="editionpage"></a>
 
-### Édition d'une page
-
+### Ajout et édition de contenu dans une page
 {% include_relative content/admin/editiondunepage.md %}
-
-<a id="editionconteneurlist"></a>
-
-#### Édition d'un conteneur Item List
-
-{% include_relative content/admin/editiondunconteneuritemlist.md %}
 
 <a id="editionconteneurgeo"></a>
 
-#### Édition d'un conteneur de cartes géographique (Map Container)
-
+#### Ajout et édition d'un conteneur de cartes géographique (Map Container)
 {% include_relative content/admin/editiondunconteneurdecartesgeographique.md %}
+
+<a id="editionconteneurlist"></a>
+
+#### Ajout et édition d'un conteneur Item List
+{% include_relative content/admin/editiondunconteneuritemlist.md %}
 
 <a id="editionhtml"></a>
 
-#### Édition d'un conteneur HTML
-
+#### Ajout et édition d'un conteneur HTML
 {% include_relative content/admin/editiondunconteneurhtml.md %}
 
 <a id="editionmarkdown"></a>
 
-#### Édition d’un conteneur Markdown
-
+#### Ajout et édition d’un conteneur Markdown
 {% include_relative content/admin/editiondunconteneurmarkdown.md %}
 
 <a id="editioncontact"></a>
 
-#### Édition d'un conteneur Contact
-
+#### Ajout et édition d'un conteneur Contact
 {% include_relative content/admin/editiondunconteneurcontact.md %}
 
 <a id="editionsearch"></a>
 
-#### Edition d'un conteneur Search
-
+#### Ajout et édition d'un conteneur Search
 {% include_relative content/admin/editiondunconteneursearch.md %}
 
 <a id="integrationmediapage"></a>
 
-### Intégration de média (embed) dans une page
-
+### Intégration de média (embed) dans une page avec le mode 'code view' du conteneur HTML
 {% include_relative content/admin/integrationdemediadansunepage.md %}
 
 <a id="organisationconteneurs"></a>
 
 ### Organisation des conteneurs
-
 {% include_relative content/admin/organisationdesconteneurs.md %}
 
 <a id="organisationbarremenu"></a>
 
 ## Organisation de la barre de menus
-
 {% include_relative content/admin/organisationdelabarredemenus.md %}
 
 <a id="cataloguemultilingue"></a>
 
 ## Catalogue multilingue
-
 {% include_relative content/admin/cataloguemultilingue.md %}
 
 <a id="gestionconsultation"></a>

@@ -8,22 +8,26 @@ The value of navbar points to the title of the sidenav file in the _include fold
 
 <!--This is the front file. Every role has its own. Every <a> element points to a link in the navigation html file. Every <a> element is followed by the title of the content and is followed by a call to the content of the page using the include_relative syntax of Jekyll. -->
 
+_________________
+## Préambule
+{% include_relative content/editors/1preambuleeditor.md %}
+
+_________________
+
+## Fonctionnalités
 En plus de la création de nouvelles fiches, un super-éditeur peut modifier toutes les fiches existantes et ajouter des choix dans les ensembles de choix.
 
 <a id="ajout-choix"></a>
 
-## Ajout de choix dans les ensembles de choix
-
+### Ajout de choix dans les ensembles de choix
 {% include_relative content/supereditors/ajoutdechoixdanslesensemblesdechoix.md %}
 
 <a id="ajoutchoixdatation"></a>
 
-## Ajouter des choix dans les ensembles de choix de type datation
-
+### Ajouter des choix dans les ensembles de choix de type datation
 {% include_relative content/supereditors/ajoutdeschoixdetypedatation.md %}
 
 <a id="choixparents"></a>
 
-## Choix parents et choix enfants
-
+### Choix parents et choix enfants
 {% include_relative content/supereditors/choixparentsetchoixenfants.md %}

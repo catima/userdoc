@@ -1,6 +1,8 @@
-Il est possible d'intégrer des médias tels que des vidéos, des capsules interactives ou des modèles 3D dans une page avec le conteneur HTML. Contrairement au [champ d'intégration (embed)](#champintegration) des fiches, l'intégration dans une page permet un affichage sur toute la page et une meilleure visualisation du contenu. 
+Il est possible d'intégrer des médias tels que des vidéos, des capsules interactives ou des modèles 3D dans une page avec le conteneur HTML. **L'intégration (embed) dans une *page*** permet un affichage sur toute la page si cela est souhaité. 
 
-Pour que l'intégration soit possible, il faut que le site sur lequel le média se trouve soit explicitement autorisé par Catima. Il doit faire partie de la **liste des domaines autorisés**.  
+Noter la différence: **L'embed des *fiches*** ne permet pas un affichage pleine page; pour ceci, se référer à la partie traitant du [champ d'intégration (embed) de la fiche](#champintegration). 
+
+Pour que **l'intégration (embed) dans une page** soit possible, il faut que le site sur lequel le média se trouve soit explicitement autorisé par Catima. Il doit faire partie de la **liste des domaines autorisés**.  
 
 > Exemple: afin de pouvoir publier une vidéo youtube dans une fiche, il faut que le domaine **youtube** soit autorisé par Catima - ce qui est le cas.
 
