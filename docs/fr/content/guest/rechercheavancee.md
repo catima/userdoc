@@ -1,3 +1,5 @@
+**Préambule:** les exemples présentés dans cette section de l'aide sont basés sur le [catalogue DEMO - Universités et bibliothèques](ttps://catima.unil.ch/catmanual2/fr).
+
 La recherche avancée permet de d'accéder à une liste de contenus en utilisant un ou plusieurs critères de recherche **au sein d'un type de fiche**. 
 
 
