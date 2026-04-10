@@ -29,7 +29,7 @@ It is possible to use advanced search with boolean operators:
 ![Operator EXCLUDE](assets/search/g-search_exclude.png)
 
 
-**Utilisation combinée des opérateurs "ET", "SAUF" et "OU"**
+**Combined use of operators "AND", "EXCLUDE" and "OR"**
 
 You can use all three operators in one search. The order in which criteria show has no impact on search results. Only the type of operator is relevant to determine how each criteria is applied. In the end, the following rules apply in the bewlow specific order:
 1. First "**AND**" criteria determine the base result list
