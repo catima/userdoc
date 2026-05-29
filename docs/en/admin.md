@@ -243,6 +243,36 @@ An administrator has full access to the catalog; they can add and modify any con
 
 {% include_relative content/admin/navigationbar.md %}
 
+<a id="export"></a>
+
+## Export
+
+{% include_relative content/admin/export.md %}
+
+<a id="exporthowto"></a>
+
+### How to export data
+
+{% include_relative content/admin/exporthowto.md %}
+
+<a id="exportcatima"></a>
+
+### Catima - JSON Export
+
+{% include_relative content/admin/exportcatima.md %}
+
+<a id="exportsql"></a>
+
+### SQL Export 
+
+{% include_relative content/admin/exportsql.md %}
+
+<a id="exportcsv"></a>
+
+### CSV Export 
+
+{% include_relative content/admin/exportcsv.md %}
+
 <a id="statistics"></a>
 
 ## Statistics

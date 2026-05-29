@@ -276,6 +276,35 @@ _________________
 
 {% include_relative content/admin/identifiantgroupe.md %}
 
+<a id="export"></a>
+
+## Export
+
+{% include_relative content/admin/export.md %}
+
+<a id="exporthowto"></a>
+
+### Comment exporter des données
+
+{% include_relative content/admin/exporthowto.md %}
+
+<a id="exportcatima"></a>
+
+### Export Catima - JSON
+
+{% include_relative content/admin/exportcatima.md %}
+
+<a id="exportsql"></a>
+
+### Export SQL
+
+{% include_relative content/admin/exportsql.md %}
+
+<a id="exportcsv"></a>
+
+### Export CSV
+
+{% include_relative content/admin/exportcsv.md %}
 
 <a id="statistiques"></a>
 
