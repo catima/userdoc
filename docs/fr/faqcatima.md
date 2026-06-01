@@ -23,9 +23,12 @@ Documentation simplifiée de [CATIMA](https://catima.github.io/userdoc/) organis
 
 ### Comment définir ou changer l'affichage d'un type de fiche ? [Lire la suite →](#affichage-des-fiches)
 
-### Comment afficher les fiches sur une carte géographique ? [Lire la suite →](#affichage-sur-une-carte)
+### Quelles sont les options de tri possibles ? [Lire la suite →](#tri-des-fiches)
 
-### Comment modifier la barre de navigation du catalogue ? [Lire la suite →](#modifier-la-barre-de-naviguation)
+### Comment afficher des fiches sur une carte géographique ? [Lire la suite →](#affichage-sur-une-carte)
+
+### Comment modifier la barre de navigation du catalogue ? [Lire la suite →](#modifier-la-barre-de-navigation)
+
 
 ## Collaboration et accès
 
@@ -39,9 +42,7 @@ Documentation simplifiée de [CATIMA](https://catima.github.io/userdoc/) organis
 
 ### Comment fonctionne le système de validation de fiches par les reviewers ? [Lire la suite →](#validation-des-fiches)
 
-<!-- ### Comment créer et gérer un catalogue multilingue ?
-
-pas dans la doc **-> à créer ?** -->
+<!-- ### Comment créer et gérer un catalogue multilingue ? pas dans la doc **-> à créer ?** -->
 
 ### Comment autoriser l'envoi de commentaire par les visiteurs du catalogue ? [Lire la suite →](#suggestions)
 
@@ -101,17 +102,44 @@ pas dans la doc **-> à créer ?** -->
 
 ----
 
+<a id="tri-des-fiches"></a>
+
+### Options de tri dans Catima
+
+Le tri dans Catima se base sur les *champs triables* d'une fiche, qui doivent remplir ces conditions:
+- le champ doit être lisible et pouvoir être classé selon un ordre logique par des humains (par exemple de A à Z)
+- le champ accepte au maximum une seule valeur (ou il est vide)
+
+**Note**: ainsi, les champs de type *fichier* ou *image*, les *champs géographiques* ou les champs qui autorisent la sélection de plusieurs valeurs ne peuvent pas être utilisés pour le tri.
+
+En mode DATA, ces champs sont identifiables dans l'affichage liste (cf. 1 dans la copie d'écran ci-dessous) et les données seront triées par ordre ascendant alphanumérique (donc de A à Z, et de 1 aux grand nombres, cf. 2 ci-dessous).
+
+![champs triables AND](assets/data/data_sort.png) 
+
+**A noter toutefois** que si, dans un champ en mode SETUP, vous avez décoché la case 'Inclure le champ dans la liste des fiches en mode édition (Data)', ce champ ne fera pas partie des champs de tri disponibles en mode DATA, même si ce champ correspond aux conditions définies plus haut. Il reste cependant disponible ailleurs dans Catima quand un ordre d'affichage peut être défini.
+
+<!-- <a href="admin.html#editionconteneurlist"> </a> -->
+
+Les mêmes principes s'appliquent par exemple lors de l'ajout d'un conteneur de type 'ItemList' dans une page HTML.
+
+Seuls les *champs triables* peuvent être sélectionnés:
+- Par défaut, le *champ primaire*, s'il existe, est la champ de tri sinon c'est le prochain *champ triable* de la fiche.
+- Pour le style d'affichage 'line', un autre *champ triable* d'une fiche peut être librement choisi comme champ de tri.
+
+----
+
 ### Affichage sur une carte
 
 {% include_relative content/admin/editiondunconteneurdecartesgeographique.md %}
 
 ----
 
-### Modifier la barre de naviguation
+### Modifier la barre de navigation
 
 {% include_relative content/admin/organisationdelabarredemenus.md %}
 
 ----
+
 <a id="attribution"></a>
 
 ### Attribution de statuts

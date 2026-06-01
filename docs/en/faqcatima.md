@@ -21,7 +21,9 @@ Simplified documentation of [CATIMA](https://catima.github.io/userdoc/) organize
 
 ## Data Display
 
-### How to define or change the display of a item type? [Read more →](#item-list-container)
+### How to define or change the display of an item type? [Read more →](#item-list-container)
+
+### What sort options are available listing items? [Read more →](#data-sort)
 
 ### How to display items on a geographical map? [Read more →](#map-container)
 
@@ -98,6 +100,32 @@ Not in the documentation **-> to be created?** -->
 ### Item list Container
 
 {% include_relative content/admin/itemlistcontainer.md %}
+
+----
+
+<a id="data-sort"></a>
+
+### Sort options for Items
+
+Sort in Catima is based on *sortable fields* of items; to be used, these fields must meet the following conditions:
+- the field is readable and can be ordered logically by a human (for instance from A to Z)
+- the field allows maximum one value (or can remain empty as well)
+
+**Note**: thus, *file* or *image* fields, *geographical fields* or fields which accept multiple values cannot be sorted.
+
+In DATA mode, these fields are rapidly identified in the list view of items. As shown below, 1) the relevant field can be selected then 2) the list shows items in *alphanumerical ascending* order (i.e. from 1 to big numbers, then from A to Z).
+
+![champs triables AND](assets/data/data_sort_en.png) 
+
+**Note however that**, in case you unticked the box 'Include this field in edition list view (Data)' of a field in SETUP mode, that particular field **will not show as a sort option in DATA view**, even though it meets the above conditions. It remains available elsewhere in Catima when a sort criteria can be defined.
+
+<!-- <a href="admin.html#editionconteneurlist"> </a> -->
+
+The same principles thus apply for instance when you add an 'ItemList' container in an HTML page.
+
+Only *sortable fields* can be selected to define the display order: 
+- By default, the sort criteria will be the primary field, provided it has been set, or the first *sortable* field of the item type. 
+- For the 'line' display style, another *sortable field* can be chosen as the sort criteria
 
 ----
 
