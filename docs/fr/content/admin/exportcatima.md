@@ -21,6 +21,6 @@ Ainsi que ces informations, uniquement disponibles dans l'export JSON:
 - la liste des **menus** et **pages html** que vous avez définis (point 4 ci-dessous)
 - les détails de **configuration** du catalogue dans le dossier *structure* (point 5 ci-dessous)
 
-> Note: il y aura donc deux fichiers \*.json pour chaque fiche de votre catalogue; d'une part un fichier avec la structure des données, de l'autre un fichier contenant les données elles-mêmes.
+> Note: il y aura donc deux fichiers \*.json pour chaque type de fiche de votre catalogue; d'une part un fichier avec la structure des données, de l'autre un fichier contenant les données elles-mêmes.
 
 ![Output json AND](assets/export/export-output-json-small.png) 

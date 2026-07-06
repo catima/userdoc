@@ -15,7 +15,7 @@ Les options ci-après sont disponibles uniquement dans l'export CSV:
 Les informations exportées sont les suivantes :
 
 1.	La **structure des données** n'est pas formellement décrite dans cet export, mais se cache derrière les données des fichiers \*.csv
-2.	Les **données** du catalogue sont sauvegardées dans les fichiers \*.csv (note: il y a 1 fichier csv pour chaque fiche)
+2.	Les **données** du catalogue sont sauvegardées dans les fichiers \*.csv (note: il y a 1 fichier csv pour chaque type de fiche)
 3.	(optionnel) les *fichiers* et les *images* sont dans le dossier **files**
 4.  Les **métadonnées de l'export** (date et heure de l'export) sont dans le fichier *meta.json*
 
