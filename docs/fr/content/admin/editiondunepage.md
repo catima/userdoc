@@ -9,15 +9,15 @@ Une fois la page créée, il s'agit d'y ajouter du contenu. Sélectionner "*Page
 
 Les champs remplis lors de l'ajout de la page (slug et titres) sont facilement modifiables en leur attribuant les nouvelles valeurs souhaitées puis en cliquant sur "Update page". 
 
-L'édition du contenu de la page se fait dans la section "**Containers**". 
+L'édition du contenu de la page se fait dans la section "**Conteneurs**". 
 
 Plusieurs types de contenus sont possibles :
 
 -	<a href="#editionconteneurgeo">**Map**</a> : Permet de générer une carte géographique affichant les données de localisation pour un type de fiche spécifique.
--	<a href="#editionconteneurlist">**ItemList**</a> : Ce type de contenu permet d’afficher une liste des contenus d’un type de fiches, notamment en changeant le style d'affichage (aperçu d'images, grille, liste ou line) *Maximum un par page*
--	<a href="#editionhtml">**HTML**</a> : Afficher un éditeur visuel afin d'écrire du texte mis en forme, des liens (URL) et d'ajouter des images ou des vidéos sans connaissance préalable. Un éditeur de code permet également aux utlisateurs avancés d'entrer directement du code HTML. C'est ce container qui permet l'intégration de médias.
+-	<a href="#editionconteneurlist">**ItemList**</a> : Ce type de contenu permet d’afficher une liste des contenus d’un type de fiches, notamment en changeant le style d'affichage (aperçu d'images, grille, liste ou line). *Maximum un par page*
+-	<a href="#editionhtml">**HTML**</a> : inclut un éditeur visuel permettant d'écrire du texte mis en forme, d'ajouter des liens (URL) et intégrer du contenu multimédia sans connaissance préalable. Un éditeur de code permet également aux utlisateurs avancés d'éditer directement le code HTML. 
 -	<a href="#editionmarkdown">**Markdown**</a> : Ce langage permet l'affichage de textes, tableaux, et images avec une syntaxe simplifiée. 
 -	<a href="#editioncontact">**Contact**</a> : Ce container permet d'ajouter un formulaire de contact dans une page personnalisée.
--	<a href="#editionsearch">**Search**</a> : Comme le conteneur ItemList, le Search permet d'afficher une liste de fiches prédéterminées selon une recherche sauvegardée. *Maximum un par page
+-	<a href="#editionsearch">**Search**</a> : Comme le conteneur ItemList, le Search permet d'afficher une liste de fiches prédéterminées selon une recherche sauvegardée. *Maximum un par page*
 
-Pour ajouter du contenu, cliquer sur "+Ajouter" puis choisir le type de contenu souhaité
+Pour ajouter du contenu, cliquer sur "+Ajouter" puis choisir le type de contenu souhaité.

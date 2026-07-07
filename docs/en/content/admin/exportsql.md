@@ -14,6 +14,4 @@ However, there are fewer exported files, and the overall information included in
 3.	(optionnal) the *files* and *images* are in folder **files**
 4.  The **export metadata** (i.e. date and time of the export) is saved in file *meta.json*
 
-![Output sql AND](assets/export/export-output-sql-small.png) 
-
-![CSV Output AND](assets/export/export-output-sql.png) 
+![Output sql AND](assets/export/export-output-sql-small.png)

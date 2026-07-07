@@ -39,7 +39,7 @@ Edit the newly created choice set and click on *+ New Choice* to add a new perio
 When creating a choice, it is possible to associate a **parent** with it.
 ![parent choice](assets/datation/parentchoice.png)
 
-The hierarchy of choices is visible in the **Set up** mode of the choice set. To modify the order, select the item and use the cross icon to move it to the desired location in the hierarchy.
+The hierarchy of choices is visible in the **Setup** mode of the choice set. To modify the order, select the item and use the cross icon to move it to the desired location in the hierarchy.
 ![hierarchy of choices](datation/hierarchie.png)
 
 **CAUTION:** It is not recommended to create multiple levels of choice hierarchy as it can lead to confusion when searching by parent choice. During a search by choice set, children of children are not included.

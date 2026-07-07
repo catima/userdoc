@@ -195,6 +195,18 @@ An administrator has full access to the catalog; they can add and modify any con
 
 {% include_relative content/admin/createandeditcustompages.md %}
 
+<a id="addapage"></a>
+
+### Add a page
+
+{% include_relative content/admin/addapage.md %}
+
+<a id="addcontent"></a>
+
+### Add content to a page
+
+{% include_relative content/admin/addacontent.md %}
+
 <a id="contact-container"></a>
 
 ### Contact container
@@ -217,13 +229,13 @@ An administrator has full access to the catalog; they can add and modify any con
 
 ### Map container
 
-{% include_relative content/admin/itemlistcontainer.md %}
+{% include_relative content/admin/mapcontainer.md %}
 
 <a id="markdown-container"></a>
 
 ### Markdown container
 
-{% include_relative content/admin/itemlistcontainer.md %}
+{% include_relative content/admin/markdowncontainer.md %}
 
 <a id="search-container"></a>
 
