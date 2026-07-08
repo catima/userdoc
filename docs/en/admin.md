@@ -205,7 +205,7 @@ An administrator has full access to the catalog; they can add and modify any con
 
 ### Add content to a page
 
-{% include_relative content/admin/addacontent.md %}
+{% include_relative content/admin/addcontent.md %}
 
 <a id="contact-container"></a>
 
