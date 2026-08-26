@@ -3,7 +3,7 @@ title: Catalog visitor
 navbar: en-sidenav-guest.html
 ---
 
-A guest is a user that doesn't have a CATIMA account. The accessibility (e.g. editing items) is limited, but it is still possible to search in the catalog and view its content.
+A guest is a user that doesn't have a CATIMA account. Functionalities are limited (e.g. editing items is not possible for a *guest*), but it is still possible to search in the catalog and view its content.
 
 <!-- The value of title will be the h1 of the page.
 The value of navbar points to the title of the sidenav file in the _include folder, to be associated with the page. Its presence or absence determines the alignment of the layout -->
@@ -16,20 +16,23 @@ The value of navbar points to the title of the sidenav file in the _include fold
 
 {% include_relative content/guest/search.md %}
 
+--
+
+<a id="simple-search"></a>
+
+## Simple search
+{% include_relative content/guest/simplesearch.md %}
+
+
+--
+
 <a id="advanced-search"></a>
 
-### Advanced search
-
+## Advanced search
 {% include_relative content/guest/advancedsearch.md %}
+
 
 <a id="searchdate"></a>
 
-### Searching the datation Field
-
-{% include_relative content/guest/searchingthedatationfield.md %}
-
-<a id="advancedsearchdate"></a>
-
-#### Advanced Search
-
-{% include_relative content/guest/advancedsearchonthedatationfield.md %}
+## Search by date (on date or datation field)
+{% include_relative content/guest/searchingwithdatationfield.md %}

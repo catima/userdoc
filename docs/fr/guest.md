@@ -3,6 +3,7 @@ title: Visiteur de catalogue
 navbar: fr-sidenav-guest.html
 ---
 
+Un visiteur est un utilisateur qui n'a pas de compte CATIMA. Les fonctionalités sont restreintes (par exemple, un visiteur ne peut pas éditer une fiche d'un catalogue), mais il lui est toujours possible de naviguer dans le contenu des catalogues en libre accès et d'effectuer des recherches dans ces catalogues. 
 <!-- The value of title will be the h1 of the page.
 The value of navbar points to the title of the sidenav file in the _include folder, to be associated with the page. Its presence or absence determines the alignment of the layout -->
 
@@ -14,24 +15,24 @@ The value of navbar points to the title of the sidenav file in the _include fold
 
 <a id="recherchesimple"></a>
 
-### Recherche simple
+## Recherche simple
 
 {% include_relative content/guest/recherchesimple.md %}
 
 <a id="rechercheavancee"></a>
 
-### Recherche avancée
+## Recherche avancée
 
 {% include_relative content/guest/rechercheavancee.md %}
 
 <a id="operateurs"></a>
 
-### Opérateurs de recherche
+## Opérateurs de recherche
 
 {% include_relative content/guest/operateursderecherche.md %}
 
-<a id="recherchedatation"></a>
+<a id="recherche-date"></a>
 
-## Recherche sur le champ datation
+## Recherche par date (sur champ date ou datation)
 
 {% include_relative content/guest/recherchesurlechampdatation.md %}

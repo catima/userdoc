@@ -6,6 +6,7 @@ The advanced search is for searching within **elements of a specific item**. To 
 
 By default, the item searched is the first one in alphabetical order. This can be changed by clicking on *Default search by item type* and choosing a different item. Then each field can be searched using a keyword or exact wording. It is also possible to filter elements by name or category.
 
+<a id="booleanoperators"></a>
 ### Boolean operators
 
 It is possible to use advanced search with boolean operators:

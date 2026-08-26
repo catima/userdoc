@@ -126,7 +126,7 @@ _________________
 
 <a id="champtexte"></a>
 
-### Champ de texte
+### Champ de type texte
 
 {% include_relative content/admin/champdetexte.md %}
 
