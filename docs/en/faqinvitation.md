@@ -6,7 +6,7 @@ This FAQ is specially designed to gather documentation related to inviting one o
 
 ## Administrator
 
-### What are the different possible statuses in Catima ? [Read more →](#roles)
+### What are the different possible user roles in Catima ? [Read more →](#roles)
 
 ### How can I manage the access to my catalog ? [Read more →](#access)
 
@@ -28,7 +28,7 @@ This FAQ is specially designed to gather documentation related to inviting one o
 
 <a id="roles"></a>
 
-#### Statuses in Catima 
+#### User roles in Catima 
 
 {% include_relative content/admin/accesstodataanddataedition.md %}
 

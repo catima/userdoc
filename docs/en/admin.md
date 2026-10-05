@@ -322,7 +322,7 @@ An administrator has full access to the catalog; they can add and modify any con
 
 <a id="change-status"></a>
 
-### Change statuses
+### Change roles
 
 {% include_relative content/admin/adduser.md %}
 

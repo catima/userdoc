@@ -248,15 +248,14 @@ _________________
 {% include_relative content/admin/indexationdanslesmoteursderecherches.md %}
 
 
-<a id="statuts"></a>
+<a id="roles"></a>
 
-## Les différents statuts
-
-{% include_relative content/admin/lesdifferentsstatuts.md %}
+## Les différents rôles utilisateurs
+{% include_relative content/admin/lesdifferentsroles.md %}
 
 <a id="attribution"></a>
 
-### Attribution de statuts
+### Attribution de rôles
 
 {% include_relative content/admin/ajouterutilisateur.md %}
 

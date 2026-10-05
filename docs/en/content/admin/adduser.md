@@ -5,4 +5,4 @@
 
    ![User Role](assets/setup/user_role.png)
 
-3. Choose the preferred language and the person's status before updating. The user will be notified by email of the changes.
+3. Choose the preferred language and the user's role before updating. The user will be notified by email of the changes.

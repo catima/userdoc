@@ -5,8 +5,8 @@ The CATIMA website can be accessible to all visitors or restricted to members/st
 Choose who can see your website by changing the **Catalog visibility** option:
 
 - **Open to everyone**: the website is visible to anybody with the URL.
-- **Open to members**: can be accessed by the website's members only. *To learn how to attribute member status, see Member status further down this page.*
-- **Open to catalog staff**: the catalog is only accessible my *editors*, *super-editors*, *reviewers* and *administrators*.
+- **Open to members**: can be accessed by the catalog's members only. *Only users with the role 'Member' will be able to access the catalog.*
+- **Open to catalog staff**: the catalog is only accessible by *editors*, *super-editors*, *reviewers* and *administrators*.
 
 Other options are accessible from this page:
 

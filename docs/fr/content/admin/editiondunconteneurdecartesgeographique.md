@@ -6,7 +6,9 @@ Pour rappel: le conteneur MAP est disponible dans une *page*, pas dans une *fich
 Ce type de conteneur permet de générer automatiquement une carte géographique affichant les données géographiques pour un type de fiches donné, comme [ceci](https://catima.unil.ch/catmanual2/fr/map-building).
 
 Pour créer ce conteneur, choisir 'Map' dans la liste déroulante et compléter les champs.
-Il est possible de choisir des calques supplémentaires, le niveau de zoom et la hauteur de la carte par exemple:
+Il est possible de choisir des calques supplémentaires, le niveau de zoom et la hauteur de la carte par exemple.
+
+> Note: ne pas sélectionner le calque 'Positron' si cette option n'apporte pas de réelle valeur ajoutée à votre catalogue.
 
 ![](assets/pages/map_container_FR.png)
 

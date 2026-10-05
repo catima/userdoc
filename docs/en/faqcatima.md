@@ -35,7 +35,7 @@ Simplified documentation of [CATIMA](https://catima.github.io/userdoc/) organize
 
 ### How to restrict catalog visibility to certain members? [Read more →](#restrict-a-catalog)
 
-### What are the different possible roles? [Read more →](#different-statuses)
+### What are the available user roles? [Read more →](#different-statuses)
 
 ## Workflow and Features
 
@@ -163,7 +163,7 @@ There is a specific FAQ dedicated to the informations related to the invitation 
 
 ----
 
-### Different statuses
+### Different user roles
 
 {% include_relative content/admin/accesstodataanddataedition.md %}
 

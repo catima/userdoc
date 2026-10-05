@@ -11,6 +11,9 @@ The map container is used to display a geographic map of an *item type* that has
 ![i](assets/setup/a-map-item.png)
 
 - The map background can be chosen via the **additional layers** field. If more than one is selected, the user will be able to switch between them.
+
+> Note: do not select 'Positron' if this option does not add specific value to your catalog.
+
 ![i](assets/setup/a-map-background.png)
 
 - The zoom, which is set by default on 'medium', can be adjusted to *distant* or *close* by changing the value in the **Initial zoom level** attribute. 

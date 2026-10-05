@@ -1,6 +1,6 @@
 *This feature is only available if activated by the administrator.*
 
-An item can have one of the following status: draf, review, approved or rejected. This status is displayed in the list view of each item in the "Data" section:
+An item can have one of the following status: draft, review, approved or rejected. This status is displayed in the list view of each item in the "Data" section:
 ![Data section - status](assets/review/status.png)
 
 By default, an item has the ***Draft*** status. This means it is not ready to be published yet and more modifications will be made. It is possible to change this status once it is ready by clicking on the "Edit" ![Edit button](assets/buttons/edit_btn.png) and checking the "Ready for review" checkbox at the bottom of the page before saving. This will change the item's status from ***Draft*** to ***Review***.

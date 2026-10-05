@@ -1,6 +1,6 @@
-CATIMA has different staus that can be attributed to users; those status define what a user can or can't do within a given catalog. Guests are users that don't have a CATIMA account and must create one to have access to other status.
+CATIMA has different roles that can be attributed to users; these roles define what a user can or can't do within a given catalog. Guests are users that don't have a CATIMA account and must create one to have access to other roles.
 
-> Status are catalog specific and a user can have different status in different catalogs.
+> Roles are catalog specific and a user can have different roles in different catalogs.
 
 **Users** can view the public areas of the non-restricted catalogs.  
 **Members** are users that can view the public areas of a restricted catalog.  

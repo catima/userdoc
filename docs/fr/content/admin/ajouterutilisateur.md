@@ -5,4 +5,4 @@ Rechercher l'utilisateur-trice et cliquer sur le bouton Éditer" ![](assets/butt
 
  ![](assets/setup/user_role.png)
 
-Choisir ensuite la langue préférée et le statut de la personne avant de mettre à jour. L'utilisateur sera notifié par email des changements.
+Choisir ensuite la langue préférée et le rôle de la personne avant de mettre à jour. L'utilisateur sera notifié par email des changements.

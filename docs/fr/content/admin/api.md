@@ -18,7 +18,7 @@ Avec cette option activée, Catima est utilisé uniquement pour stocker les donn
 
 - les fiches ne sont pas accessibles via un navigateur par des visiteurs (pas de site)
 - pas d'options de visualisation (menu, pages, statistiques)
-- l'accès au catalogue par statut (editeur, reviewer, administrateur) est toujours possible
+- l'accès au catalogue par rôle (editeur, reviewer, administrateur) est toujours possible
 
 Ceci est utile si le catalogue est utilisé uniquement comme base de données et ne nécessite pas de site pour leur visualisation. 
 

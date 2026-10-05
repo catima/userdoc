@@ -6,7 +6,7 @@ Cette FAQ est spécialement conçue pour regrouper la documentation relative à 
 
 ## Administrateur
 
-### Quels sont les différents statuts possibles dans Catima ? [Lire la suite →](#statuts)
+### Quels sont les différents rôles utilisateurs existant dans Catima ? [Lire la suite →](#roles)
 
 ### Comment gérer l'accès à un catalogue Catima ? [Lire la suite →](#acces)
 
@@ -26,11 +26,11 @@ Cette FAQ est spécialement conçue pour regrouper la documentation relative à 
 
 
 ---
-<a id="statuts"></a>
+<a id="roles"></a>
 
-#### Les différents statuts possibles dans Catima
+#### Les différents rôles utilisateurs possibles dans Catima
 
-{% include_relative content/admin/lesdifferentsstatuts.md %}
+{% include_relative content/admin/lesdifferentsroles.md %}
 
 ---
 <a id="acces"></a>

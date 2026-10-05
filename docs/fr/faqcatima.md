@@ -36,7 +36,7 @@ Documentation simplifiée de [CATIMA](https://catima.github.io/userdoc/) organis
 
 ### Comment restreindre la visibilité du catalogue à certains membres ? [Lire la suite →](#restreindre-un-catalogue)
 
-### Quels sont les différents rôles possibles ? [Lire la suite →](#les-diff&eacute;rents-statuts)
+### Quels sont les différents rôles possibles ? [Lire la suite →](#les-diff&eacute;rents-roles)
 
 ## Workflow et fonctionnalités
 
@@ -142,9 +142,9 @@ Seuls les *champs triables* peuvent être sélectionnés:
 
 <a id="attribution"></a>
 
-### Attribution de statuts
+### Attribution de rôles
 
-Il existe une FAQ consacrée à toutes les questions concernant l'imvitation d'utilisateur-ice-s sur un catalogue [consultable ici](https://catima.github.io/userdoc/fr/faqinvitation.html).
+Il existe une FAQ consacrée à toutes les questions concernant l'invitation d'utilisateur-ice-s sur un catalogue [consultable ici](https://catima.github.io/userdoc/fr/faqinvitation.html).
 
 {% include_relative content/admin/ajouterutilisateur.md %}
 
@@ -170,9 +170,9 @@ Il existe une FAQ consacrée à toutes les questions concernant l'imvitation d'u
 
 ----
 
-### Les différents statuts
+### Les différents rôles utilisateurs
 
-{% include_relative content/admin/lesdifferentsstatuts.md %}
+{% include_relative content/admin/lesdifferentsroles.md %}
 
 ----
 

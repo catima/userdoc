@@ -6,9 +6,9 @@ For each language, there is one folder (currently the [fr](docs/fr) and [en](doc
 
 ## How it works
 
-On Catima the users have access to buttons that brings them to the online documentation based on their status(es).
+On Catima the users have access to buttons that brings them to the online documentation based on their role.
 
-The content of the documentation is contained in small files divided by roles and titles that can be found in the *content* directory. The documentation is brought together in "parent" files that acts as front and contains each titles and their content embedded underneath. They are divided by statuses and a FAQ file.
+The content of the documentation is contained in small files divided by roles and titles that can be found in the *content* directory. The documentation is brought together in "parent" files that acts as front and contains each titles and their content embedded underneath. They are divided by user roles and a FAQ file.
 
 To update the doc: You edit the content of the markdown files inside the *content* directory. The parent files don't need to be edited unless you added a file in the *content* directory.
 
@@ -21,12 +21,12 @@ Each language contains different folders and files organized as follows:
 - An ***assets*** folder containing images used in the documentation.
 
     > Images are organized into different folders named after the features they are associated with.
-- Markdown files divided by **statuses (admin, user, editor, etc.)** containing the complete documentation for each status, they act as fronts for our website. Each files has a head containing the title of the page and a "navbar" variable where the title of the file's corresponding navbar is referenced. Each file contains a skeleton composed of **titles and subtitles** referenced in the navbar (see the navbar doc below) preceded by an HTML `<a>` tag carrying an id corresponding to each link in the navbar (making the menu clickable in all circumstances). The **content of each part is included using the *[include_relative](https://jekyllrb.com/docs/includes/)* syntax** provided by Jekyll. Files are retrieved as follows:
+- Markdown files divided by **user roles (admin, user, editor, etc.)** containing the complete documentation for each role, they act as fronts for our website. Each files has a head containing the title of the page and a "navbar" variable where the title of the file's corresponding navbar is referenced. Each file contains a skeleton composed of **titles and subtitles** referenced in the navbar (see the navbar doc below) preceded by an HTML `<a>` tag carrying an id corresponding to each link in the navbar (making the menu clickable in all circumstances). The **content of each part is included using the *[include_relative](https://jekyllrb.com/docs/includes/)* syntax** provided by Jekyll. Files are retrieved as follows:
 
-	`{% include_relative content/*status*/*filename*.md %}`
+	`{% include_relative content/*role*/*filename*.md %}`
 
 - A ***content*** directory containing the textual content of the documentation in markdown.
-    - _Content_ is organized into folders by **statuses (admin, user, editor, etc.)**. Each folder contains markdown files that contain markdown documentation **divided by titles and undertitles**.
+    - _Content_ is organized into folders by **user roles (admin, user, editor, etc.)**. Each folder contains markdown files that contain markdown documentation **divided by titles and undertitles**.
         
         > Individual markdown files are named after the part of the index they are attached to; the nomenclature is as follows: the title of the part in lowercase, without accents or special characters, all attached + .md.
         
@@ -51,7 +51,7 @@ The site requires two additional directories:
 
 ### How to add a navbar to your page
 
-1. Create an HTML file in the ***_includes*** folder named **fr/en**-sidenav-**status**.html.
+1. Create an HTML file in the ***_includes*** folder named **fr/en**-sidenav-**role**.html.
 
 2. Add an unordered list to the html file containing the page's titles and undertitle.
 
