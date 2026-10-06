@@ -1,4 +1,4 @@
-> Il n'est pas possible de modifier ou supprimer des fiches créées par d'autre éditeurs. 
+> Il n'est pas possible de modifier ou supprimer des fiches créées par d'autres éditeurs. 
 
 <a id="editionfiche"></a>
 ### Édition d'une fiche

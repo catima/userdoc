@@ -1,4 +1,4 @@
-Un type de fiche peut avoir des caractéristiques communes à toutes les données (p.ex : tous les films ont un réalisateur) mais peut également avoir des caractéristiques "conditionnelles" (p.ex : la 'Période traitée' n'est pertinente que pour les documentaires historiques et pas pour les films d'action). Dans ce dernier cas, il est possible de créer une **sous-fiche** qui s'affiche uniquement lorsqu'un certain **choix** est sélectionné (p.ex : le choix de 'Période traitée' apparaît uniquement si le choix documentaire historique est sélectionné et reste invisible si le choix film d'action est sélectionné).
+Un type de fiche peut avoir des caractéristiques communes à toutes les données (par exemple : tous les films ont un réalisateur) mais peut également avoir des caractéristiques "conditionnelles" (par exemple : la 'Période traitée' n'est pertinente que pour les documentaires historiques et pas pour les films d'action). Dans ce dernier cas, il est possible de créer une **sous-fiche** qui s'affiche uniquement lorsqu'un certain **choix** est sélectionné (par exemple : le choix de 'Période traitée' apparaît uniquement si le choix documentaire historique est sélectionné et reste invisible si le choix film d'action est sélectionné).
 
 Cela permet de ne pas avoir de champs superflus lors de la saisie de données. 
 
@@ -17,12 +17,12 @@ Pour ajouter une **Sous-fiche** , dans la barre de gauche, en bas de la rubrique
 
 ![](assets/categories/new_category.png)
 
-Une fois choisi un nom pour la sous-fiche, il est possible d'enregistrer et retourner au menu *Setup* avec "*Créer sous-fiche'*" ou d'enregistrer et ajouter une nouvelle sous-fiche avec "*Create and add another*".
+Une fois choisi un nom pour la sous-fiche, il est possible d'enregistrer et retourner au menu *Setup* avec "*Créer sous-fiche*" ou d'enregistrer et ajouter une nouvelle sous-fiche avec "*Create and add another*".
  
 <a id="editionsousfiche"></a>
 ### Édition d'une sous-fiche
 
-Une fois la/les sous-fiches créée-s, il s'agit d'y ajouter les champs souhaités. 
+Une fois la/les sous-fiches créée(s), il s'agit d'y ajouter les champs souhaités. 
 
 ![](assets/categories/edit_category.png)
 
@@ -47,10 +47,10 @@ La liste des "Ensembles de choix" est accessible en cliquant sur "Ensembles de c
 
 Il est alors possible de sélectionner un ensemble de choix existant ou d'en créer un nouveau. 
 
-Lors de la création ou de la modification d'un ensemble de choix, il est possible de lier une sous-fiche en éditant un choix, puis en sélectionant la sous-fiche choisie sous "Sous-fiche (optionnel)".
+Lors de la création ou de la modification d'un ensemble de choix, il est possible de lier une sous-fiche en éditant un choix, puis en sélectionnant la sous-fiche choisie sous "Sous-fiche (optionnel)".
 
 ![](assets/categories/category_choice.png)
 
-Dans cet exemple, la **sous-fiche** *extra-data* s'affichera et permettra la saisie de données uniquement lorsque le choix *Droit* sera selectionné.
+Dans cet exemple, la **sous-fiche** *extra-data* s'affichera et permettra la saisie de données uniquement lorsque le choix *Droit* sera sélectionné.
 
-> Si la sous-fiche de s'affiche pas comme voulu: en mode *Setup*, sélectionner le type de fiche et ajouter un champ avec l'ensemble de choix avec lequel la sous-fiche est reliée.
+> Si la sous-fiche ne s'affiche pas comme voulu: en mode *Setup*, sélectionner le type de fiche et ajouter un champ avec l'ensemble de choix avec lequel la sous-fiche est reliée.

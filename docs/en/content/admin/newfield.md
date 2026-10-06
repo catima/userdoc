@@ -6,5 +6,5 @@ The number of fields an item can have isn't limited.
 
 To add a new field to an item:
 
-1. On the *set up* page, select the item in the item list
+1. On the *Setup* page, select the item in the item list
 2. Click on the **Add** button on the top right of the page

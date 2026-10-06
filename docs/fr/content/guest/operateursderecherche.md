@@ -25,7 +25,7 @@ Lorsqu'un critère de recherche est accompagné de l'opérateur "**SAUF**", seul
 
 **Opérateur "OU" :**
 
-En choisissant l'opérateur "OU", on souhaite obtenir une liste de résultats contenant toutes les fiches pour lequelles au moins un des critères est vrai. 
+En choisissant l'opérateur "OU", on souhaite obtenir une liste de résultats contenant toutes les fiches pour lesquelles au moins un des critères est vrai. 
 
 > **Exemple** : Pour obtenir la liste des bâtiments correspondant soit au critère "Université de Lausanne" soit "Université de Genève" comme "Université", entrer ces deux critères (en ajoutant une ligne *via* le bouton "+") et les accompagner de l'opérateur "OU".
 

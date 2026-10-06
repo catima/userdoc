@@ -8,14 +8,14 @@ Pour que **l'intégration (embed) dans une page** soit possible, il faut que le 
 
 ##### Liste non-exhaustive des domaines autorisés:
 
-- Youtube (*.youtube.com)
-- Viméo (*.vimeo.com)
+- YouTube (*.youtube.com)
+- Vimeo (*.vimeo.com)
 
 Pour connaître la liste exhaustive des domaines autorisés (qui peut évoluer en fonction des besoins), se référer aux personnes responsables. 
 
 1. Créer ou éditer un conteneur HTML et entrer en mode "Code View".
  	![](assets/pages/code_view.png)
-2. Récupérer la *balise iframe* depuis la page internet où se trouve le média en cliquant sur le bouton ou l'option **Partager (ou Share)** > **Embed**. Coller et copier le texte dans le conteneur HTML. Le texte en question commence par `<iframe` et se termine par `</iframe>`. 
+2. Récupérer la *balise iframe* depuis la page internet où se trouve le média en cliquant sur le bouton ou l'option **Partager (ou Share)** > **Embed**. Copier et coller le texte dans le conteneur HTML. Le texte en question commence par `<iframe` et se termine par `</iframe>`. 
    ![](assets/pages/code_view_iframe.png)
 3. Retourner en mode d'édition normal pour visualiser le résultat. Cette étape est nécessaire pour sauvegarder le travail. 
 4. Sauvegarder avec *"Créer conteneur"* ou *"Enregistrer conteneur"*.

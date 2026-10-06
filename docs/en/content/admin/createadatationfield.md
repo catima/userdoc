@@ -97,10 +97,10 @@ The hierarchy of choices in standard or datation choice sets has a significant i
 
 #### Step 2: Creating the datation field
 
-In **Set Up** mode, select the record type from the left column and click on *+ Add > Datation Field*. In addition to the name, plural name, and slug, along with display options, the last parameter defines the format(s) used for data entry:
+In *Setup** mode, select the record type from the left column and click on *+ Add > Datation Field*. In addition to the name, plural name, and slug, along with display options, the last parameter defines the format(s) used for data entry:
 
 1. **Manual**: Check this box to allow manual entry of dates and periods. The data format is defined by selecting an option from the dropdown menu. *To enable the use of dates before BC, check the box below the dropdown menu*.
-2. **Through a choice set**: Check this box and select a choice set **of date type** to allow the selection of dates or periods based on a previously created choice set. The acceptance or rejection of negative dates is defined directly in the choice set settings under *Set Up > Choice Set*.
+2. **Through a choice set**: Check this box and select a choice set **of date type** to allow the selection of dates or periods based on a previously created choice set. The acceptance or rejection of negative dates is defined directly in the choice set settings under *Setup > Choice Set*.
 
 **CAUTION!** If both input types are enabled (manual and through a choice set), it is recommended to choose the same date format.
 Otherwise, ensure that you have defined **consistent** formats. The widest date format should always be included in the finer format. For example, if the choice set is in years, manual input could be in month-years format but not exclusively in months.

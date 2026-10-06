@@ -1,7 +1,7 @@
 **Options d'export**
 
 Dans l’export Catima, le format des données est du JSON.
-Vous avez une option à choix pour cet export:
+Vous avez une option au choix pour cet export:
 -	*Avec* ou *sans* fichiers, c’est-à-dire exporter ou pas les images et documents téléchargés dans le catalogue (*avec* étant l’option par défaut)
 
 <!-- ![Options Catima](assets/export/export-options-catima-sql.png "Options du format JSON") -->

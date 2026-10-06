@@ -7,7 +7,7 @@ Lors de la consultation des fiches, l'université référencée apparaît de la 
 
 ![Fiche annexe Mouline](assets/setup/reference_mouline.png)
 
-Les fiches *Bâtiments* qui font référence à une univeristé sont listé en bas de la fiche Université en question. Ci-dessous la fiche de l'université de Lausanne avec liste des fiches *Bâtiments* qui lui font référence:
+Les fiches *Bâtiments* qui font référence à une université sont listés en bas de la fiche Université en question. Ci-dessous la fiche de l'université de Lausanne avec liste des fiches *Bâtiments* qui lui font référence:
 
 ![Fiche université de Lausanne - références](assets/setup/fiche_uni_reference.png)
 

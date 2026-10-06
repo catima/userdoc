@@ -8,7 +8,7 @@ Cette recherche propose deux modes de recherche:
 
 **Recherche simple - mode 'élargi' (mode *par défaut*)**
 
-Dans la barre de texte, entrer le mot souhaité (p.ex "Rowling" ou "Suisse") et cliquer sur "*Chercher*" ("Search"). Une liste des résultats trouvés apparaît permettant d'accéder au contenu souhaité, ou de faire une nouvelle recherche.
+Dans la barre de texte, entrer le mot souhaité (par exemple: "Rowling" ou "Suisse") et cliquer sur "*Chercher*" ("Search"). Une liste des résultats trouvés apparaît permettant d'accéder au contenu souhaité, ou de faire une nouvelle recherche.
 
 **Recherche simple - mode 'restreint'**
 

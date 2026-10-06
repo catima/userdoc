@@ -7,12 +7,12 @@ En fonction des besoins, choisir l’un ou l’autre des formats:
 
 ### En résumé
 
-> Quelques exemples d'utiliation de ces trois formats
+> Quelques exemples d'utilisation de ces trois formats
 
 
 |  | Catima (JSON)                       | SQL          | CSV          | 
 |--------------| ------------------------------------|--------------|--------------|
 | **Cas d'usages** | Partager les données du catalogue avec un développeur, Recréer la base dans un autre système | Partager les données du catalogue avec un développeur, Recréer la base dans un autre système  | Partager avec des utilisateurs, Import de données en masse|
 | **Applications compatibles**|  PostgreSQL, etc ... |  MYSQL, MariaDB, etc ... | Excel, Numbers | 
-| **Utile pour réimport?**| Oui, pour les *ensemble de choix*   | Non  | Oui, comme modèle d'import de données des fiches |
+| **Utile pour réimport?**| Oui, pour les *ensembles de choix*   | Non  | Oui, comme modèle d'import de données des fiches |
 

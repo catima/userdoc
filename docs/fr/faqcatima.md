@@ -112,7 +112,7 @@ Le tri dans Catima se base sur les *champs triables* d'une fiche, qui doivent re
 
 **Note**: ainsi, les champs de type *fichier* ou *image*, les *champs géographiques* ou les champs qui autorisent la sélection de plusieurs valeurs ne peuvent pas être utilisés pour le tri.
 
-En mode DATA, ces champs sont identifiables dans l'affichage liste (cf. 1 dans la copie d'écran ci-dessous) et les données seront triées par ordre ascendant alphanumérique (donc de A à Z, et de 1 aux grand nombres, cf. 2 ci-dessous).
+En mode DATA, ces champs sont identifiables dans l'affichage liste (cf. 1 dans la copie d'écran ci-dessous) et les données seront triées par ordre ascendant alphanumérique (donc de A à Z, et de 1 aux grands nombres, cf. 2 ci-dessous).
 
 ![champs triables AND](assets/data/data_sort.png) 
 
@@ -123,7 +123,7 @@ En mode DATA, ces champs sont identifiables dans l'affichage liste (cf. 1 dans l
 Les mêmes principes s'appliquent par exemple lors de l'ajout d'un conteneur de type 'ItemList' dans une page HTML.
 
 Seuls les *champs triables* peuvent être sélectionnés:
-- Par défaut, le *champ primaire*, s'il existe, est la champ de tri sinon c'est le prochain *champ triable* de la fiche.
+- Par défaut, le *champ primaire*, s'il existe, est le champ de tri, sinon c'est le prochain *champ triable* de la fiche.
 - Pour le style d'affichage 'line', un autre *champ triable* d'une fiche peut être librement choisi comme champ de tri.
 
 ----

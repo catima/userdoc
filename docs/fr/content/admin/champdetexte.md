@@ -1,4 +1,4 @@
-Ce champ permet d'entrer du texte, qu'il soit court (p.ex un nom ou un titre) ou long (p.ex texte descriptif)
+Ce champ permet d'entrer du texte, qu'il soit court (par exemple: un nom ou un titre) ou long (par exemple: texte descriptif)
 
 > L'option **"Contient du texte formaté"** propose un éditeur de texte prenant en charge des options de mise en forme.
 

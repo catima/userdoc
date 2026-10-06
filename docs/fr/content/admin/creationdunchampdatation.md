@@ -1,13 +1,13 @@
 Quelques questions doivent être résolues avant de commencer la création d'un champ **Datation**.
 
 1. Quel est le niveau de précision: par période, par année, par jour/mois/année ?
-2. Est-ce que les dates/périodes sont exclusivement après JC ou des dates/période avant JC sont aussi possibles ?
+2. Est-ce que les dates/périodes sont exclusivement après JC ou des dates/périodes avant JC sont aussi possibles ?
 3. Quelles méthodes de saisie doivent être proposées ?
     - Saisie manuelle par date/heure uniquement (passer directement à l'étape 2 pour créer le champ datation)
     - Entrée par ensemble de choix (commencer par l'étape 1 pour configurer un ensemble de choix avant la création du champ datation lui-même)
     - Les deux (commencer à l'étape 1 pour configurer un ensemble de choix de type datation)
 
-> Des modifications du champ sont possibles par la suite mais peuvent entrainer la perte de certaines données.
+> Des modifications du champ sont possibles par la suite mais peuvent entraîner la perte de certaines données.
 
 #### Étape 1: Création d'un ensemble de choix de type datation
 
@@ -38,7 +38,7 @@ Editer l'ensemble de choix nouvellement créé et cliquer sur *+ Nouveau choix* 
 Lors de la création d'un choix, il est possible de lui associer un **parent**.
 ![](assets/datation/choix_parent.png)
 
-La hiérarchie des choix est visible dans le mode **Set up** de l'ensemble de choix. Pour modifier l’ordre, sélectionner l’élément en cliquant sur la croix et le déplacer à l’emplacement désiré de la hiérarchie. ![](datation/hierarchie.png)
+La hiérarchie des choix est visible dans le mode **Setup** de l'ensemble de choix. Pour modifier l’ordre, sélectionner l’élément en cliquant sur la croix et le déplacer à l’emplacement désiré de la hiérarchie. ![](datation/hierarchie.png)
 
 **ATTENTION** il n'est pas recommandé de créer plusieurs niveaux de hiérarchisation des choix car cela entraîne de la confusion lors de la recherche par choix parent. Lors d'une recherche par ensemble de choix, les enfants d'enfants ne sont pas inclus.
 
@@ -90,16 +90,16 @@ On recherche les objets datés du 20ème siècle en incluant les enfants **OU** 
 ![](assets/datation/20emeouseconderesultat.png)
 
 ##### En résumé
-La hiérachie des choix dans les ensembles de choix standard ou de type datation a un impact important sur la recherche. Plus les choix sont bas dans la hiérarchie plus il sera difficile de les faire ressortir lors de la recherche par ensemble de choix.
+La hiérarchie des choix dans les ensembles de choix standard ou de type datation a un impact important sur la recherche. Plus les choix sont bas dans la hiérarchie plus il sera difficile de les faire ressortir lors de la recherche par ensemble de choix.
 
 #### Étape 2: Création du champ datation
 
-En mode **Set Up**, sélectionner le type de fiche sur la colonne de gauche et cliquer sur *+ Ajouter > Champ de datation*. En plus du nom, nom au pluriel et slug ainsi que des options d'affichage, le dernier paramètre définit le ou les formats utilisés pour la saisie des données:
+En mode **Setup**, sélectionner le type de fiche dans la colonne de gauche et cliquer sur *+ Ajouter > Champ de datation*. En plus du nom, nom au pluriel et slug ainsi que des options d'affichage, le dernier paramètre définit le ou les formats utilisés pour la saisie des données:
 
 1. **Manuelle**: cocher cette case pour permettre l'entrée manuelle de dates et périodes. Le format des données est défini en choisissant une option dans le menu déroulant. *Pour permettre l'utilisation de dates avant JC, cocher la case sous le menu déroulant*.
-2. **Par ensemble de choix**: cocher cette case et sélectionner un ensemble de choix **de type datation** pour permettre la sélection de dates ou périodes selon un ensemble de choix préalablement créé. L'acceptation ou non de dates négatives est définie directement dans les paramètres de l'ensemble de choix dans *Set up > Ensemble de choix*.
+2. **Par ensemble de choix**: cocher cette case et sélectionner un ensemble de choix **de type datation** pour permettre la sélection de dates ou périodes selon un ensemble de choix préalablement créé. L'acceptation ou non de dates négatives est définie directement dans les paramètres de l'ensemble de choix dans *Setup > Ensemble de choix*.
 
 **ATTENTION !** Si les deux types de saisie sont activés (manuelle et par ensemble de choix), il est recommandé de choisir le même format de date.
-Le cas échéant, veiller à avoir défini des formats **cohérents**. Le format de date le plus large doit toujours être inclus dans le format le plus fin. Par exemple, si l'ensemble de choix est en années, la saisie manuelle peut-être en mois-années mais pas uniquement en mois.
+Le cas échéant, veiller à avoir défini des formats **cohérents**. Le format de date le plus large doit toujours être inclus dans le format le plus fin. Par exemple, si l'ensemble de choix est en années, la saisie manuelle peut être en mois-années mais pas uniquement en mois.
 
 ![](assets/datation/config_datation.png)

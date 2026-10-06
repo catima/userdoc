@@ -6,7 +6,7 @@ Pour créer un groupe, cliquer sur "*+ Nouveau groupe*":
 
  Entrer ensuite un nom et une description pour le groupe.
  
- Définir si le group est actif ou non via la case *Actif?*. Un groupe inactif n'aura pas accès au catalogue. La case actif peut être cochée ou décochée à tout moment en revenant dans les paramètres du groupe via le bouton *Éditer* [Edit Button](assets/buttons/edit_btn.png).
+ Définir si le groupe est actif ou non via la case *Actif?*. Un groupe inactif n'aura pas accès au catalogue. La case actif peut être cochée ou décochée à tout moment en revenant dans les paramètres du groupe via le bouton *Éditer* [Edit Button](assets/buttons/edit_btn.png).
 
 
  Cliquer sur créer un groupe.
@@ -14,4 +14,4 @@ Pour créer un groupe, cliquer sur "*+ Nouveau groupe*":
   Il est ensuite possible d'attribuer un même rôle à tous les membres du groupe (ici "Membre") : 
  ![](assets/setup/usergroup_member.png)
 
- > NB : Lorsque un utilisateur a un rôle attribué individuellement *et* un rôle attribué via un groupe, c'est le rôle le plus élevé qui s'applique.
+ > NB : Lorsqu'un utilisateur a un rôle attribué individuellement *et* un rôle attribué via un groupe, c'est le rôle le plus élevé qui s'applique.

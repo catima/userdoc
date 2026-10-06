@@ -6,8 +6,8 @@ Ce champ permet l'intégration de médias tels que des capsules interactives, de
 
 ##### Liste non-exhaustive des domaines autorisés:
 
-- Youtube (*.youtube.com)
-- Viméo (*.vimeo.com)
+- YouTube (*.youtube.com)
+- Vimeo (*.vimeo.com)
 
 Pour connaître la liste exhaustive des domaines autorisés (qui peut évoluer en fonction des besoins), se référer aux personnes responsables. 
 
@@ -20,7 +20,7 @@ En plus des informations standards telles que nom, slug et options d'affichage, 
 1. **Domaines supplémentaires**: choisir dans cette liste les domaines autorisés pour ce champ. *Par exemple: si le champ est uniquement pour des vidéos provenant de youtube, sélectionner Youtube. Mais si le champ est pour des vidéos provenant de youtube et/ou viméo, sélectionner Youtube et Viméo.*
 
 2. **Format voulu:** il est possible d'intégrer le média de 2 façons différentes. 
-	- *Par iframe*: cette option est pour partager un média uniquement. Les autres éléments présents sur la page ne sont pas pris en compte. Dans le cas de **Youtube**, iframe permet de partager uniquement la vidéo sans la barre de recherche youtube, le titre, les commentaires et tous les autres éléments autour. Cette option permet généralement un intégration plus propre. Un *iframe* est un simple bout de texte. 
+	- *Par iframe*: cette option est pour partager un média uniquement. Les autres éléments présents sur la page ne sont pas pris en compte. Dans le cas de **Youtube**, iframe permet de partager uniquement la vidéo sans la barre de recherche youtube, le titre, les commentaires et tous les autres éléments autour. Cette option permet généralement une intégration plus propre. Un *iframe* est un simple bout de texte. 
 		- Pour intégrer un média à une fiche avec iframe en mode édition (Data): récupérer la *balise iframe* depuis la page internet où se trouve le média en cliquant sur le bouton ou l'option **Partager (ou Share)** > **Embed**. Le texte en question commence par `<iframe` et se termine par `</iframe>`. Le et le coller dans le champ d'intégration de la fiche:
 ![](assets/setup/integration_iframe.png)
 Résultat lors de la consultation de la fiche:
@@ -30,8 +30,8 @@ Pour ajouter plus d'un média, il est possible d'insérer plusieurs balises ifra
 
 > *Note: Pour des raisons de sécurité, le champ intégration supprime toutes autres balises et garde uniquement la balise iframe.*  
 
-***Par URL***: cette option permet de partager une page d'un site internet avec la mise en page, les titres et autre éléments. Ceci est surtout pratique quand un site ne propose pas d'option de partage par iframe. La largeur et la hauteur sont personnalisables - par défaut 900px et 400px.   
-> Attention: il n'est pas toujours possible d'intégrer des pages de cette manière car il faut que le site en question accepte d'être intégré par URL. Cette décision est indépendante de Catima. Par exemple, Youtube et Viméo ne permettent pas de le faire.
+***Par URL***: cette option permet de partager une page d'un site internet avec la mise en page, les titres et autres éléments. Ceci est surtout pratique quand un site ne propose pas d'option de partage par iframe. La largeur et la hauteur sont personnalisables - par défaut 900px et 400px.   
+> Attention: il n'est pas toujours possible d'intégrer des pages de cette manière car il faut que le site en question accepte d'être intégré par URL. Cette décision est indépendante de Catima. Par exemple, YouTube et Vimeo ne permettent pas de le faire.
 
 Lors de la création d'un **champ d'intégration (embed)**, il est vivement conseillé de créer un titre explicite spécifiant le type d'intégration tel que *Intégration par iframe* et *Intégration par url* ou d'ajouter un texte d'aide à la saisie afin que les personnes ajoutant du contenu au catalogue sachent quel contenu ajouter.
 
@@ -41,4 +41,4 @@ Pour permettre l'intégration de fiches provenant des bases de données [dilps.u
 
 ![](assets/data/allow-domains.png)
 
-> Attention à ne pas changer le type d'intégration d'un champ déjà existant  au risque de perdre les intégration préalablement ajoutées dans les données. Si un nouveau type d'intégration est nécessaire, créer un nouveau champ d'intégration en précisant le type d'intégration dans le titre.
+> Attention à ne pas changer le type d'intégration d'un champ déjà existant  au risque de perdre les intégrations préalablement ajoutées dans les données. Si un nouveau type d'intégration est nécessaire, créer un nouveau champ d'intégration en précisant le type d'intégration dans le titre.

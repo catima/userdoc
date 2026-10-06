@@ -38,7 +38,7 @@ La liste déroulante (4) permet d'effectuer des recherches par ensemble de choix
 
 Le critère ***Exclure*** (5) permet d'exclure l'un ou l'autre des types de datation. Exclure les fiches avec **datation manuelle** ne retournera que les fiches avec une **datation par ensemble de choix** et inversement.
 
-Les critères peuvent être cumulés à l'aide des opérateurs de recherche "et" (6), "ou" (7) et "sauf" (8) qui se trouvent sur la gauche. De nouvelles lignes (et, ou , sauf) peut être ajoutée à l'aide du bouton **+**.
+Les critères peuvent être cumulés à l'aide des opérateurs de recherche "et" (6), "ou" (7) et "sauf" (8) qui se trouvent sur la gauche. De nouvelles lignes (et, ou , sauf) peuvent être ajoutées à l'aide du bouton **+**.
 
 L'opérateur qui se trouve avant la première ligne (6) se réfère aux autres champs de recherche. Les opérateurs suivants permettent de faire entrer en interaction plusieurs critères de type "datation".
 

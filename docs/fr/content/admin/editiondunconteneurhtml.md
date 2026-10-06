@@ -2,7 +2,7 @@ Ce type de conteneur permet d'ajouter du code utilisé habituellement dans les *
 
 ![](assets/pages/html_container.png)
 
-Choisir un "slug" (nom court à donner au conteneur). Celui-ci apparaitra dans l'adresse web (URL) du site généré par CATIMA. Il doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
+Choisir un "slug" (nom court à donner au conteneur). Celui-ci apparaîtra dans l'adresse web (URL) du site généré par CATIMA. Il doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
 
 > Exemple de slug : "accueil-html", "home-html", "biblio-html"
 
@@ -15,7 +15,7 @@ L'édition de l'HTML se déroule dans la zone "HTML" et peut se faire de deux ma
 * Gomme : **suppression des styles** appliqués
 * Choix des **polices** ; 
 * Choix de la **couleur du texte** ou celle du **fond** ;
-* Insertions de listes à **puces** ou **numérotatées**, 
+* Insertions de listes à **puces** ou **numérotées**, 
 * Choix des styles d’**alignement** ;
 * Insertion de  **tableau** (jusqu'à 10 colonnes x 10 lignes)
 * Insertion de **liens**

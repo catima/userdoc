@@ -3,7 +3,7 @@ title: Visiteur de catalogue
 navbar: fr-sidenav-guest.html
 ---
 
-Un visiteur est un utilisateur qui n'a pas de compte CATIMA. Les fonctionalités sont restreintes (par exemple, un visiteur ne peut pas éditer une fiche d'un catalogue), mais il lui est toujours possible de naviguer dans le contenu des catalogues en libre accès et d'effectuer des recherches dans ces catalogues. 
+Un visiteur est un utilisateur qui n'a pas de compte CATIMA. Les fonctionnalités sont restreintes (par exemple, un visiteur ne peut pas éditer une fiche d'un catalogue), mais il lui est toujours possible de naviguer dans le contenu des catalogues en libre accès et d'effectuer des recherches dans ces catalogues. 
 <!-- The value of title will be the h1 of the page.
 The value of navbar points to the title of the sidenav file in the _include folder, to be associated with the page. Its presence or absence determines the alignment of the layout -->
 

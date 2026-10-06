@@ -5,7 +5,7 @@ Follow the next steps to create conditional content:
 
 ### 1. Add a category
 
-On the *Set up* page click on **Category > New category** in the left sidebar. It is possible to create multiple categories that are linked to different choices.  
+On the *Setup* page click on **Category > New category** in the left sidebar. It is possible to create multiple categories that are linked to different choices.  
 The process of creating a new category is the same as creating a new item: chose a name and slug then add new fields.
 
 ### 2. Link it to a choice

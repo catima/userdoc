@@ -12,10 +12,10 @@ Pour ajouter un nouveau menu, cliquer sur "+ Nouveau menu". La page suivante aff
 ![](assets/menus/new_menu_item2.png)
 
 Pour tous les types de menus, remplir les informations suivantes : 
-- **Slug** : nom court à donner au menu. Celui-ci apparaitra dans l'adresse web (URL) du site généré par CATIMA. Il doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
+- **Slug** : nom court à donner au menu. Celui-ci apparaîtra dans l'adresse web (URL) du site généré par CATIMA. Il doit être unique et n'être composé que de lettres (non accentuées), nombres et de traits d'unions. Les slugs sont souvent en anglais.
 > Exemple de slug : "menu-oeuvres", "menu-biblio", "menu-img-gallery"
 - **Titre** du menu : nom de l'onglet de la barre de menus.
-- **Rang** : nombre entier permettant de définir l'ordre des menus (ou des éléments à l'intérieur un menu) à la place de l'ordre alphabétique. 
+- **Rang** : nombre entier permettant de définir l'ordre des menus (ou des éléments à l'intérieur d'un menu) à la place de l'ordre alphabétique. 
 - **Parent** : lors de la création d'un sous-menu, choisir un menu parent (créé précédemment, voir ci-dessous)
 
 Les champs suivants dépendent ensuite du type de menu choisi :
@@ -23,7 +23,7 @@ Les champs suivants dépendent ensuite du type de menu choisi :
 * **Menu pour un type de fiche**  : permet d'afficher la liste avec toutes les fiches du type spécifié
     * Choisir un type de fiche dans le menu déroulant "Item type"
  
-* **Menu pour une page personnalisée** : permet d'accéder à une page personnalisée dans le site catima
+* **Menu pour une page personnalisée** : permet d'accéder à une page personnalisée dans le site CATIMA
     * Choisir la page personnalisée dans le menu déroulant "Page"
 
 * **Menu pour une URL spécifique** : permet d'accéder à un lien spécifique (interne ou externe au catalogue)

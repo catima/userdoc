@@ -1,4 +1,4 @@
-Afin d'illustrer la réalisation d'un catalogue du début à la fin, voici un exemple reprenant la plupart des étapes décrites jusqu'à présent. Cet exemple consiste en un catalogue recensant les universités romandes et de leurs bibliothèques afin de les représenter sur une carte géographique.
+Afin d'illustrer la réalisation d'un catalogue du début à la fin, voici un exemple reprenant la plupart des étapes décrites jusqu'à présent. Cet exemple consiste en un catalogue recensant les universités romandes et leurs bibliothèques afin de les représenter sur une carte géographique.
 
 <a id="conceptualisation"></a>
 ## Conceptualisation 
@@ -56,7 +56,7 @@ Dans cet exemple, la réalisation d'un tableau permet de relever les concepts im
 <a id="typesfichesliens">
 ### Types de fiches et liens
 
-Les quatre concepts précédements relevés, "Université", "Bibliothèque", "Localité", "Bâtiment",  correspondent aux types de fiches qu'il faudra créer dans CATIMA.
+Les quatre concepts précédemment relevés, "Université", "Bibliothèque", "Localité", "Bâtiment",  correspondent aux types de fiches qu'il faudra créer dans CATIMA.
 
 **Liens conceptuels entre les types de fiches :**
 
@@ -85,9 +85,9 @@ Il s'agit ici de donner un nom (et d'éventuelles traductions du nom) au type de
 
 La prochaine étape est donc d'ajouter des champs descriptifs, qui ont été déterminés dans l'étape de conceptualisation. Pour la "Localité", il s'agira ainsi de créer les champs "Nom de la localité", "Canton" et "Population".
 
-Pour cela, cliquer sur le bouton "+Ajouter", qui affichera une liste de champs possibles à ajouter. Le champ "Nom de la localité" par exemple sera un champ "de texte" et "Population" sera un champ "nombre entier". Pour le champ "Canton", ceux-ci étant en nombre limités (4), un champ "ensemble de choix" semble indiqué, mais un champ de texte aurait très bien convenu également.
+Pour cela, cliquer sur le bouton "+Ajouter", qui affichera une liste de champs possibles à ajouter. Le champ "Nom de la localité" par exemple sera un champ "de texte" et "Population" sera un champ "nombre entier". Les cantons étant en nombre limité (4), un champ "ensemble de choix" semble indiqué, mais un champ de texte aurait très bien convenu également.
 
-Pour le champ "Nom de la localité", remplir le nom du champ (et éventuelles traductions), les formes au pluriel et le slug. Il est également possible d'ajouter un texte d'aide à la saisie, et de spécifier des options d'affichage comme définir que le champ en question comme champ primaire (voir "champ primaire"). Noter également les options de saisie de données, qui permettent selon le type de champ, d'entrer une ou plusieurs données (Single vs Multiple values) et de s'assurer que le champ sera rempli par l'utilisateur (Required). Confirmer l'ajout d'un champ avec le bouton "Créer le champ".
+Pour le champ "Nom de la localité", remplir le nom du champ (et éventuelles traductions), les formes au pluriel et le slug. Il est également possible d'ajouter un texte d'aide à la saisie, et de spécifier des options d'affichage comme définir le champ en question comme champ primaire (voir "champ primaire"). Noter également les options de saisie de données, qui permettent selon le type de champ, d'entrer une ou plusieurs données (Single vs Multiple values) et de s'assurer que le champ sera rempli par l'utilisateur (Required). Confirmer l'ajout d'un champ avec le bouton "Créer le champ".
 
   ![](assets/setup/new_item_type_ex3.png)
   ![](assets/setup/new_item_type_ex4.png)
@@ -103,10 +103,10 @@ Lors de la conceptualisation, les concepts les plus "précis" comme par exemple 
 
 Dans CATIMA cela se traduit par la création d'un champ "Référence" : 
 
-> Dans notre exemple, il s'agira dans "Bâtiment" de faire une référence aux concepts d' "Université". 
+> Dans notre exemple, il s'agira dans "Bâtiment" de faire une référence au concept "Université". 
 
 Pour cela, sélectionner "Bâtiment" parmi les types de fiches (accessibles dans la barre latérale gauche) puis créer un nouveau champ "Référence". 
 
   ![](assets/setup/new_item_type_ex5.png)
 
-Pour l'éditeur de données, cela se concrétisera dans l'ajout d'un nouveau bâtiment par la possiblité/obligation de choisir parmi les universités pré-existantes.
+Pour l'éditeur de données, cela se concrétisera par l'ajout d'un nouveau bâtiment et la possibilité ou l'obligation de choisir parmi les universités pré-existantes.

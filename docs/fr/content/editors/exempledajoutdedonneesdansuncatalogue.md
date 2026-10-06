@@ -1,4 +1,4 @@
-Afin d'illustrer l'ajout de données dans un catalogue, voici un exemple reprenant toutes les étapes décrites jusqu'à présent. Cet exemple consiste en un catalogue recensant les universités romandes et de leurs bibliothèques afin de les représenter sur une carte géographique.
+Afin d'illustrer l'ajout de données dans un catalogue, voici un exemple reprenant toutes les étapes décrites jusqu'à présent. Cet exemple consiste en un catalogue recensant les universités romandes et leurs bibliothèques afin de les représenter sur une carte géographique.
 
 ## Concept
 
@@ -56,7 +56,7 @@ Conceptuellement, voici les entités qui composent ce catalogue et les champs qu
 
 ### Types de fiches et liens
 
-Les quatre concepts précédements relevés, "Université", "Bibliothèque", "Localité", "Bâtiment", correspondent aux types de fiches existants dans Catima.
+Les quatre concepts précédemment relevés, "Université", "Bibliothèque", "Localité", "Bâtiment", correspondent aux types de fiches existants dans Catima.
 
 **Liens conceptuels entre les types de fiches :**
 
@@ -68,11 +68,11 @@ Les quatre concepts précédements relevés, "Université", "Bibliothèque", "Lo
 
 Le concept de "Localité" étant le concept le plus large (un bâtiment se situe dans une université, qui est dans une localité), il englobe les concepts plus précis que lui, à savoir "Université", qui lui-même englobe les "Bâtiments" et les "Bibliothèques". C'est pourquoi il est judicieux d'ajouter d'abord des fiches aux entités les plus larges, ici "Localité". Ainsi lors de l'ajout d'une nouvelle université (puis de nouveaux bâtiments et bibliothèques) il existera toujours l'entité plus globale à laquelle faire référence. 
 
-La structure du catalogue a été crée dans cet exemple par l'adminstrateur-trice du catalogue. La tâche ici est d'ajouter de nouvelles données en suivant la structure existante. 
+La structure du catalogue a été crée dans cet exemple par l'administrateur.trice du catalogue. La tâche ici est d'ajouter de nouvelles données en suivant la structure existante. 
 
 Ainsi pour ajouter une nouvelle localité : dans la section "Data" de Catima, sélectionner "Localités" dans la colonne latérale gauche. 
 
-Une liste des localités existante s'affiche : 
+Une liste des localités existantes s'affiche : 
 
 ![](assets/data/new_data_ex1.png)  
 

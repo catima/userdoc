@@ -2,7 +2,7 @@ Pour ajouter des données, sélectionner le type de fiche souhaité dans la barr
 
 Cliquer sur le bouton  **Nouvelle fiche "nom du type de fiche"**, fait s'ouvrir la page d'entrée manuelle des données, qui se présente sous la forme d'un formulaire.
 
-En remplissant les sections des objets avec des données, seules des données respectants les formats autorisés (définis dans la configuration) peuvent être entrées (p.ex données numériques, e-mail ou dates).
+En remplissant les sections des objets avec des données, seules des données respectant les formats autorisés (définis dans la configuration) peuvent être entrées (par exemple: données numériques, e-mail ou dates).
 
 Une fois les champs remplis avec les données, il est possible d'enregistrer et retourner au menu *Data* avec "*Créer fiche de type 'nom du type de fiche'*" ou d'enregistrer et ajouter de nouvelles données avec "*Create and add another*".
 

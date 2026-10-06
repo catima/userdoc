@@ -1,7 +1,7 @@
 L'ajout du contenu dans une page se fait en 3 étapes:
-- **Etape 1** - <a href="#ajoutpage">Ajouter une page</a> (étape précédente)
-- **Etape 2.1** - Editer la page (détails ici)
-- **Etape 2.2** - Ajouter ou modifier un ou plusieurs conteneur(s) (par exemple <a href="#editionconteneurgeo">un conteneur MAP</a>)
+- **Étape 1** - <a href="#ajoutpage">Ajouter une page</a> (étape précédente)
+- **Étape 2.1** - Editer la page (détails ici)
+- **Étape 2.2** - Ajouter ou modifier un ou plusieurs conteneur(s) (par exemple <a href="#editionconteneurgeo">un conteneur MAP</a>)
 
 Une fois la page créée, il s'agit d'y ajouter du contenu. Sélectionner "*Pages*" dans la barre de gauche. La liste récapitulative de toutes les pages s’affiche. Cliquer ensuite sur le bouton "Éditer" ![](assets/buttons/edit_btn.png) correspondant à la page à paramétrer. La page d'édition suivante apparaît :
 
@@ -15,7 +15,7 @@ Plusieurs types de contenus sont possibles :
 
 -	<a href="#editionconteneurgeo">**Map**</a> : Permet de générer une carte géographique affichant les données de localisation pour un type de fiche spécifique.
 -	<a href="#editionconteneurlist">**ItemList**</a> : Ce type de contenu permet d’afficher une liste des contenus d’un type de fiches, notamment en changeant le style d'affichage (aperçu d'images, grille, liste ou line). *Maximum un par page*
--	<a href="#editionhtml">**HTML**</a> : inclut un éditeur visuel permettant d'écrire du texte mis en forme, d'ajouter des liens (URL) et intégrer du contenu multimédia sans connaissance préalable. Un éditeur de code permet également aux utlisateurs avancés d'éditer directement le code HTML. 
+-	<a href="#editionhtml">**HTML**</a> : inclut un éditeur visuel permettant d'écrire du texte mis en forme, d'ajouter des liens (URL) et intégrer du contenu multimédia sans connaissance préalable. Un éditeur de code permet également aux utilisateurs avancés d'éditer directement le code HTML. 
 -	<a href="#editionmarkdown">**Markdown**</a> : Ce langage permet l'affichage de textes, tableaux, et images avec une syntaxe simplifiée. 
 -	<a href="#editioncontact">**Contact**</a> : Ce container permet d'ajouter un formulaire de contact dans une page personnalisée.
 -	<a href="#editionsearch">**Search**</a> : Comme le conteneur ItemList, le Search permet d'afficher une liste de fiches prédéterminées selon une recherche sauvegardée. *Maximum un par page*

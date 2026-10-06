@@ -1,6 +1,6 @@
 **Préambule:** les exemples présentés dans cette section de l'aide sont basés sur le [catalogue DEMO - Universités et bibliothèques](ttps://catima.unil.ch/catmanual2/fr).
 
-La recherche avancée permet de d'accéder à une liste de contenus en utilisant un ou plusieurs critères de recherche **au sein d'un type de fiche**. 
+La recherche avancée permet d'accéder à une liste de contenus en utilisant un ou plusieurs critères de recherche **au sein d'un type de fiche**. 
 
 
 La recherche avancée est accessible depuis la page d'accueil du catalogue (via un clic sur le nom du catalogue). Pour accéder à la recherche avancée, cliquer sur "*Avancé*" ("Advanced") qui se trouve à droite du bouton "Chercher". Une page s'ouvre, présentant l'interface de recherche avancée. Le premier type de fiche s'ouvre par défaut mais en cliquant sur "Recherche par défaut" les autres types de fiches peuvent être choisis pour faire l'objet d'une recherche.
