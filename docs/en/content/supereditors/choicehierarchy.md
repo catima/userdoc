@@ -4,7 +4,7 @@ When creating a choice, it is possible to associate a **parent** with it.
 The hierarchy of choices is visible in the **Setup** mode of the choice set. To modify the order, select the item and use the cross icon to move it to the desired location in the hierarchy.
 ![Hierarchy of choices](datation/hierarchie.png)
 
-**CAUTION:** It is not recommended to create multiple levels of choice hierarchy as it can lead to confusion when searching by parent choice. During a search by choice set, children of children are not included.
+**WARNING:** It is not recommended to create multiple levels of choice hierarchy as it can lead to confusion when searching by parent choice. During a search by choice set, children of children are not included.
 
 **Example**
 ![3 levels of choices](assets/datation/3levels.png)

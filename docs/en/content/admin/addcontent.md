@@ -5,7 +5,7 @@ Adding a page with new content requires three distinct steps:
 
 Once the page has been created, you can start adding content. 
 - Select "*Pages*" in the left navigation.
-- Click the "Edit" button ![](assets/buttons/edit_btn.png) which is next to the page you wish to add content to. The Edit page will show (see printscreen hereafter)
+- Click the "Edit" button ![](assets/buttons/edit_btn.png) which is next to the page you wish to add content to. The Edit page will be displayed (see screenshot hereafter)
 - The fields added during the page creation (slug and title(s)) can be changed and saved by a click on "Update page". 
 - Adding content to the page is done in the "**Containers**" section. 
 
@@ -13,11 +13,11 @@ Once the page has been created, you can start adding content.
 
 Different kinds of **content containers** can be added to a page:
 
--	<a href="#contact-container">**Contact**</a> : adds a form that allows users to send an email to specified email adress.
+-	<a href="#contact-container">**Contact**</a> : adds a form that allows users to send an email to specified email address.
 -	<a href="#html-container">**HTML**</a> : entails a visual editor in a *what you see is what you get* (*WYSIWYG*) mode, providing options to write formatted text, add links (URLs) and embed multimedia content. The editor also allows advanced users to edit HTML code directly.
--	<a href="#item-list-container">**ItemList**</a> : this container display a list of items. Different styles are availables (list, grid, thumb). *Maximum one per page*
+-	<a href="#item-list-container">**ItemList**</a> : this container displays a list of items. Different styles are available
 -	<a href="#map-container">**Map**</a> : displays a map with a specified item type's localisation. The item must have a *Geographic field*.
--	<a href="#markdown-container">**Markdown**</a> : provide options to add text, tables and images with Markdown syntax.
+-	<a href="#markdown-container">**Markdown**</a> : provides options to add text, tables and images with Markdown syntax.
 -	<a href="#search-container">**Search**</a> :  displays the results of a previously saved search. *Maximum one per page* 
 
 

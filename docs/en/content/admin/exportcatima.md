@@ -1,7 +1,7 @@
 **Options**
 
 In the Catima export, the format is JSON.
-You can chose to export the complete catalog data:
+You can choose to export the complete catalog data:
 -	*With* ou *without* files, i.e. export images and document files as well (*with* is the default  option)
 
 ![JSON Options AND](assets/export/export-options-catima-sql-en.png) 
@@ -12,7 +12,7 @@ The \*.zip folder contains :
 
 1.	The data **structure** in folder *item-types*
 2.	The catalog **data** in folder *data*
-3.	(optionnal) the **files** and **images** in folder *files*
+3.	(optional) the **files** and **images** in folder *files*
 4.  The **export metadata** (i.e. date and time of the export) is found in file *meta.json*
 
 As well as the below information, which is only available in the JSON export:

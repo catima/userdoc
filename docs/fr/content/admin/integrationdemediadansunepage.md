@@ -4,11 +4,11 @@ Noter la différence: **L'embed des *fiches*** ne permet pas un affichage pleine
 
 Pour que **l'intégration (embed) dans une page** soit possible, il faut que le site sur lequel le média se trouve soit explicitement autorisé par Catima. Il doit faire partie de la **liste des domaines autorisés**.  
 
-> Exemple: afin de pouvoir publier une vidéo youtube dans une fiche, il faut que le domaine **youtube** soit autorisé par Catima - ce qui est le cas.
+> Exemple: afin de pouvoir publier une vidéo YouTube dans une fiche, il faut que le domaine **YouTube** soit autorisé par Catima - ce qui est le cas.
 
 ##### Liste non-exhaustive des domaines autorisés:
 
-- YouTube (*.youtube.com)
+- YouTube (*.YouTube.com)
 - Vimeo (*.vimeo.com)
 
 Pour connaître la liste exhaustive des domaines autorisés (qui peut évoluer en fonction des besoins), se référer aux personnes responsables. 

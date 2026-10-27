@@ -4,4 +4,4 @@ The list of members is displayed. Click on *Add users* and then enter the email 
 
 Finalize by clicking on *Add members*.
 
-The members will be notified by email. If they do not have a Catima account, they will be invited to create one.
+The members will be notified by email. If they do not have a CATIMA account, they will be invited to create one.

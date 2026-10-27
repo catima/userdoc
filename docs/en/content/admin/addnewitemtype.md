@@ -1,6 +1,6 @@
-After deciding which concepts and features will be used in the catalog, it is time to start adding item types. No data is added yet, this is where the item types and its fields are defined.  
+After deciding which concepts and features will be used in the catalog, it is time to start adding item types. No data is added yet, this is where the item types and their fields are defined.  
 
-First, acess the set up page by clicking on **Admin** > **Catalog Setup** in the navigation bar. One must be connected to CATIMA and and be an administrator to perform this action.  
+First, access the set up page by clicking on **Admin** > **Catalog Setup** in the navigation bar. One must be connected to CATIMA and be an administrator to perform this action.  
 
 If some items have already been created, they will be displayed on the top-left of the page. Click on the "*New item type*" button to create a new one.
 

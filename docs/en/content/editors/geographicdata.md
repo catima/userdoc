@@ -10,4 +10,4 @@ Click on the *edit* icon to move the points that form a zone or an itinerary or 
 
 ![Edit and delete](assets/geography/edit_delete.png)
 
-> CAUTION ! Once the modifications are saved in the geographic field, don't forget to save the item so the changes are saved to the database.
+> WARNING ! Once the modifications are saved in the geographic field, don't forget to save the item so the changes are saved to the database.

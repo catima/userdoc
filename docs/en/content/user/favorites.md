@@ -10,4 +10,4 @@ The *Favorites* list is accessible to all connected users by clicking on
 1. **Username** (top left in navigation bar)
 2. **My favorites**
 
-![Acess to favorites](assets/favs/u-menu_email.png)
+![Access to favorites](assets/favs/u-menu_email.png)

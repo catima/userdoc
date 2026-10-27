@@ -2,7 +2,7 @@ The navigation bar is customizable: it is possible to add or remove items as wel
 
 ![i](assets/menus/a-menu-items.png)
 
-Settings can be adjusted by editing an existing item or creating a new one. Apart from the usual slug (short name that must only have small cap letters without accents, numbers or hypens) and title, the options are:
+Settings can be adjusted by editing an existing item or creating a new one. Apart from the usual slug (short name that must only have lowercase letters without accents, numbers or hypens) and title, the options are:
 
 - **Rank**: change the item's order by changing its rank. The items are displayed from left to right in ascending order.
 - **Parent**: To create a drop-down menu:

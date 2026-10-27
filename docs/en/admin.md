@@ -161,7 +161,7 @@ An administrator has full access to the catalog; they can add and modify any con
 
 <a id="datation-field"></a>
 
-### Datation field
+### datation field
 
 {% include_relative content/admin/datationfield.md %}
 

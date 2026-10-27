@@ -107,7 +107,7 @@ Not in the documentation **-> to be created?** -->
 
 ### Sort options for Items
 
-Sort in Catima is based on *sortable fields* of items; to be used, these fields must meet the following conditions:
+Sort in CATIMA is based on *sortable fields* of items; to be used, these fields must meet the following conditions:
 - the field is readable and can be ordered logically by a human (for instance from A to Z)
 - the field allows maximum one value (or can remain empty as well)
 
@@ -117,7 +117,7 @@ In DATA mode, these fields are rapidly identified in the list view of items. As 
 
 ![champs triables AND](assets/data/data_sort_en.png) 
 
-**Note however that**, in case you unticked the box 'Include this field in edition list view (Data)' of a field in SETUP mode, that particular field **will not show as a sort option in DATA view**, even though it meets the above conditions. It remains available elsewhere in Catima when a sort criteria can be defined.
+**Note however that**, in case you unticked the box 'Include this field in edition list view (Data)' of a field in SETUP mode, that particular field **will not show as a sort option in DATA view**, even though it meets the above conditions. It remains available elsewhere in CATIMA when a sort criteria can be defined.
 
 <!-- <a href="admin.html#editionconteneurlist"> </a> -->
 

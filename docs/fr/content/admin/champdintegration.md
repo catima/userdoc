@@ -2,11 +2,11 @@
 
 Ce champ permet l'intégration de médias tels que des capsules interactives, des modèles 3D ou des vidéos à une fiche à partir de sites web indépendants de Catima.  Pour que l'intégration soit possible, il faut que le site sur lequel le média se trouve soit explicitement autorisé par Catima. Il doit faire partie de la **liste des domaines autorisés**.  
 
-> Exemple: afin de pouvoir publier une vidéo youtube dans une fiche, il faut que le domaine **youtube** soit autorisé par Catima - ce qui est le cas.
+> Exemple: afin de pouvoir publier une vidéo YouTube dans une fiche, il faut que le domaine **YouTube** soit autorisé par Catima - ce qui est le cas.
 
 ##### Liste non-exhaustive des domaines autorisés:
 
-- YouTube (*.youtube.com)
+- YouTube (*.YouTube.com)
 - Vimeo (*.vimeo.com)
 
 Pour connaître la liste exhaustive des domaines autorisés (qui peut évoluer en fonction des besoins), se référer aux personnes responsables. 
@@ -17,14 +17,14 @@ En plus des informations standards telles que nom, slug et options d'affichage, 
 
 ![](assets/setup/integration.png)
 
-1. **Domaines supplémentaires**: choisir dans cette liste les domaines autorisés pour ce champ. *Par exemple: si le champ est uniquement pour des vidéos provenant de youtube, sélectionner Youtube. Mais si le champ est pour des vidéos provenant de youtube et/ou viméo, sélectionner Youtube et Viméo.*
+1. **Domaines supplémentaires**: choisir dans cette liste les domaines autorisés pour ce champ. *Par exemple: si le champ est uniquement pour des vidéos provenant de YouTube, sélectionner YouTube. Mais si le champ est pour des vidéos provenant de YouTube et/ou Vimeo, sélectionner YouTube et Vimeo.*
 
 2. **Format voulu:** il est possible d'intégrer le média de 2 façons différentes. 
-	- *Par iframe*: cette option est pour partager un média uniquement. Les autres éléments présents sur la page ne sont pas pris en compte. Dans le cas de **Youtube**, iframe permet de partager uniquement la vidéo sans la barre de recherche youtube, le titre, les commentaires et tous les autres éléments autour. Cette option permet généralement une intégration plus propre. Un *iframe* est un simple bout de texte. 
+	- *Par iframe*: cette option est pour partager un média uniquement. Les autres éléments présents sur la page ne sont pas pris en compte. Dans le cas de **YouTube**, iframe permet de partager uniquement la vidéo sans la barre de recherche YouTube, le titre, les commentaires et tous les autres éléments autour. Cette option permet généralement une intégration plus propre. Un *iframe* est un simple bout de texte. 
 		- Pour intégrer un média à une fiche avec iframe en mode édition (Data): récupérer la *balise iframe* depuis la page internet où se trouve le média en cliquant sur le bouton ou l'option **Partager (ou Share)** > **Embed**. Le texte en question commence par `<iframe` et se termine par `</iframe>`. Le et le coller dans le champ d'intégration de la fiche:
 ![](assets/setup/integration_iframe.png)
 Résultat lors de la consultation de la fiche:
-![](assets/setup/integration_youtube.png)
+![](assets/setup/integration_YouTube.png)
 Pour ajouter plus d'un média, il est possible d'insérer plusieurs balises iframe l'une après l'autre:
 ![](assets/setup/integration_mult.png)  
 

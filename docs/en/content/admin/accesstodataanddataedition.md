@@ -5,6 +5,6 @@ CATIMA has different roles that can be attributed to users; these roles define w
 **Users** can view the public areas of the non-restricted catalogs.  
 **Members** are users that can view the public areas of a restricted catalog.  
 **Editors** are members that can create and edit their own items in the catalog.  
-**Super-editors** are editors that can create and edit all the items in the catalog and add new choice in choice sets.
-**Reviewers** validate itesm created by **editors** and **super-editors**.
-**Administrator** have access to all the catalog's options.
+**Super-editors** are editors that can create and edit all the items in the catalog and add new choices in choice sets.
+**Reviewers** validate items created by **editors** and **super-editors**.
+**Administrators** have access to all the catalog's options.

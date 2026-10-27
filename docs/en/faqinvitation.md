@@ -2,17 +2,17 @@
 <!-- This is a FAQ front file. FAQs don't have side navigation bars. They start with a list of questions organized by themes and pointing to elements lower in the page. In the second part of the file, every content part is called under a title using the include_relative syntax of Jekyll -->
 
 # FAQ Invitation
-This FAQ is specially designed to gather documentation related to inviting one or more users to a Catima catalog.
+This FAQ is specially designed to gather documentation related to inviting one or more users to a CATIMA catalog.
 
 ## Administrator
 
-### What are the different possible user roles in Catima ? [Read more →](#roles)
+### What are the different possible user roles in CATIMA ? [Read more →](#roles)
 
 ### How can I manage the access to my catalog ? [Read more →](#access)
 
-### How to add a user who already has a Catima account? [Read more →](#adduser)
+### How to add a user who already has a CATIMA account? [Read more →](#adduser)
 
-### How to invite a user who does not yet have a Catima account? [Read more →](#inviteuser)
+### How to invite a user who does not yet have a CATIMA account? [Read more →](#inviteuser)
 
 ### How to create a group? [Read more →](#creategroup)
 
@@ -28,7 +28,7 @@ This FAQ is specially designed to gather documentation related to inviting one o
 
 <a id="roles"></a>
 
-#### User roles in Catima 
+#### User roles in CATIMA 
 
 {% include_relative content/admin/accesstodataanddataedition.md %}
 

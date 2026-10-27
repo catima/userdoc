@@ -1,4 +1,4 @@
-CATIMA has a default mode to display the item to the final user. This mode can not be modified, but we can create **pages** where the layout can be modified as needed.
+CATIMA has a default mode to display the item to the final user. This mode cannot be modified, but we can create **pages** where the layout can be modified as needed.
 
 Thus, in order to amend the display of items (grid, thumbnails or timeline) or to modify the fields to be displayed, the creation of a new page is needed.
 

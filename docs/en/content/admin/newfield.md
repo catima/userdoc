@@ -1,4 +1,4 @@
-Once the new item created, it is time to add fields that will hold the data. Fields are the item's *features*.
+Once the new item is created, it is time to add fields that will hold the data. Fields are the item's *features*.
 
 > A "*Movie*" item's fields could be a text field for the title, a date field for the release date and a choiceset field for its genre.
 

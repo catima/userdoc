@@ -1,9 +1,9 @@
 
-#### Rappel: différences entre les champs "Date" et "Datation" 
+#### Rappel: différences entre les champs "Date" et "datation" 
 
 Le champ **Date** permet l'entrée d'une date précise sur une fiche. Cette date est unique. Cela peut être par exemple la date de naissance d'une personne, l'année de construction d'un bâtiment ou l'heure et la date d'une représentation, lorsque celle-ci est connue.
 
-Le champ de **Datation** accepte une date de début et une date de fin, permettant la création de périodes et la recherche sur toutes les dates contenues dans cette période. Ce champ est approprié quand la date est incertaine ou inconnue.
+Le champ de **datation** accepte une date de début et une date de fin, permettant la création de périodes et la recherche sur toutes les dates contenues dans cette période. Ce champ est approprié quand la date est incertaine ou inconnue.
 
 > Le champ datation est un champ très complexe pour lequel a été réalisé un [catalogue d'exemple](https://catima.unil.ch/datation-exple/fr) permettant de mieux comprendre comment utiliser ce champ et comprendre son comportement lors des recherches.
 
@@ -17,7 +17,7 @@ Rechercher une date dans la barre de recherche retournera uniquement les fiches 
 
 ### Rechercher par date avec la recherche avancée
 
-La recherche avancée est optimale pour effectuer des recherches précises sur les dates (de type "Date" simple ou "Datation"). 
+La recherche avancée est optimale pour effectuer des recherches précises sur les dates (de type "Date" simple ou "datation"). 
 
 Grâce aux listes déroulantes, il est possible de préciser des périodes de diverses façons. 
 
@@ -32,7 +32,7 @@ Les listes déroulantes sur la droite permettent de préciser:
 
 La recherche par date est également possible en spécifiant une période (choisir 'entre les dates') ou en l'excluant (choisir 'en dehors des dates')
 
-#### Spécificités liées au champ ***"Datation"***
+#### Spécificités liées au champ ***"datation"***
 
 La liste déroulante (4) permet d'effectuer des recherches par ensemble de choix.
 

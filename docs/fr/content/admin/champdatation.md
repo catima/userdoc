@@ -18,8 +18,8 @@ Pour un projet d'inventaire d'objets d'un bâtiment du patrimoine suisse, Catima
 
 Ensuite, une personne visitant le catalogue pourra effectuer des recherches selon la datation des objets recensés. Elle pourra rechercher des dates précises et trouver les objets datés de cette date ou qui incluent cette date dans la période qui leur a été attribuée. Elle pourra effectuer des recherches par période en entrant manuellement des dates de début et de fin ou en sélectionnant une période prédéfinie dans une liste de choix. Elle pourra également croiser les périodes, exclure des dates ou croiser les critères avec d'autres champs.
 
-##### Différences entre les champs "Datation" et "Date"
+##### Différences entre les champs "datation" et "Date"
 
 Le champ **Date** permet l'entrée d'une date précise sur une fiche. Cette date doit être unique. Cela peut être par exemple la date de naissance d'une personne, l'année de construction d'un bâtiment ou l'heure et la date d'une représentation.
 
-Le champ de **Datation** accepte une date de début et une date de fin, permettant la création de périodes et la recherche sur toutes les dates contenues dans cette période.
+Le champ de **datation** accepte une date de début et une date de fin, permettant la création de périodes et la recherche sur toutes les dates contenues dans cette période.

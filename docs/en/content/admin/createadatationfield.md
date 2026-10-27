@@ -13,7 +13,7 @@ Several questions need to be addressed before starting to create a **datation** 
 
 This step is necessary for choosing dates through a predefined set of choices and must be done prior to creating the datation field.
 
-In **Setup** mode, select **Choice set** from the left column and click on *+ New Choice set*. Choose the *datation* type, decide whether dates before BC are allowed or not, and select the format.
+In **Setup** mode, select **Choice set** from the left column and click on *+ New Choice set*. Choose the *datation* type, decide whether BC dates (*dates before Christ*) are allowed or not, and select the format.
 
 *The format and the choice set type (Date or Standard) cannot be modified once the choice set is created.*
 
@@ -28,7 +28,7 @@ Edit the newly created choice set and click on *+ New Choice* to add a new perio
 - Only the *End Date* field is filled. It defines a period before the indicated end date (included).
 - Filling both fields with the same information sets a fixed date. For example, *Start Date*: 1990 and *End Date*: 1990.
 
-![difference between a field where bc date are allowed or not ](assets/datation/bcornot.png)
+![difference between a field where BC date are allowed or not ](assets/datation/bcornot.png)
 
 > Start and end dates are **inclusive**. A period defined with a start date of **1990** and an end date of **1999** includes the years 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, and 1999. Searching for any of these years will return records from this period.
 
@@ -42,7 +42,7 @@ When creating a choice, it is possible to associate a **parent** with it.
 The hierarchy of choices is visible in the **Setup** mode of the choice set. To modify the order, select the item and use the cross icon to move it to the desired location in the hierarchy.
 ![hierarchy of choices](datation/hierarchie.png)
 
-**CAUTION:** It is not recommended to create multiple levels of choice hierarchy as it can lead to confusion when searching by parent choice. During a search by choice set, children of children are not included.
+**WARNING:** It is not recommended to create multiple levels of choice hierarchy as it can lead to confusion when searching by parent choice. During a search by choice set, children of children are not included.
 
 **Example**
 ![3 levels of choices](assets/datation/3levels.png)
@@ -97,12 +97,12 @@ The hierarchy of choices in standard or datation choice sets has a significant i
 
 #### Step 2: Creating the datation field
 
-In *Setup** mode, select the record type from the left column and click on *+ Add > Datation Field*. In addition to the name, plural name, and slug, along with display options, the last parameter defines the format(s) used for data entry:
+In *Setup** mode, select the record type from the left column and click on *+ Add > datation Field*. In addition to the name, plural name, and slug, along with display options, the last parameter defines the format(s) used for data entry:
 
-1. **Manual**: Check this box to allow manual entry of dates and periods. The data format is defined by selecting an option from the dropdown menu. *To enable the use of dates before BC, check the box below the dropdown menu*.
+1. **Manual**: Check this box to allow manual entry of dates and periods. The data format is defined by selecting an option from the dropdown menu. *To enable the use of BC dates (dates before Christ), check the box below the dropdown menu*.
 2. **Through a choice set**: Check this box and select a choice set **of date type** to allow the selection of dates or periods based on a previously created choice set. The acceptance or rejection of negative dates is defined directly in the choice set settings under *Setup > Choice Set*.
 
-**CAUTION!** If both input types are enabled (manual and through a choice set), it is recommended to choose the same date format.
+**WARNING:** If both input types are enabled (manual and through a choice set), it is recommended to choose the same date format.
 Otherwise, ensure that you have defined **consistent** formats. The widest date format should always be included in the finer format. For example, if the choice set is in years, manual input could be in month-years format but not exclusively in months.
 
 ![i](assets/datation/config_datation.png)

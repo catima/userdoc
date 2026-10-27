@@ -14,6 +14,6 @@ Les éléments du concept "film" peuvent ainsi être représentés dans un table
 |-----------------------------|-----------------|----------------------|------------------|
 | 2001, l'Odyssée de l'espace | Science-fiction | Stanley Kubrick      | 1968             |
 | Le Parrain                  | Gangsters       | Francis Ford Coppola | 1972             |
-| Titanic                     | Drame, romance  | James Cameron        | 1998             |
+| Titanic                     | Drame, romance  | James Cameron        | 1997             |
 
 Les étapes suivantes permettent d'effectuer une conceptualisation efficace : exploration, hiérarchisation et liens

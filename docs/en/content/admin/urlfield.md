@@ -1,1 +1,1 @@
-This field accepts URL adress and will create a link.
+This field accepts one URL address and will create a link.

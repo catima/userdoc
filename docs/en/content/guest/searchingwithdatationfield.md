@@ -2,7 +2,7 @@
 
 The **Date** field allows the entry of a specific date on a record. This date must be unique. For example, it could be a person's birthdate, a building's construction year, or the date and time of a performance.
 
-The **Datation Field** accepts a start date and an end date, allowing the creation of periods and searching for all dates within that period.
+The **datation Field** accepts a start date and an end date, allowing the creation of periods and searching for all dates within that period.
 
 > The datation field is a very complex field for which [a complete manual](assets/datation/exampledatation.pdf) has been produced, as well as an [example catalog](https://catima.unil.ch/datation-exple/en) showing how the field is used and how it behaves when searched.
 
@@ -29,7 +29,7 @@ Dropdowns on the right allow to specify whether the search should retrieve resul
 
 In this case, options such as "between the dates" and "outside the dates" will also be available in the dropdown. 
 
-### Options available when the date is a “Datation” field
+### Options available when the date is a “datation” field
 
 The dropdown (4) enables searches through a choice set.
 

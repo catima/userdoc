@@ -27,8 +27,8 @@ If the catalog is in french, we want to reference the movies in a different way.
 
 ![compound field in french](assets/compound/compound-field-fr.png)
 
-The referece will be displayed in a different way when the catalog is in french.
+The reference will be displayed in a different way when the catalog is in french.
 
 ![movie item in french](assets/compound/fiche-film-fr.png)
 
-> CAUTION ! If the data need to be displayed in the same way in all the language it is necessary to copy and paste the canvas in all the language allowed in the catalog.
+> WARNING ! If the data need to be displayed in the same way in all the language it is necessary to copy and paste the canvas in all the language allowed in the catalog.

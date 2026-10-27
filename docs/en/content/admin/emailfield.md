@@ -1,1 +1,1 @@
-Creates a text field that only accept an email.
+Creates a text field that only accepts an email.

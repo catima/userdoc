@@ -30,7 +30,7 @@ The value of navbar points to the title of the sidenav file in the _include fold
 
 <a id="datationdata"></a>
 
-### Datation Data
+### datation Data
 
 {% include_relative content/editors/datationdata.md %}
 

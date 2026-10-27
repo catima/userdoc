@@ -1,4 +1,4 @@
-Quelques questions doivent être résolues avant de commencer la création d'un champ **Datation**.
+Quelques questions doivent être résolues avant de commencer la création d'un champ **datation**.
 
 1. Quel est le niveau de précision: par période, par année, par jour/mois/année ?
 2. Est-ce que les dates/périodes sont exclusivement après JC ou des dates/périodes avant JC sont aussi possibles ?
@@ -13,9 +13,9 @@ Quelques questions doivent être résolues avant de commencer la création d'un 
 
 Cette étape est nécessaire pour la saisie de dates par ensemble de choix et doit être effectuée préalablement à la création du champ datation.
 
-En mode **Setup**, sélectionner **Ensemble de choix** dans la colonne de gauche et cliquer sur *+ Nouvel ensemble de choix*. Sélectionner le type *Datation*, choisir si les dates avant JC sont autorisées ou non ainsi que le format.
+En mode **Setup**, sélectionner **Ensemble de choix** dans la colonne de gauche et cliquer sur *+ Nouvel ensemble de choix*. Sélectionner le type *datation*, choisir si les dates avant JC sont autorisées ou non ainsi que le format.
 
-*Le format, ainsi que le type d'ensemble de choix (Datation ou Standard) ne peuvent plus être modifiés une fois l'ensemble de choix créé.*
+*Le format, ainsi que le type d'ensemble de choix (datation ou Standard) ne peuvent plus être modifiés une fois l'ensemble de choix créé.*
 
 > Il est recommandé de choisir le format le plus large possible. Si la datation se fait par siècle, choisir **Y** (années) uniquement et non un format plus fin  qui incluerait des mois et jours sans quoi cela peut poser des conflits lors des recherches. Si une datation par jour/mois/année est nécessaire, choisir **YMD** et ne pas inclure les heures et secondes.
 

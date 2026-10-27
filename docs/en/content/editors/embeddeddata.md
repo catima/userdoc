@@ -5,12 +5,12 @@ To add more than one media, it's possible to insert multiple iframe tags one aft
 
 ![i](assets/setup/embed_iframe.png)
 
-- **Embed media using URL**: copy the full page's URL from the adress bar.
+- **Embed media using URL**: copy the full page's URL from the address bar.
 
 ![i](assets/setup/embed_url.png)
 
 
-For dilps.unil.ch and tiresias.unil.ch it is only possible to use the url embed. Access the webpage of the item you want to embed by clicking on the title and copy the url via the adress bar of your navigator. Paste the url in the url embed field to embed the page in your Catima item.
+For dilps.unil.ch and tiresias.unil.ch it is only possible to use the url embed. Access the webpage of the item you want to embed by clicking on the title and copy the url via the address bar of your navigator. Paste the url in the url embed field to embed the page in your Catima item.
 
 ![](assets/data/dilps-url.png)
 

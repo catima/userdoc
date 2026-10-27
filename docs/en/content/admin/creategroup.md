@@ -6,9 +6,9 @@ To create a group, click on "*+ Create group*":
 
 Next, enter a name and description for the group.
 
-Define whether the group is active or not using the *Active?* checkbox. An inactive group will not have access to the catalog. The active checkbox can be checked or unchecked at any time by returning to the group settings via the *Edit* button ![Edit Button](assets/buttons/edit_btn.png).
+Define whether the group is active or not thanks to the *Active?* checkbox. An inactive group will not have access to the catalog. The active checkbox can be checked or unchecked at any time by returning to the group settings via the *Edit* button ![Edit Button](assets/buttons/edit_btn.png).
 
-Click on create a group.
+Click on "*+ Create group*".
 
 It is then possible to assign the same role to all members of the group (here "Member"):
 ![](assets/setup/usergroup_member.png)
